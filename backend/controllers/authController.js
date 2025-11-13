@@ -1,0 +1,113 @@
+
+import path from 'path';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+import { readJSON, writeJSON } from '../lib/helper.js'; 
+
+dotenv.config();
+
+const JWT_SECRET = process.env.JWT_SECRET;
+const DB_PATH = path.resolve('data/db.json');
+
+
+export const register = async (req, res) => {
+  try {
+    const { nome, email, password } = req.body;
+    
+    if (!nome || !email || !password) {
+      return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+    }
+
+   
+    let db = readJSON(DB_PATH); 
+    
+ 
+    if (!db || !db.users) {
+      db = { users: [] };
+    }
+
+    const existingUser = db.users.find(user => user.email === email);
+    if (existingUser) {
+      return res.status(400).json({ message: 'Este email já está em uso.' });
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    const newUser = {
+      id: Date.now().toString(),
+      nome,
+      email,
+      password: hashedPassword,
+      createdAt: new Date().toISOString()
+    };
+
+    db.users.push(newUser);
+    
+    
+    writeJSON(DB_PATH, db);
+
+    const token = jwt.sign({ id: newUser.id, email: newUser.email }, JWT_SECRET, {
+      expiresIn: '1h',
+    });
+
+    res.status(201).json({
+      token,
+      user: {
+        id: newUser.id,
+        nome: newUser.nome,
+        email: newUser.email,
+      },
+    });
+
+  } catch (error) {
+    res.status(500).json({ message: 'Erro interno do servidor', error: error.message });
+  }
+};
+
+/**
+ * Autentica um usuário existente
+ * Rota: POST /api/auth/login
+ */
+export const login = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({ message: 'Email e senha são obrigatórios.' });
+    }
+
+   
+    const db = readJSON(DB_PATH); 
+    if (!db || !db.users) {
+      return res.status(401).json({ message: 'Credenciais inválidas.' });
+    }
+
+    const user = db.users.find(u => u.email === email);
+    if (!user) {
+      return res.status(401).json({ message: 'Credenciais inválidas.' });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(401).json({ message: 'Credenciais inválidas.' });
+    }
+
+    const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, {
+      expiresIn: '1h',
+    });
+
+    res.status(200).json({
+      token,
+      user: {
+        id: user.id,
+        nome: user.nome,
+        email: user.email,
+      },
+    });
+
+  } catch (error) {
+    res.status(500).json({ message: 'Erro interno do servidor', error: error.message });
+  }
+};

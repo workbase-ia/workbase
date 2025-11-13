@@ -1,0 +1,38 @@
+[
+    {
+        "timestamp": "2025-11-11T09:00:00Z",
+        "temperatura": 22.5,
+        "ruido": 45,
+        "luminosidade": 500,
+        "pontuacaoFoco": 85,
+        "recomendacao": null,
+        "softSkillAssociada": null
+    },
+    {
+        "timestamp": "2025-11-11T10:00:00Z",
+        "temperatura": 28.0,
+        "ruido": 55,
+        "luminosidade": 450,
+        "pontuacaoFoco": 60,
+        "recomendacao": "A temperatura elevada pode causar fadiga. Tente ventilar o ambiente.",
+        "softSkillAssociada": "Autogestão"
+    },
+    {
+        "timestamp": "2025-11-11T11:00:00Z",
+        "temperatura": 25.0,
+        "ruido": 70,
+        "luminosidade": 550,
+        "pontuacaoFoco": 45,
+        "recomendacao": "O ruído está alto, isso pode afetar sua concentração. Considere usar fones de ouvido.",
+        "softSkillAssociada": "Foco"
+    },
+    {
+        "timestamp": "2025-11-11T12:00:00Z",
+        "temperatura": 23.0,
+        "ruido": 40,
+        "luminosidade": 600,
+        "pontuacaoFoco": 95,
+        "recomendacao": null,
+        "softSkillAssociada": null
+    }
+]

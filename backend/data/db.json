@@ -1,3 +1,11 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "1763078048263",
+      "nome": "Admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$g8CVV1hlKjYnhCNdcu6XOuLYnqSNawsjtffVjtEKPfVMoazbuhBt6",
+      "createdAt": "2025-11-13T23:54:08.263Z"
+    }
+  ]
 }

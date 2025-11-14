@@ -14,8 +14,9 @@ export default function Vagas() {
   const [isLoading, setIsLoading] = useState(false); 
   const [error, setError] = useState(null);
 
-  const [termo, setTermo] = useState('Desenvolvedor Python');
+  const [termo, setTermo] = useState('');
   const [country, setCountry] = useState('br'); 
+  const [estado, setEstado] = useState('');
   const [employmentTypes, setEmploymentTypes] = useState({
     FULLTIME: false,
     PARTTIME: false,
@@ -23,7 +24,7 @@ export default function Vagas() {
     INTERN: false,
   });
 
-  const fetchVagas = async (termoBusca, countryBusca, typesBusca) => {
+  const fetchVagas = async (termoBusca, countryBusca, typesBusca, estadoBusca) => {
     setIsLoading(true);
     setError(null);
 
@@ -33,6 +34,7 @@ export default function Vagas() {
       params.append('termo', termoBusca);
       if (countryBusca) params.append('country', countryBusca);
       if (typesBusca) params.append('employment_types', typesBusca); 
+      if (estadoBusca) params.append('estado', estadoBusca);
 
       const response = await fetch(`${API_URL}/vagas?${params.toString()}`);
       
@@ -68,7 +70,7 @@ export default function Vagas() {
       .filter(key => employmentTypes[key])
       .join(',');
 
-    fetchVagas(termo, country, selectedTypes); 
+    fetchVagas(termo, country, selectedTypes, estado); 
   };
   
   return (
@@ -98,6 +100,19 @@ export default function Vagas() {
             placeholder="Ex: br, us, de"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
+            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+            disabled={isLoading}
+          />
+        </div>
+
+        {/* Filtro de Estado */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Estado (código UF)</label>
+          <input 
+            type="text"
+            placeholder="Ex: sp, rj, mg"
+            value={estado}
+            onChange={(e) => setEstado(e.target.value)}
             className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"
             disabled={isLoading}
           />

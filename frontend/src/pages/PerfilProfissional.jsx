@@ -52,93 +52,87 @@ export default function PerfilProfissional() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="md:col-span-1 space-y-6">
+          <div className="bg-white border border-gray-200 rounded-lg ">
+            <div className="h-24 md:h-28 bg-gray-200 rounded-t-lg"></div>
+            <div className="p-6 relative">
+              <img
+                src={perfil.foto || ''} 
+                alt={perfil.nome}
+                className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-white absolute -mt-16 md:-mt-20 left-6"
+              />
+              
+              {ehMeuPerfil && (
+                <Link 
+                  to="/perfil/editar"
+                  className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
+                  title="Editar perfil"
+                >
+                  <Edit size={20} className="text-gray-600" />
+                </Link>
+              )}
+              <div className="mt-12 md:mt-16"> 
+                <h1 className="text-2xl font-bold text-gray-900">{perfil.nome}</h1>
+                <p className="text-md text-gray-700 mt-1">{perfil.cargo}</p>
+                <div className="flex items-center gap-2 text-gray-500 mt-2">
+                  <MapPin size={16} />
+                  <span className="text-sm">{perfil.localizacao}</span>
+                </div>
+              </div>
 
-      <div className="max-w-3xl mx-auto space-y-6">
-        
-        {/* Card Principal do Perfil*/}
-        <div className="bg-white border border-gray-200 rounded-lg ">
-          {/* Placeholder da capa - mudar para ser foto depois */}
-          <div className="h-32 md:h-48 bg-gray-200 rounded-t-lg"></div>
-          
-          <div className="p-6 relative">
-            <img
-              src={perfil.foto || ''} 
-              alt={perfil.nome}
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white absolute -mt-20 md:-mt-24 left-6"
-            />
-            
-            {ehMeuPerfil && (
-              <Link 
-                to="/perfil/editar"
-                className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
-                title="Editar perfil"
-              >
-                <Edit size={20} className="text-gray-600" />
-              </Link>
-            )}
-
-            <div className="mt-16 md:mt-20"> 
-              <h1 className="text-3xl font-bold text-gray-900">{perfil.nome}</h1>
-              <p className="text-lg text-gray-700 mt-1">{perfil.cargo}</p>
-              <div className="flex items-center gap-2 text-gray-500 mt-2">
-                <MapPin size={16} />
-                <span>{perfil.localizacao}</span>
+              {/* Botões de Ação */}
+              <div className="mt-6 flex gap-3 flex-wrap">
+                {!ehMeuPerfil && (
+                  <>
+                    <button className="flex items-center gap-2 px-4 py-2 text-sm bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                      <Plus size={18} />
+                      Conectar
+                    </button>
+                    <button className="flex items-center gap-2 px-4 py-2 text-sm border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                      <Send size={18} />
+                      Mensagem
+                    </button>
+                  </>
+                )}
               </div>
             </div>
-
-            {/* Botões de Ação */}
-            <div className="mt-6 flex gap-3 flex-wrap">
-              {!ehMeuPerfil && (
-                <>
-                  <button className="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                    <Plus size={18} />
-                    Conectar
-                  </button>
-                  <button className="flex items-center gap-2 px-6 py-2 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
-                    <Send size={18} />
-                    Mensagem
-                  </button>
-                </>
-              )}
-            </div>
           </div>
-        </div>
-        
-        {/* Card de Criar Publicação*/}
-        <div className="bg-white border border-gray-200 rounded-lg p-4">
-          <input 
-            type="text"
-            placeholder="Começar uma publicação..."
-            className="w-full border border-gray-300 rounded-full px-4 py-3 bg-gray-50 hover:bg-gray-100 cursor-pointer"
+    
+          <SobreCard resumo={perfil.resumo} />
+          <ExperienciaCard experiencias={perfil.experiencias} />
+          <FormacaoCard formacao={perfil.formacao} />
+          <HabilidadesCard 
+            habilidadesTecnicas={perfil.habilidadesTecnicas}
+            softSkills={perfil.softSkills}
           />
+          <ProjetosCard projetos={perfil.projetos} />
+          <CertificacoesCard certificacoes={perfil.certificacoes} />
+          <IdiomasCard idiomas={perfil.idiomas} />
+          
+        </div>
+        <div className="md:col-span-2 space-y-6">
+          
+          {/* Card de Criar Publicação*/}
+            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+              <input 
+                type="text"
+                placeholder="Começar uma publicação..."
+                className="w-full border border-gray-300 rounded-full px-4 py-3 bg-gray-50  hover:bg-gray-100 cursor-pointer focus:outline-none focus:border-gray-400 focus:bg-gray-100"
+              />
+            </div>
+
+          {/* Card de Publicações */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Publicações</h2>
+            <p className="text-gray-500 text-center">
+              Nenhuma publicação ainda.
+            </p>
+          </div>
+          
         </div>
 
-        {/* Card de Publicações */}
-        <div className="bg-white border border-gray-200 rounded-lg p-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Publicações</h2>
-          <p className="text-gray-500 text-center">
-            Nenhuma publicação ainda.
-          </p>
-        </div>
-        
-        <SobreCard resumo={perfil.resumo} />
-        
-        <ExperienciaCard experiencias={perfil.experiencias} />
-        
-        <FormacaoCard formacao={perfil.formacao} />
-
-        <HabilidadesCard 
-          habilidadesTecnicas={perfil.habilidadesTecnicas}
-          softSkills={perfil.softSkills}
-        />
-        
-        <ProjetosCard projetos={perfil.projetos} />
-        
-        <CertificacoesCard certificacoes={perfil.certificacoes} />
-        
-        <IdiomasCard idiomas={perfil.idiomas} />
-
-      </div> 
+      </div>
     </div>
   );
 }

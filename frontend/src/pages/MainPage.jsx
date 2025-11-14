@@ -61,7 +61,7 @@ export default function MainPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen flex flex-col bg-slate-50">
       <Header isAuthenticated={isAuthenticated} onLogout={handleLogout} onLogin={handleLogin} />
 
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8">

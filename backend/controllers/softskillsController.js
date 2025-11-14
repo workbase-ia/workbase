@@ -1,5 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const SOFTSKILLS_PATH = path.join(__dirname, '..', 'data', 'softSkills.json');
 
@@ -13,7 +17,7 @@ const lerSoftSkills = () => {
     }
 };
 
-const getGlossario = (req, res) => {
+export const getGlossario = (req, res) => {
     const { glossario } = lerSoftSkills();
     if (glossario && glossario.length > 0) {
         res.json(glossario);
@@ -22,7 +26,7 @@ const getGlossario = (req, res) => {
     }
 };
 
-const getSoftSkillDoDia = (req, res) => {
+export const getSoftSkillDoDia = (req, res) => {
     const { glossario } = lerSoftSkills();
     
     if (!glossario || glossario.length === 0) {
@@ -38,9 +42,4 @@ const getSoftSkillDoDia = (req, res) => {
         ...softSkillDoDia,
         dicaContextualizada: dica
     });
-};
-
-module.exports = {
-    getGlossario,
-    getSoftSkillDoDia,
 };

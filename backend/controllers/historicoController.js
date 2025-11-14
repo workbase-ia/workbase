@@ -1,6 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-const PDFDocument = require('pdfkit');
+import fs from 'fs';
+import path from 'path';
+import PDFDocument from 'pdfkit';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const HISTORICO_PATH = path.join(__dirname, '..', 'data', 'historicoUsuario.json');
 
@@ -22,13 +26,13 @@ const escreverHistorico = (novoHistorico) => {
    }
 };
 
-const getHistorico = (req, res) => {
-   const historico = lerHistorico();
-   res.json(historico);
+export const getHistorico = (req, res) => {
+   const historico = lerHistorico();
+   res.json(historico);
 };
 
 // Controller para gerar o relatório em PDF
-const gerarRelatorioPDF = (req, res) => {
+export const gerarRelatorioPDF = (req, res) => {
    const historico = lerHistorico();
 
    if (historico.length === 0) {
@@ -159,7 +163,3 @@ const gerarRelatorioPDF = (req, res) => {
    doc.end();
 };
 
-module.exports = {
-   getHistorico,
-   gerarRelatorioPDF,
-};

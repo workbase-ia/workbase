@@ -9,12 +9,11 @@ export default function Header({ isAuthenticated, onLogout, onLogin }) {
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                 {/* Logo e Título */}
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                         WA
                     </div>
-                    <h1 className="text-2xl font-bold text-slate-900">Workplace AI</h1>
+                    <h1 className="text-2xl font-bold text-slate-900">WorkBase AI</h1>
                 </div>
-
                 {/* Menu Desktop */}
                 <nav className="hidden md:flex items-center gap-8">
                     <a href="#" className="text-slate-600 hover:text-blue-600 transition font-medium">

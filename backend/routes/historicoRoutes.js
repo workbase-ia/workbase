@@ -1,11 +1,9 @@
-const express = require('express');
-const router = express.Router();
-const historicoController = require('../controllers/historicoController');
+import { Router } from 'express';
+import { getHistorico, gerarRelatorioPDF } from '../controllers/historicoController.js'; 
 
+const router = Router();
 
-router.get('/', historicoController.getHistorico);
+router.get('/', getHistorico);
+router.get('/relatorio-pdf', gerarRelatorioPDF);
 
-
-router.get('/relatorio-pdf', historicoController.gerarRelatorioPDF);
-
-module.exports = router;
+export default router;

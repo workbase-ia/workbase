@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import ambienteRoutes from './routes/ambienteRoutes.js';
 import authRoutes from './routes/authRoutes.js'; 
+import perfilRoutes from './routes/perfilRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json());
 
 app.use('/api/ambiente', ambienteRoutes); 
 app.use('/api/auth', authRoutes); 
+app.use('/api/perfil', perfilRoutes);
 
 
 app.listen(port, () => {

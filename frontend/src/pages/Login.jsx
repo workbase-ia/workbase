@@ -35,7 +35,7 @@ export default function Login() {
 
       // SUCESSO: 
       login(data); 
-      navigate(`/perfil/${data.user.id}`);   
+      navigate('/');   
 
       console.log('Login bem-sucedido:', data);
 

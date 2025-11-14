@@ -6,6 +6,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import PerfilProfissional from './pages/PerfilProfissional';
+import Vagas from './pages/Vagas';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/perfil/:id" element={<PerfilProfissional />} />
+          <Route path="/perfil/:id" element={<PerfilProfissional />} />
+          <Route path="/vagas" element={<Vagas />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

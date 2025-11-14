@@ -45,7 +45,7 @@ export default function Cadastro() {
       }
 
       login(data);
-      navigate('/perfil'); 
+      navigate('/'); 
 
       console.log('Cadastro bem-sucedido:', data);
 

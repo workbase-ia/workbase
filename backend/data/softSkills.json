@@ -1,0 +1,30 @@
+{
+    "glossario": [
+        {
+            "nome": "Foco",
+            "descricao": "Capacidade de manter a atenção em uma tarefa específica, ignorando distrações.",
+            "associacao": ["Pontuação de Foco Baixa", "Ruído Alto"]
+        },
+        {
+            "nome": "Autogestão",
+            "descricao": "Habilidade de gerenciar o próprio tempo, emoções e tarefas de forma eficaz.",
+            "associacao": ["Temperatura Extrema", "Luminosidade Inadequada"]
+        },
+        {
+            "nome": "Resiliência",
+            "descricao": "Capacidade de se recuperar rapidamente de dificuldades e manter a produtividade sob pressão.",
+            "associacao": ["Recomendações Frequentes", "Ambiente Instável"]
+        },
+        {
+            "nome": "Comunicação",
+            "descricao": "Habilidade de transmitir informações de forma clara e eficaz.",
+            "associacao": ["Recomendação de Pausa", "Interrupções"]
+        }
+    ],
+    "associacoes": {
+        "Ruído Alto": "Foco",
+        "Temperatura Extrema": "Autogestão",
+        "Luminosidade Inadequada": "Autogestão",
+        "Recomendações Frequentes": "Resiliência"
+    }
+}

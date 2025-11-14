@@ -1,4 +1,16 @@
 import React from 'react';
+<<<<<<< HEAD
+import MainPage from './MainPage';
+import './index.css';
+
+export default function App() {
+  return (
+    <div>
+      <MainPage />
+    </div>
+  );
+}
+=======
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext'; 
 import Login from './pages/Login';
@@ -20,3 +32,4 @@ function App() {
 }
 
 export default App;
+>>>>>>> 6724d205b0c30f234662e1584057d8ac5d090721

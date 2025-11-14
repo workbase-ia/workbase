@@ -38,7 +38,7 @@ export default function PerfilProfissional() {
     fetchPerfil();
   }, [id]); 
 
-  const ehMeuPerfil = usuarioLogado && usuarioLogado.id === id;
+  const MeuPerfil = usuarioLogado && usuarioLogado.id === id;
 
   if (isLoading) {
     return <div className="text-center p-10">Carregando perfil...</div>;
@@ -63,7 +63,7 @@ export default function PerfilProfissional() {
                 className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-white absolute -mt-16 md:-mt-20 left-6"
               />
               
-              {ehMeuPerfil && (
+              {MeuPerfil && (
                 <Link 
                   to="/perfil/editar"
                   className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
@@ -83,7 +83,7 @@ export default function PerfilProfissional() {
 
               {/* Botões de Ação */}
               <div className="mt-6 flex gap-3 flex-wrap">
-                {!ehMeuPerfil && (
+                {!MeuPerfil && (
                   <>
                     <button className="flex items-center gap-2 px-4 py-2 text-sm bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
                       <Plus size={18} />
@@ -99,16 +99,17 @@ export default function PerfilProfissional() {
             </div>
           </div>
     
-          <SobreCard resumo={perfil.resumo} />
-          <ExperienciaCard experiencias={perfil.experiencias} />
-          <FormacaoCard formacao={perfil.formacao} />
+          <SobreCard resumo={perfil.resumo} MeuPerfil={MeuPerfil} />
+          <ExperienciaCard experiencias={perfil.experiencias} MeuPerfil={MeuPerfil}/>
+          <FormacaoCard formacao={perfil.formacao} MeuPerfil={MeuPerfil} />
           <HabilidadesCard 
             habilidadesTecnicas={perfil.habilidadesTecnicas}
             softSkills={perfil.softSkills}
+            MeuPerfil={MeuPerfil}
           />
-          <ProjetosCard projetos={perfil.projetos} />
-          <CertificacoesCard certificacoes={perfil.certificacoes} />
-          <IdiomasCard idiomas={perfil.idiomas} />
+          <ProjetosCard projetos={perfil.projetos} MeuPerfil={MeuPerfil} />
+          <CertificacoesCard certificacoes={perfil.certificacoes} MeuPerfil={MeuPerfil} />
+          <IdiomasCard idiomas={perfil.idiomas} MeuPerfil={MeuPerfil} />
           
         </div>
         <div className="md:col-span-2 space-y-6">

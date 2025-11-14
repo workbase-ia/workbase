@@ -6,6 +6,13 @@
       "email": "admin@gmail.com",
       "password": "$2b$10$g8CVV1hlKjYnhCNdcu6XOuLYnqSNawsjtffVjtEKPfVMoazbuhBt6",
       "createdAt": "2025-11-13T23:54:08.263Z"
+    },
+    {
+      "id": "1763126460224",
+      "nome": "Murilo Rosa",
+      "email": "yuri@teste.com",
+      "password": "$2b$10$dlOa9vM5MOZlP.M1zDbIROtbLjLPnRAPafJBWV8jsZLNO28etPbfu",
+      "createdAt": "2025-11-14T13:21:00.223Z"
     }
   ]
 }

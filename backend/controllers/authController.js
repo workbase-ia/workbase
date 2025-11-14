@@ -9,6 +9,7 @@ dotenv.config();
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const DB_PATH = path.resolve('data/db.json');
+const PERFIL_DB_PATH = path.resolve('data/usuarios.json');
 
 
 export const register = async (req, res) => {
@@ -21,32 +22,61 @@ export const register = async (req, res) => {
 
    
     let db = readJSON(DB_PATH); 
+    let perfisdb = readJSON(PERFIL_DB_PATH);
     
  
     if (!db || !db.users) {
       db = { users: [] };
     }
 
+    if (!perfisdb) {
+      perfisdb = [];
+    }
+
     const existingUser = db.users.find(user => user.email === email);
-    if (existingUser) {
+    const perfilExistente = perfisdb.find(perfil => perfil.email === email);
+    if (existingUser || perfilExistente) {
       return res.status(400).json({ message: 'Este email já está em uso.' });
     }
 
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
+    const newId = Date.now();
+
     const newUser = {
-      id: Date.now().toString(),
+      id: newId.toString(),
       nome,
       email,
       password: hashedPassword,
       createdAt: new Date().toISOString()
     };
 
-    db.users.push(newUser);
+    const newPerfilUser = {
+      Id: newId,
+      nome: nome,
+      email: email,
+      area: '',
+      foto: "",
+      cargo: "",
+      resumo: "",
+      localizacao: "",
+      area: "",
+      habilidadesTecnicas: [],
+      softSkills: [],
+      experiencias: [],
+      formacao: [],
+      projetos: [],
+      certificacoes: [],
+      idiomas: [],
+      arealnteresses: [] 
+    };
     
+    db.users.push(newUser);
+    perfisdb.push(newPerfilUser);
     
     writeJSON(DB_PATH, db);
+    writeJSON(PERFIL_DB_PATH, perfisdb);
 
     const token = jwt.sign({ id: newUser.id, email: newUser.email }, JWT_SECRET, {
       expiresIn: '1h',

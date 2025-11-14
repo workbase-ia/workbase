@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext'; 
 
-// URL da sua API (ajuste se for diferente)
 const API_URL = 'http://localhost:3001/api';
 
 export default function Login() {
@@ -12,10 +11,10 @@ export default function Login() {
   const [isLoading, setIsLoading] = useState(false);
   
   const navigate = useNavigate();
-  const { login } = useAuth(); // Você usará isso para salvar o usuário/token
+  const { login } = useAuth(); 
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Impede o recarregamento da página
+    e.preventDefault(); 
     setIsLoading(true);
     setError(null);
 
@@ -36,7 +35,7 @@ export default function Login() {
 
       // SUCESSO: 
       login(data); 
-      navigate('/perfil');   
+      navigate(`/perfil/${data.user.id}`);   
 
       console.log('Login bem-sucedido:', data);
 
@@ -133,8 +132,6 @@ export default function Login() {
               </button>
             </div>
           </form>
-
-
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
+import { analisarHabilidadesVagas } from '../lib/analisarVagas.js';  
 
 dotenv.config();
 
@@ -112,9 +113,7 @@ export const buscarVagas = async (req, res) => {
 
   const {termo} = req.query;
 
-  if (!termo || termo.trim() === '') {
-    return res.status(200).json([]);
-  }
+  if (!termo || termo.trim() === '') { return res.status(200).json({ vagas: [], analise: [] }); }
 
   try {
     // Chama as duas APIs em paralelo
@@ -146,8 +145,12 @@ export const buscarVagas = async (req, res) => {
     });
 
     const vagasFiltradas = Array.from(vagasUnicas.values());
-    
-    res.status(200).json(vagasFiltradas);
+    const analiseSkills = analisarHabilidadesVagas(vagasFiltradas);
+
+    res.status(200).json({
+      vagas: vagasFiltradas,
+      analise: analiseSkills,
+    });
 
   } catch (error) {
     console.error("Erro ao agregar vagas:", error.message);

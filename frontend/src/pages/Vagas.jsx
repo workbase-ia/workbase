@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import VagasAnaliseCard from '../components/VagasAnaliseCard';
 
 const API_URL = 'http://127.0.0.1:3001/api';
 
@@ -10,11 +11,12 @@ const employmentTypesEnum = {
 };
 
 export default function Vagas() {
-  const [vagas, setVagas] = useState([]); 
+  const [vagas, setVagas] = useState([]);
+  const [analiseSkills, setAnaliseSkills] = useState([]);
   const [isLoading, setIsLoading] = useState(false); 
   const [error, setError] = useState(null);
-
   const [termo, setTermo] = useState('');
+  const [lastSearchedTerm, setLastSearchedTerm] = useState('');
   const [country, setCountry] = useState('br'); 
   const [estado, setEstado] = useState('');
   const [employmentTypes, setEmploymentTypes] = useState({
@@ -25,8 +27,16 @@ export default function Vagas() {
   });
 
   const fetchVagas = async (termoBusca, countryBusca, typesBusca, estadoBusca) => {
-    setIsLoading(true);
-    setError(null);
+    setIsLoading(true);
+    setError(null);
+    setVagas([]);
+    setAnaliseSkills([]);
+
+    if (!termoBusca || termoBusca.trim() === '') {
+      setIsLoading(false); 
+      setLastSearchedTerm('');
+      return; 
+      }
 
     try {
       // Constrói os parâmetros de busca
@@ -43,13 +53,16 @@ export default function Vagas() {
         throw new Error(errorData.message || `Erro HTTP ${response.status}`);
       }
 
-      const data = await response.json();
-      setVagas(data);
+      const { vagas: vagasData, analise: analiseData } = await response.json();
+      setVagas(vagasData);
+      setAnaliseSkills(analiseData);
+      setLastSearchedTerm(termoBusca);
 
     } catch (err) {
       console.error(err);
       setError(err.message);
       setVagas([]);
+      setLastSearchedTerm('');
     } finally {
       setIsLoading(false);
     }
@@ -148,6 +161,13 @@ export default function Vagas() {
         </button>
       </form>
 
+        <VagasAnaliseCard
+          analiseSkills={analiseSkills}
+          vagasLength={vagas?.length || 0}
+          isLoading={isLoading}
+          termo={termo}
+        />
+
       {error && (
         <div className="bg-red-100 border border-red-400 text-red-700 p-4 rounded mb-4">
           <p className="font-bold">Erro de API:</p>
@@ -163,7 +183,7 @@ export default function Vagas() {
         <p className="text-blue-600 text-lg text-center">Carregando vagas para "{termo}"...</p>
       )}
 
-      {!isLoading && vagas.length > 0 && (
+      {!isLoading && vagas?.length > 0 && (
         <div className="space-y-6">
           <p className="text-sm text-gray-500">Exibindo {vagas.length} vagas encontradas.</p>
           

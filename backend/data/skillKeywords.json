@@ -1,0 +1,40 @@
+{
+  "tecnologia": [
+    "JavaScript", "Python", "Java", "C++", "C#", "SQL", "NoSQL", 
+    "React", "Angular", "Vue.js", "Node.js", "Spring Boot", 
+    "AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform", 
+    "TypeScript", "Tailwind CSS", "REST API", "GraphQL", "DevOps", 
+    "Cybersecurity", "Linux", "Scrum", "Agile"
+  ],
+
+  "engenharia": [
+    "AutoCAD", "SolidWorks", "Revit", "CAD/CAM", "Civil 3D", "Análise Estrutural", 
+    "Gestão de Projetos", "PMBOK", "MS Project", "Lean Manufacturing", "Six Sigma", 
+    "Mecatrônica", "Sistemas Embarcados", "Controle de Qualidade", "ISO 9001"
+  ],
+
+  "marketing": [
+    "SEO", "SEM", "Google Ads", "Facebook Ads", "Google Analytics", "Content Marketing", 
+    "Inbound Marketing", "Branding", "Social Media", "CRM", "E-commerce", "UX Writing", 
+    "Automação de Marketing", "Performance Marketing", "Mídia Paga"
+  ],
+
+  "direito": [
+    "LGPD", "Compliance", "Direito Digital", "Contratos", "Direito Tributário", 
+    "Contencioso", "Due Diligence", "Direito Trabalhista", "Propriedade Intelectual", 
+    "Mediação", "Arbitragem", "Regulatório", "Processo Civil"
+  ],
+
+  "saude": [
+    "Prontuário Eletrônico", "Telemedicina", "Enfermagem", "Fisioterapia", 
+    "Farmácia Clínica", "Terapia Intensiva", "Reabilitação", "Anatomia", 
+    "Urgência e Emergência", "Biossegurança", "Saúde Pública", "Análise Laboratorial"
+  ],
+
+  "soft_skills": [
+    "Comunicação", "Liderança", "Pensamento Crítico", "Resolução de Problemas", 
+    "Trabalho em Equipe", "Adaptabilidade", "Inteligência Emocional", 
+    "Gestão de Tempo", "Proatividade", "Negociação", "Criatividade", 
+    "Tomada de Decisão", "Foco", "Resiliência"
+  ]
+}

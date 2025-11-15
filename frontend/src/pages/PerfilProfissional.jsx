@@ -80,7 +80,7 @@ export default function PerfilProfissional() {
               <PerfilEditarModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                perfilData={perfil}
+                perfil={perfil}
                 onProfileUpdate={handleProfileUpdate} 
               />
               <div className="mt-12 md:mt-16"> 

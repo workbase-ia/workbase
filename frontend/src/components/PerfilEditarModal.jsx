@@ -6,7 +6,6 @@ const API_URL = 'http://127.0.0.1:3001/api';
 
 export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUpdate }) {
   const { token } = useAuth();
-    
   const [formData, setFormData] = useState({
     nome: perfil?.nome || '',
     cargo: perfil?.cargo || '',
@@ -17,7 +16,6 @@ export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUp
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  // 1. Garante que os inputs sejam pré-preenchidos com os dados atuais
   useEffect(() => {
     if (perfil) {
         setFormData({
@@ -31,7 +29,6 @@ export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUp
     }
   }, [perfil, isOpen]);
 
-  // Função CORRIGIDA: Atualiza o estado do formulário em cada digitação
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -60,11 +57,7 @@ export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUp
       }
 
       setSuccess('Perfil atualizado com sucesso!');
-      
-      // Dispara a busca por novos dados no componente pai
       onProfileUpdate(); 
-      
-      // 2. REMOVIDO: O setTimeout para fechar o modal
       onClose(); 
 
     } catch (err) {
@@ -78,7 +71,6 @@ export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUp
     return null;
   }
 
-  // 3. Estilização do Modal: Fundo Transparente para ver o Perfil
   return (
     <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 p-4">
       <div className="bg-white w-full max-w-2xl rounded-lg shadow-2xl relative flex flex-col max-h-[90vh] overflow-hidden border border-gray-300">

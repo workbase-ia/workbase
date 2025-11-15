@@ -43,3 +43,9 @@ export const solicitarExclusao = (req, res) => {
     }
 };
 
+module.exports = {
+    getConsentimentoStatus,
+    ativarConsentimento,
+    revogarConsentimento,
+    solicitarExclusao,
+};

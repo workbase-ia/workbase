@@ -1,31 +1,53 @@
-import fs from 'fs';
+import { readJSON, writeJSON } from '../lib/helper.js';
 import path from 'path';
-import { fileURLToPath } from 'url';
+
+const USUARIOS_FILE_PATH = path.resolve('./data/usuarios.json');
+
+export const verificarConsentimento = (userId) => {
+    try {
+        const usuarios = readJSON(USUARIOS_FILE_PATH);
+        if (!usuarios) {
+            return false;
+        }
+
+        const usuario = usuarios.find(u => u.Id === userId);
 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+        return usuario && usuario.Id === 1; 
 
-const HISTORICO_PATH = path.join(__dirname, '..', 'data', 'historicoUsuario.json');
-
-
-export const verificarConsentimento = () => {
-  return true;
+    } catch (error) {
+        console.error('Erro em verificarConsentimento:', error);
+        return false;
+    }
 };
 
-
 export const excluirDadosUsuario = () => {
-  try {
+    try {
+        let usuarios = readJSON(USUARIOS_FILE_PATH);
+        if (!usuarios) {
+            return false;
+        }
 
-    const historicoVazio = [];
-    
+        const userIdToDelete = 1; 
+        
+        const initialLength = usuarios.length;
+        
+        usuarios = usuarios.filter(u => u.Id !== userIdToDelete);
 
-    fs.writeFileSync(HISTORICO_PATH, JSON.stringify(historicoVazio, null, 2), 'utf8');
-    
-    console.log('Dados do histórico excluídos com sucesso (LGPD).');
-    return true; // Sucesso
-  } catch (error) {
-    console.error('Erro ao excluir dados (LGPD):', error.message);
-    return false; // Falha
-  }
+        if (usuarios.length < initialLength) {
+            writeJSON(USUARIOS_FILE_PATH, usuarios);
+            return true;
+        } else {
+            return false;
+        }
+
+    } catch (error) {
+        console.error('Erro em excluirDadosUsuario:', error);
+        return false;
+    }
+};
+
+export default {
+    verificarConsentimento,
+    excluirDadosUsuario
 };

@@ -1,7 +1,11 @@
 import express from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
-import ambienteRoutes from './routes/ambienteRoutes.js';
+import ambienteRoutes from './routes/ambienteRoutes.js'; 
+
+import privacidadeRoutes from './routes/privacidadeRoutes.js';
+import softskillsRoutes from './routes/softskillsRoutes.js';
+import postsRoutes from './routes/postsRoutes.js';
+import usuariosRoutes from './routes/usuariosRoutes.js';
 import authRoutes from './routes/authRoutes.js'; 
 import perfilRoutes from './routes/perfilRoutes.js';
 import historicoRoutes from'./routes/historicoRoutes.js';
@@ -9,8 +13,12 @@ import privacidadeRoutes from'./routes/privacidadeRoutes.js';
 import softskillsRoutes from'./routes/softskillsRoutes.js';
 import vagasRoutes from './routes/vagasRoutes.js';
 
-
 dotenv.config();
+
+const historicoRoutes = require('./routes/historicoRoutes');
+const privacidadeRoutes = require('./routes/privacidadeRoutes');
+const softskillsRoutes = require('./routes/softskillsRoutes');
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -24,7 +32,8 @@ app.use('/api/perfil', perfilRoutes);
 app.use('/api/historico', historicoRoutes); 
 app.use('/api/privacidade', privacidadeRoutes);
 app.use('/api/softskills', softskillsRoutes);
-app.use('/api/vagas', vagasRoutes);
+app.use('/api/posts', postsRoutes);
+app.use('/api/usuarios', usuariosRoutes);
 
 // Inicia o servidor
 app.listen(port, () => {

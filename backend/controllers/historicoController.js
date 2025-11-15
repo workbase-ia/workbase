@@ -1,165 +1,80 @@
-const fs = require('fs');
-const path = require('path');
-const PDFDocument = require('pdfkit');
+import { readJSON, writeJSON } from '../lib/helper.js';
+import path from 'path';
 
-const HISTORICO_PATH = path.join(__dirname, '..', 'data', 'historicoUsuario.json');
+const HISTORICO_FILE_PATH = path.resolve('../data/historicoUsuario.json');
 
-const lerHistorico = () => {
-   try {
-      const data = fs.readFileSync(HISTORICO_PATH, 'utf8');
-      return JSON.parse(data);
-   } catch (error) {
-      console.error('Erro ao ler histórico:', error.message);
-      return [];
-   }
+export const getHistorico = (req, res) => {
+    try {
+        const historico = readJSON(HISTORICO_FILE_PATH);
+        if (historico) {
+            res.status(200).json(historico);
+        } else {
+            res.status(200).json([]);
+        }
+    } catch (error) {
+        console.error('Erro ao obter histórico:', error);
+        res.status(500).json({ message: 'Erro interno do servidor ao buscar histórico.' });
+    }
 };
 
-const escreverHistorico = (novoHistorico) => {
-   try {
-      fs.writeFileSync(HISTORICO_PATH, JSON.stringify(novoHistorico, null, 2), 'utf8');
-   } catch (error) {
-      console.error('Erro ao escrever histórico:', error.message);
-   }
+export const addRegistro = (req, res) => {
+    try {
+        const novoRegistro = req.body;
+
+        if (!novoRegistro || Object.keys(novoRegistro).length === 0) {
+            return res.status(400).json({ message: 'Corpo da requisição vazio ou inválido.' });
+        }
+
+        let historico = readJSON(HISTORICO_FILE_PATH);
+        if (!historico) {
+            historico = [];
+        }
+
+        const registroComTimestamp = {
+            timestamp: new Date().toISOString(),
+            ...novoRegistro
+        };
+        
+        historico.push(registroComTimestamp);
+
+        writeJSON(HISTORICO_FILE_PATH, historico);
+
+        res.status(201).json({ message: 'Registro adicionado com sucesso!', registro: registroComTimestamp });
+
+    } catch (error) {
+        console.error('Erro ao adicionar registro:', error);
+        res.status(500).json({ message: 'Erro interno do servidor ao adicionar registro.' });
+    }
 };
 
-const getHistorico = (req, res) => {
-   const historico = lerHistorico();
-   res.json(historico);
+export const getRegistroByTimestamp = (req, res) => {
+    try {
+        const { timestamp } = req.params;
+        const historico = readJSON(HISTORICO_FILE_PATH);
+
+        if (!historico) {
+            return res.status(404).json({ message: 'Histórico não encontrado ou vazio.' });
+        }
+
+        const registro = historico.find(r => r.timestamp === timestamp);
+
+        if (registro) {
+            res.status(200).json(registro);
+        } else {
+            res.status(404).json({ message: 'Registro não encontrado.' });
+        }
+    } catch (error) {
+        console.error('Erro ao buscar registro por timestamp:', error);
+        res.status(500).json({ message: 'Erro interno do servidor ao buscar registro.' });
+    }
 };
 
-// Controller para gerar o relatório em PDF
-const gerarRelatorioPDF = (req, res) => {
-   const historico = lerHistorico();
-
-   if (historico.length === 0) {
-      return res.status(404).send('Nenhum dado de histórico encontrado para gerar o relatório.');
-   }
-
-
-   res.setHeader('Content-Type', 'application/pdf');
-   res.setHeader('Content-Disposition', 'attachment; filename="Relatorio_WorkBalanceAI.pdf"');
-
-   const doc = new PDFDocument({ size: 'A4', margin: 50 });
-
-
-   doc.pipe(res);
-
-
-   doc.fontSize(24)
-      .fillColor('#004d40') 
-      .text('Relatório de Produtividade e Bem-Estar', { align: 'center' })
-      .moveDown(0.5);
-
-   doc.fontSize(14)
-      .fillColor('#333333')
-      .text('WorkBalance AI - Seu Guia para o Equilíbrio', { align: 'center' })
-      .moveDown(1.5);
-
-
-   doc.fontSize(12)
-      .text('Olá! Este relatório resume suas interações e o impacto do ambiente no seu foco e bem-estar. Lembre-se: o autoconhecimento é o primeiro passo para uma rotina mais saudável e produtiva.', { align: 'justify' })
-      .moveDown(1);
-
-
-   doc.fontSize(16)
-      .fillColor('#004d40')
-      .text('Resumo do Período', { underline: true })
-      .moveDown(0.5);
-
-   doc.fontSize(12)
-      .fillColor('#333333')
-      .text(`Período analisado: ${historico[0].timestamp.substring(0, 10)} a ${historico[historico.length - 1].timestamp.substring(0, 10)}`)
-      .moveDown(0.5);
-
-
-   const totalRecomendacoes = historico.filter(item => item.recomendacao).length;
-   const mediaFoco = (historico.reduce((acc, item) => acc + item.pontuacaoFoco, 0) / historico.length).toFixed(1);
-
-   doc.text(`Média de Foco no Período: ${mediaFoco} / 100`)
-      .text(`Total de Recomendações Recebidas: ${totalRecomendacoes}`)
-      .moveDown(1.5);
-
-
-   doc.fontSize(16)
-      .fillColor('#004d40')
-      .text('Histórico Detalhado de Leituras e Insights', { underline: true })
-      .moveDown(0.5);
-
-   const tableTop = doc.y;
-   const itemHeight = 20;
-   const col1 = 50;
-   const col2 = 150;
-   const col3 = 250;
-   const col4 = 400;
-
-
-   doc.fillColor('#004d40')
-      .text('Data/Hora', col1, tableTop)
-      .text('Foco', col2, tableTop)
-      .text('Recomendação', col3, tableTop)
-      .text('Soft Skill', col4, tableTop)
-      .moveDown(0.5);
-
-   let currentY = doc.y;
-
-
-   historico.slice(-10).forEach((item, index) => { 
-      if (currentY + itemHeight > 750) {  
-         doc.addPage();
-         currentY = 50; 
-         doc.fillColor('#004d40')
-            .text('Data/Hora', col1, currentY)
-            .text('Foco', col2, currentY)
-            .text('Recomendação', col3, currentY)
-            .text('Soft Skill', col4, currentY)
-            .moveDown(0.5);
-         currentY = doc.y;
-      }
-
-      const dataHora = new Date(item.timestamp).toLocaleTimeString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
-      const foco = `${item.pontuacaoFoco}/100`;
-      const recomendacao = item.recomendacao ? item.recomendacao.substring(0, 40) + '...' : 'Ambiente Ideal';
-      const softSkill = item.softSkillAssociada || '-';
-
-      doc.fillColor('#666666')
-         .text(dataHora, col1, currentY)
-         .text(foco, col2, currentY)
-         .text(recomendacao, col3, currentY, { width: 140 })
-         .text(softSkill, col4, currentY)
-         .moveDown(0.5);
-
-      currentY = doc.y;
-   });
-
-   doc.addPage();
-   doc.fontSize(16)
-      .fillColor('#004d40')
-      .text('Entendendo as Recomendações', { underline: true })
-      .moveDown(0.5);
-
-   doc.fontSize(12)
-      .fillColor('#333333')
-      .text('Cada recomendação é gerada com base em desvios dos limites ideais de temperatura, ruído e luminosidade. Nosso objetivo é sempre fornecer um insight claro sobre como o ambiente pode estar afetando sua concentração.', { align: 'justify' })
-      .moveDown(1);
-
-   doc.fontSize(14)
-      .fillColor('#004d40')
-      .text('Exemplo de Insight:', { bold: true })
-      .moveDown(0.5);
-
-   doc.fontSize(12)
-      .fillColor('#333333')
-      .text('Se a temperatura estiver muito alta, a IA sugere: "A temperatura elevada pode causar fadiga. Tente ventilar o ambiente e pratique a **Autogestão** do seu conforto."')
-      .moveDown(1);
-
-   doc.fontSize(10)
-      .fillColor('#999999')
-      .text('Relatório gerado pelo WorkBalance AI. Todos os dados são anonimizados e usados apenas para o seu autoconhecimento, conforme a LGPD.', 50, 780, { align: 'center' });
-
-   doc.end();
-};
-
-module.exports = {
-   getHistorico,
-   gerarRelatorioPDF,
+export const clearHistorico = (req, res) => {
+    try {
+        writeJSON(HISTORICO_FILE_PATH, []);
+        res.status(200).json({ message: 'Histórico limpo com sucesso!' });
+    } catch (error) {
+        console.error('Erro ao limpar histórico:', error);
+        res.status(500).json({ message: 'Erro interno do servidor ao limpar histórico.' });
+    }
 };

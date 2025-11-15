@@ -1,9 +1,10 @@
-const express = require('express');
+import express from 'express';
+import softskillsController from '../controllers/softskillsController.js';
+
 const router = express.Router();
-const softskillsController = require('../controllers/softskillsController');
 
 router.get('/glossario', softskillsController.getGlossario);
 
 router.get('/softskill-do-dia', softskillsController.getSoftSkillDoDia);
 
-module.exports = router;
+export default router;

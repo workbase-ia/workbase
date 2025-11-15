@@ -1,4 +1,4 @@
-const { verificarConsentimento, excluirDadosUsuario } = require('../lib/utilidadesLGPD');
+import { verificarConsentimento, excluirDadosUsuario } from '../lib/utilidadesLGPD.js';
 
 
 let consentimentoAtivo = true;
@@ -43,7 +43,8 @@ const solicitarExclusao = (req, res) => {
     }
 };
 
-module.exports = {
+// Exportação padrão (default export) para ser importado como 'privacidadeController'
+export default {
     getConsentimentoStatus,
     ativarConsentimento,
     revogarConsentimento,

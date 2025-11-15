@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import privacidadeController from '../controllers/privacidadeController.js';
+
 const router = express.Router();
-const privacidadeController = require('../controllers/privacidadeController');
 
 router.get('/status', privacidadeController.getConsentimentoStatus);
 
@@ -10,4 +11,4 @@ router.post('/consentimento/revogar', privacidadeController.revogarConsentimento
 
 router.delete('/excluir-dados', privacidadeController.solicitarExclusao);
 
-module.exports = router;
+export default router;

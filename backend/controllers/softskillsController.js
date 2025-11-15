@@ -1,6 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
+// Ajuste para usar import.meta.url em vez de __dirname em ES Modules
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 const SOFTSKILLS_PATH = path.join(__dirname, '..', 'data', 'softSkills.json');
 
 const lerSoftSkills = () => {
@@ -40,7 +42,7 @@ const getSoftSkillDoDia = (req, res) => {
     });
 };
 
-module.exports = {
+export default {
     getGlossario,
     getSoftSkillDoDia,
 };

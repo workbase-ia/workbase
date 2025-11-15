@@ -1,15 +1,14 @@
-
 import express from 'express';
 import cors from 'cors';
 import ambienteRoutes from './routes/ambienteRoutes.js'; 
-
-const historicoRoutes = require('./routes/historicoRoutes');
-const privacidadeRoutes = require('./routes/privacidadeRoutes');
-const softskillsRoutes = require('./routes/softskillsRoutes');
+import historicoRoutes from './routes/historicoRoutes.js';
+import privacidadeRoutes from './routes/privacidadeRoutes.js';
+import softskillsRoutes from './routes/softskillsRoutes.js';
+import postsRoutes from './routes/postsRoutes.js';
+import usuariosRoutes from './routes/usuariosRoutes.js';
 
 const app = express();
 const port = 3001; 
-
 
 app.use(cors()); 
 
@@ -18,6 +17,8 @@ app.use('/api', ambienteRoutes);
 app.use('/api/historico', historicoRoutes); 
 app.use('/api/privacidade', privacidadeRoutes);
 app.use('/api/softskills', softskillsRoutes);
+app.use('/api/posts', postsRoutes);
+app.use('/api/usuarios', usuariosRoutes);
 
 // Inicia o servidor
 app.listen(port, () => {

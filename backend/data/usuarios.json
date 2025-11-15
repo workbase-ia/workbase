@@ -1,14 +1,24 @@
 [
   {
-    "Id": 1,
+    "id": 1,
     "nome": "Ana Clara Souza",
     "foto": "./images/foto1.jpg",
     "cargo": "Desenvolvedora Front-End",
     "resumo": "Especialista em React e Tailwind CSS, criando interfaces modernas e responsivas.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["React", "Tailwind CSS", "JavaScript", "Vite", "HTML5"],
-    "softSkills": ["Comunicação", "Trabalho em Equipe", "Criatividade"],
+    "habilidadesTecnicas": [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Vite",
+      "HTML5"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Trabalho em Equipe",
+      "Criatividade"
+    ],
     "experiencias": [
       {
         "empresa": "TechCorp",
@@ -32,23 +42,46 @@
         "descricao": "Site de e-commerce responsivo."
       }
     ],
-    "certificacoes": ["Scrum Foundation", "React Básico (Udemy)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" },
-      { "idioma": "Espanhol", "nivel": "Básico" }
+    "certificacoes": [
+      "Scrum Foundation",
+      "React Básico (Udemy)"
     ],
-    "arealnteresses": ["IA", "Design UI/UX", "Educação"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "IA",
+      "Design UI/UX",
+      "Educação"
+    ]
   },
   {
-    "Id": 2,
+    "id": 2,
     "nome": "Bruno Gonçalves",
     "foto": "./images/foto2.jpg",
     "cargo": "Engenheiro de Dados",
     "resumo": "Focado em pipelines de dados e arquitetura em nuvem (AWS e GCP).",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Dados",
-    "habilidadesTecnicas": ["Python", "SQL", "AWS", "Spark", "Airflow"],
-    "softSkills": ["Pensamento Crítico", "Resolução de Problemas", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Python",
+      "SQL",
+      "AWS",
+      "Spark",
+      "Airflow"
+    ],
+    "softSkills": [
+      "Pensamento Crítico",
+      "Resolução de Problemas",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "DataSol",
@@ -72,22 +105,42 @@
         "descricao": "Processamento de dados de vendas em tempo real."
       }
     ],
-    "certificacoes": ["AWS Certified Data Analytics", "Azure Data Engineer Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "AWS Certified Data Analytics",
+      "Azure Data Engineer Associate"
     ],
-    "arealnteresses": ["IA ética", "Big Data", "Finanças"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "IA ética",
+      "Big Data",
+      "Finanças"
+    ]
   },
   {
-    "Id": 3,
+    "id": 3,
     "nome": "Carla Martins",
     "foto": "./images/foto3.jpg",
     "cargo": "Designer UX/UI Pleno",
     "resumo": "Apaixonada por criar experiências de usuário intuitivas e acessíveis.",
     "localizacao": "Curitiba/PR",
     "area": "Design",
-    "habilidadesTecnicas": ["Figma", "Adobe XD", "User Research", "Design Thinking", "HTML/CSS"],
-    "softSkills": ["Empatia", "Colaboração", "Comunicação Visual"],
+    "habilidadesTecnicas": [
+      "Figma",
+      "Adobe XD",
+      "User Research",
+      "Design Thinking",
+      "HTML/CSS"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Colaboração",
+      "Comunicação Visual"
+    ],
     "experiencias": [
       {
         "empresa": "WebDesign BR",
@@ -111,22 +164,42 @@
         "descricao": "Protótipo de alta fidelidade para app focado em bem-estar."
       }
     ],
-    "certificacoes": ["Google UX Design Professional Certificate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google UX Design Professional Certificate"
     ],
-    "arealnteresses": ["Acessibilidade Web", "Saúde Digital", "Sustentabilidade"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Acessibilidade Web",
+      "Saúde Digital",
+      "Sustentabilidade"
+    ]
   },
   {
-    "Id": 4,
+    "id": 4,
     "nome": "Daniel Almeida",
     "foto": "./images/foto4.jpg",
     "cargo": "Engenheiro de Software Sênior",
     "resumo": "Especialista em back-end com foco em microserviços (Java e Spring).",
     "localizacao": "Belo Horizonte/MG",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Java", "Spring Boot", "Kotlin", "Kafka", "Docker", "Kubernetes"],
-    "softSkills": ["Liderança Técnica", "Mentoria", "Resiliência"],
+    "habilidadesTecnicas": [
+      "Java",
+      "Spring Boot",
+      "Kotlin",
+      "Kafka",
+      "Docker",
+      "Kubernetes"
+    ],
+    "softSkills": [
+      "Liderança Técnica",
+      "Mentoria",
+      "Resiliência"
+    ],
     "experiencias": [
       {
         "empresa": "Banco Digital X",
@@ -150,23 +223,46 @@
         "descricao": "Sistema de alta disponibilidade para processamento de transações."
       }
     ],
-    "certificacoes": ["Oracle Certified Professional, Java SE Programmer", "CKAD"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Alemão", "nivel": "Básico" }
+    "certificacoes": [
+      "Oracle Certified Professional, Java SE Programmer",
+      "CKAD"
     ],
-    "arealnteresses": ["Sistemas Distribuídos", "Fintech", "Cibersegurança"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Alemão",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Sistemas Distribuídos",
+      "Fintech",
+      "Cibersegurança"
+    ]
   },
   {
-    "Id": 5,
+    "id": 5,
     "nome": "Elisa Fernandes",
     "foto": "./images/foto5.jpg",
     "cargo": "Cientista de Dados",
     "resumo": "Foco em Machine Learning e processamento de linguagem natural (PLN).",
     "localizacao": "São Paulo/SP",
     "area": "IA",
-    "habilidadesTecnicas": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "SQL"],
-    "softSkills": ["Pensamento Analítico", "Curiosidade", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "SQL"
+    ],
+    "softSkills": [
+      "Pensamento Analítico",
+      "Curiosidade",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "IA Lab",
@@ -190,22 +286,42 @@
         "descricao": "Modelo de PLN para análise de reviews de produtos."
       }
     ],
-    "certificacoes": ["TensorFlow Developer Certificate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "TensorFlow Developer Certificate"
     ],
-    "arealnteresses": ["IA ética", "PLN", "Computação Quântica"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "IA ética",
+      "PLN",
+      "Computação Quântica"
+    ]
   },
   {
-    "Id": 6,
+    "id": 6,
     "nome": "Felipe Moreira",
     "foto": "./images/foto6.jpg",
     "cargo": "Gerente de Projetos (Agile)",
     "resumo": "Scrum Master e Agile Coach com experiência em transformação digital.",
     "localizacao": "Porto Alegre/RS",
     "area": "Gestão",
-    "habilidadesTecnicas": ["Scrum", "Kanban", "Jira", "Azure DevOps", "Gestão de Riscos"],
-    "softSkills": ["Liderança", "Negociação", "Organização", "Comunicação Clara"],
+    "habilidadesTecnicas": [
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "Azure DevOps",
+      "Gestão de Riscos"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Negociação",
+      "Organização",
+      "Comunicação Clara"
+    ],
     "experiencias": [
       {
         "empresa": "Consultoria Y",
@@ -234,23 +350,49 @@
         "descricao": "Gestão do projeto de migração de plataforma de e-commerce."
       }
     ],
-    "certificacoes": ["PMP", "CSM", "PSM I", "SAFe Agilist"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" },
-      { "idioma": "Espanhol", "nivel": "Intermediário" }
+    "certificacoes": [
+      "PMP",
+      "CSM",
+      "PSM I",
+      "SAFe Agilist"
     ],
-    "arealnteresses": ["Metodologias Ágeis", "Educação Corporativa", "Liderança"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Metodologias Ágeis",
+      "Educação Corporativa",
+      "Liderança"
+    ]
   },
   {
-    "Id": 7,
+    "id": 7,
     "nome": "Gabriela Lima",
     "foto": "./images/foto7.jpg",
     "cargo": "Especialista DevOps",
     "resumo": "Automatização de infraestrutura e CI/CD. Foco em AWS e Kubernetes.",
     "localizacao": "Florianópolis/SC",
     "area": "Infraestrutura",
-    "habilidadesTecnicas": ["AWS", "Docker", "Kubernetes", "Terraform", "Ansible", "CI/CD"],
-    "softSkills": ["Colaboração", "Resolução de Problemas", "Adaptabilidade"],
+    "habilidadesTecnicas": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Ansible",
+      "CI/CD"
+    ],
+    "softSkills": [
+      "Colaboração",
+      "Resolução de Problemas",
+      "Adaptabilidade"
+    ],
     "experiencias": [
       {
         "empresa": "CloudExperts",
@@ -274,22 +416,42 @@
         "descricao": "Setup de um cluster Kubernetes com Terraform."
       }
     ],
-    "certificacoes": ["AWS Solutions Architect Associate", "CKA"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "AWS Solutions Architect Associate",
+      "CKA"
     ],
-    "arealnteresses": ["Cibersegurança", "Cloud Native", "SRE"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Cibersegurança",
+      "Cloud Native",
+      "SRE"
+    ]
   },
   {
-    "Id": 8,
+    "id": 8,
     "nome": "Heitor Borges",
     "foto": "./images/foto8.jpg",
     "cargo": "Desenvolvedor Back-End",
     "resumo": "Focado em Node.js, Typescript e arquiteturas serverless.",
     "localizacao": "Recife/PE",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Node.js", "TypeScript", "NestJS", "Serverless (AWS Lambda)", "PostgreSQL"],
-    "softSkills": ["Foco", "Aprendizado Rápido", "Proatividade"],
+    "habilidadesTecnicas": [
+      "Node.js",
+      "TypeScript",
+      "NestJS",
+      "Serverless (AWS Lambda)",
+      "PostgreSQL"
+    ],
+    "softSkills": [
+      "Foco",
+      "Aprendizado Rápido",
+      "Proatividade"
+    ],
     "experiencias": [
       {
         "empresa": "Startup Z",
@@ -313,22 +475,42 @@
         "descricao": "Serviço de autenticação JWT."
       }
     ],
-    "certificacoes": ["AWS Cloud Practitioner"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "AWS Cloud Practitioner"
     ],
-    "arealnteresses": ["Serverless", "Arquitetura de Software", "Educação"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Serverless",
+      "Arquitetura de Software",
+      "Educação"
+    ]
   },
   {
-    "Id": 9,
+    "id": 9,
     "nome": "Isabela Ribeiro",
     "foto": "./images/foto9.jpg",
     "cargo": "Analista de QA (Automação)",
     "resumo": "Especialista em testes automatizados web e mobile com Cypress e Selenium.",
     "localizacao": "São Paulo/SP",
     "area": "Qualidade",
-    "habilidadesTecnicas": ["Cypress", "Selenium", "JavaScript", "Testes de API", "Postman", "JMeter"],
-    "softSkills": ["Atenção aos Detalhes", "Pensamento Crítico", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Cypress",
+      "Selenium",
+      "JavaScript",
+      "Testes de API",
+      "Postman",
+      "JMeter"
+    ],
+    "softSkills": [
+      "Atenção aos Detalhes",
+      "Pensamento Crítico",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "QualityNow",
@@ -352,22 +534,42 @@
         "descricao": "Framework de automação com Cypress para e-commerce."
       }
     ],
-    "certificacoes": ["CTFL (ISTQB)", "Certified Agile Tester (CAT)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "CTFL (ISTQB)",
+      "Certified Agile Tester (CAT)"
     ],
-    "arealnteresses": ["Cultura DevOps", "Testes de Performance", "Acessibilidade"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Cultura DevOps",
+      "Testes de Performance",
+      "Acessibilidade"
+    ]
   },
   {
-    "Id": 10,
+    "id": 10,
     "nome": "João Pedro Oliveira",
     "foto": "./images/foto10.jpg",
     "cargo": "Arquiteto de Soluções",
     "resumo": "10+ anos de experiência desenhando soluções escaláveis e resilientes em multicloud.",
     "localizacao": "Brasília/DF",
     "area": "Infraestrutura",
-    "habilidadesTecnicas": ["AWS", "Azure", "GCP", "Arquitetura de Microserviços", "TOGAF"],
-    "softSkills": ["Visão Estratégica", "Liderança", "Negociação"],
+    "habilidadesTecnicas": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Arquitetura de Microserviços",
+      "TOGAF"
+    ],
+    "softSkills": [
+      "Visão Estratégica",
+      "Liderança",
+      "Negociação"
+    ],
     "experiencias": [
       {
         "empresa": "GovTech",
@@ -391,22 +593,42 @@
         "descricao": "Planejamento e execução de migração de datacenter para AWS."
       }
     ],
-    "certificacoes": ["AWS Solutions Architect Professional", "Azure Solutions Architect Expert"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "AWS Solutions Architect Professional",
+      "Azure Solutions Architect Expert"
     ],
-    "arealnteresses": ["IA Governamental", "Cibersegurança", "Cloud Híbrida"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "IA Governamental",
+      "Cibersegurança",
+      "Cloud Híbrida"
+    ]
   },
   {
-    "Id": 11,
+    "id": 11,
     "nome": "Larissa Mendes",
     "foto": "./images/foto11.jpg",
     "cargo": "Desenvolvedora Mobile (Flutter)",
     "resumo": "Focada no desenvolvimento de aplicativos híbridos com Flutter.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Flutter", "Dart", "Firebase", "React Native", "Swift"],
-    "softSkills": ["Adaptabilidade", "Colaboração", "Foco no Usuário"],
+    "habilidadesTecnicas": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "React Native",
+      "Swift"
+    ],
+    "softSkills": [
+      "Adaptabilidade",
+      "Colaboração",
+      "Foco no Usuário"
+    ],
     "experiencias": [
       {
         "empresa": "AppFactory",
@@ -430,22 +652,42 @@
         "descricao": "Aplicativo de delivery de comida."
       }
     ],
-    "certificacoes": ["Google Certified Associate Android Developer"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Google Certified Associate Android Developer"
     ],
-    "arealnteresses": ["UI/UX Mobile", "IoT", "Games"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "UI/UX Mobile",
+      "IoT",
+      "Games"
+    ]
   },
   {
-    "Id": 12,
+    "id": 12,
     "nome": "Lucas Vasconcelos",
     "foto": "./images/foto12.jpg",
     "cargo": "Desenvolvedor Full-Stack",
     "resumo": "Experiência em todo o ciclo de vida do software, de React a Node.js.",
     "localizacao": "Salvador/BA",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["React", "Node.js", "TypeScript", "SQL", "MongoDB", "Docker"],
-    "softSkills": ["Versatilidade", "Resolução de Problemas", "Gestão de Tempo"],
+    "habilidadesTecnicas": [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "SQL",
+      "MongoDB",
+      "Docker"
+    ],
+    "softSkills": [
+      "Versatilidade",
+      "Resolução de Problemas",
+      "Gestão de Tempo"
+    ],
     "experiencias": [
       {
         "empresa": "Agência Web",
@@ -471,20 +713,37 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
     ],
-    "arealnteresses": ["Educação", "Fintech", "Startups"]
+    "arealnteresses": [
+      "Educação",
+      "Fintech",
+      "Startups"
+    ]
   },
   {
-    "Id": 13,
+    "id": 13,
     "nome": "Mariana Costa",
     "foto": "./images/foto13.jpg",
     "cargo": "Analista de BI",
     "resumo": "Especialista em Power BI e SQL, transformando dados em insights acionáveis.",
     "localizacao": "Belo Horizonte/MG",
     "area": "Dados",
-    "habilidadesTecnicas": ["Power BI", "SQL Server", "Excel", "DAX", "Python (Pandas)"],
-    "softSkills": ["Comunicação", "Visão de Negócio", "Atenção aos Detalhes"],
+    "habilidadesTecnicas": [
+      "Power BI",
+      "SQL Server",
+      "Excel",
+      "DAX",
+      "Python (Pandas)"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Visão de Negócio",
+      "Atenção aos Detalhes"
+    ],
     "experiencias": [
       {
         "empresa": "Varejo S.A.",
@@ -508,22 +767,41 @@
         "descricao": "Análise de KPIs de vendas."
       }
     ],
-    "certificacoes": ["Microsoft Certified: Power BI Data Analyst Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Microsoft Certified: Power BI Data Analyst Associate"
     ],
-    "arealnteresses": ["Data Visualization", "Varejo", "Marketing Digital"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Data Visualization",
+      "Varejo",
+      "Marketing Digital"
+    ]
   },
   {
-    "Id": 14,
+    "id": 14,
     "nome": "Nuno Pereira",
     "foto": "./images/foto14.jpg",
     "cargo": "Desenvolvedor .NET Pleno",
     "resumo": "Apaixonado por C# e soluções em nuvem Azure.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["C#", ".NET Core", "Azure", "SQL Server", "React"],
-    "softSkills": ["Intensidade", "Criatividade", "Resiliência"],
+    "habilidadesTecnicas": [
+      "C#",
+      ".NET Core",
+      "Azure",
+      "SQL Server",
+      "React"
+    ],
+    "softSkills": [
+      "Intensidade",
+      "Criatividade",
+      "Resiliência"
+    ],
     "experiencias": [
       {
         "empresa": "Consultoria ABC",
@@ -547,22 +825,42 @@
         "descricao": "Um sistema em .NET para gestão de inventário."
       }
     ],
-    "certificacoes": ["Microsoft Certified: Azure Developer Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Microsoft Certified: Azure Developer Associate"
     ],
-    "arealnteresses": ["Criptografia", "História", "Cloud"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Criptografia",
+      "História",
+      "Cloud"
+    ]
   },
   {
-    "Id": 15,
+    "id": 15,
     "nome": "Olivia Pereira",
     "foto": "./images/foto15.jpg",
     "cargo": "Especialista em Cibersegurança",
     "resumo": "Foco em Pentest e Análise de Vulnerabilidades. Certificada OSCP.",
     "localizacao": "Brasília/DF",
     "area": "Segurança",
-    "habilidadesTecnicas": ["Pentest", "Kali Linux", "Metasploit", "Nmap", "Python", "Redes"],
-    "softSkills": ["Pensamento Crítico", "Ética", "Curiosidade"],
+    "habilidadesTecnicas": [
+      "Pentest",
+      "Kali Linux",
+      "Metasploit",
+      "Nmap",
+      "Python",
+      "Redes"
+    ],
+    "softSkills": [
+      "Pensamento Crítico",
+      "Ética",
+      "Curiosidade"
+    ],
     "experiencias": [
       {
         "empresa": "SecureLabs",
@@ -586,22 +884,44 @@
         "descricao": "Estudo de caso sobre um ransomware."
       }
     ],
-    "certificacoes": ["OSCP", "CEH", "Security+"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "OSCP",
+      "CEH",
+      "Security+"
     ],
-    "arealnteresses": ["IA ética", "Criptografia", "Hardware Hacking"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "IA ética",
+      "Criptografia",
+      "Hardware Hacking"
+    ]
   },
   {
-    "Id": 16,
+    "id": 16,
     "nome": "Pedro Henrique Ramos",
     "foto": "./images/foto16.jpg",
     "cargo": "Desenvolvedor Front-End Júnior",
     "resumo": "Estudante de Engenharia de Software focado em React e Tailwind.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "React", "Vite"],
-    "softSkills": ["Aprendizado Rápido", "Proatividade", "Colaboração"],
+    "habilidadesTecnicas": [
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "JavaScript",
+      "React",
+      "Vite"
+    ],
+    "softSkills": [
+      "Aprendizado Rápido",
+      "Proatividade",
+      "Colaboração"
+    ],
     "experiencias": [
       {
         "empresa": "Freelas",
@@ -627,20 +947,38 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
     ],
-    "arealnteresses": ["IA", "Design UI/UX", "IoT"]
+    "arealnteresses": [
+      "IA",
+      "Design UI/UX",
+      "IoT"
+    ]
   },
   {
-    "Id": 17,
+    "id": 17,
     "nome": "Raquel Azevedo",
     "foto": "./images/foto17.jpg",
     "cargo": "Product Owner (PO)",
     "resumo": "Foco em produtos digitais B2B, fazendo a ponte entre negócio e tecnologia.",
     "localizacao": "Curitiba/PR",
     "area": "Produto",
-    "habilidadesTecnicas": ["Gestão de Backlog", "Roadmap", "Scrum", "User Stories", "Analytics"],
-    "softSkills": ["Negociação", "Priorização", "Visão de Produto", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Gestão de Backlog",
+      "Roadmap",
+      "Scrum",
+      "User Stories",
+      "Analytics"
+    ],
+    "softSkills": [
+      "Negociação",
+      "Priorização",
+      "Visão de Produto",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "SaaS Company",
@@ -664,23 +1002,47 @@
         "descricao": "Gestão do lançamento de funcionalidade de automação de marketing."
       }
     ],
-    "certificacoes": ["CSPO (Scrum Alliance)", "PMI-ACP"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Espanhol", "nivel": "Intermediário" }
+    "certificacoes": [
+      "CSPO (Scrum Alliance)",
+      "PMI-ACP"
     ],
-    "arealnteresses": ["SaaS", "IA", "Experiência do Cliente"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "SaaS",
+      "IA",
+      "Experiência do Cliente"
+    ]
   },
   {
-    "Id": 18,
+    "id": 18,
     "nome": "Samuel Rocha",
     "foto": "./images/foto18.jpg",
     "cargo": "Desenvolvedor Back-End (.NET)",
     "resumo": "Desenvolvedor C# com experiência em microsserviços e nuvem Azure.",
     "localizacao": "Recife/PE",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": [".NET Core", "C#", "Azure", "SQL Server", "Docker", "RabbitMQ"],
-    "softSkills": ["Foco", "Resolução de Problemas", "Trabalho em Equipe"],
+    "habilidadesTecnicas": [
+      ".NET Core",
+      "C#",
+      "Azure",
+      "SQL Server",
+      "Docker",
+      "RabbitMQ"
+    ],
+    "softSkills": [
+      "Foco",
+      "Resolução de Problemas",
+      "Trabalho em Equipe"
+    ],
     "experiencias": [
       {
         "empresa": "Consultoria TI",
@@ -704,22 +1066,41 @@
         "descricao": "API para consulta de ativos financeiros."
       }
     ],
-    "certificacoes": ["Microsoft Certified: Azure Developer Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Microsoft Certified: Azure Developer Associate"
     ],
-    "arealnteresses": ["Fintech", "Arquitetura Limpa", "Mercado Financeiro"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Fintech",
+      "Arquitetura Limpa",
+      "Mercado Financeiro"
+    ]
   },
   {
-    "Id": 19,
+    "id": 19,
     "nome": "Tatiana Correia",
     "foto": "./images/foto19.jpg",
     "cargo": "Analista de RH (Tech Recruiter)",
     "resumo": "Especialista em recrutamento e seleção para vagas de tecnologia (Devs, Dados, DevOps).",
     "localizacao": "São Paulo/SP",
     "area": "RH",
-    "habilidadesTecnicas": ["LinkedIn Recruiter", "Hunting", "Boolean Search", "Entrevista por Competências"],
-    "softSkills": ["Comunicação", "Empatia", "Negociação", "Organização"],
+    "habilidadesTecnicas": [
+      "LinkedIn Recruiter",
+      "Hunting",
+      "Boolean Search",
+      "Entrevista por Competências"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Empatia",
+      "Negociação",
+      "Organização"
+    ],
     "experiencias": [
       {
         "empresa": "HireTech",
@@ -737,22 +1118,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["Certified Tech Recruiter (CTR)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Certified Tech Recruiter (CTR)"
     ],
-    "arealnteresses": ["Employer Branding", "Diversidade e Inclusão", "Educação"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Employer Branding",
+      "Diversidade e Inclusão",
+      "Educação"
+    ]
   },
   {
-    "Id": 20,
+    "id": 20,
     "nome": "Thiago Nunes",
     "foto": "./images/foto20.jpg",
     "cargo": "Engenheiro de Machine Learning",
     "resumo": "Foco em MLOps e deploy de modelos de IA em produção.",
     "localizacao": "São Paulo/SP",
     "area": "IA",
-    "habilidadesTecnicas": ["Python", "MLOps", "Kubeflow", "AWS Sagemaker", "Docker", "TensorFlow"],
-    "softSkills": ["Visão de Processos", "Colaboração", "Resiliência"],
+    "habilidadesTecnicas": [
+      "Python",
+      "MLOps",
+      "Kubeflow",
+      "AWS Sagemaker",
+      "Docker",
+      "TensorFlow"
+    ],
+    "softSkills": [
+      "Visão de Processos",
+      "Colaboração",
+      "Resiliência"
+    ],
     "experiencias": [
       {
         "empresa": "HealthTech",
@@ -776,22 +1177,41 @@
         "descricao": "Pipeline de MLOps para um modelo de score de crédito."
       }
     ],
-    "certificacoes": ["AWS Certified Machine Learning - Specialty"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "AWS Certified Machine Learning - Specialty"
     ],
-    "arealnteresses": ["Saúde Digital", "Visão Computacional", "IA ética"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Saúde Digital",
+      "Visão Computacional",
+      "IA ética"
+    ]
   },
   {
-    "Id": 21,
+    "id": 21,
     "nome": "Vinicius Moraes",
     "foto": "./images/foto21.jpg",
     "cargo": "Desenvolvedor Front-End",
     "resumo": "Criando interfaces com React e Vue.js.",
     "localizacao": "Belo Horizonte/MG",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["React", "Vue.js", "JavaScript", "CSS", "SASS"],
-    "softSkills": ["Comunicação", "Criatividade", "Trabalho em Equipe"],
+    "habilidadesTecnicas": [
+      "React",
+      "Vue.js",
+      "JavaScript",
+      "CSS",
+      "SASS"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Criatividade",
+      "Trabalho em Equipe"
+    ],
     "experiencias": [
       {
         "empresa": "Agência Digital",
@@ -811,20 +1231,36 @@
     "projetos": [],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
     ],
-    "arealnteresses": ["Design", "Marketing Digital", "Música"]
+    "arealnteresses": [
+      "Design",
+      "Marketing Digital",
+      "Música"
+    ]
   },
   {
-    "Id": 22,
+    "id": 22,
     "nome": "Yasmin Ferreira",
     "foto": "./images/foto22.jpg",
     "cargo": "Analista de Dados Júnior",
     "resumo": "Entusiasta de dados, com foco em SQL e Python para análise.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Dados",
-    "habilidadesTecnicas": ["SQL", "Python (Pandas)", "Excel", "Tableau"],
-    "softSkills": ["Curiosidade", "Aprendizado Rápido", "Atenção aos Detalhes"],
+    "habilidadesTecnicas": [
+      "SQL",
+      "Python (Pandas)",
+      "Excel",
+      "Tableau"
+    ],
+    "softSkills": [
+      "Curiosidade",
+      "Aprendizado Rápido",
+      "Atenção aos Detalhes"
+    ],
     "experiencias": [
       {
         "empresa": "DataInsight",
@@ -848,22 +1284,40 @@
         "descricao": "Projeto acadêmico de análise de evasão de clientes."
       }
     ],
-    "certificacoes": ["Google Data Analytics Professional Certificate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google Data Analytics Professional Certificate"
     ],
-    "arealnteresses": ["Finanças", "Logística", "IA"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Finanças",
+      "Logística",
+      "IA"
+    ]
   },
   {
-    "Id": 23,
+    "id": 23,
     "nome": "Ricardo Alves",
     "foto": "./images/foto23.jpg",
     "cargo": "Ilustrador / Designer Gráfico",
     "resumo": "Criador de identidades visuais e ilustrações para marcas.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Design",
-    "habilidadesTecnicas": ["Ilustração Digital", "Photoshop", "Illustrator", "Branding"],
-    "softSkills": ["Criatividade", "Contação de Histórias", "Comunicação Visual"],
+    "habilidadesTecnicas": [
+      "Ilustração Digital",
+      "Photoshop",
+      "Illustrator",
+      "Branding"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Contação de Histórias",
+      "Comunicação Visual"
+    ],
     "experiencias": [
       {
         "empresa": "Estúdio Criativo",
@@ -887,22 +1341,41 @@
         "descricao": "Projeto de rebranding para marca de varejo."
       }
     ],
-    "certificacoes": ["Prêmio ABRE de Design"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Prêmio ABRE de Design"
     ],
-    "arealnteresses": ["Educação", "Branding", "Cultura Brasileira"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Educação",
+      "Branding",
+      "Cultura Brasileira"
+    ]
   },
   {
-    "Id": 24,
+    "id": 24,
     "nome": "Amanda Nunes",
     "foto": "./images/foto24.jpg",
     "cargo": "Desenvolvedora Mobile (iOS Nativo)",
     "resumo": "Especialista em Swift e UIKit. Criando apps fluidos para o ecossistema Apple.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Swift", "SwiftUI", "UIKit", "Objective-C", "Xcode"],
-    "softSkills": ["Foco no Detalhe", "Qualidade", "Colaboração"],
+    "habilidadesTecnicas": [
+      "Swift",
+      "SwiftUI",
+      "UIKit",
+      "Objective-C",
+      "Xcode"
+    ],
+    "softSkills": [
+      "Foco no Detalhe",
+      "Qualidade",
+      "Colaboração"
+    ],
     "experiencias": [
       {
         "empresa": "Fintech Bank",
@@ -928,20 +1401,37 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
     ],
-    "arealnteresses": ["Fintech", "UI/UX", "Acessibilidade"]
+    "arealnteresses": [
+      "Fintech",
+      "UI/UX",
+      "Acessibilidade"
+    ]
   },
   {
-    "Id": 25,
+    "id": 25,
     "nome": "Bernardo Silva",
     "foto": "./images/foto25.jpg",
     "cargo": "Engenheiro de Software (Golang)",
     "resumo": "Focado em alta performance e concorrência com Go.",
     "localizacao": "Campinas/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Golang", "gRPC", "Docker", "Kubernetes", "Prometheus"],
-    "softSkills": ["Performance", "Simplicidade", "Foco"],
+    "habilidadesTecnicas": [
+      "Golang",
+      "gRPC",
+      "Docker",
+      "Kubernetes",
+      "Prometheus"
+    ],
+    "softSkills": [
+      "Performance",
+      "Simplicidade",
+      "Foco"
+    ],
     "experiencias": [
       {
         "empresa": "AdTech",
@@ -967,20 +1457,37 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
     ],
-    "arealnteresses": ["Sistemas Distribuídos", "AdTech", "Alta Performance"]
+    "arealnteresses": [
+      "Sistemas Distribuídos",
+      "AdTech",
+      "Alta Performance"
+    ]
   },
   {
-    "Id": 26,
+    "id": 26,
     "nome": "Camila Oliveira",
     "foto": "./images/foto26.jpg",
     "cargo": "Gerente de Produto Sênior",
     "resumo": "Líder de produto com foco em descoberta (discovery) e estratégia de mercado.",
     "localizacao": "São Paulo/SP",
     "area": "Produto",
-    "habilidadesTecnicas": ["Product Discovery", "Roadmap Estratégico", "Análise de Métricas", "Gestão de Stakeholders"],
-    "softSkills": ["Liderança", "Visão Estratégica", "Comunicação", "Negociação"],
+    "habilidadesTecnicas": [
+      "Product Discovery",
+      "Roadmap Estratégico",
+      "Análise de Métricas",
+      "Gestão de Stakeholders"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Visão Estratégica",
+      "Comunicação",
+      "Negociação"
+    ],
     "experiencias": [
       {
         "empresa": "E-commerce Z",
@@ -998,23 +1505,46 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["Certified Product Manager (AIPMM)", "CSPO"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Espanhol", "nivel": "Avançado" }
+    "certificacoes": [
+      "Certified Product Manager (AIPMM)",
+      "CSPO"
     ],
-    "arealnteresses": ["E-commerce", "IA", "Liderança Feminina"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "E-commerce",
+      "IA",
+      "Liderança Feminina"
+    ]
   },
   {
-    "Id": 27,
+    "id": 27,
     "nome": "Davi Matos",
     "foto": "./images/foto27.jpg",
     "cargo": "Desenvolvedor Front-End (Vue.js)",
     "resumo": "Especialista em Vue.js e Nuxt.js.",
     "localizacao": "Curitiba/PR",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Vue.js", "Nuxt.js", "JavaScript", "Pinia", "Tailwind CSS"],
-    "softSkills": ["Colaboração", "Proatividade", "Qualidade de Código"],
+    "habilidadesTecnicas": [
+      "Vue.js",
+      "Nuxt.js",
+      "JavaScript",
+      "Pinia",
+      "Tailwind CSS"
+    ],
+    "softSkills": [
+      "Colaboração",
+      "Proatividade",
+      "Qualidade de Código"
+    ],
     "experiencias": [
       {
         "empresa": "Agência Criativa",
@@ -1040,20 +1570,38 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
     ],
-    "arealnteresses": ["Animação Web", "Design", "Acessibilidade"]
+    "arealnteresses": [
+      "Animação Web",
+      "Design",
+      "Acessibilidade"
+    ]
   },
   {
-    "Id": 28,
+    "id": 28,
     "nome": "Eduarda Barros",
     "foto": "./images/foto28.jpg",
     "cargo": "Engenheira de Confiabilidade (SRE)",
     "resumo": "Garantindo a disponibilidade e performance de sistemas em larga escala.",
     "localizacao": "São Paulo/SP",
     "area": "Infraestrutura",
-    "habilidadesTecnicas": ["SRE", "Kubernetes", "Prometheus", "Grafana", "Go", "Observabilidade"],
-    "softSkills": ["Resolução de Problemas", "Resiliência", "Visão Sistêmica"],
+    "habilidadesTecnicas": [
+      "SRE",
+      "Kubernetes",
+      "Prometheus",
+      "Grafana",
+      "Go",
+      "Observabilidade"
+    ],
+    "softSkills": [
+      "Resolução de Problemas",
+      "Resiliência",
+      "Visão Sistêmica"
+    ],
     "experiencias": [
       {
         "empresa": "Fintech Y",
@@ -1071,22 +1619,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["CKA", "AWS Solutions Architect Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "CKA",
+      "AWS Solutions Architect Associate"
     ],
-    "arealnteresses": ["Sistemas Distribuídos", "Observabilidade", "Cultura DevOps"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Sistemas Distribuídos",
+      "Observabilidade",
+      "Cultura DevOps"
+    ]
   },
   {
-    "Id": 29,
+    "id": 29,
     "nome": "Fábio Medeiros",
     "foto": "./images/foto29.jpg",
     "cargo": "Desenvolvedor Full-Stack",
     "resumo": "Apaixonado por JavaScript, React e Node.js. Buscando sempre novos desafios.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["JavaScript", "React", "Node.js", "HTML", "CSS"],
-    "softSkills": ["Comunicação", "Carisma", "Paixão"],
+    "habilidadesTecnicas": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML",
+      "CSS"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Carisma",
+      "Paixão"
+    ],
     "experiencias": [
       {
         "empresa": "Startup Alpha",
@@ -1110,22 +1678,40 @@
         "descricao": "Um app de networking para eventos."
       }
     ],
-    "certificacoes": ["Scrum Foundation"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Scrum Foundation"
     ],
-    "arealnteresses": ["Música", "Startups", "Educação"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Música",
+      "Startups",
+      "Educação"
+    ]
   },
   {
-    "Id": 30,
+    "id": 30,
     "nome": "Giovanna Antunes",
     "foto": "./images/foto30.jpg",
     "cargo": "UX Designer",
     "resumo": "Trazendo a emoção da narrativa para a experiência do usuário.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Design",
-    "habilidadesTecnicas": ["Figma", "User Research", "Storytelling", "Adobe XD"],
-    "softSkills": ["Empatia", "Versatilidade", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Figma",
+      "User Research",
+      "Storytelling",
+      "Adobe XD"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Versatilidade",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Publicidade",
@@ -1149,22 +1735,42 @@
         "descricao": "App de turismo focado em roteiros culturais."
       }
     ],
-    "certificacoes": ["Google UX Design Professional Certificate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google UX Design Professional Certificate"
     ],
-    "arealnteresses": ["Moda", "Empreendedorismo", "Viagens"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Moda",
+      "Empreendedorismo",
+      "Viagens"
+    ]
   },
   {
-    "Id": 31,
+    "id": 31,
     "nome": "Hugo Bastos",
     "foto": "./images/foto31.jpg",
     "cargo": "Engenheiro de Software Embarcado",
     "resumo": "Desenvolvimento de firmware para dispositivos IoT (ESP32 e ARM).",
     "localizacao": "Florianópolis/SC",
     "area": "IoT",
-    "habilidadesTecnicas": ["C", "C++", "ESP32", "FreeRTOS", "Python", "MQTT"],
-    "softSkills": ["Resolução de Problemas", "Atenção aos Detalhes", "Foco"],
+    "habilidadesTecnicas": [
+      "C",
+      "C++",
+      "ESP32",
+      "FreeRTOS",
+      "Python",
+      "MQTT"
+    ],
+    "softSkills": [
+      "Resolução de Problemas",
+      "Atenção aos Detalhes",
+      "Foco"
+    ],
     "experiencias": [
       {
         "empresa": "IoT Solutions",
@@ -1190,20 +1796,37 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
     ],
-    "arealnteresses": ["IoT", "Automação Residencial", "Sistemas Embarcados"]
+    "arealnteresses": [
+      "IoT",
+      "Automação Residencial",
+      "Sistemas Embarcados"
+    ]
   },
   {
-    "Id": 32,
+    "id": 32,
     "nome": "Igor Nascimento",
     "foto": "./images/foto32.jpg",
     "cargo": "Desenvolvedor Python (Django)",
     "resumo": "Focado em desenvolvimento web back-end com Django e DRF.",
     "localizacao": "Porto Alegre/RS",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Python", "Django", "Django Rest Framework", "PostgreSQL", "Celery"],
-    "softSkills": ["Qualidade de Código", "Pragmatismo", "Colaboração"],
+    "habilidadesTecnicas": [
+      "Python",
+      "Django",
+      "Django Rest Framework",
+      "PostgreSQL",
+      "Celery"
+    ],
+    "softSkills": [
+      "Qualidade de Código",
+      "Pragmatismo",
+      "Colaboração"
+    ],
     "experiencias": [
       {
         "empresa": "WebDev Co.",
@@ -1229,20 +1852,38 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
     ],
-    "arealnteresses": ["Educação", "Fintech", "Web Scraping"]
+    "arealnteresses": [
+      "Educação",
+      "Fintech",
+      "Web Scraping"
+    ]
   },
   {
-    "Id": 33,
+    "id": 33,
     "nome": "Julia Fortes",
     "foto": "./images/foto33.jpg",
     "cargo": "Designer de Produto (Product Designer)",
     "resumo": "Visão holística do produto, unindo UX, UI e estratégia de negócio.",
     "localizacao": "São Paulo/SP",
     "area": "Design",
-    "habilidadesTecnicas": ["Figma", "Design System", "User Research", "Prototipagem", "Strategy"],
-    "softSkills": ["Empatia", "Visão Estratégica", "Colaboração", "Liderança"],
+    "habilidadesTecnicas": [
+      "Figma",
+      "Design System",
+      "User Research",
+      "Prototipagem",
+      "Strategy"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Visão Estratégica",
+      "Colaboração",
+      "Liderança"
+    ],
     "experiencias": [
       {
         "empresa": "Fintech X",
@@ -1266,22 +1907,41 @@
         "descricao": "Redesenho do fluxo de onboarding focado em conversão."
       }
     ],
-    "certificacoes": ["NN/g UX Certification"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "NN/g UX Certification"
     ],
-    "arealnteresses": ["Fintech", "Design Systems", "Liderança"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Fintech",
+      "Design Systems",
+      "Liderança"
+    ]
   },
   {
-    "Id": 34,
+    "id": 34,
     "nome": "Kauan Dias",
     "foto": "./images/foto34.jpg",
     "cargo": "Desenvolvedor de Jogos (Unity)",
     "resumo": "Programador de jogos focado em C# e Unity.",
     "localizacao": "Recife/PE",
     "area": "Games",
-    "habilidadesTecnicas": ["Unity", "C#", "Blender", "Game Design", "Mobile Games"],
-    "softSkills": ["Criatividade", "Resolução de Problemas", "Paixão"],
+    "habilidadesTecnicas": [
+      "Unity",
+      "C#",
+      "Blender",
+      "Game Design",
+      "Mobile Games"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Resolução de Problemas",
+      "Paixão"
+    ],
     "experiencias": [
       {
         "empresa": "Indie Game Studio",
@@ -1305,22 +1965,41 @@
         "descricao": "Projeto pessoal de um jogo de plataforma."
       }
     ],
-    "certificacoes": ["Unity Certified Professional: Programmer"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Unity Certified Professional: Programmer"
     ],
-    "arealnteresses": ["Games", "Realidade Virtual (VR)", "Narrativa"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Games",
+      "Realidade Virtual (VR)",
+      "Narrativa"
+    ]
   },
   {
-    "Id": 35,
+    "id": 35,
     "nome": "Lívia Andrade",
     "foto": "./images/foto35.jpg",
     "cargo": "Especialista em Marketing Digital",
     "resumo": "Foco em performance (Google Ads e Meta Ads) e SEO.",
     "localizacao": "São Paulo/SP",
     "area": "Marketing",
-    "habilidadesTecnicas": ["Google Ads", "Meta Ads", "SEO", "Google Analytics 4", "SEM"],
-    "softSkills": ["Pensamento Analítico", "Comunicação", "Foco em Resultados"],
+    "habilidadesTecnicas": [
+      "Google Ads",
+      "Meta Ads",
+      "SEO",
+      "Google Analytics 4",
+      "SEM"
+    ],
+    "softSkills": [
+      "Pensamento Analítico",
+      "Comunicação",
+      "Foco em Resultados"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Performance",
@@ -1338,22 +2017,44 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["Google Ads Search Certification", "Meta Certified Media Buying Professional"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google Ads Search Certification",
+      "Meta Certified Media Buying Professional"
     ],
-    "arealnteresses": ["E-commerce", "CRO (Conversion Rate Optimization)", "IA em Marketing"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "E-commerce",
+      "CRO (Conversion Rate Optimization)",
+      "IA em Marketing"
+    ]
   },
   {
-    "Id": 36,
+    "id": 36,
     "nome": "Miguel Ângelo Barbosa",
     "foto": "./images/foto36.jpg",
     "cargo": "Arquiteto de Software",
     "resumo": "Buscando a perfeição na arquitetura de sistemas escaláveis e resilientes.",
     "localizacao": "Campinas/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Arquitetura de Software", "Design Patterns", "C#", ".NET", "SQL", "Azure"],
-    "softSkills": ["Visão de Longo Prazo", "Atenção ao Detalhe", "Paciência", "Resiliência"],
+    "habilidadesTecnicas": [
+      "Arquitetura de Software",
+      "Design Patterns",
+      "C#",
+      ".NET",
+      "SQL",
+      "Azure"
+    ],
+    "softSkills": [
+      "Visão de Longo Prazo",
+      "Atenção ao Detalhe",
+      "Paciência",
+      "Resiliência"
+    ],
     "experiencias": [
       {
         "empresa": "Tech Solutions",
@@ -1377,22 +2078,43 @@
         "descricao": "Projeto de migração de um sistema monolítico para microserviços."
       }
     ],
-    "certificacoes": ["TOGAF", "Azure Solutions Architect Expert"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "TOGAF",
+      "Azure Solutions Architect Expert"
     ],
-    "arealnteresses": ["Arquitetura Limpa", "Sustentabilidade", "Sistemas Distribuídos"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Arquitetura Limpa",
+      "Sustentabilidade",
+      "Sistemas Distribuídos"
+    ]
   },
   {
-    "Id": 37,
+    "id": 37,
     "nome": "Natália Rocha",
     "foto": "./images/foto37.jpg",
     "cargo": "Analista de Negócios (Business Analyst)",
     "resumo": "Tradução de necessidades de negócio em requisitos técnicos claros.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Gestão",
-    "habilidadesTecnicas": ["Requisitos de Software", "BPMN", "SQL", "Scrum", "User Stories"],
-    "softSkills": ["Comunicação", "Negociação", "Análise Crítica", "Organização"],
+    "habilidadesTecnicas": [
+      "Requisitos de Software",
+      "BPMN",
+      "SQL",
+      "Scrum",
+      "User Stories"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Negociação",
+      "Análise Crítica",
+      "Organização"
+    ],
     "experiencias": [
       {
         "empresa": "Seguradora Y",
@@ -1410,22 +2132,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["CBAP (Certified Business Analysis Professional)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "CBAP (Certified Business Analysis Professional)"
     ],
-    "arealnteresses": ["Fintech", "Seguros", "Processos Ágeis"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Fintech",
+      "Seguros",
+      "Processos Ágeis"
+    ]
   },
   {
-    "Id": 38,
+    "id": 38,
     "nome": "Otávio Bernardes",
     "foto": "./images/foto38.jpg",
     "cargo": "Desenvolvedor Front-End (Angular)",
     "resumo": "Focado em aplicações enterprise com Angular e TypeScript.",
     "localizacao": "Belo Horizonte/MG",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Angular", "TypeScript", "RxJS", "NGRX", "SCSS", "Testes Unitários"],
-    "softSkills": ["Organização", "Qualidade de Código", "Trabalho em Equipe"],
+    "habilidadesTecnicas": [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      "NGRX",
+      "SCSS",
+      "Testes Unitários"
+    ],
+    "softSkills": [
+      "Organização",
+      "Qualidade de Código",
+      "Trabalho em Equipe"
+    ],
     "experiencias": [
       {
         "empresa": "Banco Corp",
@@ -1449,22 +2191,41 @@
         "descricao": "Sistema interno para gestão de clientes."
       }
     ],
-    "certificacoes": ["Google Developer Expert (GDE) in Angular"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google Developer Expert (GDE) in Angular"
     ],
-    "arealnteresses": ["Fintech", "Acessibilidade", "Micro-frontends"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Fintech",
+      "Acessibilidade",
+      "Micro-frontends"
+    ]
   },
   {
-    "Id": 39,
+    "id": 39,
     "nome": "Paula Teixeira",
     "foto": "./images/foto39.jpg",
     "cargo": "Especialista em Redes",
     "resumo": "Garantindo a conectividade e segurança da infraestrutura de rede.",
     "localizacao": "São Paulo/SP",
     "area": "Infraestrutura",
-    "habilidadesTecnicas": ["Cisco (Routing/Switching)", "Firewalls (Palo Alto)", "VPN", "Redes Wireless", "TCP/IP"],
-    "softSkills": ["Resolução de Problemas", "Atenção aos Detalhes", "Trabalho sob Pressão"],
+    "habilidadesTecnicas": [
+      "Cisco (Routing/Switching)",
+      "Firewalls (Palo Alto)",
+      "VPN",
+      "Redes Wireless",
+      "TCP/IP"
+    ],
+    "softSkills": [
+      "Resolução de Problemas",
+      "Atenção aos Detalhes",
+      "Trabalho sob Pressão"
+    ],
     "experiencias": [
       {
         "empresa": "Telecom X",
@@ -1482,22 +2243,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["CCNP Enterprise", "PCNSA"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "CCNP Enterprise",
+      "PCNSA"
     ],
-    "arealnteresses": ["Cibersegurança", "Redes 5G", "Cloud Networking"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Cibersegurança",
+      "Redes 5G",
+      "Cloud Networking"
+    ]
   },
   {
-    "Id": 40,
+    "id": 40,
     "nome": "Quirino Ramos",
     "foto": "./images/foto40.jpg",
     "cargo": "Psicólogo Organizacional",
     "resumo": "Analisando o comportamento humano e como ele se aplica ao design de produtos e cultura.",
     "localizacao": "Lisboa/PT (Remoto)",
     "area": "RH",
-    "habilidadesTecnicas": ["Análise Comportamental", "Psicologia Cognitiva", "User Research", "Soft Skills"],
-    "softSkills": ["Comunicação", "Empatia", "Escuta Ativa", "Análise Crítica"],
+    "habilidadesTecnicas": [
+      "Análise Comportamental",
+      "Psicologia Cognitiva",
+      "User Research",
+      "Soft Skills"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Empatia",
+      "Escuta Ativa",
+      "Análise Crítica"
+    ],
     "experiencias": [
       {
         "empresa": "Consultoria de RH",
@@ -1515,23 +2296,45 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["Certificação em Análise Comportamental"],
-    "idiomas": [
-      { "idioma": "Português", "nivel": "Nativo" },
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Certificação em Análise Comportamental"
     ],
-    "arealnteresses": ["Saúde Mental", "IA", "Comportamento do Usuário"]
+    "idiomas": [
+      {
+        "idioma": "Português",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Saúde Mental",
+      "IA",
+      "Comportamento do Usuário"
+    ]
   },
   {
-    "Id": 41,
+    "id": 41,
     "nome": "Renata Faria",
     "foto": "./images/foto41.jpg",
     "cargo": "Analista de Dados Pleno",
     "resumo": "Foco em SQL e Tableau para criação de dashboards estratégicos.",
     "localizacao": "Curitiba/PR",
     "area": "Dados",
-    "habilidadesTecnicas": ["Tableau", "SQL", "PostgreSQL", "Python (Pandas)", "Estatística"],
-    "softSkills": ["Visão Analítica", "Comunicação", "Organização"],
+    "habilidadesTecnicas": [
+      "Tableau",
+      "SQL",
+      "PostgreSQL",
+      "Python (Pandas)",
+      "Estatística"
+    ],
+    "softSkills": [
+      "Visão Analítica",
+      "Comunicação",
+      "Organização"
+    ],
     "experiencias": [
       {
         "empresa": "LogTech",
@@ -1555,22 +2358,41 @@
         "descricao": "Análise de KPIs de entrega (OTIF)."
       }
     ],
-    "certificacoes": ["Tableau Desktop Specialist"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Tableau Desktop Specialist"
     ],
-    "arealnteresses": ["Logística", "Supply Chain", "Sustentabilidade"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Logística",
+      "Supply Chain",
+      "Sustentabilidade"
+    ]
   },
   {
-    "Id": 42,
+    "id": 42,
     "nome": "Silas Nogueira",
     "foto": "./images/foto42.jpg",
     "cargo": "Product Manager Sênior",
     "resumo": "Gestão de produto com foco na monetização e engajamento do usuário.",
     "localizacao": "São Paulo/SP",
     "area": "Produto",
-    "habilidadesTecnicas": ["Monetização", "Engajamento", "Análise de Métricas", "Roadmap"],
-    "softSkills": ["Carisma", "Negociação", "Visão de Negócio", "Resiliência"],
+    "habilidadesTecnicas": [
+      "Monetização",
+      "Engajamento",
+      "Análise de Métricas",
+      "Roadmap"
+    ],
+    "softSkills": [
+      "Carisma",
+      "Negociação",
+      "Visão de Negócio",
+      "Resiliência"
+    ],
     "experiencias": [
       {
         "empresa": "MediaTech",
@@ -1594,22 +2416,43 @@
         "descricao": "Produto de assinatura com foco em gamificação."
       }
     ],
-    "certificacoes": ["CSPO", "AIPMM"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "CSPO",
+      "AIPMM"
     ],
-    "arealnteresses": ["Comunicação", "Varejo", "Finanças"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Comunicação",
+      "Varejo",
+      "Finanças"
+    ]
   },
   {
-    "Id": 43,
+    "id": 43,
     "nome": "Teresa Cristina Dias",
     "foto": "./images/foto43.jpg",
     "cargo": "Desenvolvedora Back-End (PHP/Laravel)",
     "resumo": "Especialista em PHP moderno com o framework Laravel.",
     "localizacao": "Porto Alegre/RS",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["PHP", "Laravel", "MySQL", "JavaScript", "Docker", "API REST"],
-    "softSkills": ["Pragmatismo", "Resolução de Problemas", "Colaboração"],
+    "habilidadesTecnicas": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "Docker",
+      "API REST"
+    ],
+    "softSkills": [
+      "Pragmatismo",
+      "Resolução de Problemas",
+      "Colaboração"
+    ],
     "experiencias": [
       {
         "empresa": "Agência Web RS",
@@ -1633,23 +2476,46 @@
         "descricao": "Plataforma de vendas online com Laravel."
       }
     ],
-    "certificacoes": ["Zend Certified PHP Engineer"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Básico" },
-      { "idioma": "Espanhol", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Zend Certified PHP Engineer"
     ],
-    "arealnteresses": ["E-commerce", "Educação", "Software Livre"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "E-commerce",
+      "Educação",
+      "Software Livre"
+    ]
   },
   {
-    "Id": 44,
+    "id": 44,
     "nome": "Ulisses Guimarães Neto",
     "foto": "./images/foto44.jpg",
     "cargo": "Agile Coach",
     "resumo": "Facilitando a transformação ágil em grandes corporações.",
     "localizacao": "Brasília/DF",
     "area": "Gestão",
-    "habilidadesTecnicas": ["Scrum", "Kanban", "SAFe", "Gestão de Conflitos", "Coaching"],
-    "softSkills": ["Liderança", "Negociação", "Comunicação", "Diplomacia"],
+    "habilidadesTecnicas": [
+      "Scrum",
+      "Kanban",
+      "SAFe",
+      "Gestão de Conflitos",
+      "Coaching"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Negociação",
+      "Comunicação",
+      "Diplomacia"
+    ],
     "experiencias": [
       {
         "empresa": "Consultoria Ágil",
@@ -1673,22 +2539,43 @@
         "descricao": "Gestão da implementação do framework SAFe em banco."
       }
     ],
-    "certificacoes": ["CSM", "PSM II", "SAFe Agilist"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "CSM",
+      "PSM II",
+      "SAFe Agilist"
     ],
-    "arealnteresses": ["Direito Digital", "Agilidade Organizacional", "Gestão de Pessoas"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Direito Digital",
+      "Agilidade Organizacional",
+      "Gestão de Pessoas"
+    ]
   },
   {
-    "Id": 45,
+    "id": 45,
     "nome": "Valentina Soares",
     "foto": "./images/foto45.jpg",
     "cargo": "Desenvolvedora Front-End Estagiária",
     "resumo": "Cursando Engenharia de Software na FIAP, buscando experiência em React.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["HTML", "CSS", "JavaScript", "React (Iniciante)", "Tailwind CSS"],
-    "softSkills": ["Proatividade", "Vontade de Aprender", "Comunicação"],
+    "habilidadesTecnicas": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React (Iniciante)",
+      "Tailwind CSS"
+    ],
+    "softSkills": [
+      "Proatividade",
+      "Vontade de Aprender",
+      "Comunicação"
+    ],
     "experiencias": [],
     "formacao": [
       {
@@ -1706,20 +2593,38 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
     ],
-    "arealnteresses": ["IA", "Design UI/UX", "Educação"]
+    "arealnteresses": [
+      "IA",
+      "Design UI/UX",
+      "Educação"
+    ]
   },
   {
-    "Id": 46,
+    "id": 46,
     "nome": "Wagner Moraes",
     "foto": "./images/foto46.jpg",
     "cargo": "Desenvolvedor Python (Data Science)",
     "resumo": "Desenvolvedor focado em Data Science. 'Não sou eu que tô dizendo, são os dados.'",
     "localizacao": "Salvador/BA",
     "area": "Dados",
-    "habilidadesTecnicas": ["Python", "Pandas", "Scikit-learn", "SQL", "Tableau"],
-    "softSkills": ["Versatilidade", "Comunicação", "Imersão", "Foco Analítico"],
+    "habilidadesTecnicas": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "SQL",
+      "Tableau"
+    ],
+    "softSkills": [
+      "Versatilidade",
+      "Comunicação",
+      "Imersão",
+      "Foco Analítico"
+    ],
     "experiencias": [
       {
         "empresa": "Data Corp",
@@ -1743,23 +2648,45 @@
         "descricao": "Modelo de ML para prever áreas de risco."
       }
     ],
-    "certificacoes": ["AWS Certified Data Analytics"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Espanhol", "nivel": "Avançado" }
+    "certificacoes": [
+      "AWS Certified Data Analytics"
     ],
-    "arealnteresses": ["IA ética", "Segurança", "Análise Preditiva"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "IA ética",
+      "Segurança",
+      "Análise Preditiva"
+    ]
   },
   {
-    "Id": 47,
+    "id": 47,
     "nome": "Marcela Menezes",
     "foto": "./images/foto47.jpg",
     "cargo": "UX Designer (Kids)",
     "resumo": "Focada na experiência do usuário infantil (Kids UX).",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Design",
-    "habilidadesTecnicas": ["UX Research (Kids)", "Figma", "Design Thinking", "Acessibilidade"],
-    "softSkills": ["Empatia", "Comunicação", "Criatividade", "Paciência"],
+    "habilidadesTecnicas": [
+      "UX Research (Kids)",
+      "Figma",
+      "Design Thinking",
+      "Acessibilidade"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Comunicação",
+      "Criatividade",
+      "Paciência"
+    ],
     "experiencias": [
       {
         "empresa": "EdTech",
@@ -1783,23 +2710,47 @@
         "descricao": "Protótipo de app de alfabetização."
       }
     ],
-    "certificacoes": ["Google UX Design Professional Certificate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" },
-      { "idioma": "Espanhol", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google UX Design Professional Certificate"
     ],
-    "arealnteresses": ["Educação", "Proteção Animal", "Sustentabilidade"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Educação",
+      "Proteção Animal",
+      "Sustentabilidade"
+    ]
   },
   {
-    "Id": 48,
+    "id": 48,
     "nome": "José Carlos Almeida",
     "foto": "./images/foto48.jpg",
     "cargo": "Engenheiro DevOps Sênior",
     "resumo": "Deixa a vida me levar, que o pipeline eu automatizo.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Infraestrutura",
-    "habilidadesTecnicas": ["Docker", "Kubernetes", "Jenkins", "AWS", "Terraform", "Ansible"],
-    "softSkills": ["Calma", "Resiliência", "Colaboração", "Simplicidade"],
+    "habilidadesTecnicas": [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "AWS",
+      "Terraform",
+      "Ansible"
+    ],
+    "softSkills": [
+      "Calma",
+      "Resiliência",
+      "Colaboração",
+      "Simplicidade"
+    ],
     "experiencias": [
       {
         "empresa": "Cloud Services",
@@ -1823,22 +2774,43 @@
         "descricao": "Script Terraform para provisionar infraestrutura na AWS."
       }
     ],
-    "certificacoes": ["CKA", "AWS Solutions Architect Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "CKA",
+      "AWS Solutions Architect Associate"
     ],
-    "arealnteresses": ["Samba", "Cloud Native", "Automação"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Samba",
+      "Cloud Native",
+      "Automação"
+    ]
   },
   {
-    "Id": 49,
+    "id": 49,
     "nome": "Alice Barros",
     "foto": "./images/foto49.jpg",
     "cargo": "Especialista em Cibersegurança",
     "resumo": "Protegendo dados em ambientes hostis, da rede local à nuvem.",
     "localizacao": "São Paulo/SP",
     "area": "Segurança",
-    "habilidadesTecnicas": ["Pentest", "Análise de Malware", "Python", "Redes", "Criptografia"],
-    "softSkills": ["Adaptabilidade", "Pensamento Crítico", "Foco", "Resiliência"],
+    "habilidadesTecnicas": [
+      "Pentest",
+      "Análise de Malware",
+      "Python",
+      "Redes",
+      "Criptografia"
+    ],
+    "softSkills": [
+      "Adaptabilidade",
+      "Pensamento Crítico",
+      "Foco",
+      "Resiliência"
+    ],
     "experiencias": [
       {
         "empresa": "Secure Consultoria",
@@ -1862,23 +2834,47 @@
         "descricao": "Estudo de vulnerabilidades em dispositivos IoT."
       }
     ],
-    "certificacoes": ["OSCP", "Security+"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Espanhol", "nivel": "Básico" }
+    "certificacoes": [
+      "OSCP",
+      "Security+"
     ],
-    "arealnteresses": ["IA ética", "Cibersegurança", "IoT"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "IA ética",
+      "Cibersegurança",
+      "IoT"
+    ]
   },
   {
-    "Id": 50,
+    "id": 50,
     "nome": "Caetano Viana",
     "foto": "./images/foto50.jpg",
     "cargo": "Desenvolvedor Front-End Sênior",
     "resumo": "Criando interfaces com foco em acessibilidade e semântica.",
     "localizacao": "Salvador/BA",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["HTML5 Semântico", "CSS3", "JavaScript", "Acessibilidade (WCAG)", "React"],
-    "softSkills": ["Criatividade", "Comunicação", "Empatia", "Vanguarda"],
+    "habilidadesTecnicas": [
+      "HTML5 Semântico",
+      "CSS3",
+      "JavaScript",
+      "Acessibilidade (WCAG)",
+      "React"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Comunicação",
+      "Empatia",
+      "Vanguarda"
+    ],
     "experiencias": [
       {
         "empresa": "GovTech",
@@ -1902,22 +2898,43 @@
         "descricao": "Portfólio 100% acessível e semanticamente correto."
       }
     ],
-    "certificacoes": ["Web Accessibility Specialist (WAS)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Web Accessibility Specialist (WAS)"
     ],
-    "arealnteresses": ["Música", "Literatura", "Acessibilidade Web", "Cultura"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Música",
+      "Literatura",
+      "Acessibilidade Web",
+      "Cultura"
+    ]
   },
   {
-    "Id": 51,
+    "id": 51,
     "nome": "Débora Bastos",
     "foto": "./images/foto51.jpg",
     "cargo": "Analista de QA Pleno",
     "resumo": "Garantindo a qualidade do software com versatilidade e foco no detalhe.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Qualidade",
-    "habilidadesTecnicas": ["Testes Manuais", "Testes de Usabilidade", "Cypress", "Jira", "SQL"],
-    "softSkills": ["Versatilidade", "Atenção aos Detalhes", "Comunicação", "Adaptabilidade"],
+    "habilidadesTecnicas": [
+      "Testes Manuais",
+      "Testes de Usabilidade",
+      "Cypress",
+      "Jira",
+      "SQL"
+    ],
+    "softSkills": [
+      "Versatilidade",
+      "Atenção aos Detalhes",
+      "Comunicação",
+      "Adaptabilidade"
+    ],
     "experiencias": [
       {
         "empresa": "Fintech Pagamentos",
@@ -1941,22 +2958,42 @@
         "descricao": "Documentação completa de um plano de testes para um e-commerce."
       }
     ],
-    "certificacoes": ["CTFL (ISTQB)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "CTFL (ISTQB)"
     ],
-    "arealnteresses": ["E-commerce", "Testes de Usabilidade", "Fintech"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "E-commerce",
+      "Testes de Usabilidade",
+      "Fintech"
+    ]
   },
   {
-    "Id": 52,
+    "id": 52,
     "nome": "Evaristo Santos",
     "foto": "./images/foto52.jpg",
     "cargo": "UX Writer Sênior",
     "resumo": "Criando textos claros e objetivos para interfaces. 'Boa tarde' ao bom design.",
     "localizacao": "São Paulo/SP",
     "area": "Design",
-    "habilidadesTecnicas": ["UX Writing", "Microcopy", "Tom e Voz", "Testes A/B", "Design Thinking"],
-    "softSkills": ["Comunicação Clara", "Empatia", "Objetividade", "Colaboração"],
+    "habilidadesTecnicas": [
+      "UX Writing",
+      "Microcopy",
+      "Tom e Voz",
+      "Testes A/B",
+      "Design Thinking"
+    ],
+    "softSkills": [
+      "Comunicação Clara",
+      "Empatia",
+      "Objetividade",
+      "Colaboração"
+    ],
     "experiencias": [
       {
         "empresa": "Jornal da Cidade",
@@ -1981,22 +3018,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["UX Writing (Domestika)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "UX Writing (Domestika)"
     ],
-    "arealnteresses": ["Comunicação", "Mídias Digitais", "Acessibilidade"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Comunicação",
+      "Mídias Digitais",
+      "Acessibilidade"
+    ]
   },
   {
-    "Id": 53,
+    "id": 53,
     "nome": "Fernanda Torres",
     "foto": "./images/foto53.jpg",
     "cargo": "Roteirista / UX Writer",
     "resumo": "Adaptando a arte de contar histórias (storytelling) para a jornada do usuário.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Design",
-    "habilidadesTecnicas": ["Storytelling", "UX Writing", "Roteiro", "Microcopy", "Tom e Voz"],
-    "softSkills": ["Criatividade", "Empatia", "Comunicação", "Versatilidade"],
+    "habilidadesTecnicas": [
+      "Storytelling",
+      "UX Writing",
+      "Roteiro",
+      "Microcopy",
+      "Tom e Voz"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Empatia",
+      "Comunicação",
+      "Versatilidade"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora Cultural",
@@ -2022,20 +3079,39 @@
     ],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
     ],
-    "arealnteresses": ["Cinema", "Literatura", "Viagens", "Economia Criativa"]
+    "arealnteresses": [
+      "Cinema",
+      "Literatura",
+      "Viagens",
+      "Economia Criativa"
+    ]
   },
   {
-    "Id": 54,
+    "id": 54,
     "nome": "Gilberto Gilmar",
     "foto": "./images/foto54.jpg",
     "cargo": "Desenvolvedor Back-End Sênior",
     "resumo": "Arquiteto de software focado em performance, escalabilidade e 'aquele abraço' no código.",
     "localizacao": "Salvador/BA",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Go", "Python", "Node.js", "Arquitetura de Microserviços", "AWS"],
-    "softSkills": ["Visão Sistêmica", "Liderança", "Criatividade", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Go",
+      "Python",
+      "Node.js",
+      "Arquitetura de Microserviços",
+      "AWS"
+    ],
+    "softSkills": [
+      "Visão Sistêmica",
+      "Liderança",
+      "Criatividade",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "Ministério da Cultura (TI)",
@@ -2059,23 +3135,46 @@
         "descricao": "Sistema de streaming de áudio de alta performance."
       }
     ],
-    "certificacoes": ["AWS Solutions Architect Professional"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Francês", "nivel": "Avançado" }
+    "certificacoes": [
+      "AWS Solutions Architect Professional"
     ],
-    "arealnteresses": ["Música", "Software Livre", "Cultura Digital", "Sustentabilidade"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Francês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Música",
+      "Software Livre",
+      "Cultura Digital",
+      "Sustentabilidade"
+    ]
   },
   {
-    "Id": 55,
+    "id": 55,
     "nome": "Helena Duarte",
     "foto": "./images/foto55.jpg",
     "cargo": "Desenvolvedora Mobile (Android Nativo)",
     "resumo": "Especialista em Kotlin, Jetpack Compose e arquitetura MVVM.",
     "localizacao": "Curitiba/PR",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Kotlin", "Jetpack Compose", "Java", "MVVM", "Android SDK"],
-    "softSkills": ["Qualidade de Código", "Colaboração", "Foco no Usuário"],
+    "habilidadesTecnicas": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Java",
+      "MVVM",
+      "Android SDK"
+    ],
+    "softSkills": [
+      "Qualidade de Código",
+      "Colaboração",
+      "Foco no Usuário"
+    ],
     "experiencias": [
       {
         "empresa": "AppDev Studio",
@@ -2099,22 +3198,41 @@
         "descricao": "Projeto pessoal usando Jetpack Compose."
       }
     ],
-    "certificacoes": ["Google Certified Associate Android Developer"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "Google Certified Associate Android Developer"
     ],
-    "arealnteresses": ["UI/UX Mobile", "IoT", "Varejo"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "UI/UX Mobile",
+      "IoT",
+      "Varejo"
+    ]
   },
   {
-    "Id": 56,
+    "id": 56,
     "nome": "Ícaro Almeida",
     "foto": "./images/foto56.jpg",
     "cargo": "Engenheiro de Dados Pleno",
     "resumo": "Focado em ETL, SQL e visualização de dados com Power BI.",
     "localizacao": "Belo Horizonte/MG",
     "area": "Dados",
-    "habilidadesTecnicas": ["SQL Server", "Python", "ETL", "Power BI", "Azure Data Factory"],
-    "softSkills": ["Pensamento Analítico", "Organização", "Comunicação"],
+    "habilidadesTecnicas": [
+      "SQL Server",
+      "Python",
+      "ETL",
+      "Power BI",
+      "Azure Data Factory"
+    ],
+    "softSkills": [
+      "Pensamento Analítico",
+      "Organização",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "Indústria S.A.",
@@ -2138,22 +3256,42 @@
         "descricao": "Dashboard de monitoramento de produção industrial."
       }
     ],
-    "certificacoes": ["Microsoft Certified: Power BI Data Analyst Associate"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Intermediário" }
+    "certificacoes": [
+      "Microsoft Certified: Power BI Data Analyst Associate"
     ],
-    "arealnteresses": ["Indústria 4.0", "BI", "Logística"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Indústria 4.0",
+      "BI",
+      "Logística"
+    ]
   },
   {
-    "Id": 57,
+    "id": 57,
     "nome": "Joana Lemos",
     "foto": "./images/foto57.jpg",
     "cargo": "Scrum Master",
     "resumo": "Facilitadora ágil com foco em melhoria contínua e entrega de valor.",
     "localizacao": "São Paulo/SP",
     "area": "Gestão",
-    "habilidadesTecnicas": ["Scrum", "Kanban", "Jira", "Azure DevOps", "Gestão de Métricas Ágeis"],
-    "softSkills": ["Facilitação", "Comunicação", "Empatia", "Resolução de Conflitos"],
+    "habilidadesTecnicas": [
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "Azure DevOps",
+      "Gestão de Métricas Ágeis"
+    ],
+    "softSkills": [
+      "Facilitação",
+      "Comunicação",
+      "Empatia",
+      "Resolução de Conflitos"
+    ],
     "experiencias": [
       {
         "empresa": "Banco Digital Z",
@@ -2171,22 +3309,44 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["PSM II", "CSM", "KMP I"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" }
+    "certificacoes": [
+      "PSM II",
+      "CSM",
+      "KMP I"
     ],
-    "arealnteresses": ["Agilidade Organizacional", "Cultura DevOps", "Fintech"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Agilidade Organizacional",
+      "Cultura DevOps",
+      "Fintech"
+    ]
   },
   {
-    "Id": 58,
+    "id": 58,
     "nome": "Kleber Santos",
     "foto": "./images/foto58.jpg",
     "cargo": "Analista de Suporte Técnico",
     "resumo": "Especialista em suporte a infraestrutura Windows e Office 365.",
     "localizacao": "Recife/PE",
     "area": "Infraestrutura",
-    "habilidadesTecnicas": ["Windows Server", "Active Directory", "Office 365", "Helpdesk", "Redes"],
-    "softSkills": ["Paciência", "Didática", "Resolução de Problemas", "Comunicação"],
+    "habilidadesTecnicas": [
+      "Windows Server",
+      "Active Directory",
+      "Office 365",
+      "Helpdesk",
+      "Redes"
+    ],
+    "softSkills": [
+      "Paciência",
+      "Didática",
+      "Resolução de Problemas",
+      "Comunicação"
+    ],
     "experiencias": [
       {
         "empresa": "Consultoria TI",
@@ -2204,22 +3364,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["ITIL Foundation", "Microsoft 365 Certified: Fundamentals"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Técnico" }
+    "certificacoes": [
+      "ITIL Foundation",
+      "Microsoft 365 Certified: Fundamentals"
     ],
-    "arealnteresses": ["Cloud", "Segurança", "Atendimento ao Cliente"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Técnico"
+      }
+    ],
+    "arealnteresses": [
+      "Cloud",
+      "Segurança",
+      "Atendimento ao Cliente"
+    ]
   },
   {
-    "Id": 59,
+    "id": 59,
     "nome": "Laís Macedo",
     "foto": "./images/foto59.jpg",
     "cargo": "Especialista em SEO",
     "resumo": "Estrategista de SEO com foco em conteúdo e SEO técnico.",
     "localizacao": "São Paulo/SP",
     "area": "Marketing",
-    "habilidadesTecnicas": ["SEO On-Page", "SEO Técnico", "SEMrush", "Ahrefs", "Google Analytics"],
-    "softSkills": ["Pensamento Analítico", "Escrita", "Visão Estratégica"],
+    "habilidadesTecnicas": [
+      "SEO On-Page",
+      "SEO Técnico",
+      "SEMrush",
+      "Ahrefs",
+      "Google Analytics"
+    ],
+    "softSkills": [
+      "Pensamento Analítico",
+      "Escrita",
+      "Visão Estratégica"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Marketing",
@@ -2237,22 +3417,42 @@
       }
     ],
     "projetos": [],
-    "certificacoes": ["Google Analytics Individual Qualification (GAIQ)"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" }
+    "certificacoes": [
+      "Google Analytics Individual Qualification (GAIQ)"
     ],
-    "arealnteresses": ["Marketing de Conteúdo", "IA", "E-commerce"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Marketing de Conteúdo",
+      "IA",
+      "E-commerce"
+    ]
   },
   {
-    "Id": 60,
+    "id": 60,
     "nome": "Murilo Rosa",
     "foto": "./images/foto60.jpg",
     "cargo": "Desenvolvedor Back-End (Java)",
     "resumo": "Desenvolvedor Java/Spring focado em construir APIs robustas e escaláveis.",
     "localizacao": "Porto Alegre/RS",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Java", "Spring Boot", "Microserviços", "SQL", "AWS", "Kafka"],
-    "softSkills": ["Trabalho em Equipe", "Resolução de Problemas", "Qualidade de Código"],
+    "habilidadesTecnicas": [
+      "Java",
+      "Spring Boot",
+      "Microserviços",
+      "SQL",
+      "AWS",
+      "Kafka"
+    ],
+    "softSkills": [
+      "Trabalho em Equipe",
+      "Resolução de Problemas",
+      "Qualidade de Código"
+    ],
     "experiencias": [
       {
         "empresa": "Software House",
@@ -2276,11 +3476,23 @@
         "descricao": "Serviço de cotação de moedas em tempo real."
       }
     ],
-    "certificacoes": ["Oracle Certified Professional, Java SE Programmer"],
-    "idiomas": [
-      { "idioma": "Inglês", "nivel": "Avançado" },
-      { "idioma": "Espanhol", "nivel": "Básico" }
+    "certificacoes": [
+      "Oracle Certified Professional, Java SE Programmer"
     ],
-    "arealnteresses": ["Fintech", "Mercado Financeiro", "Sistemas Distribuídos"]
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Fintech",
+      "Mercado Financeiro",
+      "Sistemas Distribuídos"
+    ]
   }
 ]

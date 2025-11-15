@@ -1,9 +1,19 @@
-import { Router } from 'express';
-import { getHistorico, gerarRelatorioPDF } from '../controllers/historicoController.js'; 
+import express from 'express';
+import { 
+    getHistorico, 
+    addRegistro, 
+    getRegistroByTimestamp,
+    clearHistorico
+} from '../controllers/historicoController.js';
 
-const router = Router();
+const router = express.Router();
 
 router.get('/', getHistorico);
-router.get('/relatorio-pdf', gerarRelatorioPDF);
+
+router.post('/', addRegistro);
+
+router.get('/:timestamp', getRegistroByTimestamp);
+
+router.delete('/', clearHistorico);
 
 export default router;

@@ -9,6 +9,7 @@ import IdiomasCard from '../components/IdiomasCard.jsx';
 import SobreCard from '../components/SobreCard.jsx';
 import ExperienciaCard from '../components/ExperienciaCard.jsx';
 import FormacaoCard from '../components/FormacaoCard.jsx';
+import PerfilEditarModal from '../components/PerfilEditarModal.jsx';
 
 const API_URL = 'http://127.0.0.1:3001/api'; 
 
@@ -16,7 +17,7 @@ export default function PerfilProfissional() {
   const [perfil, setPerfil] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { id } = useParams(); 
   const { user: usuarioLogado } = useAuth(); 
 
@@ -37,6 +38,10 @@ export default function PerfilProfissional() {
     };
     fetchPerfil();
   }, [id]); 
+
+  const handleProfileUpdate = (updatedProfile) => {
+    fetchPerfil();
+  };
 
   const MeuPerfil = usuarioLogado && usuarioLogado.id === id;
 
@@ -64,14 +69,20 @@ export default function PerfilProfissional() {
               />
               
               {MeuPerfil && (
-                <Link 
-                  to="/perfil/editar"
-                  className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
+                <button 
+                  onClick={() => setIsModalOpen(true)} // <-- Abre o modal
+                  className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 z-10"
                   title="Editar perfil"
                 >
-                  <Edit size={20} className="text-gray-600" />
-                </Link>
+                <Edit size={20} className="text-gray-600" />
+              </button>
               )}
+              <PerfilEditarModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                perfilData={perfil}
+                onProfileUpdate={handleProfileUpdate} 
+              />
               <div className="mt-12 md:mt-16"> 
                 <h1 className="text-2xl font-bold text-gray-900">{perfil.nome}</h1>
                 <p className="text-md text-gray-700 mt-1">{perfil.cargo}</p>

@@ -2,7 +2,7 @@ import { verificarConsentimento, excluirDadosUsuario } from '../lib/utilidadesLG
 
 let consentimentoAtivo = true;
 
-
+// Funções já estão em ES Modules (export const)
 export const getConsentimentoStatus = (req, res) => {
     res.json({ 
         status: consentimentoAtivo ? 'ativo' : 'inativo',
@@ -43,9 +43,3 @@ export const solicitarExclusao = (req, res) => {
     }
 };
 
-module.exports = {
-    getConsentimentoStatus,
-    ativarConsentimento,
-    revogarConsentimento,
-    solicitarExclusao,
-};

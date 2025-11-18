@@ -87,7 +87,7 @@ export default function Vagas() {
   };
   
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-50 ">
+    <div className="max-w-3xl mx-auto p-6 bg-gray-50 ">
       <h2 className="text-3xl font-bold text-gray-900 mb-6">Encontrar Vagas</h2>
 
       {/*  O formulário de filtros*/}
@@ -100,7 +100,7 @@ export default function Vagas() {
             placeholder="Digite o cargo (ex: Desenvolvedor Node.js)"
             value={termo}
             onChange={(e) => setTermo(e.target.value)}
-            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-gray-400"
             disabled={isLoading}
           />
         </div>
@@ -113,7 +113,7 @@ export default function Vagas() {
             placeholder="Ex: br, us, de"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
-            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-gray-400"
             disabled={isLoading}
           />
         </div>
@@ -126,7 +126,7 @@ export default function Vagas() {
             placeholder="Ex: sp, rj, mg"
             value={estado}
             onChange={(e) => setEstado(e.target.value)}
-            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-gray-400"
             disabled={isLoading}
           />
         </div>
@@ -155,7 +155,7 @@ export default function Vagas() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full py-3 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+          className="w-1/4 py-3 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
         >
           {isLoading ? 'Buscando...' : 'Ver vagas'}
         </button>

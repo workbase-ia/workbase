@@ -30,18 +30,17 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
     setTempSoftSkills(softSkills || []);
   }, [habilidadesTecnicas, softSkills]);
 
-  // --- Funções de Manipulação da Lista ---
-
+  //  Funções de Manipulação da Lista
   const handleAddSkill = (e) => {
-    e.preventDefault(); // Impede o submit do formulário
-    if (newSkillText.trim() === '') return; // Não adiciona tags vazias
+    e.preventDefault(); 
+    if (newSkillText.trim() === '') return; 
 
     if (newSkillType === 'tech') {
       setTempTechSkills([...tempTechSkills, newSkillText.trim()]);
     } else {
       setTempSoftSkills([...tempSoftSkills, newSkillText.trim()]);
     }
-    setNewSkillText(''); // Limpa o input
+    setNewSkillText(''); 
   };
 
   const handleRemoveSkill = (type, index) => {
@@ -152,7 +151,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
             <h4 className="text-md font-semibold text-gray-800 mb-2">Habilidades Técnicas</h4>
             <div className="flex flex-wrap gap-2">
               {tempTechSkills.map((skill, index) => (
-                <span key={index} className="flex items-center gap-1 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                <span key={index} className="flex items-center gap-1 bg-blue-50 text-black text-sm font-medium px-3 py-1 rounded-full">
                   {skill}
                   <button onClick={() => handleRemoveSkill('tech', index)} className="hover:bg-blue-200 rounded-full">
                     <X size={14} />
@@ -167,9 +166,9 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
             <h4 className="text-md font-semibold text-gray-800 mb-2">Soft Skills</h4>
             <div className="flex flex-wrap gap-2">
               {tempSoftSkills.map((skill, index) => (
-                <span key={index} className="flex items-center gap-1 bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                <span key={index} className="flex items-center gap-1 bg-green-50 text-black text-sm font-medium px-3 py-1 rounded-full">
                   {skill}
-                  <button onClick={() => handleRemoveSkill('soft', index)} className="hover:bg-green-200 rounded-full">
+                  <button onClick={() => handleRemoveSkill('soft', index)} className=" rounded-full">
                     <X size={14} />
                   </button>
                 </span>
@@ -189,7 +188,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
         </div>
 
       ) : (
-        // --- MODO DE VISUALIZAÇÃO ---
+        // MODO DE VISUALIZAÇÃO 
         <div>
           {isEmpty ? (
             <p className="text-sm text-gray-500">

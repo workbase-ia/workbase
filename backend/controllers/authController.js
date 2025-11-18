@@ -61,7 +61,6 @@ export const register = async (req, res) => {
       cargo: "",
       resumo: "",
       localizacao: "",
-      area: "",
       habilidadesTecnicas: [],
       softSkills: [],
       experiencias: [],
@@ -79,7 +78,7 @@ export const register = async (req, res) => {
     writeJSON(PERFIL_DB_PATH, perfisdb);
 
     const token = jwt.sign({ id: newUser.id, email: newUser.email }, JWT_SECRET, {
-      expiresIn: '1h',
+      expiresIn: '100h',
     });
 
     res.status(201).json({

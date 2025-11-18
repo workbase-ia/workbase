@@ -13,17 +13,21 @@ import Footer from './components/Footer';
 function App() {
   return (
     <AuthProvider>
-      <Header />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/perfil/:id" element={<PerfilProfissional />} />
-            <Route path="/vagas" element={<Vagas />} />
-          </Routes>
-        </BrowserRouter>
-      <Footer />
+      <BrowserRouter>
+        <div className="flex flex-col min-h-screen bg-slate-50">
+          <Header /> 
+          <main className="flex-1 pt-20"> 
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/perfil/:id" element={<PerfilProfissional />} />
+              <Route path="/vagas" element={<Vagas />} />
+            </Routes>
+          </main>
+          <Footer />  
+        </div>
+      </BrowserRouter>
     </AuthProvider>
   );
 }

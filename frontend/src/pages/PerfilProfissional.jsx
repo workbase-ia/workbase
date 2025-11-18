@@ -9,6 +9,7 @@ import IdiomasCard from '../components/IdiomasCard.jsx';
 import SobreCard from '../components/SobreCard.jsx';
 import ExperienciaCard from '../components/ExperienciaCard.jsx';
 import FormacaoCard from '../components/FormacaoCard.jsx';
+import PerfilEditarModal from '../components/PerfilEditarModal.jsx';
 
 const API_URL = 'http://127.0.0.1:3001/api'; 
 
@@ -16,7 +17,7 @@ export default function PerfilProfissional() {
   const [perfil, setPerfil] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { id } = useParams(); 
   const { user: usuarioLogado } = useAuth(); 
 
@@ -37,6 +38,10 @@ export default function PerfilProfissional() {
     };
     fetchPerfil();
   }, [id]); 
+
+  const handleProfileUpdate = (updatedProfile) => {
+    fetchPerfil();
+  };
 
   const MeuPerfil = usuarioLogado && usuarioLogado.id === id;
 
@@ -64,14 +69,20 @@ export default function PerfilProfissional() {
               />
               
               {MeuPerfil && (
-                <Link 
-                  to="/perfil/editar"
-                  className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
+                <button 
+                  onClick={() => setIsModalOpen(true)} 
+                  className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 z-10"
                   title="Editar perfil"
                 >
-                  <Edit size={20} className="text-gray-600" />
-                </Link>
+                <Edit size={20} className="text-gray-600" />
+              </button>
               )}
+              <PerfilEditarModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                perfil={perfil}
+                onProfileUpdate={handleProfileUpdate} 
+              />
               <div className="mt-12 md:mt-16"> 
                 <h1 className="text-2xl font-bold text-gray-900">{perfil.nome}</h1>
                 <p className="text-md text-gray-700 mt-1">{perfil.cargo}</p>
@@ -99,23 +110,40 @@ export default function PerfilProfissional() {
             </div>
           </div>
     
-          <SobreCard resumo={perfil.resumo} MeuPerfil={MeuPerfil} />
-          <ExperienciaCard experiencias={perfil.experiencias} MeuPerfil={MeuPerfil}/>
-          <FormacaoCard formacao={perfil.formacao} MeuPerfil={MeuPerfil} />
+          <SobreCard resumo={perfil.resumo} 
+          MeuPerfil={MeuPerfil}/>
+
+          <ExperienciaCard experiencias={perfil.experiencias} 
+          MeuPerfil={MeuPerfil}
+          onProfileUpdate={handleProfileUpdate}/>
+          
+          <FormacaoCard formacao={perfil.formacao} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
+
           <HabilidadesCard 
-            habilidadesTecnicas={perfil.habilidadesTecnicas}
-            softSkills={perfil.softSkills}
-            MeuPerfil={MeuPerfil}
-          />
-          <ProjetosCard projetos={perfil.projetos} MeuPerfil={MeuPerfil} />
-          <CertificacoesCard certificacoes={perfil.certificacoes} MeuPerfil={MeuPerfil} />
-          <IdiomasCard idiomas={perfil.idiomas} MeuPerfil={MeuPerfil} />
+          habilidadesTecnicas={perfil.habilidadesTecnicas}
+          softSkills={perfil.softSkills}
+          MeuPerfil={MeuPerfil}
+          onProfileUpdate={handleProfileUpdate}/>
+
+          <ProjetosCard projetos={perfil.projetos} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
+          
+          <CertificacoesCard certificacoes={perfil.certificacoes} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
+
+          <IdiomasCard idiomas={perfil.idiomas} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
           
         </div>
         <div className="md:col-span-2 space-y-6">
           
           {/* Card de Criar Publicação*/}
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+            <div className="bg-white border border-gray-200 rounded-lg p-4">
               <input 
                 type="text"
                 placeholder="Começar uma publicação..."

@@ -3410,13 +3410,7 @@
         "descricao": "Desenvolvimento de sistemas para o setor financeiro."
       }
     ],
-    "formacao": [
-      {
-        "curso": "Ciência da Computação",
-        "instituicao": "PUC-RS",
-        "ano": 2019
-      }
-    ],
+    "formacao": [],
     "projetos": [
       {
         "titulo": "API de Câmbio",

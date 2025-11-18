@@ -54,7 +54,7 @@ export default function MainPage() {
     }
 
     return (
-        <div className="max-w-3xl mx-auto py-8 px-4">
+        <div className="max-w-3xl mx-auto px-4">
             <h1 className="text-3xl font-bold text-slate-800 mb-6">Feed Principal</h1>
             <div className="space-y-6">
                 {posts.map(post => (

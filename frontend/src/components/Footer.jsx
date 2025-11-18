@@ -12,7 +12,7 @@ export default function Footer() {
                     {/* Sobre */}
                     <div>
                         <h5 className="font-bold text-lg mb-4 flex items-center gap-2">
-                            <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                                 WA                
                             </div>
                             Workplace AI

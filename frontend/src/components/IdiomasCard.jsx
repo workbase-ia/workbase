@@ -20,12 +20,11 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
     setTempList(idiomas || []);
   }, [idiomas]);
 
-  // --- Funções de Manipulação do Array ---
+  // Funções de Manipulação do Array
 
   const handleAddItem = () => {
     setTempList([
       ...tempList,
-      // Adiciona um item novo (vazio)
       { idioma: '', nivel: '' }
     ]);
   };
@@ -40,7 +39,7 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
     setTempList(newList);
   };
 
-  // --- Salvar e Cancelar ---
+  //  Salvar e Cancelar 
 
   const handleSave = async () => {
     setIsLoading(true);
@@ -52,14 +51,14 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
-        // Envia o array de idiomas completo
+        
         body: JSON.stringify({ idiomas: tempList }) 
       });
 
       if (!response.ok) throw new Error('Falha ao salvar idiomas.');
       
-      onProfileUpdate(); // Avisa o pai para recarregar
-      setIsEditing(false); // Sai do modo de edição
+      onProfileUpdate(); 
+      setIsEditing(false); 
 
     } catch (err) {
       setError(err.message);
@@ -69,12 +68,12 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
   };
 
   const handleCancel = () => {
-    setTempList(idiomas || []); // Reseta para a lista original
+    setTempList(idiomas || []); 
     setIsEditing(false);
     setError(null);
   };
 
-  // Se estiver vazio E não for o meu perfil, o card some.
+  
   if (isEmpty && !MeuPerfil) {
     return null;
   }
@@ -96,7 +95,7 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
       </div>
       
       {isEditing ? (
-        // --- MODO DE EDIÇÃO (Formulário de Lista) ---
+        //  MODO DE EDIÇÃO (Formulário de Lista)
         <div className="space-y-4">
           {error && <p className="text-sm text-red-600">{error}</p>}
           

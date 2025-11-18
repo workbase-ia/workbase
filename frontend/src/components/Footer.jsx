@@ -11,7 +11,7 @@ export default function Footer() {
           
           {/* Adicionar a imagem da Logo */}
           <img 
-            src="/path-to-your-logo.png" // Substitua pelo caminho real da sua imagem
+            src="#" 
             alt="Logo WorkBase AI" 
             className="h-10 w-auto object-contain" 
           />

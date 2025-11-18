@@ -12,6 +12,8 @@ import perfilRoutes from './routes/perfilRoutes.js';
 import historicoRoutes from'./routes/historicoRoutes.js';
 import vagasRoutes from './routes/vagasRoutes.js'; 
 
+import listEndpoints from 'express-list-endpoints';
+
 dotenv.config();
 
 const port = process.env.PORT || 3001;
@@ -31,7 +33,14 @@ app.use('/api/posts', postsRoutes);
 app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/vagas', vagasRoutes);
 
+
+console.log("\nROTAS REGISTRADAS:");
+console.log(listEndpoints(app));
+console.log("\n");
+
+
 // Inicia o servidor
 app.listen(port, () => {
   console.log(`🚀 Servidor rodando em http://localhost:${port}`);
 });
+

@@ -24,7 +24,7 @@ export const getPosts = async (req, res) => {
         const postsComAutor = postsData.map(post => {
             const autor = usuariosData.find(user => user.id === post.autorId);
 
-            return {
+            const postComAutor = {
                 ...post,
                 autor: autor ? {
                     id: autor.id,
@@ -37,6 +37,25 @@ export const getPosts = async (req, res) => {
                     foto: null
                 }
             };
+
+            if (postComAutor.comentarios && postComAutor.comentarios.length > 0) {
+                postComAutor.comentarios = postComAutor.comentarios.map(comment => {
+                    const commenter = usuariosData.find(user => user.id === comment.commenterId);
+
+                    return {
+                        ...comment,
+                        autor: commenter ? {
+                            nome: commenter.nome,
+                            foto: commenter.foto
+                        } : {
+                            nome: "Usuário Desconhecido",
+                            foto: null
+                        }
+                    };
+                });
+            }
+
+            return postComAutor;
         });
 
         postsComAutor.sort(

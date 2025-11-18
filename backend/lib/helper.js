@@ -1,34 +1,40 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
-export const readJSON = (filePath) => {
-    try {
-        const resolved = path.resolve(filePath);
-        const fileData = fs.readFileSync(resolved, 'utf-8');
+const baseDir = path.resolve("data"); 
 
-        console.log(`[readJSON] Lendo: ${resolved}`);
-        console.log(`[readJSON] Primeiro conteúdo: "${fileData.substring(0, 80).replace(/\n/g, '\\n')}"`);
+function resolvePath(fileOrPath) {
+  if (path.isAbsolute(fileOrPath)) return fileOrPath;
 
-        return JSON.parse(fileData);
-    } catch (error) {
-        console.error(`[readJSON] Erro ao ler o arquivo JSON: ${filePath}`);
-        console.error(`[readJSON] Mensagem: ${error.message}`);
-        return null;
-    }
-};
+  if (fileOrPath.startsWith("data" + path.sep)) {
+    fileOrPath = fileOrPath.slice(5); 
+  }
 
-export const writeJSON = (filePath, data) => {
-    try {
-        const resolved = path.resolve(filePath);
-        const jsonData = JSON.stringify(data, null, 2);
+  return path.join(baseDir, fileOrPath);
+}
 
-        fs.writeFileSync(resolved, jsonData, 'utf-8');
+export function readJSON(fileOrPath) {
+  try {
+    const fullPath = resolvePath(fileOrPath);
+    console.log("[readJSON] Lendo:", fullPath);
+    const content = fs.readFileSync(fullPath, "utf8");
+    return JSON.parse(content);
+  } catch (err) {
+    console.error("[readJSON] Erro ao ler:", fileOrPath);
+    console.error(err && err.message ? err.message : err);
+    return null;
+  }
+}
 
-        console.log(`[writeJSON] Gravado com sucesso: ${resolved}`);
-        return true;
-    } catch (error) {
-        console.error(`[writeJSON] Erro ao escrever no arquivo JSON: ${filePath}`);
-        console.error(`[writeJSON] Mensagem: ${error.message}`);
-        return false;
-    }
-};
+export function writeJSON(fileOrPath, data) {
+  try {
+    const fullPath = resolvePath(fileOrPath);
+    console.log("[writeJSON] Gravando:", fullPath);
+    fs.writeFileSync(fullPath, JSON.stringify(data, null, 2), "utf8");
+    return true;
+  } catch (err) {
+    console.error("[writeJSON] Erro ao gravar:", fileOrPath);
+    console.error(err && err.message ? err.message : err);
+    return false;
+  }
+}

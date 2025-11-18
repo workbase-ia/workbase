@@ -10,7 +10,7 @@ export const getPerfilById = (req, res) => {
       return res.status(404).json({ message: 'Arquivo de usuários não encontrado ou inválido.' }); 
     }
 
-    const user = db.find(u => u.Id.toString() === req.params.id);
+    const user = db.find(u => u && u.id && u.id.toString() === req.params.id);
     if (!user) { return res.status(404).json({ message: 'Usuário não encontrado.' }); }
     res.status(200).json(user);
 
@@ -33,7 +33,7 @@ export const updateMeuPerfil = (req, res) => {
       return res.status(500).json({ message: 'Arquivo de perfis inválido.' }); 
     }
 
-    const userIndex = db.findIndex(u => u.Id.toString() === userIdLogado);
+    const userIndex = db.findIndex(u => u && u.id && u.id.toString() === userIdLogado);
     if (userIndex === -1) {
       return res.status(404).json({ message: 'Usuário não encontrado no DB de perfis.' });
     }

@@ -56,7 +56,7 @@ export const register = async (req, res) => {
       Id: newId,
       nome: nome,
       email: email,
-      area: '',
+      area: "",
       foto: "",
       cargo: "",
       resumo: "",

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "autorId": 60,
+        "autorId": 1763126460224,
         "title": "Serverless: A Revolução Silenciosa que Redefine o Desenvolvimento Back-end",
         "content": "Pessoal, aqui é o Murilo. Tenho observado de perto a aceleração da adoção de Serverless, e é inegável que estamos vivenciando uma mudança de paradigma no desenvolvimento back-end. Não se trata apenas de hospedar código; é sobre eliminar a sobrecarga operacional. A promessa de Serverless — pagar apenas pelo consumo e esquecer a gestão de servidores, patching e escalabilidade — finalmente se concretizou, permitindo que as equipes se concentrem 100% na lógica de negócio que realmente agrega valor. Isso nos libera para inovar mais rápido e com muito menos atrito.\n\nAs implicações para nós, desenvolvedores back-end, são profundas. O Serverless nos força a pensar em arquiteturas mais granulares e orientadas a eventos (event-driven), onde cada função (FaaS) é uma unidade de trabalho isolada. Isso exige uma mentalidade diferente na hora de projetar APIs, gerenciar estados e lidar com a persistência de dados. O ciclo de desenvolvimento se torna mais rápido, mas a complexidade se move da infraestrutura para o design arquitetural. O conhecimento sobre otimização de custo e observabilidade (monitoramento de latência e consumo) torna-se tão crucial quanto a própria escrita do código. O back-end moderno é Serverless-first.\n\nEm resumo, a ascensão do Serverless não é uma moda passageira; é a evolução natural da computação em nuvem. Ela democratiza a escalabilidade e acelera o time-to-market de forma inédita. Se você ainda não está explorando AWS Lambda, Azure Functions ou Google Cloud Functions, está deixando de lado uma ferramenta poderosa que redefine a eficiência operacional. Fica a dica: invistam em aprender a desenhar soluções Serverless resilientes e a dominar os padrões de arquitetura orientada a eventos. O futuro do back-end é sem servidor!",
         "date": "2025-11-14",
@@ -176,7 +176,7 @@
             },
             {
                 "id": 19,
-                "commenterId": 60,
+                "commenterId": 1763126460224,
                 "texto": "Excelente ponto sobre a reavaliação da arquitetura, Kleber. Na minha experiência, a chave para o sucesso dos Data Lakes reside na correta catalogação e gestão da qualidade dos dados brutos, evitando que se tornem \"data swamps\". O desafio de governança é proporcional ao volume e variedade que estamos absorvendo.",
                 "data": "2025-11-08"
             }

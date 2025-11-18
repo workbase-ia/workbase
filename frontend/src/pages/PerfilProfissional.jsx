@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate} from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import { MapPin, Briefcase, BookOpen, Plus, Send, Edit } from 'lucide-react';
 import HabilidadesCard from '../components/HabilidadesCard.jsx';
@@ -19,40 +19,15 @@ export default function PerfilProfissional() {
   const [error, setError] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { id } = useParams(); 
-  const navigate = useNavigate();
-  const { user: usuarioLogado, token, logout } = useAuth();
+  const { user: usuarioLogado } = useAuth(); 
 
-useEffect(() => {
+  useEffect(() => {
     const fetchPerfil = async () => {
       setIsLoading(true);
       setError(null);
-
-      if (!token) {
-        logout(); 
-        navigate('/login');
-        return;
-      }
-
       try {
-        const response = await fetch(`${API_URL}/perfil/${id}`, {
-          headers: {
-            'Authorization': `Bearer ${token}`
-          }
-        });
-        if (response.status === 401 || response.status === 403) {
-          logout();
-          navigate('/login');
-          return;
-        }
-
-        if (response.status === 404) {
-          throw new Error('Perfil não encontrado (404)');
-        }
-        
-        if (!response.ok) { 
-          throw new Error('Erro ao buscar perfil'); 
-        }
-
+        const response = await fetch(`${API_URL}/perfil/${id}`);
+        if (!response.ok) { throw new Error('Perfil não encontrado'); }
         const data = await response.json();
         setPerfil(data);
       } catch (err) {
@@ -61,9 +36,12 @@ useEffect(() => {
         setIsLoading(false);
       }
     };
-
     fetchPerfil();
-  }, [id, token, navigate, logout]);
+  }, [id]); 
+
+  const handleProfileUpdate = () => {
+    fetchPerfil();
+  };
 
   const MeuPerfil = usuarioLogado && usuarioLogado.id === id;
 

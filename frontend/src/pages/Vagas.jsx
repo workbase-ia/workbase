@@ -87,7 +87,7 @@ export default function Vagas() {
   };
   
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-50 min-h-screen">
+    <div className="max-w-4xl mx-auto p-6 bg-gray-50 ">
       <h2 className="text-3xl font-bold text-gray-900 mb-6">Encontrar Vagas</h2>
 
       {/*  O formulário de filtros*/}

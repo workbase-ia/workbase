@@ -4,7 +4,7 @@ import { protect } from '../middleware/authMiddleware.js';
 
 const router = Router();
 
-router.get('/:id', getPerfilById);
+router.get('/:id', protect, getPerfilById);
 router.put('/me', protect, updateMeuPerfil);
 
 export default router;

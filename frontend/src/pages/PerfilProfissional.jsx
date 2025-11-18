@@ -70,7 +70,7 @@ export default function PerfilProfissional() {
               
               {MeuPerfil && (
                 <button 
-                  onClick={() => setIsModalOpen(true)} // <-- Abre o modal
+                  onClick={() => setIsModalOpen(true)} 
                   className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 z-10"
                   title="Editar perfil"
                 >
@@ -110,23 +110,40 @@ export default function PerfilProfissional() {
             </div>
           </div>
     
-          <SobreCard resumo={perfil.resumo} MeuPerfil={MeuPerfil} />
-          <ExperienciaCard experiencias={perfil.experiencias} MeuPerfil={MeuPerfil}/>
-          <FormacaoCard formacao={perfil.formacao} MeuPerfil={MeuPerfil} />
+          <SobreCard resumo={perfil.resumo} 
+          MeuPerfil={MeuPerfil}/>
+
+          <ExperienciaCard experiencias={perfil.experiencias} 
+          MeuPerfil={MeuPerfil}
+          onProfileUpdate={handleProfileUpdate}/>
+          
+          <FormacaoCard formacao={perfil.formacao} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
+
           <HabilidadesCard 
-            habilidadesTecnicas={perfil.habilidadesTecnicas}
-            softSkills={perfil.softSkills}
-            MeuPerfil={MeuPerfil}
-          />
-          <ProjetosCard projetos={perfil.projetos} MeuPerfil={MeuPerfil} />
-          <CertificacoesCard certificacoes={perfil.certificacoes} MeuPerfil={MeuPerfil} />
-          <IdiomasCard idiomas={perfil.idiomas} MeuPerfil={MeuPerfil} />
+          habilidadesTecnicas={perfil.habilidadesTecnicas}
+          softSkills={perfil.softSkills}
+          MeuPerfil={MeuPerfil}
+          onProfileUpdate={handleProfileUpdate}/>
+
+          <ProjetosCard projetos={perfil.projetos} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
+          
+          <CertificacoesCard certificacoes={perfil.certificacoes} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
+
+          <IdiomasCard idiomas={perfil.idiomas} 
+          MeuPerfil={MeuPerfil} 
+          onProfileUpdate={handleProfileUpdate}/>
           
         </div>
         <div className="md:col-span-2 space-y-6">
           
           {/* Card de Criar Publicação*/}
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+            <div className="bg-white border border-gray-200 rounded-lg p-4">
               <input 
                 type="text"
                 placeholder="Começar uma publicação..."

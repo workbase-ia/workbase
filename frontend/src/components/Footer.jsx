@@ -5,7 +5,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-slate-900 text-white mt-12">
+        <footer className="bg-slate-900 dark:bg-gray-900 text-white mt-12">
             <div className="max-w-7xl mx-auto px-4 py-12">
                 {/* Grid de Conteúdo */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -60,34 +60,34 @@ export default function Footer() {
                             <div className="flex gap-4 mb-6">
                                 <a
                                 href="#"
-                                className="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition"
+                                className="w-10 h-10 bg-slate-800 dark:bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition"
                                 title="LinkedIn"
                                 >
                                     <Linkedin size={20} />
                                 </a>
                                 <a
                                 href="#"
-                                className="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition"
+                                className="w-10 h-10 bg-slate-800 dark:bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition"
                                 title="GitHub"
                                 >
                                     <Github size={20} />
                                 </a>
                                 <a
                                 href="#"
-                                className="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition"
+                                className="w-10 h-10 bg-slate-800 dark:bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition"
                                 title="Email"
                                 >
                                     <Mail size={20} />
                                 </a>
                             </div>
-                            <p className="text-slate-400 text-sm">
+                            <p className="text-slate-400">
                                 Siga-nos para atualizações e novidades sobre a plataforma.
                             </p>
                         </div>
                     </div>
 
             {/* Divisor */}
-                    <div className="border-t border-slate-700 pt-8">
+                    <div className="border-t border-slate-700 dark:border-gray-700 pt-8">
                         {/* Copyright */}
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                             <p className="text-slate-400 text-sm flex items-center gap-1">

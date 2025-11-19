@@ -26,22 +26,22 @@ export default function MainPage() {
             }
         };
 
+        const loadSuggestedProfiles = async () => {
+            try {
+                const response = await fetch('http://localhost:3001/api/usuarios/suggested-profiles');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const profiles = await response.json();
+                setSuggestedProfiles(profiles);
+            } catch (err) {
+                console.error("Erro ao carregar perfis sugeridos:", err);
+            }
+        };
+
         loadPosts();
         loadSuggestedProfiles();
     }, []);
-
-    const loadSuggestedProfiles = async () => {
-        try {
-            const response = await fetch('http://localhost:3001/api/usuarios/suggested-profiles');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const profiles = await response.json();
-            setSuggestedProfiles(profiles);
-        } catch (err) {
-            console.error("Erro ao carregar perfis sugeridos:", err);
-        }
-    };
 
     const handleLike = (postId) => {
         console.log(`Curtir post ${postId}`);
@@ -55,7 +55,7 @@ export default function MainPage() {
         return (
             <div className="flex justify-center items-center h-96">
                 <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-                <p className="ml-3 text-lg text-slate-600">Carregando feed...</p>
+                <p className="ml-3 text-lg text-slate-600 dark:text-slate-300">Carregando feed...</p>
             </div>
         );
     }
@@ -71,23 +71,23 @@ export default function MainPage() {
 
     return (
         <div className="max-w-3xl mx-auto py-8 px-4">
-	            <h1 className="text-3xl font-bold text-slate-800 mb-6">Feed Principal</h1>
-	            <div className="space-y-6">
-	                {posts.map((post, index) => (
-	                    <React.Fragment key={post.id}>
-	                        <Post
-	                            post={post}
-	                            onLike={handleLike}
-	                            onComment={handleComment}
-	                        />
-	                        {(index + 1) % 4 === 0 && suggestedProfiles.length > 0 && (
-	                            <ProfileCardContainer profiles={suggestedProfiles} />
-	                        )}
-	                    </React.Fragment>
-	                ))}
-	            </div>
+            <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-6">Feed Principal</h1>
+            <div className="space-y-6">
+                {posts.map((post, index) => (
+                    <React.Fragment key={post.id}>
+                        <Post
+                            post={post}
+                            onLike={handleLike}
+                            onComment={handleComment}
+                        />
+                        {(index + 1) % 4 === 0 && suggestedProfiles.length > 0 && (
+                            <ProfileCardContainer profiles={suggestedProfiles} />
+                        )}
+                    </React.Fragment>
+                ))}
+            </div>
             {posts.length === 0 && (
-                <div className="text-center p-8 bg-slate-50 border border-slate-200 text-slate-600 rounded-lg mt-10">
+                <div className="text-center p-8 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-lg mt-10">
                     <p className="font-bold">Nenhum Post Encontrado</p>
                     <p>Parece que o feed está vazio.</p>
                 </div>

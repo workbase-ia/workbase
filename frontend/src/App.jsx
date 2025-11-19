@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MainPage from './pages/MainPage';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,11 +11,30 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+  const [isDark, setIsDark] = useState(() => {
+    try {
+      return localStorage.getItem('theme') === 'dark';
+    } catch {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
+
   return (
-    <AuthProvider>
-      <Header />
+    <div className={`bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300`}>
+      <AuthProvider>
+        <Header isDark={isDark} setIsDark={setIsDark} />
         <BrowserRouter>
-          <Routes>
+          <Routes>            
             <Route path="/" element={<MainPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
@@ -23,8 +42,9 @@ function App() {
             <Route path="/vagas" element={<Vagas />} />
           </Routes>
         </BrowserRouter>
-      <Footer />
-    </AuthProvider>
+        <Footer />
+      </AuthProvider>
+    </div>
   );
 }
 

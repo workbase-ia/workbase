@@ -19,7 +19,7 @@ export default function VagasAnaliseCard({ analiseSkills, vagasLength, isLoading
   ).slice(0, 5);
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-8">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
       <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
         📊 Análise de Requisitos para "{termo}"
         <span className="text-sm font-normal text-gray-500 block mt-1">

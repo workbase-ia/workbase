@@ -9,31 +9,41 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 
-function AppContent() { 
-  return (
-    <div className="flex flex-col min-h-screen bg-slate-50">
-      <Header />
-      <main className="flex-1 w-full">
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/perfil/:id" element={<PerfilProfissional />} />
-          <Route path="/vagas" element={<Vagas />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
-}
-
 function App() {
+  const [isDark, setIsDark] = useState(() => {
+    try {
+      return localStorage.getItem('theme') === 'dark';
+    } catch {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
+
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <AppContent />
-      </BrowserRouter>
-    </AuthProvider>
+    <div className={`bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300`}>
+      <AuthProvider>
+        <Header isDark={isDark} setIsDark={setIsDark} />
+        <BrowserRouter>
+          <Routes>            
+            <Route path="/" element={<MainPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/perfil/:id" element={<PerfilProfissional />} />
+            <Route path="/vagas" element={<Vagas />} />
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </AuthProvider>
+    </div>
   );
 }
 

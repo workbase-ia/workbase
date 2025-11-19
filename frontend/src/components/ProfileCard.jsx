@@ -5,7 +5,7 @@ const ProfileCard = ({ profile }) => {
     const { nome, foto, cargo, localizacao, habilidadesTecnicas } = profile;
 
     return (
-        <div className="bg-white shadow-lg rounded-xl p-6 border border-slate-200 transition duration-300 hover:shadow-xl">
+        <div className="bg-white dark:bg-slate-800 shadow-lg rounded-xl p-6 border border-slate-200 dark:border-slate-700 transition duration-300 hover:shadow-xl">
             <div className="flex items-center space-x-4 mb-4">
                 {/* Imagem do Perfil */}
                 <img
@@ -15,10 +15,10 @@ const ProfileCard = ({ profile }) => {
                 />
                 <div className="flex-1">
                     {/* Nome e Cargo */}
-                    <h3 className="text-xl font-bold text-slate-800 hover:text-blue-600 transition duration-150 cursor-pointer">
+                    <h3 className="text-xl font-bold text-slate-800 dark:text-white hover:text-blue-600 transition duration-150 cursor-pointer">
                         {nome}
                     </h3>
-                    <p className="text-sm text-slate-500 flex items-center">
+                    <p className="text-sm text-slate-500 dark:text-slate-400 flex items-center">
                         <Briefcase className="w-4 h-4 mr-1 text-blue-500" />
                         {cargo}
                     </p>
@@ -26,14 +26,14 @@ const ProfileCard = ({ profile }) => {
             </div>
 
             {/* Localização */}
-            <div className="flex items-center text-sm text-slate-600 mb-4">
-                <MapPin className="w-4 h-4 mr-1 text-slate-400" />
+            <div className="flex items-center text-sm text-slate-600 dark:text-slate-300 mb-4">
+                <MapPin className="w-4 h-4 mr-1 text-slate-400 dark:text-slate-500" />
                 {localizacao}
             </div>
 
             {/* Habilidades */}
             <div className="mb-4">
-                <h4 className="text-sm font-semibold text-slate-700 mb-2 flex items-center">
+                <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-2 flex items-center">
                     <Zap className="w-4 h-4 mr-1 text-yellow-500" />
                     Principais Habilidades:
                 </h4>
@@ -41,7 +41,7 @@ const ProfileCard = ({ profile }) => {
                     {habilidadesTecnicas.map((habilidade, index) => (
                         <span
                             key={index}
-                            className="px-3 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-full"
+                            className="px-3 py-1 text-xs font-medium text-blue-700 bg-blue-100 dark:bg-blue-900 dark:text-blue-300 rounded-full"
                         >
                             {habilidade}
                         </span>
@@ -64,8 +64,8 @@ export default ProfileCard;
 
 export const ProfileCardContainer = ({ profiles }) => {
     return (
-        <div className="bg-white shadow-2xl rounded-xl p-6 mb-8 border-t-4 border-blue-600">
-            <h2 className="text-2xl font-extrabold text-slate-800 mb-6 border-b pb-2">
+        <div className="bg-white dark:bg-slate-800 shadow-2xl rounded-xl p-6 mb-8 border-t-4 border-blue-600 dark:border-blue-500">
+            <h2 className="text-2xl font-extrabold text-slate-800 dark:text-white mb-6 border-b dark:border-slate-700 pb-2">
                 Pessoas que você talvez conheça
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

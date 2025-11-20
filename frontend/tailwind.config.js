@@ -4,10 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  safelist: [
+    {
+      pattern: /dark:/,
+    }
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-
-  
 };

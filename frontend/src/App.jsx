@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import MainPage from './pages/MainPage';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,29 +11,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
-  const [isDark, setIsDark] = useState(() => {
-    try {
-      return localStorage.getItem('theme') === 'dark';
-    } catch {
-      return false;
-    }
-  });
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [isDark]);
-
   return (
-    <div className={`bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300`}>
-      <AuthProvider>
-        <Header isDark={isDark} setIsDark={setIsDark} />
-        <BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
+          <Header />
           <Routes>            
             <Route path="/" element={<MainPage />} />
             <Route path="/login" element={<Login />} />
@@ -41,10 +23,10 @@ function App() {
             <Route path="/perfil/:id" element={<PerfilProfissional />} />
             <Route path="/vagas" element={<Vagas />} />
           </Routes>
-        </BrowserRouter>
-        <Footer />
-      </AuthProvider>
-    </div>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

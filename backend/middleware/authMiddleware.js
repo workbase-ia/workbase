@@ -4,23 +4,24 @@ import dotenv from 'dotenv';
 dotenv.config();
 const JWT_SECRET = process.env.JWT_SECRET;
 
-export const protect = (req, res, next) => {
-  let token;
+export default function authMiddleware(req, res, next) {
+    const authHeader = req.headers.authorization;
 
-  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
-    try {
-      token = req.headers.authorization.split(' ')[1];
-      const decoded = jwt.verify(token, JWT_SECRET);
-      req.user = decoded; 
-
-      next(); 
-    } catch (error) {
-      console.error('Erro no token:', error.message);
-      return res.status(401).json({ message: 'Não autorizado, token inválido.' });
+    if (!authHeader) {
+        return res.status(401).json({ message: 'Não autorizado, sem token.' });
     }
-  }
 
-  if (!token) {
-    return res.status(401).json({ message: 'Não autorizado, sem token.' });
-  }
-};
+    if (!authHeader.startsWith('Bearer ')) {
+        return res.status(401).json({ message: 'Token mal formatado.' });
+    }
+
+    const token = authHeader.split(' ')[1];
+
+    try {
+        const decoded = jwt.verify(token, JWT_SECRET);
+        req.user = decoded;
+        next();
+    } catch (error) {
+        return res.status(401).json({ message: 'Token inválido.' });
+    }
+}

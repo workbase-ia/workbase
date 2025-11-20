@@ -3444,24 +3444,42 @@
     ]
   },
   {
-  "id": 60,
-  "nome": "Murilo",
-  "foto": "./images/foto61.jpg",
-  "cargo": "Engenheiro de Software",
-  "resumo": "Observador da adoção de Serverless e arquitetura orientada a eventos.",
-  "localizacao": "São Paulo/SP",
-  "area": "Desenvolvimento",
-  "habilidadesTecnicas": [
-    "Node.js",
-    "AWS Lambda",
-    "Arquitetura Serverless"
-  ],
-  "softSkills": [
-    "Pensamento Sistêmico",
-    "Comunicação"
-  ],
-  "experiencias": [],
-  "formacao": [],
-  "projetos": []
-}
+    "id": 60,
+    "nome": "Murilo",
+    "foto": "./images/foto61.jpg",
+    "cargo": "Engenheiro de Software",
+    "resumo": "Observador da adoção de Serverless e arquitetura orientada a eventos.",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": [
+      "Node.js",
+      "AWS Lambda",
+      "Arquitetura Serverless"
+    ],
+    "softSkills": [
+      "Pensamento Sistêmico",
+      "Comunicação"
+    ],
+    "experiencias": [],
+    "formacao": [],
+    "projetos": []
+  },
+  {
+    "id": 1763658048932,
+    "nome": "teste",
+    "email": "teste@teste.com",
+    "area": "",
+    "foto": "",
+    "cargo": "",
+    "resumo": "",
+    "localizacao": "",
+    "habilidadesTecnicas": [],
+    "softSkills": [],
+    "experiencias": [],
+    "formacao": [],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "arealnteresses": []
+  }
 ]

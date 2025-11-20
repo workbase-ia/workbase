@@ -13,9 +13,9 @@ export default function Footer() {
                     <div>
                         <h5 className="font-bold text-lg mb-4 flex items-center gap-2">
                             <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">
-                                WA                
+                                WB                
                             </div>
-                            Workplace AI
+                            Workbase AI
                         </h5>
                         <p className="text-slate-400">
                             Conectando talentos para o futuro do trabalho. Uma rede profissional moderna e inclusiva.

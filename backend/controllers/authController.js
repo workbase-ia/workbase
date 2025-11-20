@@ -53,7 +53,7 @@ export const register = async (req, res) => {
     };
 
     const newPerfilUser = {
-      Id: newId,
+      id: newId,
       nome: nome,
       email: email,
       area: '',

@@ -13,6 +13,13 @@
       "email": "yuri@teste.com",
       "password": "$2b$10$dlOa9vM5MOZlP.M1zDbIROtbLjLPnRAPafJBWV8jsZLNO28etPbfu",
       "createdAt": "2025-11-14T13:21:00.223Z"
+    },
+    {
+      "id": "1763658048932",
+      "nome": "teste",
+      "email": "teste@teste.com",
+      "password": "$2b$10$BIYbNvW45PJZ.oZQ/qbayurn/6I5CK7ojE65yfCRvaN93Dfv2nHZS",
+      "createdAt": "2025-11-20T17:00:48.932Z"
     }
   ]
 }

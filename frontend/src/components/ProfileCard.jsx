@@ -1,83 +1,40 @@
 import React from 'react';
-import { MapPin, Briefcase, Zap } from 'lucide-react';
+import { MapPin, UserPlus } from 'lucide-react';
 
-const ProfileCard = ({ profile }) => {
-    const { nome, foto, cargo, localizacao, habilidadesTecnicas } = profile;
+const handleConnect = () => {
+    
+  };
 
-    return (
-        <div className="bg-white dark:bg-slate-800 shadow-lg rounded-xl p-6 border border-slate-200 dark:border-slate-700 transition duration-300 hover:shadow-xl">
-            <div className="flex items-center space-x-4 mb-4">
-                {/* Imagem do Perfil */}
-                <img
-                    className="w-16 h-16 rounded-full object-cover border-2 border-blue-500 p-0.5"
-                    src={foto}
-                    alt={`Foto de perfil de ${nome}`}
-                />
-                <div className="flex-1">
-                    {/* Nome e Cargo */}
-                    <h3 className="text-xl font-bold text-slate-800 dark:text-white hover:text-blue-600 transition duration-150 cursor-pointer">
-                        {nome}
-                    </h3>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 flex items-center">
-                        <Briefcase className="w-4 h-4 mr-1 text-blue-500" />
-                        {cargo}
-                    </p>
-                </div>
-            </div>
-
-            {/* Localização */}
-            <div className="flex items-center text-sm text-slate-600 dark:text-slate-300 mb-4">
-                <MapPin className="w-4 h-4 mr-1 text-slate-400 dark:text-slate-500" />
-                {localizacao}
-            </div>
-
-            {/* Habilidades */}
-            <div className="mb-4">
-                <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-2 flex items-center">
-                    <Zap className="w-4 h-4 mr-1 text-yellow-500" />
-                    Principais Habilidades:
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                    {habilidadesTecnicas.map((habilidade, index) => (
-                        <span
-                            key={index}
-                            className="px-3 py-1 text-xs font-medium text-blue-700 bg-blue-100 dark:bg-blue-900 dark:text-blue-300 rounded-full"
-                        >
-                            {habilidade}
-                        </span>
-                    ))}
-                </div>
-            </div>
-
-            {/* Botão de Conexão */}
-            <button
-                className="w-full py-2 mt-2 text-white bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-                onClick={() => console.log(`Conectar com ${nome}`)}
-            >
-                Conectar
-            </button>
-        </div>
-    );
-};
-
-export default ProfileCard;
-
-export const ProfileCardContainer = ({ profiles }) => {
-    return (
-        <div className="bg-white dark:bg-slate-800 shadow-2xl rounded-xl p-6 mb-8 border-t-4 border-blue-600 dark:border-blue-500">
-            <h2 className="text-2xl font-extrabold text-slate-800 dark:text-white mb-6 border-b dark:border-slate-700 pb-2">
-                Pessoas que você talvez conheça
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {profiles.map(profile => (
-                    <ProfileCard key={profile.id} profile={profile} />
-                ))}
-            </div>
-            <div className="text-center mt-6">
-                <button className="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
-                    Ver mais sugestões &rarr;
-                </button>
-            </div>
-        </div>
-    );
-};
+export default function CardProfissional({ profissional, onClick }) {
+  return (
+    <div 
+      onClick={onClick}
+      className="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer flex flex-col items-center text-center h-72 w-56"
+    >
+      {/* Foto */}
+      <img
+        src={profissional.foto || ''}
+        alt={profissional.nome}
+        className="w-20 h-20 rounded-full object-cover mb-3 border-2 border-gray-100"
+      />
+      
+      {/* Nome e Cargo */}
+      <h3 className="text-lg font-bold text-gray-900 mb-1">{profissional.nome}</h3>
+      <p className="text-sm text-gray-600 mb-3 line-clamp-2">{profissional.cargo}</p>
+      
+      {/* Localização */}
+      <div className="flex items-center gap-1 text-xs text-gray-500 mb-4">
+        <MapPin size={14} />
+        <span>{profissional.localizacao}</span>
+      </div>
+      
+      {/* Botão de Ação */}
+      <button 
+      onClick={handleConnect}
+      className="flex items-center gap-2 mt-auto w-full py-2 px-12 border border-blue-600 text-blue-600 rounded-full text-sm font-medium hover:bg-blue-50 transition-colors">
+        <UserPlus size={18} />
+        Conectar
+      </button>
+    </div>
+  );
+}

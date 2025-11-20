@@ -8,6 +8,7 @@ import Vagas from './pages/Vagas';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
+import MinhaRede from './pages/MinhaRede';
 
 function App() {
     const [isDark, setIsDark] = useState(() => {
@@ -40,6 +41,7 @@ function App() {
                         <Route path="/cadastro" element={<Cadastro />} />
                         <Route path="/perfil/:id" element={<PerfilProfissional />} />
                         <Route path="/vagas" element={<Vagas />} />
+                        <Route path="/minha-rede" element={<MinhaRede />} />
                     </Routes>
 
                     <Footer />

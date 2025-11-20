@@ -14,9 +14,9 @@ export default function Header({ isDark, setIsDark }) {
 
     const navItems = [
         { name: 'Início', path: '/' },
+        { name: 'Minha Rede', path: '/minha-rede' },
         { name: 'Vagas', path: '/vagas' },
-        { name: 'Sobre', path: '/sobre' },
-        { name: 'Contato', path: '/contato' },
+
     ];
 
     const handleLogin = () => {

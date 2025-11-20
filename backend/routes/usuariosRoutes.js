@@ -1,10 +1,8 @@
 import { Router } from 'express';
-import { getUser, getSuggestedProfiles } from '../controllers/usuariosController.js';
+import { getAllUsuarios } from '../controllers/usuariosController.js';
 
 const router = Router();
 
-router.get('/suggested-profiles', getSuggestedProfiles);
-router.get('/:id', getUser);
-
+router.get('/', getAllUsuarios);
 
 export default router;

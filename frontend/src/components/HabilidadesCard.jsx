@@ -93,17 +93,17 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 relative">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 relative dark:bg-slate-900 dark:border-slate-800">
       {/* Cabeçalho com Título e Botão de Edição */}
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center gap-2">
           <Award size={22} className="text-gray-700" />
-          <h2 className="text-xl font-bold text-gray-900">Habilidades</h2>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white">Habilidades</h2>
         </div>
         {MeuPerfil && !isEditing && (
           <button 
             onClick={() => setIsEditing(true)}
-            className="p-2 rounded-full hover:bg-gray-100"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800"
             title="Editar habilidades"
           >
             {isEmpty ? <Plus size={20} /> : <Edit size={18} />}
@@ -124,7 +124,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
                 type="text"
                 value={newSkillText}
                 onChange={(e) => setNewSkillText(e.target.value)}
-                className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white dark:focus:ring-slate-600"
                 placeholder="Ex: React, Comunicação"
               />
             </div>
@@ -140,7 +140,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
             </div>
             <button
               type="submit"
-              className="p-2 bg-blue-600 text-white rounded-lg h-[42px] hover:bg-blue-700"
+              className="p-2 bg-blue-600 text-white rounded-lg h-[42px] hover:bg-blue-700 dark:focus:ring-slate-600"
             >
               <Plus size={18} />
             </button>
@@ -151,7 +151,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
             <h4 className="text-md font-semibold text-gray-800 mb-2">Habilidades Técnicas</h4>
             <div className="flex flex-wrap gap-2">
               {tempTechSkills.map((skill, index) => (
-                <span key={index} className="flex items-center gap-1 bg-blue-50 text-black text-sm font-medium px-3 py-1 rounded-full">
+                <span key={index} className="flex items-center gap-1 bg-blue-50 text-black text-sm font-medium px-3 py-1 rounded-full dark:bg-blue-900/40 dark:text-white">
                   {skill}
                   <button onClick={() => handleRemoveSkill('tech', index)} className="hover:bg-blue-200 rounded-full">
                     <X size={14} />
@@ -166,7 +166,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
             <h4 className="text-md font-semibold text-gray-800 mb-2">Soft Skills</h4>
             <div className="flex flex-wrap gap-2">
               {tempSoftSkills.map((skill, index) => (
-                <span key={index} className="flex items-center gap-1 bg-green-50 text-black text-sm font-medium px-3 py-1 rounded-full">
+                <span key={index} className="flex items-center gap-1 bg-green-50 text-black text-sm font-medium px-3 py-1 rounded-full dark:bg-green-900/40 dark:text-white">
                   {skill}
                   <button onClick={() => handleRemoveSkill('soft', index)} className=" rounded-full">
                     <X size={14} />
@@ -202,7 +202,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
                   {tempTechSkills.map((skill, index) => (
                     <span 
                       key={`tech-${index}`} 
-                      className=" text-black text-sm font-medium px-3 py-1 rounded-full"
+                      className=" text-black text-sm font-medium px-3 py-1 rounded-full dark:text-white"
                     >
                       {skill}
                     </span>
@@ -215,7 +215,7 @@ export default function HabilidadesCard({ habilidadesTecnicas, softSkills, MeuPe
                   {tempSoftSkills.map((skill, index) => (
                     <span 
                       key={`soft-${index}`} 
-                      className=" text-black text-sm font-medium px-3 py-1 rounded-full"
+                      className=" text-black text-sm font-medium px-3 py-1 rounded-full dark:text-white"
                     >
                       {skill}
                     </span>

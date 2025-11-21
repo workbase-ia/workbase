@@ -61,7 +61,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
+    <header className="bg-white dark:bg-gray-900 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
         {/* Logo */}
@@ -117,7 +117,7 @@ export default function Header() {
 
               {/* DROPDOWN */}
               {isProfileMenuOpen && (
-                <div className="absolute right-0 top-full mt-1 w-44 bg-white dark:bg-gray-800 rounded-md py-1 shadow ring-1 ring-gray-200 dark:ring-gray-700">
+                <div className="absolute right-0 top-full mt-1 w-44 bg-white dark:bg-gray-800 rounded-md py-1 ring-1 ring-gray-200 dark:ring-gray-700">
                   <div className="px-4 py-2 border-b border-slate-100 dark:border-slate-700">
                     <p className="text-sm font-medium text-slate-900 dark:text-white truncate">{user?.nome}</p>
                     <p className="text-xs text-slate-500 dark:text-slate-300 truncate">{user?.email}</p>
@@ -164,7 +164,7 @@ export default function Header() {
 
       {/* MENU MOBILE */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-slate-200 dark:border-slate-700 shadow-lg">
+        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-slate-200 dark:border-slate-700 ">
           <nav className="flex flex-col p-4 gap-2">
 
                         {/* BOTÃO DARK MODE MOBILE */}

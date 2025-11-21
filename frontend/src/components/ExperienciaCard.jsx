@@ -72,14 +72,14 @@ export default function ExperienciaCard({ experiencias, MeuPerfil, onProfileUpda
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 relative">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 relative dark:bg-slate-900 dark:border-slate-800">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900">Experiência</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Experiência</h2>
         {/* Botão de Edição */}
         {MeuPerfil && !isEditing && (
           <button 
             onClick={() => setIsEditing(true)}
-            className="p-2 rounded-full hover:bg-gray-100"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800"
             title="Editar experiências"
           >
             {isEmpty ? <Plus size={20} /> : <Edit size={18} />}
@@ -108,7 +108,7 @@ export default function ExperienciaCard({ experiencias, MeuPerfil, onProfileUpda
                   type="text"
                   value={exp.cargo}
                   onChange={(e) => handleItemChange(index, 'cargo', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none  focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: Desenvolvedor Pleno"
                 />
               </div>
@@ -157,23 +157,23 @@ export default function ExperienciaCard({ experiencias, MeuPerfil, onProfileUpda
           {/* Botões de Ação do Modo de Edição */}
           <button
             onClick={handleAddItem}
-            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200"
-          >
-            <Plus size={18} />
-            Adicionar Experiência
-          </button>
+            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
+           >
+             <Plus size={18} />
+             Adicionar Experiência
+           </button>
           
           <div className="flex gap-2 justify-end border-t pt-4 mt-4">
-            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
-              Cancelar
-            </button>
+            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-slate-800">
+               Cancelar
+             </button>
             <button onClick={handleSave} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50">
-              {isLoading ? "Salvando..." : "Salvar Experiências"}
-            </button>
-          </div>
-        </div>
+               {isLoading ? "Salvando..." : "Salvar Experiências"}
+             </button>
+           </div>
+         </div>
 
-      ) : (
+       ) : (
         // --- MODO DE VISUALIZAÇÃO ---
         <div>
           {isEmpty ? (
@@ -186,19 +186,19 @@ export default function ExperienciaCard({ experiencias, MeuPerfil, onProfileUpda
                 <div key={index} className="flex gap-4">
                   <Briefcase size={32} className="text-gray-500 shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{exp.cargo}</h3>
-                    <p className="text-gray-600">{exp.empresa}</p>
-                    <p className="text-sm text-gray-500 mt-1">
-                      {exp.inicio} - {exp.fim || 'Atual'}
-                    </p>
-                    <p className="text-gray-700 mt-2">{exp.descricao}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{exp.cargo}</h3>
+                    <p className="text-gray-600 dark:text-slate-300">{exp.empresa}</p>
+                    <p className="text-sm text-gray-500 mt-1 dark:text-slate-400">
+                       {exp.inicio} - {exp.fim || 'Atual'}
+                     </p>
+                    <p className="text-gray-700 mt-2 dark:text-slate-300">{exp.descricao}</p>
+                   </div>
+                 </div>
+               ))}
+             </div>
+           )}
+         </div>
+       )}
+     </div>
+   );
+ }

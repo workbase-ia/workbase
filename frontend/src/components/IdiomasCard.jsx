@@ -21,7 +21,6 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
   }, [idiomas]);
 
   // Funções de Manipulação do Array
-
   const handleAddItem = () => {
     setTempList([
       ...tempList,
@@ -40,7 +39,6 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
   };
 
   //  Salvar e Cancelar 
-
   const handleSave = async () => {
     setIsLoading(true);
     setError(null);
@@ -79,14 +77,14 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 relative">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 relative dark:bg-slate-900 dark:border-slate-800">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-gray-900">Idiomas</h2>
-        {/* Botão de Edição (só aparece se for MeuPerfil e NÃO estiver editando) */}
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white">Idiomas</h2>
+        {/* Botão de Edição*/}
         {MeuPerfil && !isEditing && (
           <button 
             onClick={() => setIsEditing(true)}
-            className="p-2 rounded-full hover:bg-gray-100"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800"
             title="Editar idiomas"
           >
             {isEmpty ? <Plus size={20} /> : <Edit size={18} />}
@@ -95,7 +93,7 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
       </div>
       
       {isEditing ? (
-        //  MODO DE EDIÇÃO (Formulário de Lista)
+        //  MODO DE EDIÇÃO 
         <div className="space-y-4">
           {error && <p className="text-sm text-red-600">{error}</p>}
           
@@ -116,7 +114,7 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
                     type="text"
                     value={idioma.idioma}
                     onChange={(e) => handleItemChange(index, 'idioma', e.target.value)}
-                    className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                    className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                     placeholder="Ex: Inglês"
                   />
                 </div>
@@ -137,14 +135,14 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
           {/* Botões de Ação do Modo de Edição */}
           <button
             onClick={handleAddItem}
-            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200"
+            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
           >
             <Plus size={18} />
             Adicionar Idioma
           </button>
           
           <div className="flex gap-2 justify-end border-t pt-4 mt-4">
-            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-slate-800">
               Cancelar
             </button>
             <button onClick={handleSave} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50">
@@ -154,7 +152,7 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
         </div>
 
       ) : (
-        // --- MODO DE VISUALIZAÇÃO ---
+        // MODO DE VISUALIZAÇÃO 
         <div>
           {isEmpty ? (
             <p className="text-sm text-gray-500">
@@ -163,15 +161,15 @@ export default function IdiomasCard({ idiomas, MeuPerfil, onProfileUpdate }) {
           ) : (
             <div className="space-y-2">
               {idiomas.map((idioma, index) => (
-                <div key={index}>
-                  <span className="text-md font-semibold text-gray-900">{idioma.idioma}</span>
-                  <p className="text-sm text-gray-600">{idioma.nivel}</p>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
+                 <div key={index}>
+                  <span className="text-md font-semibold text-gray-900 dark:text-white">{idioma.idioma}</span>
+                  <p className="text-sm text-gray-600 dark:text-slate-300">{idioma.nivel}</p>
+                 </div>
+               ))}
+             </div>
+           )}
+         </div>
+       )}
+     </div>
+   );
+ }

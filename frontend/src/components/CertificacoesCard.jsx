@@ -71,13 +71,13 @@ export default function CertificacoesCard({ certificacoes, MeuPerfil, onProfileU
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 relative">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 relative dark:bg-slate-900 dark:border-slate-800">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-gray-900">Certificações e Cursos</h2>
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white">Certificações e Cursos</h2>
         {MeuPerfil && !isEditing && (
           <button 
             onClick={() => setIsEditing(true)}
-            className="p-2 rounded-full hover:bg-gray-100"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800"
             title="Editar certificações"
           >
             {isEmpty ? <Plus size={20} /> : <Edit size={18} />}
@@ -91,7 +91,7 @@ export default function CertificacoesCard({ certificacoes, MeuPerfil, onProfileU
           {error && <p className="text-sm text-red-600">{error}</p>}
           
           {tempList.map((cert, index) => (
-            <div key={index} className="p-4 border border-gray-200 rounded-lg relative">
+            <div key={index} className="p-4 border border-gray-200 rounded-lg relative dark:border-slate-700">
               <button 
                 onClick={() => handleRemoveItem(index)}
                 className="absolute top-2 right-2 text-red-500 hover:text-red-700 p-1"
@@ -101,12 +101,12 @@ export default function CertificacoesCard({ certificacoes, MeuPerfil, onProfileU
               </button>
               
               <div>
-                <label className="text-sm font-medium text-gray-700">Nome da Certificação/Curso</label>
+                <label className="text-sm font-medium text-gray-700 dark:text-slate-200">Nome da Certificação/Curso</label>
                 <input
                   type="text"
                   value={cert}
                   onChange={(e) => handleItemChange(index, e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none  focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: Oracle Certified Java Programmer"
                 />
               </div>
@@ -116,14 +116,14 @@ export default function CertificacoesCard({ certificacoes, MeuPerfil, onProfileU
           {/* Botões de Ação do Modo de Edição */}
           <button
             onClick={handleAddItem}
-            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200"
+            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
           >
             <Plus size={18} />
             Adicionar Certificação
           </button>
           
           <div className="flex gap-2 justify-end border-t pt-4 mt-4">
-            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-slate-800">
               Cancelar
             </button>
             <button onClick={handleSave} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50">
@@ -136,7 +136,7 @@ export default function CertificacoesCard({ certificacoes, MeuPerfil, onProfileU
         // MODO DE VISUALIZAÇÃO 
         <div>
           {isEmpty ? (
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 dark:text-slate-300">
               Clique no botão '+' para adicionar suas certificações.
             </p>
           ) : (
@@ -144,7 +144,7 @@ export default function CertificacoesCard({ certificacoes, MeuPerfil, onProfileU
               {certificacoes.map((cert, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <ShieldCheck size={18} className="text-blue-600 flex mt-1" />
-                  <span className="text-md text-gray-700">{cert}</span>
+                  <span className="text-md text-gray-700 dark:text-slate-200">{cert}</span>
                 </li>
               ))}
             </ul>

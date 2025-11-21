@@ -77,14 +77,14 @@ export default function ProjetosCard({ projetos, MeuPerfil, onProfileUpdate }) {
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg  p-6 relative">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 relative dark:bg-slate-900 dark:border-slate-800">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-gray-900">Projetos</h2>
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white">Projetos</h2>
         {/* Botão de Edição*/}
         {MeuPerfil && !isEditing && (
           <button 
             onClick={() => setIsEditing(true)}
-            className="p-2 rounded-full hover:bg-gray-100"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800"
             title="Editar projetos"
           >
             {isEmpty ? <Plus size={20} /> : <Edit size={18} />}
@@ -98,7 +98,7 @@ export default function ProjetosCard({ projetos, MeuPerfil, onProfileUpdate }) {
           {error && <p className="text-sm text-red-600">{error}</p>}
           
           {tempList.map((projeto, index) => (
-            <div key={projeto.tempId} className="p-4 border border-gray-200 rounded-lg relative space-y-3">
+            <div key={projeto.tempId} className="p-4 border border-gray-200 rounded-lg relative space-y-3 dark:border-slate-700">
               <button 
                 onClick={() => handleRemoveItem(projeto.tempId)}
                 className="absolute top-2 right-2 text-red-500 hover:text-red-700 p-1"
@@ -108,31 +108,31 @@ export default function ProjetosCard({ projetos, MeuPerfil, onProfileUpdate }) {
               </button>
               
               <div>
-                <label className="text-sm font-medium">Título do Projeto</label>
+                <label className="text-sm font-medium dark:text-slate-200">Título do Projeto</label>
                 <input
                   type="text"
                   value={projeto.titulo}
                   onChange={(e) => handleItemChange(projeto.tempId, 'titulo', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none  focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: API de E-commerce"
                 />
               </div>
               <div>
-                <label className="text-sm font-medium">Link (GitHub, etc.)</label>
+                <label className="text-sm font-medium dark:text-slate-200">Link (GitHub, etc.)</label>
                 <input
                   type="text"
                   value={projeto.link}
                   onChange={(e) => handleItemChange(projeto.tempId, 'link', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none  focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: https://github.com/..."
                 />
               </div>
               <div>
-                <label className="text-sm font-medium">Descrição</label>
+                <label className="text-sm font-medium dark:text-slate-200">Descrição</label>
                 <textarea
                   value={projeto.descricao}
                   onChange={(e) => handleItemChange(projeto.tempId, 'descricao', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 h-20 focus:outline-none  focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 h-20 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Descreva o projeto..."
                 />
               </div>
@@ -142,14 +142,14 @@ export default function ProjetosCard({ projetos, MeuPerfil, onProfileUpdate }) {
           {/* Botões de Ação do Modo de Edição */}
           <button
             onClick={handleAddItem}
-            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200"
+            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
           >
             <Plus size={18} />
             Adicionar Projeto
           </button>
           
           <div className="flex gap-2 justify-end border-t pt-4 mt-4">
-            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-slate-800">
               Cancelar
             </button>
             <button onClick={handleSave} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50">
@@ -162,7 +162,7 @@ export default function ProjetosCard({ projetos, MeuPerfil, onProfileUpdate }) {
         // --- MODO DE VISUALIZAÇÃO ---
         <div>
           {isEmpty ? (
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 dark:text-slate-300">
               Clique no botão '+' para adicionar seus projetos.
             </p>
           ) : (
@@ -171,9 +171,9 @@ export default function ProjetosCard({ projetos, MeuPerfil, onProfileUpdate }) {
                 <div key={index}>
                   <div className="flex items-center gap-2">
                     <Github size={18} className="text-gray-600" />
-                    <h3 className="text-md font-semibold text-gray-900">{projeto.titulo}</h3>
+                    <h3 className="text-md font-semibold text-gray-900 dark:text-white">{projeto.titulo}</h3>
                   </div>
-                  <p className="text-sm text-gray-700 mt-1 mb-2">{projeto.descricao}</p>
+                  <p className="text-sm text-gray-700 mt-1 mb-2 dark:text-slate-300">{projeto.descricao}</p>
                   <a
                     href={projeto.link}
                     target="_blank"

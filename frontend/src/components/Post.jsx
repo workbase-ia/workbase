@@ -14,7 +14,7 @@ const Comment = ({ comment }) => {
     return (
         <div className="flex gap-3 mt-4">
             <img
-                src={commenter.foto || "./images/default.jpg"}
+                src={commenter.foto || "../../public/profilePicture.png"}
                 alt={commenter.nome}
                 className="w-8 h-8 rounded-full object-cover"
             />
@@ -132,12 +132,12 @@ export default function Post({ post }) {
     const autor = post.autor || { nome: "Usuário Desconhecido", foto: "./images/default.jpg", cargo: "Cargo Desconhecido" };
 
     return (
-        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-slate-200 dark:border-slate-700 mb-6">
+        <div className="bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 mb-6">
             {/* Cabeçalho */}
             <div className="p-4 border-b border-slate-100 dark:border-slate-700 flex justify-between items-start">
                 <div className="flex items-center gap-3">
                     <img
-                        src={autor.foto}
+                        src={autor.foto || "../../public/profilePicture.png"}
                         alt={autor.nome}
                         className="w-12 h-12 rounded-full object-cover border-2 border-blue-500"
                     />

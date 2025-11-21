@@ -20,12 +20,10 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
     setTempList(formacao || []);
   }, [formacao]);
 
-  // --- Funções de Manipulação do Array ---
-
+  // Funções de Manipulação do Array 
   const handleAddItem = () => {
     setTempList([
       ...tempList,
-      // Adiciona um item novo (vazio)
       { curso: '', instituicao: '', ano: '' }
     ]);
   };
@@ -40,8 +38,7 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
     setTempList(newList);
   };
 
-  // --- Salvar e Cancelar ---
-
+  //  Salvar e Cancelar 
   const handleSave = async () => {
     setIsLoading(true);
     setError(null);
@@ -52,14 +49,14 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
-        // Envia o array de formação completo
+    
         body: JSON.stringify({ formacao: tempList }) 
       });
 
       if (!response.ok) throw new Error('Falha ao salvar formação.');
       
-      onProfileUpdate(); // Avisa o pai para recarregar
-      setIsEditing(false); // Sai do modo de edição
+      onProfileUpdate(); 
+      setIsEditing(false); 
 
     } catch (err) {
       setError(err.message);
@@ -69,7 +66,7 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
   };
 
   const handleCancel = () => {
-    setTempList(formacao || []); // Reseta para a lista original
+    setTempList(formacao || []); 
     setIsEditing(false);
     setError(null);
   };
@@ -80,14 +77,14 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 relative">
+    <div className="bg-white border border-gray-200 rounded-lg p-6 relative dark:bg-slate-900 dark:border-slate-800">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900">Formação</h2>
-        {/* Botão de Edição (só aparece se for MeuPerfil e NÃO estiver editando) */}
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Formação</h2>
+        {/* Botão de Edição */}
         {MeuPerfil && !isEditing && (
           <button 
             onClick={() => setIsEditing(true)}
-            className="p-2 rounded-full hover:bg-gray-100"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800"
             title="Editar formação"
           >
             {isEmpty ? <Plus size={20} /> : <Edit size={18} />}
@@ -96,12 +93,12 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
       </div>
       
       {isEditing ? (
-        // --- MODO DE EDIÇÃO (Formulário de Lista) ---
+        //MODO DE EDIÇÃO 
         <div className="space-y-4">
           {error && <p className="text-sm text-red-600">{error}</p>}
           
           {tempList.map((form, index) => (
-            <div key={index} className="p-4 border border-gray-200 rounded-lg relative space-y-3">
+            <div key={index} className="p-4 border border-gray-200 rounded-lg relative space-y-3 dark:border-slate-700">
               <button 
                 onClick={() => handleRemoveItem(index)}
                 className="absolute top-2 right-2 text-red-500 hover:text-red-700 p-1"
@@ -111,32 +108,32 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
               </button>
               
               <div>
-                <label className="text-sm font-medium">Curso</label>
+                <label className="text-sm font-medium dark:text-slate-200">Curso</label>
                 <input
                   type="text"
                   value={form.curso}
                   onChange={(e) => handleItemChange(index, 'curso', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: Ciência da Computação"
                 />
               </div>
               <div>
-                <label className="text-sm font-medium">Instituição</label>
+                <label className="text-sm font-medium dark:text-slate-200">Instituição</label>
                 <input
                   type="text"
                   value={form.instituicao}
                   onChange={(e) => handleItemChange(index, 'instituicao', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: Universidade XYZ"
                 />
               </div>
               <div>
-                <label className="text-sm font-medium">Ano de Conclusão</label>
+                <label className="text-sm font-medium dark:text-slate-200">Ano de Conclusão</label>
                 <input
                   type="number"
                   value={form.ano}
                   onChange={(e) => handleItemChange(index, 'ano', e.target.value)}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white dark:bg-slate-800 dark:border-slate-600 dark:text-white"
                   placeholder="Ex: 2024"
                 />
               </div>
@@ -146,14 +143,14 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
           {/* Botões de Ação do Modo de Edição */}
           <button
             onClick={handleAddItem}
-            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200"
+            className="flex items-center gap-2 px-4 py-2 text-sm bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
           >
             <Plus size={18} />
             Adicionar Formação
           </button>
           
           <div className="flex gap-2 justify-end border-t pt-4 mt-4">
-            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+            <button onClick={handleCancel} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-slate-800">
               Cancelar
             </button>
             <button onClick={handleSave} disabled={isLoading} className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50">
@@ -163,10 +160,10 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
         </div>
 
       ) : (
-        // --- MODO DE VISUALIZAÇÃO ---
+        //MODO DE VISUALIZAÇÃO 
         <div>
           {isEmpty ? (
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 dark:text-slate-300">
               Clique no botão '+' para adicionar suas formações.
             </p>
           ) : (
@@ -175,9 +172,9 @@ export default function FormacaoCard({ formacao, MeuPerfil, onProfileUpdate }) {
                 <div key={index} className="flex gap-4">
                   <BookOpen size={32} className="text-gray-500 shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{form.curso}</h3>
-                    <p className="text-gray-600">{form.instituicao}</p>
-                    <p className="text-sm text-gray-500 mt-1">{form.ano}</p>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{form.curso}</h3>
+                    <p className="text-gray-600 dark:text-slate-300">{form.instituicao}</p>
+                    <p className="text-sm text-gray-500 mt-1 dark:text-slate-400">{form.ano}</p>
                   </div>
                 </div>
               ))}

@@ -1,3 +1,10 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none ring-0 ring-slate-400 border-slate-400;
+}
+

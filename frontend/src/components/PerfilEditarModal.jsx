@@ -73,46 +73,72 @@ export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUp
 
   return (
     <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 p-4">
-      <div className="bg-white w-full max-w-2xl rounded-lg shadow-2xl relative flex flex-col max-h-[90vh] overflow-hidden border border-gray-300">
+      <div className="bg-white dark:bg-slate-900 w-full max-w-2xl rounded-xl shadow-2xl p-6 relative max-h-[90vh] overflow-y-auto border border-slate-200 dark:border-slate-800">
         
         {/* Header do Modal */}
-        <div className="p-5 border-b flex justify-between items-center">
-          <h3 className="text-2xl font-bold text-gray-900">Editar Perfil Principal</h3>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-900">
+        <div className="p-5 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
+          <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Editar Perfil</h3>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
             <X size={24} />
           </button>
         </div>
         
         {/* Corpo do Formulário */}
         <div className="p-6 overflow-y-auto flex-1">
-          {success && <div className="p-3 mb-4 text-sm text-green-700 bg-green-100 rounded-lg">{success}</div>}
-          {error && <div className="p-3 mb-4 text-sm text-red-700 bg-red-100 rounded-lg">{error}</div>}
+          {success && <div className="p-3 mb-4 text-sm text-green-700 bg-green-100 dark:bg-green-900/30 dark:text-green-300 rounded-lg">{success}</div>}
+          {error && <div className="p-3 mb-4 text-sm text-red-700 bg-red-100 dark:bg-red-900/30 dark:text-red-300 rounded-lg">{error}</div>}
 
           <form onSubmit={handleSubmit} className="space-y-4">
             
             {/* Campo NOME */}
             <div>
-              <label className="block text-sm font-medium text-gray-700">Nome Completo</label>
-              <input type="text" name="nome" value={formData.nome} onChange={handleChange} required className="mt-1 block w-full border border-gray-300 rounded-md p-3 
-             focus:outline-none focus:border-gray-300 focus:ring-1 focus:ring-gray-300" />
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Nome Completo</label>
+              <input 
+                type="text" 
+                name="nome" 
+                value={formData.nome} 
+                onChange={handleChange} 
+                required 
+                className="mt-1 block w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:border-gray-300 dark:focus:border-gray-500 focus:ring-1 focus:ring-gray-300 dark:focus:ring-gray-500" 
+              />
             </div>
 
             <div>
             {/* Campo RESUMO */}
-              <label className="block text-sm font-medium text-gray-700">Resumo Profissional</label>
-              <textarea name="resumo" value={formData.resumo} onChange={handleChange} required className="mt-1 block w-full border border-gray-300 rounded-md p-3 h-24 focus:outline-none focus:border-gray-300 focus:ring-1 focus:ring-gray-300"></textarea>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Resumo Profissional</label>
+              <textarea 
+                name="resumo" 
+                value={formData.resumo} 
+                onChange={handleChange} 
+                required 
+                className="mt-1 block w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 h-24 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:border-gray-300 dark:focus:border-gray-500 focus:ring-1 focus:ring-gray-300 dark:focus:ring-gray-500"
+              ></textarea>
             </div>
 
             <div>
             {/* Campo CARGO */}
-              <label className="block text-sm font-medium text-gray-700">Cargo</label>
-              <input type="text" name="cargo" value={formData.cargo} onChange={handleChange} required className="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-gray-300 focus:ring-1 focus:ring-gray-300" />
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Cargo</label>
+              <input 
+                type="text" 
+                name="cargo" 
+                value={formData.cargo} 
+                onChange={handleChange} 
+                required 
+                className="mt-1 block w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:border-gray-300 dark:focus:border-gray-500 focus:ring-1 focus:ring-gray-300 dark:focus:ring-gray-500" 
+              />
             </div>
 
             <div>
             {/* Campo LOCALIZAÇÃO */}
-              <label className="block text-sm font-medium text-gray-700">Localização (Cidade/Estado)</label>
-              <input type="text" name="localizacao" value={formData.localizacao} onChange={handleChange} required className="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-gray-300 focus:ring-1 focus:ring-gray-300" />
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Localização (Cidade/Estado)</label>
+              <input 
+                type="text" 
+                name="localizacao" 
+                value={formData.localizacao} 
+                onChange={handleChange} 
+                required 
+                className="mt-1 block w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:border-gray-300 dark:focus:border-gray-500 focus:ring-1 focus:ring-gray-300 dark:focus:ring-gray-500" 
+              />
             </div>
           
             {/* Rodapé e Botões */}
@@ -121,7 +147,7 @@ export default function PerfilEditarModal({ isOpen, onClose, perfil, onProfileUp
                 type="button"
                 onClick={onClose}
                 disabled={isLoading}
-                className="px-6 py-3 text-gray-700 font-semibold border border-gray-300 rounded-lg hover:bg-gray-100"
+                className="px-6 py-3 text-gray-700 dark:text-gray-300 font-semibold border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800"
               >
                 Cancelar
               </button>

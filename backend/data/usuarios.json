@@ -66,8 +66,23 @@
       "Design UI/UX",
       "Educação"
     ],
-    "convites": [],
-    "conexoes": []
+    "convites": [
+      {
+        "id": "conv_1763768975916",
+        "remetenteId": "1763126460224",
+        "data": "2025-11-21T23:49:35.916Z"
+      }
+    ],
+    "conexoes": [],
+    "mensagens": [
+      {
+        "id": "msg_1763768982437_odpffgr47",
+        "remetenteId": "1763126460224",
+        "conteudo": "Teste",
+        "data": "2025-11-21T23:49:42.437Z",
+        "lida": false
+      }
+    ]
   },
   {
     "id": 2,

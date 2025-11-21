@@ -48,7 +48,7 @@ export default function ModalProfissional({ isOpen, onClose, profissional, onOpe
   };
 
   const handleRecommend = () => {
-  
+    alert('O Perfil for recomendado com sucesso!');
   };
 
   const renderConnectButton = () => {

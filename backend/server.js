@@ -10,6 +10,7 @@ import authRoutes from './routes/authRoutes.js';
 import perfilRoutes from './routes/perfilRoutes.js';
 import historicoRoutes from'./routes/historicoRoutes.js';
 import vagasRoutes from './routes/vagasRoutes.js'; 
+import conexoesRoutes from './routes/conexoesRoutes.js';
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use('/api/softskills', softskillsRoutes);
 app.use('/api/posts', postsRoutes);
 app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/vagas', vagasRoutes);
+app.use('/api/conexoes', conexoesRoutes);
 
 // Inicia o servidor
 app.listen(port, () => {

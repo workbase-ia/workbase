@@ -68,7 +68,7 @@ export const register = async (req, res) => {
       projetos: [],
       certificacoes: [],
       idiomas: [],
-      arealnteresses: [] 
+      areaInteresses: [] 
     };
     
     db.users.push(newUser);

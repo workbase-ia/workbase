@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "Ana Clara Souza",
-    "foto": "./images/foto1.jpg",
+    "foto": "",
     "cargo": "Desenvolvedora Front-End",
     "resumo": "Especialista em React e Tailwind CSS, criando interfaces modernas e responsivas.",
     "localizacao": "São Paulo/SP",
@@ -18,6 +18,11 @@
       "Comunicação",
       "Trabalho em Equipe",
       "Criatividade"
+    ],
+    "hobbies": [
+      "Jogos Online",
+      "Yoga",
+      "Fotografia"
     ],
     "experiencias": [
       {
@@ -60,12 +65,14 @@
       "IA",
       "Design UI/UX",
       "Educação"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 2,
     "nome": "Bruno Gonçalves",
-    "foto": "./images/foto2.jpg",
+    "foto": "",
     "cargo": "Engenheiro de Dados",
     "resumo": "Focado em pipelines de dados e arquitetura em nuvem (AWS e GCP).",
     "localizacao": "Rio de Janeiro/RJ",
@@ -81,6 +88,11 @@
       "Pensamento Crítico",
       "Resolução de Problemas",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Xadrez",
+      "Ciclismo",
+      "Culinária"
     ],
     "experiencias": [
       {
@@ -119,12 +131,14 @@
       "IA ética",
       "Big Data",
       "Finanças"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 3,
     "nome": "Carla Martins",
-    "foto": "./images/foto3.jpg",
+    "foto": "",
     "cargo": "Designer UX/UI Pleno",
     "resumo": "Apaixonada por criar experiências de usuário intuitivas e acessíveis.",
     "localizacao": "Curitiba/PR",
@@ -140,6 +154,11 @@
       "Empatia",
       "Colaboração",
       "Comunicação Visual"
+    ],
+    "hobbies": [
+      "Pintura em Aquarela",
+      "Museus",
+      "Viagens"
     ],
     "experiencias": [
       {
@@ -177,12 +196,14 @@
       "Acessibilidade Web",
       "Saúde Digital",
       "Sustentabilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 4,
     "nome": "Daniel Almeida",
-    "foto": "./images/foto4.jpg",
+    "foto": "",
     "cargo": "Engenheiro de Software Sênior",
     "resumo": "Especialista em back-end com foco em microserviços (Java e Spring).",
     "localizacao": "Belo Horizonte/MG",
@@ -199,6 +220,11 @@
       "Liderança Técnica",
       "Mentoria",
       "Resiliência"
+    ],
+    "hobbies": [
+      "Música (Guitarra)",
+      "Futebol",
+      "Churrasco"
     ],
     "experiencias": [
       {
@@ -241,12 +267,14 @@
       "Sistemas Distribuídos",
       "Fintech",
       "Cibersegurança"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 5,
     "nome": "Elisa Fernandes",
-    "foto": "./images/foto5.jpg",
+    "foto": "",
     "cargo": "Cientista de Dados",
     "resumo": "Foco em Machine Learning e processamento de linguagem natural (PLN).",
     "localizacao": "São Paulo/SP",
@@ -262,6 +290,11 @@
       "Pensamento Analítico",
       "Curiosidade",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Leitura de Ficção Científica",
+      "Piano",
+      "Jardinagem"
     ],
     "experiencias": [
       {
@@ -299,12 +332,14 @@
       "IA ética",
       "PLN",
       "Computação Quântica"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 6,
     "nome": "Felipe Moreira",
-    "foto": "./images/foto6.jpg",
+    "foto": "",
     "cargo": "Gerente de Projetos (Agile)",
     "resumo": "Scrum Master e Agile Coach com experiência em transformação digital.",
     "localizacao": "Porto Alegre/RS",
@@ -321,6 +356,11 @@
       "Negociação",
       "Organização",
       "Comunicação Clara"
+    ],
+    "hobbies": [
+      "Corrida de Rua",
+      "Podcasts",
+      "Voluntariado"
     ],
     "experiencias": [
       {
@@ -370,12 +410,14 @@
       "Metodologias Ágeis",
       "Educação Corporativa",
       "Liderança"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 7,
     "nome": "Gabriela Lima",
-    "foto": "./images/foto7.jpg",
+    "foto": "",
     "cargo": "Especialista DevOps",
     "resumo": "Automatização de infraestrutura e CI/CD. Foco em AWS e Kubernetes.",
     "localizacao": "Florianópolis/SC",
@@ -392,6 +434,11 @@
       "Colaboração",
       "Resolução de Problemas",
       "Adaptabilidade"
+    ],
+    "hobbies": [
+      "Surf",
+      "Trilhas",
+      "Impressão 3D"
     ],
     "experiencias": [
       {
@@ -430,12 +477,14 @@
       "Cibersegurança",
       "Cloud Native",
       "SRE"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 8,
     "nome": "Heitor Borges",
-    "foto": "./images/foto8.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Back-End",
     "resumo": "Focado em Node.js, Typescript e arquiteturas serverless.",
     "localizacao": "Recife/PE",
@@ -451,6 +500,11 @@
       "Foco",
       "Aprendizado Rápido",
       "Proatividade"
+    ],
+    "hobbies": [
+      "Hackathon",
+      "Séries de TV",
+      "Natação"
     ],
     "experiencias": [
       {
@@ -488,12 +542,14 @@
       "Serverless",
       "Arquitetura de Software",
       "Educação"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 9,
     "nome": "Isabela Ribeiro",
-    "foto": "./images/foto9.jpg",
+    "foto": "",
     "cargo": "Analista de QA (Automação)",
     "resumo": "Especialista em testes automatizados web e mobile com Cypress e Selenium.",
     "localizacao": "São Paulo/SP",
@@ -510,6 +566,11 @@
       "Atenção aos Detalhes",
       "Pensamento Crítico",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Quebra-cabeças",
+      "Cinema",
+      "Blogueira"
     ],
     "experiencias": [
       {
@@ -548,12 +609,14 @@
       "Cultura DevOps",
       "Testes de Performance",
       "Acessibilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 10,
     "nome": "João Pedro Oliveira",
-    "foto": "./images/foto10.jpg",
+    "foto": "",
     "cargo": "Arquiteto de Soluções",
     "resumo": "10+ anos de experiência desenhando soluções escaláveis e resilientes em multicloud.",
     "localizacao": "Brasília/DF",
@@ -569,6 +632,11 @@
       "Visão Estratégica",
       "Liderança",
       "Negociação"
+    ],
+    "hobbies": [
+      "Aviação Virtual",
+      "História",
+      "Viagens Internacionais"
     ],
     "experiencias": [
       {
@@ -607,12 +675,14 @@
       "IA Governamental",
       "Cibersegurança",
       "Cloud Híbrida"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 11,
     "nome": "Larissa Mendes",
-    "foto": "./images/foto11.jpg",
+    "foto": "",
     "cargo": "Desenvolvedora Mobile (Flutter)",
     "resumo": "Focada no desenvolvimento de aplicativos híbridos com Flutter.",
     "localizacao": "São Paulo/SP",
@@ -628,6 +698,11 @@
       "Adaptabilidade",
       "Colaboração",
       "Foco no Usuário"
+    ],
+    "hobbies": [
+      "Desenho",
+      "K-pop",
+      "Games Mobile"
     ],
     "experiencias": [
       {
@@ -665,12 +740,14 @@
       "UI/UX Mobile",
       "IoT",
       "Games"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 12,
     "nome": "Lucas Vasconcelos",
-    "foto": "./images/foto12.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Full-Stack",
     "resumo": "Experiência em todo o ciclo de vida do software, de React a Node.js.",
     "localizacao": "Salvador/BA",
@@ -687,6 +764,11 @@
       "Versatilidade",
       "Resolução de Problemas",
       "Gestão de Tempo"
+    ],
+    "hobbies": [
+      "Surf",
+      "Música Eletrônica",
+      "Skate"
     ],
     "experiencias": [
       {
@@ -722,12 +804,14 @@
       "Educação",
       "Fintech",
       "Startups"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 13,
     "nome": "Mariana Costa",
-    "foto": "./images/foto13.jpg",
+    "foto": "",
     "cargo": "Analista de BI",
     "resumo": "Especialista em Power BI e SQL, transformando dados em insights acionáveis.",
     "localizacao": "Belo Horizonte/MG",
@@ -743,6 +827,11 @@
       "Comunicação",
       "Visão de Negócio",
       "Atenção aos Detalhes"
+    ],
+    "hobbies": [
+      "Crossfit",
+      "Decoração",
+      "Vinhos"
     ],
     "experiencias": [
       {
@@ -780,12 +869,14 @@
       "Data Visualization",
       "Varejo",
       "Marketing Digital"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 14,
     "nome": "Nuno Pereira",
-    "foto": "./images/foto14.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor .NET Pleno",
     "resumo": "Apaixonado por C# e soluções em nuvem Azure.",
     "localizacao": "São Paulo/SP",
@@ -801,6 +892,11 @@
       "Intensidade",
       "Criatividade",
       "Resiliência"
+    ],
+    "hobbies": [
+      "RPG de Mesa",
+      "Impressão 3D",
+      "Games Retrô"
     ],
     "experiencias": [
       {
@@ -838,12 +934,14 @@
       "Criptografia",
       "História",
       "Cloud"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 15,
     "nome": "Olivia Pereira",
-    "foto": "./images/foto15.jpg",
+    "foto": "",
     "cargo": "Especialista em Cibersegurança",
     "resumo": "Foco em Pentest e Análise de Vulnerabilidades. Certificada OSCP.",
     "localizacao": "Brasília/DF",
@@ -860,6 +958,11 @@
       "Pensamento Crítico",
       "Ética",
       "Curiosidade"
+    ],
+    "hobbies": [
+      "Capture The Flag (CTF)",
+      "Lockpicking",
+      "Ficção Policial"
     ],
     "experiencias": [
       {
@@ -899,12 +1002,14 @@
       "IA ética",
       "Criptografia",
       "Hardware Hacking"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 16,
     "nome": "Pedro Henrique Ramos",
-    "foto": "./images/foto16.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Front-End Júnior",
     "resumo": "Estudante de Engenharia de Software focado em React e Tailwind.",
     "localizacao": "São Paulo/SP",
@@ -921,6 +1026,11 @@
       "Aprendizado Rápido",
       "Proatividade",
       "Colaboração"
+    ],
+    "hobbies": [
+      "Skate",
+      "Edição de Vídeo",
+      "Festivais de Música"
     ],
     "experiencias": [
       {
@@ -956,12 +1066,14 @@
       "IA",
       "Design UI/UX",
       "IoT"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 17,
     "nome": "Raquel Azevedo",
-    "foto": "./images/foto17.jpg",
+    "foto": "",
     "cargo": "Product Owner (PO)",
     "resumo": "Foco em produtos digitais B2B, fazendo a ponte entre negócio e tecnologia.",
     "localizacao": "Curitiba/PR",
@@ -978,6 +1090,11 @@
       "Priorização",
       "Visão de Produto",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Meditação",
+      "Gastronomia",
+      "Viagens em Família"
     ],
     "experiencias": [
       {
@@ -1020,12 +1137,14 @@
       "SaaS",
       "IA",
       "Experiência do Cliente"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 18,
     "nome": "Samuel Rocha",
-    "foto": "./images/foto18.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Back-End (.NET)",
     "resumo": "Desenvolvedor C# com experiência em microsserviços e nuvem Azure.",
     "localizacao": "Recife/PE",
@@ -1042,6 +1161,11 @@
       "Foco",
       "Resolução de Problemas",
       "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Ciclismo",
+      "Investimentos",
+      "Futebol"
     ],
     "experiencias": [
       {
@@ -1079,12 +1203,14 @@
       "Fintech",
       "Arquitetura Limpa",
       "Mercado Financeiro"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 19,
     "nome": "Tatiana Correia",
-    "foto": "./images/foto19.jpg",
+    "foto": "",
     "cargo": "Analista de RH (Tech Recruiter)",
     "resumo": "Especialista em recrutamento e seleção para vagas de tecnologia (Devs, Dados, DevOps).",
     "localizacao": "São Paulo/SP",
@@ -1100,6 +1226,11 @@
       "Empatia",
       "Negociação",
       "Organização"
+    ],
+    "hobbies": [
+      "Teatro",
+      "Psicologia Positiva",
+      "Pets"
     ],
     "experiencias": [
       {
@@ -1131,12 +1262,14 @@
       "Employer Branding",
       "Diversidade e Inclusão",
       "Educação"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 20,
     "nome": "Thiago Nunes",
-    "foto": "./images/foto20.jpg",
+    "foto": "",
     "cargo": "Engenheiro de Machine Learning",
     "resumo": "Foco em MLOps e deploy de modelos de IA em produção.",
     "localizacao": "São Paulo/SP",
@@ -1153,6 +1286,11 @@
       "Visão de Processos",
       "Colaboração",
       "Resiliência"
+    ],
+    "hobbies": [
+      "Automação Residencial",
+      "Impressão 3D",
+      "Robótica"
     ],
     "experiencias": [
       {
@@ -1190,12 +1328,14 @@
       "Saúde Digital",
       "Visão Computacional",
       "IA ética"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 21,
     "nome": "Vinicius Moraes",
-    "foto": "./images/foto21.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Front-End",
     "resumo": "Criando interfaces com React e Vue.js.",
     "localizacao": "Belo Horizonte/MG",
@@ -1211,6 +1351,11 @@
       "Comunicação",
       "Criatividade",
       "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Design Gráfico",
+      "Produção Musical",
+      "Games"
     ],
     "experiencias": [
       {
@@ -1240,12 +1385,14 @@
       "Design",
       "Marketing Digital",
       "Música"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 22,
     "nome": "Yasmin Ferreira",
-    "foto": "./images/foto22.jpg",
+    "foto": "",
     "cargo": "Analista de Dados Júnior",
     "resumo": "Entusiasta de dados, com foco em SQL e Python para análise.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -1260,6 +1407,11 @@
       "Curiosidade",
       "Aprendizado Rápido",
       "Atenção aos Detalhes"
+    ],
+    "hobbies": [
+      "Sudoku",
+      "Volêi",
+      "Filmes de Suspense"
     ],
     "experiencias": [
       {
@@ -1297,12 +1449,14 @@
       "Finanças",
       "Logística",
       "IA"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 23,
     "nome": "Ricardo Alves",
-    "foto": "./images/foto23.jpg",
+    "foto": "",
     "cargo": "Ilustrador / Designer Gráfico",
     "resumo": "Criador de identidades visuais e ilustrações para marcas.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -1317,6 +1471,11 @@
       "Criatividade",
       "Contação de Histórias",
       "Comunicação Visual"
+    ],
+    "hobbies": [
+      "Quadrinhos",
+      "Animação",
+      "Sketching Urbano"
     ],
     "experiencias": [
       {
@@ -1354,12 +1513,14 @@
       "Educação",
       "Branding",
       "Cultura Brasileira"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 24,
     "nome": "Amanda Nunes",
-    "foto": "./images/foto24.jpg",
+    "foto": "",
     "cargo": "Desenvolvedora Mobile (iOS Nativo)",
     "resumo": "Especialista em Swift e UIKit. Criando apps fluidos para o ecossistema Apple.",
     "localizacao": "São Paulo/SP",
@@ -1375,6 +1536,11 @@
       "Foco no Detalhe",
       "Qualidade",
       "Colaboração"
+    ],
+    "hobbies": [
+      "Fotografia Mobile",
+      "Apple Ecosystem",
+      "Pilates"
     ],
     "experiencias": [
       {
@@ -1410,12 +1576,14 @@
       "Fintech",
       "UI/UX",
       "Acessibilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 25,
     "nome": "Bernardo Silva",
-    "foto": "./images/foto25.jpg",
+    "foto": "",
     "cargo": "Engenheiro de Software (Golang)",
     "resumo": "Focado em alta performance e concorrência com Go.",
     "localizacao": "Campinas/SP",
@@ -1431,6 +1599,11 @@
       "Performance",
       "Simplicidade",
       "Foco"
+    ],
+    "hobbies": [
+      "Eletrônica",
+      "Automação",
+      "Cafés Especiais"
     ],
     "experiencias": [
       {
@@ -1466,12 +1639,14 @@
       "Sistemas Distribuídos",
       "AdTech",
       "Alta Performance"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 26,
     "nome": "Camila Oliveira",
-    "foto": "./images/foto26.jpg",
+    "foto": "",
     "cargo": "Gerente de Produto Sênior",
     "resumo": "Líder de produto com foco em descoberta (discovery) e estratégia de mercado.",
     "localizacao": "São Paulo/SP",
@@ -1487,6 +1662,11 @@
       "Visão Estratégica",
       "Comunicação",
       "Negociação"
+    ],
+    "hobbies": [
+      "Mentoria de Mulheres",
+      "Vinhos",
+      "Literatura Clássica"
     ],
     "experiencias": [
       {
@@ -1523,12 +1703,14 @@
       "E-commerce",
       "IA",
       "Liderança Feminina"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 27,
     "nome": "Davi Matos",
-    "foto": "./images/foto27.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Front-End (Vue.js)",
     "resumo": "Especialista em Vue.js e Nuxt.js.",
     "localizacao": "Curitiba/PR",
@@ -1544,6 +1726,11 @@
       "Colaboração",
       "Proatividade",
       "Qualidade de Código"
+    ],
+    "hobbies": [
+      "Animes",
+      "Desenho Digital",
+      "Culinária Japonesa"
     ],
     "experiencias": [
       {
@@ -1579,12 +1766,14 @@
       "Animação Web",
       "Design",
       "Acessibilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 28,
     "nome": "Eduarda Barros",
-    "foto": "./images/foto28.jpg",
+    "foto": "",
     "cargo": "Engenheira de Confiabilidade (SRE)",
     "resumo": "Garantindo a disponibilidade e performance de sistemas em larga escala.",
     "localizacao": "São Paulo/SP",
@@ -1601,6 +1790,11 @@
       "Resolução de Problemas",
       "Resiliência",
       "Visão Sistêmica"
+    ],
+    "hobbies": [
+      "Escalada",
+      "Camping",
+      "Astronomia"
     ],
     "experiencias": [
       {
@@ -1633,12 +1827,14 @@
       "Sistemas Distribuídos",
       "Observabilidade",
       "Cultura DevOps"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 29,
     "nome": "Fábio Medeiros",
-    "foto": "./images/foto29.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Full-Stack",
     "resumo": "Apaixonado por JavaScript, React e Node.js. Buscando sempre novos desafios.",
     "localizacao": "São Paulo/SP",
@@ -1654,6 +1850,11 @@
       "Comunicação",
       "Carisma",
       "Paixão"
+    ],
+    "hobbies": [
+      "Karaokê",
+      "Violão",
+      "Stand-up Comedy"
     ],
     "experiencias": [
       {
@@ -1691,12 +1892,14 @@
       "Música",
       "Startups",
       "Educação"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 30,
     "nome": "Giovanna Antunes",
-    "foto": "./images/foto30.jpg",
+    "foto": "",
     "cargo": "UX Designer",
     "resumo": "Trazendo a emoção da narrativa para a experiência do usuário.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -1711,6 +1914,11 @@
       "Empatia",
       "Versatilidade",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Teatro",
+      "Escrita Criativa",
+      "Moda Sustentável"
     ],
     "experiencias": [
       {
@@ -1748,12 +1956,14 @@
       "Moda",
       "Empreendedorismo",
       "Viagens"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 31,
     "nome": "Hugo Bastos",
-    "foto": "./images/foto31.jpg",
+    "foto": "",
     "cargo": "Engenheiro de Software Embarcado",
     "resumo": "Desenvolvimento de firmware para dispositivos IoT (ESP32 e ARM).",
     "localizacao": "Florianópolis/SC",
@@ -1770,6 +1980,11 @@
       "Resolução de Problemas",
       "Atenção aos Detalhes",
       "Foco"
+    ],
+    "hobbies": [
+      "Eletrônica DIY",
+      "Drones",
+      "Impressão 3D"
     ],
     "experiencias": [
       {
@@ -1805,12 +2020,14 @@
       "IoT",
       "Automação Residencial",
       "Sistemas Embarcados"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 32,
     "nome": "Igor Nascimento",
-    "foto": "./images/foto32.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Python (Django)",
     "resumo": "Focado em desenvolvimento web back-end com Django e DRF.",
     "localizacao": "Porto Alegre/RS",
@@ -1826,6 +2043,11 @@
       "Qualidade de Código",
       "Pragmatismo",
       "Colaboração"
+    ],
+    "hobbies": [
+      "Cerveja Artesanal",
+      "Board Games",
+      "Ficção Científica"
     ],
     "experiencias": [
       {
@@ -1861,12 +2083,14 @@
       "Educação",
       "Fintech",
       "Web Scraping"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 33,
     "nome": "Julia Fortes",
-    "foto": "./images/foto33.jpg",
+    "foto": "",
     "cargo": "Designer de Produto (Product Designer)",
     "resumo": "Visão holística do produto, unindo UX, UI e estratégia de negócio.",
     "localizacao": "São Paulo/SP",
@@ -1883,6 +2107,11 @@
       "Visão Estratégica",
       "Colaboração",
       "Liderança"
+    ],
+    "hobbies": [
+      "Cerâmica",
+      "Yoga",
+      "Arquitetura"
     ],
     "experiencias": [
       {
@@ -1920,12 +2149,14 @@
       "Fintech",
       "Design Systems",
       "Liderança"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 34,
     "nome": "Kauan Dias",
-    "foto": "./images/foto34.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor de Jogos (Unity)",
     "resumo": "Programador de jogos focado em C# e Unity.",
     "localizacao": "Recife/PE",
@@ -1941,6 +2172,11 @@
       "Criatividade",
       "Resolução de Problemas",
       "Paixão"
+    ],
+    "hobbies": [
+      "Jogos Indie",
+      "Desenho",
+      "Cosplay"
     ],
     "experiencias": [
       {
@@ -1978,12 +2214,14 @@
       "Games",
       "Realidade Virtual (VR)",
       "Narrativa"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 35,
     "nome": "Lívia Andrade",
-    "foto": "./images/foto35.jpg",
+    "foto": "",
     "cargo": "Especialista em Marketing Digital",
     "resumo": "Foco em performance (Google Ads e Meta Ads) e SEO.",
     "localizacao": "São Paulo/SP",
@@ -1999,6 +2237,11 @@
       "Pensamento Analítico",
       "Comunicação",
       "Foco em Resultados"
+    ],
+    "hobbies": [
+      "Instagram",
+      "Fotografia",
+      "Viagens"
     ],
     "experiencias": [
       {
@@ -2031,12 +2274,14 @@
       "E-commerce",
       "CRO (Conversion Rate Optimization)",
       "IA em Marketing"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 36,
     "nome": "Miguel Ângelo Barbosa",
-    "foto": "./images/foto36.jpg",
+    "foto": "",
     "cargo": "Arquiteto de Software",
     "resumo": "Buscando a perfeição na arquitetura de sistemas escaláveis e resilientes.",
     "localizacao": "Campinas/SP",
@@ -2054,6 +2299,11 @@
       "Atenção ao Detalhe",
       "Paciência",
       "Resiliência"
+    ],
+    "hobbies": [
+      "Escultura",
+      "História da Arte",
+      "Xadrez"
     ],
     "experiencias": [
       {
@@ -2092,12 +2342,14 @@
       "Arquitetura Limpa",
       "Sustentabilidade",
       "Sistemas Distribuídos"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 37,
     "nome": "Natália Rocha",
-    "foto": "./images/foto37.jpg",
+    "foto": "",
     "cargo": "Analista de Negócios (Business Analyst)",
     "resumo": "Tradução de necessidades de negócio em requisitos técnicos claros.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -2114,6 +2366,11 @@
       "Negociação",
       "Análise Crítica",
       "Organização"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Dança",
+      "Voluntariado"
     ],
     "experiencias": [
       {
@@ -2145,12 +2402,14 @@
       "Fintech",
       "Seguros",
       "Processos Ágeis"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 38,
     "nome": "Otávio Bernardes",
-    "foto": "./images/foto38.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Front-End (Angular)",
     "resumo": "Focado em aplicações enterprise com Angular e TypeScript.",
     "localizacao": "Belo Horizonte/MG",
@@ -2167,6 +2426,11 @@
       "Organização",
       "Qualidade de Código",
       "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Mountain Bike",
+      "Café",
+      "Programação Competitiva"
     ],
     "experiencias": [
       {
@@ -2204,12 +2468,14 @@
       "Fintech",
       "Acessibilidade",
       "Micro-frontends"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 39,
     "nome": "Paula Teixeira",
-    "foto": "./images/foto39.jpg",
+    "foto": "",
     "cargo": "Especialista em Redes",
     "resumo": "Garantindo a conectividade e segurança da infraestrutura de rede.",
     "localizacao": "São Paulo/SP",
@@ -2225,6 +2491,11 @@
       "Resolução de Problemas",
       "Atenção aos Detalhes",
       "Trabalho sob Pressão"
+    ],
+    "hobbies": [
+      "Jogos de Estratégia",
+      "Corrida",
+      "Tecnologia"
     ],
     "experiencias": [
       {
@@ -2257,12 +2528,14 @@
       "Cibersegurança",
       "Redes 5G",
       "Cloud Networking"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 40,
     "nome": "Quirino Ramos",
-    "foto": "./images/foto40.jpg",
+    "foto": "",
     "cargo": "Psicólogo Organizacional",
     "resumo": "Analisando o comportamento humano e como ele se aplica ao design de produtos e cultura.",
     "localizacao": "Lisboa/PT (Remoto)",
@@ -2278,6 +2551,11 @@
       "Empatia",
       "Escuta Ativa",
       "Análise Crítica"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Cinema Europeu",
+      "Vinhos"
     ],
     "experiencias": [
       {
@@ -2313,12 +2591,14 @@
       "Saúde Mental",
       "IA",
       "Comportamento do Usuário"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 41,
     "nome": "Renata Faria",
-    "foto": "./images/foto41.jpg",
+    "foto": "",
     "cargo": "Analista de Dados Pleno",
     "resumo": "Foco em SQL e Tableau para criação de dashboards estratégicos.",
     "localizacao": "Curitiba/PR",
@@ -2334,6 +2614,11 @@
       "Visão Analítica",
       "Comunicação",
       "Organização"
+    ],
+    "hobbies": [
+      "Crossfit",
+      "Viagens",
+      "Séries"
     ],
     "experiencias": [
       {
@@ -2371,12 +2656,14 @@
       "Logística",
       "Supply Chain",
       "Sustentabilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 42,
     "nome": "Silas Nogueira",
-    "foto": "./images/foto42.jpg",
+    "foto": "",
     "cargo": "Product Manager Sênior",
     "resumo": "Gestão de produto com foco na monetização e engajamento do usuário.",
     "localizacao": "São Paulo/SP",
@@ -2392,6 +2679,11 @@
       "Negociação",
       "Visão de Negócio",
       "Resiliência"
+    ],
+    "hobbies": [
+      "TV",
+      "Família",
+      "Viagens"
     ],
     "experiencias": [
       {
@@ -2430,12 +2722,14 @@
       "Comunicação",
       "Varejo",
       "Finanças"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 43,
     "nome": "Teresa Cristina Dias",
-    "foto": "./images/foto43.jpg",
+    "foto": "",
     "cargo": "Desenvolvedora Back-End (PHP/Laravel)",
     "resumo": "Especialista em PHP moderno com o framework Laravel.",
     "localizacao": "Porto Alegre/RS",
@@ -2452,6 +2746,11 @@
       "Pragmatismo",
       "Resolução de Problemas",
       "Colaboração"
+    ],
+    "hobbies": [
+      "Música (Samba)",
+      "Cozinha",
+      "Leitura"
     ],
     "experiencias": [
       {
@@ -2493,12 +2792,14 @@
       "E-commerce",
       "Educação",
       "Software Livre"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 44,
     "nome": "Ulisses Guimarães Neto",
-    "foto": "./images/foto44.jpg",
+    "foto": "",
     "cargo": "Agile Coach",
     "resumo": "Facilitando a transformação ágil em grandes corporações.",
     "localizacao": "Brasília/DF",
@@ -2515,6 +2816,11 @@
       "Negociação",
       "Comunicação",
       "Diplomacia"
+    ],
+    "hobbies": [
+      "Política",
+      "História",
+      "Oratória"
     ],
     "experiencias": [
       {
@@ -2554,12 +2860,14 @@
       "Direito Digital",
       "Agilidade Organizacional",
       "Gestão de Pessoas"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 45,
     "nome": "Valentina Soares",
-    "foto": "./images/foto45.jpg",
+    "foto": "",
     "cargo": "Desenvolvedora Front-End Estagiária",
     "resumo": "Cursando Engenharia de Software na FIAP, buscando experiência em React.",
     "localizacao": "São Paulo/SP",
@@ -2575,6 +2883,11 @@
       "Proatividade",
       "Vontade de Aprender",
       "Comunicação"
+    ],
+    "hobbies": [
+      "TikTok",
+      "Jogos Mobile",
+      "Maquiagem"
     ],
     "experiencias": [],
     "formacao": [
@@ -2602,12 +2915,14 @@
       "IA",
       "Design UI/UX",
       "Educação"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 46,
     "nome": "Wagner Moraes",
-    "foto": "./images/foto46.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Python (Data Science)",
     "resumo": "Desenvolvedor focado em Data Science. 'Não sou eu que tô dizendo, são os dados.'",
     "localizacao": "Salvador/BA",
@@ -2624,6 +2939,11 @@
       "Comunicação",
       "Imersão",
       "Foco Analítico"
+    ],
+    "hobbies": [
+      "Cinema",
+      "Jiu-Jitsu",
+      "Leitura"
     ],
     "experiencias": [
       {
@@ -2665,12 +2985,14 @@
       "IA ética",
       "Segurança",
       "Análise Preditiva"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 47,
     "nome": "Marcela Menezes",
-    "foto": "./images/foto47.jpg",
+    "foto": "",
     "cargo": "UX Designer (Kids)",
     "resumo": "Focada na experiência do usuário infantil (Kids UX).",
     "localizacao": "Rio de Janeiro/RJ",
@@ -2686,6 +3008,11 @@
       "Comunicação",
       "Criatividade",
       "Paciência"
+    ],
+    "hobbies": [
+      "Brinquedoteca",
+      "Voluntariado com Crianças",
+      "Artesanato"
     ],
     "experiencias": [
       {
@@ -2727,12 +3054,14 @@
       "Educação",
       "Proteção Animal",
       "Sustentabilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 48,
     "nome": "José Carlos Almeida",
-    "foto": "./images/foto48.jpg",
+    "foto": "",
     "cargo": "Engenheiro DevOps Sênior",
     "resumo": "Deixa a vida me levar, que o pipeline eu automatizo.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -2750,6 +3079,11 @@
       "Resiliência",
       "Colaboração",
       "Simplicidade"
+    ],
+    "hobbies": [
+      "Samba",
+      "Churrasco",
+      "Cerveja Artesanal"
     ],
     "experiencias": [
       {
@@ -2788,12 +3122,14 @@
       "Samba",
       "Cloud Native",
       "Automação"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 49,
     "nome": "Alice Barros",
-    "foto": "./images/foto49.jpg",
+    "foto": "",
     "cargo": "Especialista em Cibersegurança",
     "resumo": "Protegendo dados em ambientes hostis, da rede local à nuvem.",
     "localizacao": "São Paulo/SP",
@@ -2810,6 +3146,11 @@
       "Pensamento Crítico",
       "Foco",
       "Resiliência"
+    ],
+    "hobbies": [
+      "Cinema",
+      "Krav Maga",
+      "Ficção Científica"
     ],
     "experiencias": [
       {
@@ -2852,12 +3193,14 @@
       "IA ética",
       "Cibersegurança",
       "IoT"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 50,
     "nome": "Caetano Viana",
-    "foto": "./images/foto50.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Front-End Sênior",
     "resumo": "Criando interfaces com foco em acessibilidade e semântica.",
     "localizacao": "Salvador/BA",
@@ -2874,6 +3217,11 @@
       "Comunicação",
       "Empatia",
       "Vanguarda"
+    ],
+    "hobbies": [
+      "Composição Musical",
+      "Literatura",
+      "Filosofia"
     ],
     "experiencias": [
       {
@@ -2912,12 +3260,14 @@
       "Literatura",
       "Acessibilidade Web",
       "Cultura"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 51,
     "nome": "Débora Bastos",
-    "foto": "./images/foto51.jpg",
+    "foto": "",
     "cargo": "Analista de QA Pleno",
     "resumo": "Garantindo a qualidade do software com versatilidade e foco no detalhe.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -2934,6 +3284,11 @@
       "Atenção aos Detalhes",
       "Comunicação",
       "Adaptabilidade"
+    ],
+    "hobbies": [
+      "Teatro",
+      "Moda",
+      "Instagram"
     ],
     "experiencias": [
       {
@@ -2971,12 +3326,14 @@
       "E-commerce",
       "Testes de Usabilidade",
       "Fintech"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 52,
     "nome": "Evaristo Santos",
-    "foto": "./images/foto52.jpg",
+    "foto": "",
     "cargo": "UX Writer Sênior",
     "resumo": "Criando textos claros e objetivos para interfaces. 'Boa tarde' ao bom design.",
     "localizacao": "São Paulo/SP",
@@ -2993,6 +3350,11 @@
       "Empatia",
       "Objetividade",
       "Colaboração"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Redes Sociais",
+      "Viagens"
     ],
     "experiencias": [
       {
@@ -3031,12 +3393,14 @@
       "Comunicação",
       "Mídias Digitais",
       "Acessibilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 53,
     "nome": "Fernanda Torres",
-    "foto": "./images/foto53.jpg",
+    "foto": "",
     "cargo": "Roteirista / UX Writer",
     "resumo": "Adaptando a arte de contar histórias (storytelling) para a jornada do usuário.",
     "localizacao": "Rio de Janeiro/RJ",
@@ -3053,6 +3417,11 @@
       "Empatia",
       "Comunicação",
       "Versatilidade"
+    ],
+    "hobbies": [
+      "Cinema",
+      "Teatro",
+      "Literatura"
     ],
     "experiencias": [
       {
@@ -3089,12 +3458,14 @@
       "Literatura",
       "Viagens",
       "Economia Criativa"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 54,
     "nome": "Gilberto Gilmar",
-    "foto": "./images/foto54.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Back-End Sênior",
     "resumo": "Arquiteto de software focado em performance, escalabilidade e 'aquele abraço' no código.",
     "localizacao": "Salvador/BA",
@@ -3111,6 +3482,11 @@
       "Liderança",
       "Criatividade",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Violão",
+      "Composição",
+      "Cultura"
     ],
     "experiencias": [
       {
@@ -3153,12 +3529,14 @@
       "Software Livre",
       "Cultura Digital",
       "Sustentabilidade"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 55,
     "nome": "Helena Duarte",
-    "foto": "./images/foto55.jpg",
+    "foto": "",
     "cargo": "Desenvolvedora Mobile (Android Nativo)",
     "resumo": "Especialista em Kotlin, Jetpack Compose e arquitetura MVVM.",
     "localizacao": "Curitiba/PR",
@@ -3174,6 +3552,11 @@
       "Qualidade de Código",
       "Colaboração",
       "Foco no Usuário"
+    ],
+    "hobbies": [
+      "Caminhadas",
+      "Costura",
+      "Podcasts"
     ],
     "experiencias": [
       {
@@ -3211,12 +3594,14 @@
       "UI/UX Mobile",
       "IoT",
       "Varejo"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 56,
     "nome": "Ícaro Almeida",
-    "foto": "./images/foto56.jpg",
+    "foto": "",
     "cargo": "Engenheiro de Dados Pleno",
     "resumo": "Focado em ETL, SQL e visualização de dados com Power BI.",
     "localizacao": "Belo Horizonte/MG",
@@ -3232,6 +3617,11 @@
       "Pensamento Analítico",
       "Organização",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Corrida",
+      "Cozinhar",
+      "Séries"
     ],
     "experiencias": [
       {
@@ -3269,12 +3659,14 @@
       "Indústria 4.0",
       "BI",
       "Logística"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 57,
     "nome": "Joana Lemos",
-    "foto": "./images/foto57.jpg",
+    "foto": "",
     "cargo": "Scrum Master",
     "resumo": "Facilitadora ágil com foco em melhoria contínua e entrega de valor.",
     "localizacao": "São Paulo/SP",
@@ -3291,6 +3683,11 @@
       "Comunicação",
       "Empatia",
       "Resolução de Conflitos"
+    ],
+    "hobbies": [
+      "Yoga",
+      "Meditação",
+      "Leitura"
     ],
     "experiencias": [
       {
@@ -3324,12 +3721,14 @@
       "Agilidade Organizacional",
       "Cultura DevOps",
       "Fintech"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 58,
     "nome": "Kleber Santos",
-    "foto": "./images/foto58.jpg",
+    "foto": "",
     "cargo": "Analista de Suporte Técnico",
     "resumo": "Especialista em suporte a infraestrutura Windows e Office 365.",
     "localizacao": "Recife/PE",
@@ -3346,6 +3745,11 @@
       "Didática",
       "Resolução de Problemas",
       "Comunicação"
+    ],
+    "hobbies": [
+      "Games",
+      "Futebol",
+      "Churrasco"
     ],
     "experiencias": [
       {
@@ -3378,12 +3782,73 @@
       "Cloud",
       "Segurança",
       "Atendimento ao Cliente"
-    ]
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 59,
+    "nome": "Laís Macedo",
+    "foto": "",
+    "cargo": "Especialista em SEO",
+    "resumo": "Estrategista de SEO com foco em conteúdo e SEO técnico.",
+    "localizacao": "São Paulo/SP",
+    "area": "Marketing",
+    "habilidadesTecnicas": [
+      "SEO On-Page",
+      "SEO Técnico",
+      "SEMrush",
+      "Ahrefs",
+      "Google Analytics"
+    ],
+    "softSkills": [
+      "Pensamento Analítico",
+      "Escrita",
+      "Visão Estratégica"
+    ],
+    "hobbies": [
+      "Blogging",
+      "Viagens",
+      "Gastronomia"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Agência de Marketing",
+        "cargo": "Analista de SEO Sênior",
+        "inicio": "2019-07",
+        "fim": "Atual",
+        "descricao": "Planejamento e execução de estratégias de SEO para clientes B2B."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Mackenzie",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Google Analytics Individual Qualification (GAIQ)"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Marketing de Conteúdo",
+      "IA",
+      "E-commerce"
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
     "id": 1763126460224,
     "nome": "Murilo Rosa",
-    "foto": "./images/foto60.jpg",
+    "foto": "",
     "cargo": "Desenvolvedor Back-End (Java)",
     "resumo": "Desenvolvedor Java/Spring focado em construir APIs robustas e escaláveis.",
     "localizacao": "Porto Alegre/RS",
@@ -3400,6 +3865,11 @@
       "Trabalho em Equipe",
       "Resolução de Problemas",
       "Qualidade de Código"
+    ],
+    "hobbies": [
+      "Tênis",
+      "Investimentos",
+      "Vinhos"
     ],
     "experiencias": [
       {
@@ -3441,45 +3911,4252 @@
       "Fintech",
       "Mercado Financeiro",
       "Sistemas Distribuídos"
-    ]
+    ],
+    "conexoes": [
+       1, 4, 8, 11, 12, 14, 16, 21, 24, 25, 27, 29, 32, 38, 43, 2, 7, 10, 28, 37, 51, 57, 83, 90, 101, 13, 26, 40, 61, 64, 118, 143, 18, 71, 113, 55, 77, 88, 95, 105, 116, 125, 134, 149, 156
+    ],
+    "convites": [80, 99, 102, 120, 130]
   },
   {
-    "id": 60,
-    "nome": "Murilo",
-    "foto": "./images/foto61.jpg",
-    "cargo": "Engenheiro de Software",
-    "resumo": "Observador da adoção de Serverless e arquitetura orientada a eventos.",
+    "Id": 61,
+    "nome": "Roberto Costa",
+    "foto": "",
+    "cargo": "Desenvolvedor Salesforce Sênior",
+    "resumo": "Especialista em Apex, Lightning Web Components e arquitetura de CRM.",
     "localizacao": "São Paulo/SP",
-    "area": "Desenvolvimento",
+    "area": "Salesforce",
     "habilidadesTecnicas": [
-      "Node.js",
-      "AWS Lambda",
-      "Arquitetura Serverless"
+      "Apex",
+      "LWC",
+      "Salesforce Admin",
+      "SOQL",
+      "Flows"
     ],
     "softSkills": [
-      "Pensamento Sistêmico",
+      "Resolução de Problemas",
+      "Consultoria",
       "Comunicação"
     ],
-    "experiencias": [],
-    "formacao": [],
-    "projetos": []
+    "hobbies": [
+      "Futebol",
+      "Churrasco",
+      "Investimentos"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Consultoria CRM",
+        "cargo": "Dev Salesforce",
+        "inicio": "2019-05",
+        "fim": "Atual",
+        "descricao": "Implementação de clouds de Sales e Service."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Sistemas de Informação",
+        "instituicao": "FIAP",
+        "ano": 2018
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Automação de Vendas",
+        "link": "https://github.com/user/salesforce",
+        "descricao": "Sistema de automação de leads."
+      }
+    ],
+    "certificacoes": [
+      "Salesforce Certified Platform Developer I"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "CRM",
+      "Cloud Computing",
+      "Vendas"
+    ],
+    "convites": [],
+    "conexoes": []
   },
   {
-    "id": 1763658048932,
-    "nome": "teste",
-    "email": "teste@teste.com",
-    "area": "",
+    "Id": 62,
+    "nome": "Juliana Ferreira",
     "foto": "",
-    "cargo": "",
-    "resumo": "",
-    "localizacao": "",
-    "habilidadesTecnicas": [],
-    "softSkills": [],
-    "experiencias": [],
-    "formacao": [],
+    "cargo": "Engenheira Civil",
+    "resumo": "Focada em cálculo estrutural e BIM (Building Information Modeling).",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Engenharia Civil",
+    "habilidadesTecnicas": [
+      "AutoCAD",
+      "Revit",
+      "TQS",
+      "Gestão de Obras",
+      "MS Project"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Organização",
+      "Atenção aos Detalhes"
+    ],
+    "hobbies": [
+      "Arquitetura",
+      "Viagens",
+      "Fotografia"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Construtora Horizonte",
+        "cargo": "Engenheira Plena",
+        "inicio": "2020-01",
+        "fim": "Atual",
+        "descricao": "Gestão de obras residenciais de alto padrão."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Civil",
+        "instituicao": "UFMG",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "PMP"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Sustentabilidade",
+      "Urbanismo",
+      "Smart Cities"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 63,
+    "nome": "Marcos Vinicius Silva",
+    "foto": "",
+    "cargo": "Engenheiro Mecatrônico",
+    "resumo": "Especialista em automação industrial e robótica.",
+    "localizacao": "Joinville/SC",
+    "area": "Mecatrônica",
+    "habilidadesTecnicas": [
+      "PLC",
+      "Arduino",
+      "Python",
+      "C++",
+      "Sistemas Embarcados"
+    ],
+    "softSkills": [
+      "Inovação",
+      "Pensamento Lógico",
+      "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Impressão 3D",
+      "Drones",
+      "Eletrônica"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Indústria Auto",
+        "cargo": "Engenheiro de Automação",
+        "inicio": "2018-03",
+        "fim": "Atual",
+        "descricao": "Programação de braços robóticos na linha de produção."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Mecatrônica",
+        "instituicao": "UFSC",
+        "ano": 2017
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Braço Robótico",
+        "link": "https://github.com/user/robot",
+        "descricao": "Protótipo de braço industrial."
+      }
+    ],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Indústria 4.0",
+      "IA",
+      "Robótica"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 64,
+    "nome": "Beatriz Santos",
+    "foto": "",
+    "cargo": "Engenheira de Alimentos",
+    "resumo": "Focada em controle de qualidade e desenvolvimento de novos produtos.",
+    "localizacao": "Campinas/SP",
+    "area": "Engenharia de Alimentos",
+    "habilidadesTecnicas": [
+      "HACCP",
+      "BPF",
+      "Microbiologia",
+      "P&D",
+      "Legislação Sanitária"
+    ],
+    "softSkills": [
+      "Rigor Técnico",
+      "Gestão de Processos",
+      "Criatividade"
+    ],
+    "hobbies": [
+      "Confeitaria",
+      "Gastronomia Molecular",
+      "Vinhos"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Food Corp",
+        "cargo": "Analista de Qualidade",
+        "inicio": "2021-06",
+        "fim": "Atual",
+        "descricao": "Garantia da qualidade na linha de laticínios."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Alimentos",
+        "instituicao": "UNICAMP",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Auditora ISO 22000"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Segurança Alimentar",
+      "Sustentabilidade",
+      "Nutrição"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 65,
+    "nome": "Lucas Pereira",
+    "foto": "",
+    "cargo": "Engenheiro Mecânico",
+    "resumo": "Projetista de máquinas e sistemas térmicos.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Engenharia Mecânica",
+    "habilidadesTecnicas": [
+      "SolidWorks",
+      "AutoCAD",
+      "Ansys",
+      "Manutenção Preventiva",
+      "Termodinâmica"
+    ],
+    "softSkills": [
+      "Resolução de Problemas",
+      "Foco",
+      "Pragmatismo"
+    ],
+    "hobbies": [
+      "Carros Antigos",
+      "Mecânica DIY",
+      "Kart"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Metalúrgica Sul",
+        "cargo": "Projetista Mecânico",
+        "inicio": "2019-02",
+        "fim": "Atual",
+        "descricao": "Desenho de peças e montagens industriais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Mecânica",
+        "instituicao": "UFRGS",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "SolidWorks Professional"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Alemão",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Energia Renovável",
+      "Automobilismo",
+      "Materiais"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 66,
+    "nome": "Fernanda Oliveira",
+    "foto": "",
+    "cargo": "Advogada Digital (LGPD)",
+    "resumo": "Especialista em Direito Digital e Proteção de Dados.",
+    "localizacao": "São Paulo/SP",
+    "area": "Direito",
+    "habilidadesTecnicas": [
+      "LGPD",
+      "GDPR",
+      "Compliance",
+      "Contratos de TI",
+      "Propriedade Intelectual"
+    ],
+    "softSkills": [
+      "Oratória",
+      "Negociação",
+      "Escrita Jurídica"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Debates",
+      "Política"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Escritório Tech Law",
+        "cargo": "Advogada Sênior",
+        "inicio": "2018-08",
+        "fim": "Atual",
+        "descricao": "Consultoria para adequação à LGPD."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Direito",
+        "instituicao": "USP",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "DPO (Exin)"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Direito Digital",
+      "Ética em IA",
+      "Privacidade"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 67,
+    "nome": "Ricardo Mendes",
+    "foto": "",
+    "cargo": "Engenheiro Ambiental",
+    "resumo": "Gestão de resíduos e licenciamento ambiental.",
+    "localizacao": "Manaus/AM",
+    "area": "Engenharia Ambiental",
+    "habilidadesTecnicas": [
+      "EIA/RIMA",
+      "Gestão de Resíduos",
+      "ISO 14001",
+      "Geoprocessamento",
+      "Legislação Ambiental"
+    ],
+    "softSkills": [
+      "Consciência Ambiental",
+      "Comunicação",
+      "Negociação"
+    ],
+    "hobbies": [
+      "Trilhas",
+      "Fotografia de Natureza",
+      "Canoagem"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Eco Solutions",
+        "cargo": "Consultor Ambiental",
+        "inicio": "2020-03",
+        "fim": "Atual",
+        "descricao": "Projetos de recuperação de áreas degradadas."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Ambiental",
+        "instituicao": "UFAM",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Sustentabilidade",
+      "Mudanças Climáticas",
+      "ESG"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 68,
+    "nome": "Camila Siqueira",
+    "foto": "",
+    "cargo": "Psicóloga Organizacional",
+    "resumo": "Foco em Recrutamento e Seleção, Clima e Cultura Organizacional.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Psicologia",
+    "habilidadesTecnicas": [
+      "Testes Psicológicos",
+      "Entrevista por Competência",
+      "People Analytics",
+      "Treinamento"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Escuta Ativa",
+      "Inteligência Emocional"
+    ],
+    "hobbies": [
+      "Yoga",
+      "Psicanálise",
+      "Cinema"
+    ],
+    "experiencias": [
+      {
+        "empresa": "RH Consultoria",
+        "cargo": "Business Partner",
+        "inicio": "2019-11",
+        "fim": "Atual",
+        "descricao": "Apoio estratégico às lideranças."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Psicologia",
+        "instituicao": "UFRJ",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Coaching"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Espanhol",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Saúde Mental",
+      "Diversidade",
+      "Liderança"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 69,
+    "nome": "Gustavo Rocha",
+    "foto": "",
+    "cargo": "Engenheiro de Pesca",
+    "resumo": "Especialista em Aquicultura e manejo sustentável.",
+    "localizacao": "Fortaleza/CE",
+    "area": "Engenharia de Pesca",
+    "habilidadesTecnicas": [
+      "Aquicultura",
+      "Limnologia",
+      "Processamento de Pescado",
+      "Gestão de Recursos Hídricos"
+    ],
+    "softSkills": [
+      "Resiliência",
+      "Gestão de Projetos",
+      "Trabalho em Campo"
+    ],
+    "hobbies": [
+      "Pesca Esportiva",
+      "Mergulho",
+      "Aquarismo"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Fazenda Marinha",
+        "cargo": "Engenheiro de Produção",
+        "inicio": "2021-01",
+        "fim": "Atual",
+        "descricao": "Gestão da produção de camarão."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Pesca",
+        "instituicao": "UFC",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Biologia Marinha",
+      "Oceanografia",
+      "Sustentabilidade"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 70,
+    "nome": "Mariana Lins",
+    "foto": "",
+    "cargo": "Designer Gráfico",
+    "resumo": "Criativa focada em Branding e Identidade Visual.",
+    "localizacao": "São Paulo/SP",
+    "area": "Design",
+    "habilidadesTecnicas": [
+      "Photoshop",
+      "Illustrator",
+      "InDesign",
+      "Tipografia",
+      "Branding"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Comunicação Visual",
+      "Estética"
+    ],
+    "hobbies": [
+      "Colagem",
+      "Museus",
+      "Sketchbook"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Estúdio Criativo",
+        "cargo": "Designer Pleno",
+        "inicio": "2020-05",
+        "fim": "Atual",
+        "descricao": "Criação de marcas para startups."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Design Gráfico",
+        "instituicao": "Belas Artes",
+        "ano": 2019
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Identidade Visual Café",
+        "link": "https://behance.net/mariana",
+        "descricao": "Branding completo para cafeteria."
+      }
+    ],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Arte",
+      "Moda",
+      "Publicidade"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 71,
+    "nome": "Paulo Albuquerque",
+    "foto": "",
+    "cargo": "Administrador Financeiro",
+    "resumo": "Gestão de fluxo de caixa, FP&A e controladoria.",
+    "localizacao": "Curitiba/PR",
+    "area": "Administração",
+    "habilidadesTecnicas": [
+      "Excel Avançado",
+      "Power BI",
+      "SAP",
+      "Valuation",
+      "Contabilidade"
+    ],
+    "softSkills": [
+      "Analítico",
+      "Ética",
+      "Organização"
+    ],
+    "hobbies": [
+      "Xadrez",
+      "Mercado Financeiro",
+      "Corrida"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Indústria Têxtil",
+        "cargo": "Coordenador Financeiro",
+        "inicio": "2018-04",
+        "fim": "Atual",
+        "descricao": "Responsável pela tesouraria e planejamento financeiro."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Administração",
+        "instituicao": "UFPR",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "CPA-20"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Economia",
+      "Investimentos",
+      "Gestão"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 72,
+    "nome": "Sofia Martins",
+    "foto": "",
+    "cargo": "Analista de Marketing (Growth)",
+    "resumo": "Especialista em Growth Hacking e aquisição de usuários.",
+    "localizacao": "Florianópolis/SC",
+    "area": "Marketing",
+    "habilidadesTecnicas": [
+      "Google Ads",
+      "Facebook Ads",
+      "SEO",
+      "Google Analytics",
+      "CRM"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Orientação a Dados",
+      "Experimentação"
+    ],
+    "hobbies": [
+      "Blogs",
+      "Viagens",
+      "Fotografia"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Tech Startup",
+        "cargo": "Growth Hacker",
+        "inicio": "2021-08",
+        "fim": "Atual",
+        "descricao": "Estratégias de aquisição B2B."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Marketing",
+        "instituicao": "ESPM",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Google Ads Certified"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Startups",
+      "Tecnologia",
+      "Comportamento do Consumidor"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 73,
+    "nome": "André Souza",
+    "foto": "",
+    "cargo": "Técnico em Eletrônica",
+    "resumo": "Manutenção de equipamentos industriais e placas de circuito.",
+    "localizacao": "São Bernardo do Campo/SP",
+    "area": "Eletrônica",
+    "habilidadesTecnicas": [
+      "Soldagem",
+      "Leitura de Esquemas",
+      "Osciloscópio",
+      "Manutenção de Hardware",
+      "Arduino"
+    ],
+    "softSkills": [
+      "Resolução de Problemas",
+      "Paciência",
+      "Atenção Manual"
+    ],
+    "hobbies": [
+      "Radioamadorismo",
+      "Conserto de Retrô Games",
+      "Música"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Assistência Técnica",
+        "cargo": "Técnico Eletrônico",
+        "inicio": "2015-02",
+        "fim": "Atual",
+        "descricao": "Reparo de placas mãe e fontes."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Técnico em Eletrônica",
+        "instituicao": "ETEC",
+        "ano": 2014
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Técnico"
+      }
+    ],
+    "arealnteresses": [
+      "Hardware",
+      "IoT",
+      "Automação"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 74,
+    "nome": "Larissa Pires",
+    "foto": "",
+    "cargo": "Nutricionista Esportiva",
+    "resumo": "Acompanhamento nutricional para atletas de alto rendimento.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Saúde",
+    "habilidadesTecnicas": [
+      "Avaliação Antropométrica",
+      "Prescrição Dietética",
+      "Suplementação",
+      "Bioimpedância"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Comunicação",
+      "Motivação"
+    ],
+    "hobbies": [
+      "Crossfit",
+      "Culinária Saudável",
+      "Corrida"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Clínica Bem Estar",
+        "cargo": "Nutricionista",
+        "inicio": "2019-01",
+        "fim": "Atual",
+        "descricao": "Atendimento clínico."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Nutrição",
+        "instituicao": "UERJ",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Esportes",
+      "Saúde Pública",
+      "Bem-estar"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 75,
+    "nome": "Diego Ramos",
+    "foto": "",
+    "cargo": "Videomaker / Editor",
+    "resumo": "Produção e edição de conteúdo audiovisual para mídias digitais.",
+    "localizacao": "São Paulo/SP",
+    "area": "Mídias",
+    "habilidadesTecnicas": [
+      "Premiere Pro",
+      "After Effects",
+      "DaVinci Resolve",
+      "Captação de Imagem",
+      "Roteiro"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Narrativa",
+      "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Cinema",
+      "Fotografia Analógica",
+      "Música"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Produtora Digital",
+        "cargo": "Editor de Vídeo",
+        "inicio": "2020-06",
+        "fim": "Atual",
+        "descricao": "Edição de vídeos para Youtube e Instagram."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Rádio e TV",
+        "instituicao": "Cásper Líbero",
+        "ano": 2019
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Documentário Curta",
+        "link": "https://vimeo.com/diego",
+        "descricao": "Curta metragem documental."
+      }
+    ],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Cinema",
+      "Streaming",
+      "Produção Audiovisual"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 76,
+    "nome": "Bruna Costa",
+    "foto": "",
+    "cargo": "Arquiteta Urbanista",
+    "resumo": "Projetos residenciais e design de interiores.",
+    "localizacao": "Brasília/DF",
+    "area": "Arquitetura",
+    "habilidadesTecnicas": [
+      "AutoCAD",
+      "SketchUp",
+      "V-Ray",
+      "Lumion",
+      "Detalhamento"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Visão Espacial",
+      "Atendimento ao Cliente"
+    ],
+    "hobbies": [
+      "Decoração",
+      "Viagens",
+      "Arte"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Escritório de Arquitetura",
+        "cargo": "Arquiteta Júnior",
+        "inicio": "2021-02",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de projetos de interiores."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Arquitetura e Urbanismo",
+        "instituicao": "UnB",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Francês",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Urbanismo",
+      "Sustentabilidade",
+      "Design"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 77,
+    "nome": "Felipe Araújo",
+    "foto": "",
+    "cargo": "Engenheiro de Produção",
+    "resumo": "Otimização de processos industriais e Lean Manufacturing.",
+    "localizacao": "Caxias do Sul/RS",
+    "area": "Engenharia de Produção",
+    "habilidadesTecnicas": [
+      "Lean Six Sigma",
+      "PCP",
+      "Gestão de Qualidade",
+      "Power BI",
+      "SAP"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Analítico",
+      "Gestão de Tempo"
+    ],
+    "hobbies": [
+      "Futebol",
+      "Churrasco",
+      "Carros"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Indústria Metalmecânica",
+        "cargo": "Analista de PCP",
+        "inicio": "2019-05",
+        "fim": "Atual",
+        "descricao": "Planejamento e controle da produção."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Produção",
+        "instituicao": "UCS",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Green Belt Six Sigma"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Logística",
+      "Gestão Industrial",
+      "Melhoria Contínua"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 78,
+    "nome": "Clara Nunes",
+    "foto": "",
+    "cargo": "Biomédica",
+    "resumo": "Análises clínicas e pesquisa laboratorial.",
+    "localizacao": "Recife/PE",
+    "area": "Saúde",
+    "habilidadesTecnicas": [
+      "Hematologia",
+      "Microbiologia",
+      "Operação de Equipamentos Lab",
+      "Coleta"
+    ],
+    "softSkills": [
+      "Atenção aos Detalhes",
+      "Organização",
+      "Ética"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Séries Médicas",
+      "Voluntariado"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Laboratório Diagnóstico",
+        "cargo": "Biomédica",
+        "inicio": "2020-08",
+        "fim": "Atual",
+        "descricao": "Análise de exames laboratoriais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Biomedicina",
+        "instituicao": "UFPE",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Técnico"
+      }
+    ],
+    "arealnteresses": [
+      "Pesquisa Científica",
+      "Genética",
+      "Saúde"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 79,
+    "nome": "Rodrigo Farias",
+    "foto": "",
+    "cargo": "Social Media Manager",
+    "resumo": "Gestão de redes sociais e criação de comunidades.",
+    "localizacao": "São Paulo/SP",
+    "area": "Mídias",
+    "habilidadesTecnicas": [
+      "Instagram",
+      "TikTok",
+      "Canva",
+      "Copywriting",
+      "Análise de Métricas"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Comunicação",
+      "Adaptabilidade"
+    ],
+    "hobbies": [
+      "Fotografia",
+      "Shows",
+      "Trends"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Agência Digital",
+        "cargo": "Social Media",
+        "inicio": "2021-03",
+        "fim": "Atual",
+        "descricao": "Gestão de perfis de clientes de moda."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Publicidade e Propaganda",
+        "instituicao": "Anhembi Morumbi",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Influencer Marketing",
+      "Branding",
+      "Cultura Pop"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 80,
+    "nome": "Patrícia Lima",
+    "foto": "",
+    "cargo": "Gerente Comercial",
+    "resumo": "Gestão de equipes de vendas e contas estratégicas B2B.",
+    "localizacao": "Goiânia/GO",
+    "area": "Vendas",
+    "habilidadesTecnicas": [
+      "CRM",
+      "Negociação",
+      "Spin Selling",
+      "Gestão de Pipeline",
+      "Previsão de Vendas"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Persuasão",
+      "Resiliência"
+    ],
+    "hobbies": [
+      "Networking",
+      "Vinhos",
+      "Tênis"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Distribuidora Centro-Oeste",
+        "cargo": "Gerente de Contas",
+        "inicio": "2017-05",
+        "fim": "Atual",
+        "descricao": "Gestão de carteira de grandes clientes."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Gestão Comercial",
+        "instituicao": "PUC-GO",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Vendas",
+      "Liderança",
+      "Agronegócio"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 81,
+    "nome": "Marcelo Vieira",
+    "foto": "",
+    "cargo": "Engenheiro Eletricista",
+    "resumo": "Projetos de instalações elétricas e sistemas de potência.",
+    "localizacao": "Curitiba/PR",
+    "area": "Engenharia Elétrica",
+    "habilidadesTecnicas": [
+      "AutoCAD Electrical",
+      "Projetos de Subestação",
+      "NR-10",
+      "Energia Solar",
+      "Matlab"
+    ],
+    "softSkills": [
+      "Segurança",
+      "Foco",
+      "Resolução de Problemas"
+    ],
+    "hobbies": [
+      "Eletrônica",
+      "Carros Elétricos",
+      "Futebol"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Engenharia Elétrica Sul",
+        "cargo": "Engenheiro Pleno",
+        "inicio": "2018-09",
+        "fim": "Atual",
+        "descricao": "Projetos elétricos para edifícios comerciais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Elétrica",
+        "instituicao": "UTFPR",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "NR-10"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Energias Renováveis",
+      "Smart Grid",
+      "Automação"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 82,
+    "nome": "Aline Silva",
+    "foto": "",
+    "cargo": "Professora de Inglês",
+    "resumo": "Ensino de língua inglesa para adultos e preparação para exames.",
+    "localizacao": "São Paulo/SP",
+    "area": "Educação",
+    "habilidadesTecnicas": [
+      "Metodologias Ativas",
+      "TOEFL",
+      "Ensino EAD",
+      "Tradução",
+      "Didática"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Paciência",
+      "Empatia"
+    ],
+    "hobbies": [
+      "Literatura Inglesa",
+      "Viagens",
+      "Cinema"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Escola de Idiomas",
+        "cargo": "Professora",
+        "inicio": "2016-02",
+        "fim": "Atual",
+        "descricao": "Aulas para turmas avançadas e business."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Letras - Inglês",
+        "instituicao": "USP",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "CELTA"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Educação",
+      "Linguística",
+      "Cultura"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 83,
+    "nome": "Breno Correia",
+    "foto": "",
+    "cargo": "Consultor SAP",
+    "resumo": "Especialista no módulo FI/CO (Finanças e Controladoria).",
+    "localizacao": "São Paulo/SP",
+    "area": "TI Corporativa",
+    "habilidadesTecnicas": [
+      "SAP FI/CO",
+      "SAP S/4HANA",
+      "ABAP (Básico)",
+      "Implantação de ERP"
+    ],
+    "softSkills": [
+      "Consultoria",
+      "Resolução de Problemas",
+      "Viagens"
+    ],
+    "hobbies": [
+      "Milhas Aéreas",
+      "Tênis",
+      "Restaurantes"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Consultoria Global",
+        "cargo": "Consultor SAP Sênior",
+        "inicio": "2015-06",
+        "fim": "Atual",
+        "descricao": "Projetos de rollout internacional."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Contabilidade",
+        "instituicao": "Mackenzie",
+        "ano": 2014
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "SAP Certified Application Associate"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "ERP",
+      "Finanças",
+      "Tecnologia"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 84,
+    "nome": "Eliane Moreira",
+    "foto": "",
+    "cargo": "Jornalista",
+    "resumo": "Repórter e redatora focada em economia e negócios.",
+    "localizacao": "Brasília/DF",
+    "area": "Comunicação",
+    "habilidadesTecnicas": [
+      "Redação Jornalística",
+      "Apuração",
+      "SEO",
+      "Assessoria de Imprensa",
+      "Edição"
+    ],
+    "softSkills": [
+      "Curiosidade",
+      "Comunicação",
+      "Ética"
+    ],
+    "hobbies": [
+      "Política",
+      "Leitura",
+      "Documentários"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Portal de Notícias",
+        "cargo": "Repórter",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Cobertura do cenário econômico nacional."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Jornalismo",
+        "instituicao": "UnB",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Jornalismo de Dados",
+      "Economia",
+      "Política"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 85,
+    "nome": "Vitor Azevedo",
+    "foto": "",
+    "cargo": "Geólogo",
+    "resumo": "Mapeamento geológico e análise de solo para mineração.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Geologia",
+    "habilidadesTecnicas": [
+      "Mapeamento",
+      "ArcGIS",
+      "Petrografia",
+      "Sondagem",
+      "Mineração"
+    ],
+    "softSkills": [
+      "Trabalho em Campo",
+      "Análise",
+      "Resiliência"
+    ],
+    "hobbies": [
+      "Escalada",
+      "Coleção de Minerais",
+      "Camping"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Mineradora Vale do Rio",
+        "cargo": "Geólogo Júnior",
+        "inicio": "2021-04",
+        "fim": "Atual",
+        "descricao": "Acompanhamento de sondagem."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Geologia",
+        "instituicao": "UFMG",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Mineração",
+      "Geofísica",
+      "Meio Ambiente"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 86,
+    "nome": "Daniela Kotscho",
+    "foto": "",
+    "cargo": "Tradutora e Intérprete",
+    "resumo": "Tradução técnica e juramentada (Inglês/Português).",
+    "localizacao": "São Paulo/SP",
+    "area": "Letras",
+    "habilidadesTecnicas": [
+      "Tradução Técnica",
+      "Legendagem",
+      "CAT Tools (Trados)",
+      "Revisão"
+    ],
+    "softSkills": [
+      "Concentração",
+      "Escrita Impecável",
+      "Prazos"
+    ],
+    "hobbies": [
+      "Literatura",
+      "Línguas",
+      "Cinema"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Freelancer",
+        "cargo": "Tradutora",
+        "inicio": "2016-01",
+        "fim": "Atual",
+        "descricao": "Tradução de manuais técnicos e contratos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Letras - Tradução",
+        "instituicao": "PUC-SP",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Francês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Literatura",
+      "Cultura",
+      "Linguística"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 87,
+    "nome": "Carlos Drumond",
+    "foto": "",
+    "cargo": "Bibliotecário",
+    "resumo": "Gestão de acervo e normalização de documentos.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Biblioteconomia",
+    "habilidadesTecnicas": [
+      "Catalogação (AACR2/RDA)",
+      "Marc21",
+      "Gestão de Acervo",
+      "ABNT",
+      "Pergamum"
+    ],
+    "softSkills": [
+      "Organização",
+      "Atendimento",
+      "Silêncio"
+    ],
+    "hobbies": [
+      "Leitura",
+      "História",
+      "Arquivos"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Biblioteca Universitária",
+        "cargo": "Bibliotecário",
+        "inicio": "2019-03",
+        "fim": "Atual",
+        "descricao": "Atendimento aos alunos e catalogação."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Biblioteconomia",
+        "instituicao": "UNIRIO",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Ciência da Informação",
+      "Preservação Digital",
+      "Educação"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 88,
+    "nome": "Renan Barreto",
+    "foto": "",
+    "cargo": "Fisioterapeuta",
+    "resumo": "Reabilitação ortopédica e esportiva.",
+    "localizacao": "Salvador/BA",
+    "area": "Saúde",
+    "habilidadesTecnicas": [
+      "Terapia Manual",
+      "Pilates",
+      "Eletroterapia",
+      "Avaliação Cinética"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Paciência",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Surf",
+      "Capoeira",
+      "Praia"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Clínica FisioSport",
+        "cargo": "Fisioterapeuta",
+        "inicio": "2020-02",
+        "fim": "Atual",
+        "descricao": "Reabilitação de lesões em atletas amadores."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Fisioterapia",
+        "instituicao": "UFBA",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Pilates"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Biomecânica",
+      "Esportes",
+      "Saúde"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 89,
+    "nome": "Camila Dias",
+    "foto": "",
+    "cargo": "Engenheira Florestal",
+    "resumo": "Manejo florestal e recuperação de áreas degradadas.",
+    "localizacao": "Curitiba/PR",
+    "area": "Engenharia Florestal",
+    "habilidadesTecnicas": [
+      "Inventário Florestal",
+      "Silvicultura",
+      "Geoprocessamento",
+      "Legislação Ambiental"
+    ],
+    "softSkills": [
+      "Amor pela Natureza",
+      "Planejamento",
+      "Liderança em Campo"
+    ],
+    "hobbies": [
+      "Botânica",
+      "Trilhas",
+      "Fotografia"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Reflorestadora Sul",
+        "cargo": "Engenheira Florestal",
+        "inicio": "2021-01",
+        "fim": "Atual",
+        "descricao": "Planejamento de plantio de Pinus."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Florestal",
+        "instituicao": "UFPR",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Alemão",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "Sustentabilidade",
+      "Amazônia",
+      "Conservação"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 90,
+    "nome": "Thales Mello",
+    "foto": "",
+    "cargo": "Economista",
+    "resumo": "Análise macroeconômica e estudos de mercado.",
+    "localizacao": "São Paulo/SP",
+    "area": "Economia",
+    "habilidadesTecnicas": [
+      "Econometria",
+      "Stata",
+      "R",
+      "Análise de Conjuntura",
+      "Modelagem Financeira"
+    ],
+    "softSkills": [
+      "Pensamento Crítico",
+      "Escrita Analítica",
+      "Matemática"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Debates",
+      "Xadrez"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Consultoria Econômica",
+        "cargo": "Economista Júnior",
+        "inicio": "2022-01",
+        "fim": "Atual",
+        "descricao": "Elaboração de relatórios setoriais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Economia",
+        "instituicao": "FGV",
+        "ano": 2021
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Políticas Públicas",
+      "Mercado Financeiro",
+      "Desenvolvimento"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 91,
+    "nome": "Priscila Alcântara",
+    "foto": "",
+    "cargo": "Farmacêutica",
+    "resumo": "Atuação em farmácia hospitalar e oncologia.",
+    "localizacao": "São Paulo/SP",
+    "area": "Saúde",
+    "habilidadesTecnicas": [
+      "Farmacologia",
+      "Gestão de Estoque",
+      "Atenção Farmacêutica",
+      "Manipulação"
+    ],
+    "softSkills": [
+      "Atenção",
+      "Cuidado",
+      "Ética"
+    ],
+    "hobbies": [
+      "Voluntariado",
+      "Yoga",
+      "Leitura"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Hospital Santa Cruz",
+        "cargo": "Farmacêutica Hospitalar",
+        "inicio": "2019-04",
+        "fim": "Atual",
+        "descricao": "Gestão da farmácia central do hospital."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Farmácia",
+        "instituicao": "USP",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Técnico"
+      }
+    ],
+    "arealnteresses": [
+      "Saúde Pública",
+      "Pesquisa Clínica",
+      "Medicamentos"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 92,
+    "nome": "Felipe Martins",
+    "foto": "",
+    "cargo": "Engenheiro Naval",
+    "resumo": "Projetos de embarcações e estruturas offshore.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Engenharia Naval",
+    "habilidadesTecnicas": [
+      "Hidrostática",
+      "Estruturas Navais",
+      "Ansys Aqwa",
+      "AutoCAD"
+    ],
+    "softSkills": [
+      "Resolução de Problemas",
+      "Trabalho em Equipe",
+      "Foco"
+    ],
+    "hobbies": [
+      "Vela",
+      "Natação",
+      "Modelismo Naval"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Estaleiro Atlântico",
+        "cargo": "Engenheiro Naval",
+        "inicio": "2018-02",
+        "fim": "Atual",
+        "descricao": "Acompanhamento de reparos em navios."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Naval",
+        "instituicao": "UFRJ",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Offshore",
+      "Petróleo e Gás",
+      "Logística"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 93,
+    "nome": "Talita Souza",
+    "foto": "",
+    "cargo": "Gestora de Tráfego (Ads)",
+    "resumo": "Especialista em mídia paga e performance.",
+    "localizacao": "Recife/PE",
+    "area": "Marketing",
+    "habilidadesTecnicas": [
+      "Facebook Ads",
+      "Google Ads",
+      "Google Tag Manager",
+      "Copywriting",
+      "Analytics"
+    ],
+    "softSkills": [
+      "Analítico",
+      "Foco em Resultados",
+      "Autodidata"
+    ],
+    "hobbies": [
+      "Podcasts",
+      "Praia",
+      "Marketing Digital"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Agência Performance",
+        "cargo": "Gestora de Tráfego",
+        "inicio": "2020-09",
+        "fim": "Atual",
+        "descricao": "Gestão de orçamento de R$ 50k/mês."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Marketing Digital",
+        "instituicao": "Udacity (Curso Livre)",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "Meta Media Buying"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "E-commerce",
+      "Dropshipping",
+      "Negócios Digitais"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 94,
+    "nome": "Otávio Nogueira",
+    "foto": "",
+    "cargo": "Agrônomo",
+    "resumo": "Consultoria em grandes culturas (Soja e Milho).",
+    "localizacao": "Sorriso/MT",
+    "area": "Agronomia",
+    "habilidadesTecnicas": [
+      "Fitopatologia",
+      "Gestão de Fazendas",
+      "Agricultura de Precisão",
+      "GPS",
+      "Drones"
+    ],
+    "softSkills": [
+      "Comunicação Rural",
+      "Vendas",
+      "Resiliência"
+    ],
+    "hobbies": [
+      "Pesca",
+      "Churrasco",
+      "Violão"
+    ],
+    "experiencias": [
+      {
+        "empresa": "AgroConsult",
+        "cargo": "Engenheiro Agrônomo",
+        "inicio": "2019-01",
+        "fim": "Atual",
+        "descricao": "Venda técnica e assistência ao produtor."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Agronomia",
+        "instituicao": "UFMT",
+        "ano": 2018
+      }
+    ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "arealnteresses": []
+    "arealnteresses": [
+      "Agronegócio",
+      "Tecnologia no Campo",
+      "Sustentabilidade"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 95,
+    "nome": "Júlia Vargas",
+    "foto": "",
+    "cargo": "Designer de Interiores",
+    "resumo": "Projetos de interiores residenciais e comerciais.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Design",
+    "habilidadesTecnicas": [
+      "Promob",
+      "SketchUp",
+      "V-Ray",
+      "Decoração",
+      "Detalhamento de Móveis"
+    ],
+    "softSkills": [
+      "Estética",
+      "Atendimento",
+      "Criatividade"
+    ],
+    "hobbies": [
+      "Feiras de Antiguidade",
+      "Pinterest",
+      "Viagens"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Escritório de Design",
+        "cargo": "Designer de Interiores",
+        "inicio": "2021-02",
+        "fim": "Atual",
+        "descricao": "Projetos de reforma de apartamentos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Design de Interiores",
+        "instituicao": "Ritter dos Reis",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "arealnteresses": [
+      "Arquitetura",
+      "Arte",
+      "Tendências"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 96,
+    "nome": "Fernando Teixeira",
+    "foto": "",
+    "cargo": "Copywriter",
+    "resumo": "Redator publicitário focado em conversão e storytelling.",
+    "localizacao": "Lisboa/PT (Remoto)",
+    "area": "Marketing",
+    "habilidadesTecnicas": [
+      "Copywriting",
+      "Gatillos Mentais",
+      "SEO",
+      "Email Marketing",
+      "Storytelling"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Escrita Persuasiva",
+      "Empatia"
+    ],
+    "hobbies": [
+      "Poesia",
+      "Vinhos",
+      "Cafés"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Agência de Lançamentos",
+        "cargo": "Copywriter",
+        "inicio": "2020-05",
+        "fim": "Atual",
+        "descricao": "Criação de scripts de vendas e páginas de captura."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Publicidade",
+        "instituicao": "ESPM",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Marketing Digital",
+      "Literatura",
+      "Psicologia"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 97,
+    "nome": "Marta Rocha",
+    "foto": "",
+    "cargo": "Treinadora Física",
+    "resumo": "Personal Trainer focada em saúde e emagrecimento.",
+    "localizacao": "Santos/SP",
+    "area": "Esporte",
+    "habilidadesTecnicas": [
+      "Musculação",
+      "Fisiologia do Exercício",
+      "Avaliação Física",
+      "Treinamento Funcional"
+    ],
+    "softSkills": [
+      "Motivação",
+      "Energia",
+      "Disciplina"
+    ],
+    "hobbies": [
+      "Futebol",
+      "Praia",
+      "Corrida"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Academia Smart",
+        "cargo": "Personal Trainer",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Acompanhamento individual de alunos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Educação Física",
+        "instituicao": "Unisanta",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "arealnteresses": [
+      "Esportes",
+      "Saúde",
+      "Nutrição"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 98,
+    "nome": "Lucas Bernardes",
+    "foto": "",
+    "cargo": "Engenheiro Acústico",
+    "resumo": "Projetos de isolamento e tratamento acústico.",
+    "localizacao": "Santa Maria/RS",
+    "area": "Engenharia Acústica",
+    "habilidadesTecnicas": [
+      "Medição de Ruído",
+      "Simulação Acústica",
+      "Laudos Técnicos",
+      "Áudio"
+    ],
+    "softSkills": [
+      "Percepção Auditiva",
+      "Precisão",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Música",
+      "Produção Musical",
+      "Violão"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Consultoria de Ruído",
+        "cargo": "Engenheiro Acústico",
+        "inicio": "2021-03",
+        "fim": "Atual",
+        "descricao": "Laudos de impacto sonoro urbano."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Acústica",
+        "instituicao": "UFSM",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Áudio",
+      "Arquitetura",
+      "Música"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 99,
+    "nome": "Sandro Gomes",
+    "foto": "",
+    "cargo": "Gestor de Logística",
+    "resumo": "Otimização de cadeia de suprimentos e transportes.",
+    "localizacao": "Campinas/SP",
+    "area": "Logística",
+    "habilidadesTecnicas": [
+      "Gestão de Frota",
+      "WMS",
+      "Excel Avançado",
+      "Roteirização",
+      "Supply Chain"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Resolução de Conflitos",
+      "Organização"
+    ],
+    "hobbies": [
+      "Skate",
+      "Churrasco",
+      "Família"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Transportadora Rápida",
+        "cargo": "Gerente de Operações",
+        "inicio": "2015-05",
+        "fim": "Atual",
+        "descricao": "Gestão de centro de distribuição."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Logística",
+        "instituicao": "FATEC",
+        "ano": 2014
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "arealnteresses": [
+      "E-commerce",
+      "Transportes",
+      "Inovação"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 100,
+    "nome": "Vitória Mello",
+    "foto": "",
+    "cargo": "Produtora de Moda",
+    "resumo": "Styling e produção para editoriais e e-commerce.",
+    "localizacao": "São Paulo/SP",
+    "area": "Moda",
+    "habilidadesTecnicas": [
+      "Styling",
+      "Pesquisa de Tendências",
+      "Organização de Set",
+      "Produção Executiva"
+    ],
+    "softSkills": [
+      "Estética",
+      "Agilidade",
+      "Networking"
+    ],
+    "hobbies": [
+      "Moda",
+      "Teatro",
+      "Viagens"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Revista Fashion",
+        "cargo": "Produtora Assistente",
+        "inicio": "2019-08",
+        "fim": "Atual",
+        "descricao": "Produção de capas e editoriais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Design de Moda",
+        "instituicao": "IED",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Arte",
+      "Fotografia",
+      "Cinema"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 101,
+    "nome": "Hugo Carvalho",
+    "foto": "",
+    "cargo": "Analista de Sistemas (Mainframe)",
+    "resumo": "Especialista em sistemas legados e COBOL.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "TI",
+    "habilidadesTecnicas": [
+      "COBOL",
+      "JCL",
+      "DB2",
+      "CICS",
+      "Mainframe IBM"
+    ],
+    "softSkills": [
+      "Foco",
+      "Lógica",
+      "Resolução de Problemas"
+    ],
+    "hobbies": [
+      "Tênis de Mesa",
+      "Cubo Mágico",
+      "Jogos de Estratégia"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Banco Nacional",
+        "cargo": "Analista de Sistemas Sênior",
+        "inicio": "2010-03",
+        "fim": "Atual",
+        "descricao": "Manutenção do core bancário em COBOL."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Processamento de Dados",
+        "instituicao": "PUC-RJ",
+        "ano": 2009
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Técnico"
+      }
+    ],
+    "arealnteresses": [
+      "Bancos",
+      "Sistemas Legados",
+      "Tecnologia"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 102,
+    "nome": "Rafael Borges",
+    "foto": "",
+    "cargo": "Engenheiro de Minas",
+    "resumo": "Planejamento de lavra e operações mineiras.",
+    "localizacao": "Parauapebas/PA",
+    "area": "Mineração",
+    "habilidadesTecnicas": [
+      "Datamine",
+      "Planejamento de Mina",
+      "Desmonte de Rochas",
+      "Segurança do Trabalho"
+    ],
+    "softSkills": [
+      "Liderança em Campo",
+      "Resiliência",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Pesca",
+      "Violão",
+      "Churrasco"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Mineradora Norte",
+        "cargo": "Engenheiro de Minas Pleno",
+        "inicio": "2018-06",
+        "fim": "Atual",
+        "descricao": "Supervisão de turno na mina."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Minas",
+        "instituicao": "UFOP",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "arealnteresses": [
+      "Mineração",
+      "Geologia",
+      "Commodities"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 103,
+    "nome": "Yasmin Soares",
+    "foto": "",
+    "cargo": "Cosmetóloga",
+    "resumo": "Desenvolvimento de formulações cosméticas naturais.",
+    "localizacao": "São Paulo/SP",
+    "area": "Química",
+    "habilidadesTecnicas": [
+      "Formulação",
+      "Química Cosmética",
+      "Controle de Qualidade",
+      "Pesquisa"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Estética",
+      "Inovação"
+    ],
+    "hobbies": [
+      "Skincare",
+      "Yoga",
+      "Natureza"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Indústria Cosmética",
+        "cargo": "Pesquisadora P&D",
+        "inicio": "2019-02",
+        "fim": "Atual",
+        "descricao": "Criação de linha de shampoos veganos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Farmácia",
+        "instituicao": "Anhembi Morumbi",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "arealnteresses": [
+      "Beleza Limpa",
+      "Sustentabilidade",
+      "Bem-estar"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 104,
+    "nome": "Marcos Nogueira",
+    "foto": "",
+    "cargo": "Piloto Comercial",
+    "resumo": "Comandante de aeronaves comerciais.",
+    "localizacao": "Guarulhos/SP",
+    "area": "Aviação",
+    "habilidadesTecnicas": [
+      "Pilotagem",
+      "Navegação Aérea",
+      "Inglês ICAO",
+      "CRM (Crew Resource Management)"
+    ],
+    "softSkills": [
+      "Disciplina",
+      "Liderança",
+      "Tomada de Decisão"
+    ],
+    "hobbies": [
+      "Astronomia",
+      "Simuladores de Voo",
+      "Viagens"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Companhia Aérea Nacional",
+        "cargo": "Comandante A320",
+        "inicio": "2010-05",
+        "fim": "Atual",
+        "descricao": "Voos domésticos e internacionais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciências Aeronáuticas",
+        "instituicao": "Universidade Tuiuti",
+        "ano": 2008
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [
+      "PLA (Piloto de Linha Aérea)"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente (ICAO 5)"
+      }
+    ],
+    "arealnteresses": [
+      "Aviação",
+      "Espaço",
+      "Tecnologia"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 105,
+    "nome": "Ana Paula Torres",
+    "foto": "",
+    "cargo": "Gerente de Loja",
+    "resumo": "Gestão de varejo de moda e liderança de equipe de vendas.",
+    "localizacao": "São Paulo/SP",
+    "area": "Vendas",
+    "habilidadesTecnicas": [
+      "Gestão de Vendas",
+      "Visual Merchandising",
+      "KPIs de Varejo",
+      "Atendimento"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Comunicação",
+      "Organização"
+    ],
+    "hobbies": [
+      "Moda",
+      "Decoração",
+      "Família"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Rede de Varejo",
+        "cargo": "Gerente Geral",
+        "inicio": "2015-10",
+        "fim": "Atual",
+        "descricao": "Gerenciamento de loja em shopping center."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Administração",
+        "instituicao": "UNIP",
+        "ano": 2014
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "arealnteresses": [
+      "Varejo",
+      "Moda",
+      "Gestão de Pessoas"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 106,
+    "nome": "Roberto Santos",
+    "foto": "",
+    "cargo": "Diretor de Criação",
+    "resumo": "Liderança criativa em agências de publicidade.",
+    "localizacao": "São Paulo/SP",
+    "area": "Publicidade",
+    "habilidadesTecnicas": [
+      "Direção de Arte",
+      "Conceituação",
+      "Branding",
+      "Gestão de Criativos"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Exigência",
+      "Visão de Negócio"
+    ],
+    "hobbies": [
+      "Golfe",
+      "Relógios",
+      "Viagens"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Agência Publicidade Y",
+        "cargo": "Diretor de Criação",
+        "inicio": "2012-01",
+        "fim": "Atual",
+        "descricao": "Liderança de campanhas nacionais."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Publicidade e Propaganda",
+        "instituicao": "FAAP",
+        "ano": 2010
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "arealnteresses": [
+      "Publicidade",
+      "Negócios",
+      "Mídia"
+    ],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 108,
+    "nome": "Felipe Costa",
+    "foto": "",
+    "cargo": "Youtuber / Criador de Conteúdo",
+    "resumo": "Criação de vídeos de entretenimento e opinião.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Mídias",
+    "habilidadesTecnicas": ["Edição de Vídeo", "Roteiro", "SEO para Youtube", "Atuação"],
+    "softSkills": ["Comunicação", "Carisma", "Polêmica"],
+    "hobbies": ["Games", "Futebol", "Leitura"],
+    "experiencias": [
+      {
+        "empresa": "Canal Próprio",
+        "cargo": "Criador de Conteúdo",
+        "inicio": "2010-01",
+        "fim": "Atual",
+        "descricao": "Produção diária de conteúdo."
+      }
+    ],
+    "formacao": [
+      { "curso": "Teatro", "instituicao": "Curso Livre", "ano": 2009 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Internet", "Cultura Pop", "Política"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 109,
+    "nome": "Marina Barbosa",
+    "foto": "",
+    "cargo": "Designer de Moda",
+    "resumo": "Criação de coleções de vestuário feminino.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Moda",
+    "habilidadesTecnicas": ["Desenho de Moda", "Modelagem", "Ficha Técnica", "Pesquisa de Tecidos"],
+    "softSkills": ["Criatividade", "Estilo", "Sensibilidade"],
+    "hobbies": ["Viagens", "Gatos", "Arte"],
+    "experiencias": [
+      {
+        "empresa": "Marca de Roupas",
+        "cargo": "Estilista",
+        "inicio": "2018-02",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de coleção verão."
+      }
+    ],
+    "formacao": [
+      { "curso": "Design de Moda", "instituicao": "PUC-Rio", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areaInteresses": ["Sustentabilidade na Moda", "Tecidos Naturais", "Tendências"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 110,
+    "nome": "Thiago Oliveira",
+    "foto": "",
+    "cargo": "Zagueiro / Atleta Profissional",
+    "resumo": "Atleta de futebol profissional com foco em alta performance.",
+    "localizacao": "Londres/UK (Temporário)",
+    "area": "Esporte",
+    "habilidadesTecnicas": ["Futebol", "Tática", "Condicionamento Físico", "Liderança em Campo"],
+    "softSkills": ["Liderança", "Disciplina", "Foco"],
+    "hobbies": ["Pagode", "Família", "Video Game"],
+    "experiencias": [
+      {
+        "empresa": "Clube de Futebol",
+        "cargo": "Atleta",
+        "inicio": "2005-01",
+        "fim": "Atual",
+        "descricao": "Defensor titular."
+      }
+    ],
+    "formacao": [
+      { "curso": "Ensino Médio", "instituicao": "Escola Estadual", "ano": 2002 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }, { "idioma": "Francês", "nivel": "Básico" }],
+    "areaInteresses": ["Esportes", "Família", "Religião"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 111,
+    "nome": "Gabriel Souza",
+    "foto": "",
+    "cargo": "Técnico em Refrigeração",
+    "resumo": "Instalação e manutenção de sistemas de ar condicionado.",
+    "localizacao": "Manaus/AM",
+    "area": "Serviços Técnicos",
+    "habilidadesTecnicas": ["HVAC", "Solda", "Elétrica Básica", "Manutenção Preventiva"],
+    "softSkills": ["Pontualidade", "Honestidade", "Proatividade"],
+    "hobbies": ["Pesca", "Motos", "Futebol"],
+    "experiencias": [
+      {
+        "empresa": "Clima Frio",
+        "cargo": "Técnico",
+        "inicio": "2017-04",
+        "fim": "Atual",
+        "descricao": "Manutenção de splits e ACJ."
+      }
+    ],
+    "formacao": [
+      { "curso": "Refrigeração", "instituicao": "SENAI", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Climatização", "Automóveis", "Tecnologia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 112,
+    "nome": "Letícia Camargo",
+    "foto": "",
+    "cargo": "Maquiadora Profissional",
+    "resumo": "Maquiagem social, noivas e artística.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Beleza",
+    "habilidadesTecnicas": ["Colorimetria", "Penteados", "Visagismo", "Maquiagem HD"],
+    "softSkills": ["Simpatia", "Paciência", "Estética"],
+    "hobbies": ["Instagram", "Tutoriais", "Moda"],
+    "experiencias": [
+      {
+        "empresa": "Autônoma",
+        "cargo": "Maquiadora",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Atendimento em domicílio e salão."
+      }
+    ],
+    "formacao": [
+      { "curso": "Maquiagem Profissional", "instituicao": "Instituto Embelleze", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Beleza", "Arte", "Empreendedorismo"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 113,
+    "nome": "Bruno Ferrari",
+    "foto": "",
+    "cargo": "Corretor de Imóveis",
+    "resumo": "Venda e locação de imóveis de alto padrão.",
+    "localizacao": "Balneário Camboriú/SC",
+    "area": "Vendas",
+    "habilidadesTecnicas": ["Avaliação de Imóveis", "Contratos", "Fotografia Imobiliária", "Negociação"],
+    "softSkills": ["Persuasão", "Networking", "Boa Apresentação"],
+    "hobbies": ["Carros Esportivos", "Praia", "Investimentos"],
+    "experiencias": [
+      {
+        "empresa": "Imobiliária Prime",
+        "cargo": "Corretor Sênior",
+        "inicio": "2019-05",
+        "fim": "Atual",
+        "descricao": "Venda de apartamentos frente mar."
+      }
+    ],
+    "formacao": [
+      { "curso": "TTI (Técnico em Transações Imobiliárias)", "instituicao": "Sindimóveis", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": ["CRECI"],
+    "idiomas": [{ "idioma": "Espanhol", "nivel": "Intermediário" }],
+    "areaInteresses": ["Mercado Imobiliário", "Luxo", "Arquitetura"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 114,
+    "nome": "Bianca Menezes",
+    "foto": "",
+    "cargo": "Instrutora de Pilates",
+    "resumo": "Fisioterapeuta especializada em Pilates e reabilitação postural.",
+    "localizacao": "Salvador/BA",
+    "area": "Saúde",
+    "habilidadesTecnicas": ["Pilates Solo", "Pilates Aparelhos", "RPG", "Anatomia"],
+    "softSkills": ["Paciência", "Atenção", "Didática"],
+    "hobbies": ["Dança", "Praia", "Leitura"],
+    "experiencias": [
+      {
+        "empresa": "Studio Zen",
+        "cargo": "Instrutora",
+        "inicio": "2016-03",
+        "fim": "Atual",
+        "descricao": "Aulas personalizadas para idosos e gestantes."
+      }
+    ],
+    "formacao": [
+      { "curso": "Fisioterapia", "instituicao": "UFBA", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": ["Certificação Internacional em Pilates"],
+    "idiomas": [],
+    "areaInteresses": ["Bem-estar", "Saúde", "Fisioterapia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 115,
+    "nome": "Thiago Bastos",
+    "foto": "",
+    "cargo": "Coordenador de Eventos",
+    "resumo": "Planejamento e execução de eventos corporativos e feiras.",
+    "localizacao": "São Paulo/SP",
+    "area": "Eventos",
+    "habilidadesTecnicas": ["Gestão de Fornecedores", "Logística", "Orçamento", "Produção"],
+    "softSkills": ["Organização", "Liderança", "Comunicação"],
+    "hobbies": ["Musculação", "Cinema", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Eventos Corp",
+        "cargo": "Coordenador",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Organização de feiras de tecnologia."
+      }
+    ],
+    "formacao": [
+      { "curso": "Relações Públicas", "instituicao": "Cásper Líbero", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Marketing", "Eventos", "Negócios"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 116,
+    "nome": "Eduardo Lima",
+    "foto": "",
+    "cargo": "Gestor de Projetos Sociais",
+    "resumo": "Coordenação de iniciativas de impacto social e captação de recursos.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Terceiro Setor",
+    "habilidadesTecnicas": ["Gestão de Projetos", "Captação de Recursos", "Relatórios de Impacto", "Parcerias"],
+    "softSkills": ["Empatia", "Liderança", "Negociação"],
+    "hobbies": ["Voluntariado", "Corrida", "Leitura"],
+    "experiencias": [
+      {
+        "empresa": "ONG Educar",
+        "cargo": "Gerente de Projetos",
+        "inicio": "2019-05",
+        "fim": "Atual",
+        "descricao": "Gestão de programas educacionais em comunidades."
+      }
+    ],
+    "formacao": [
+      { "curso": "Ciências Sociais", "instituicao": "UFRJ", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Educação", "Sustentabilidade", "Impacto Social"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 117,
+    "nome": "Alice Pinheiro",
+    "foto": "",
+    "cargo": "Psicopedagoga",
+    "resumo": "Atendimento clínico a crianças com dificuldades de aprendizagem.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Educação",
+    "habilidadesTecnicas": ["Avaliação Psicopedagógica", "Intervenção", "Orientação Familiar", "Inclusão"],
+    "softSkills": ["Paciência", "Escuta Ativa", "Empatia"],
+    "hobbies": ["Artesanato", "Literatura Infantil", "Jardinagem"],
+    "experiencias": [
+      {
+        "empresa": "Clínica Aprender",
+        "cargo": "Psicopedagoga",
+        "inicio": "2020-02",
+        "fim": "Atual",
+        "descricao": "Atendimento a crianças com TDAH e dislexia."
+      }
+    ],
+    "formacao": [
+      { "curso": "Pedagogia", "instituicao": "UFRGS", "ano": 2019 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Educação Inclusiva", "Psicologia", "Desenvolvimento Infantil"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 118,
+    "nome": "Vitor Hugo",
+    "foto": "",
+    "cargo": "Sommelier",
+    "resumo": "Consultoria de vinhos e gestão de adegas para restaurantes.",
+    "localizacao": "Bento Gonçalves/RS",
+    "area": "Gastronomia",
+    "habilidadesTecnicas": ["Enologia", "Harmonização", "Gestão de Estoque", "Vendas"],
+    "softSkills": ["Comunicação", "Atendimento", "Paixão"],
+    "hobbies": ["Vinhos", "Culinária", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Vinícola Vale",
+        "cargo": "Sommelier",
+        "inicio": "2018-06",
+        "fim": "Atual",
+        "descricao": "Responsável pelas degustações e loja."
+      }
+    ],
+    "formacao": [
+      { "curso": "Sommelier Profissional", "instituicao": "ABS", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": ["WSET Level 2"],
+    "idiomas": [{ "idioma": "Italiano", "nivel": "Intermediário" }],
+    "areaInteresses": ["Vinicultura", "Turismo", "Gastronomia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 119,
+    "nome": "Renato Silva",
+    "foto": "",
+    "cargo": "Podcaster e Locutor",
+    "resumo": "Produção e apresentação de podcasts sobre tecnologia e cultura.",
+    "localizacao": "São Paulo/SP",
+    "area": "Comunicação",
+    "habilidadesTecnicas": ["Edição de Áudio", "Roteiro", "Entrevistas", "Locução"],
+    "softSkills": ["Curiosidade", "Comunicação", "Humor"],
+    "hobbies": ["Games", "Séries", "Música"],
+    "experiencias": [
+      {
+        "empresa": "Produtora de Áudio",
+        "cargo": "Produtor de Podcast",
+        "inicio": "2019-01",
+        "fim": "Atual",
+        "descricao": "Criação de conteúdo para plataformas de streaming."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "Mackenzie", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Tecnologia", "Cultura Pop", "Rádio"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 120,
+    "nome": "Daniela Campos",
+    "foto": "",
+    "cargo": "Produtora Executiva",
+    "resumo": "Gestão financeira e logística de projetos culturais.",
+    "localizacao": "Salvador/BA",
+    "area": "Cultura",
+    "habilidadesTecnicas": ["Leis de Incentivo", "Planilhas", "Gestão de Equipe", "Produção"],
+    "softSkills": ["Organização", "Liderança", "Resiliência"],
+    "hobbies": ["Teatro", "Praia", "Dança"],
+    "experiencias": [
+      {
+        "empresa": "Produtora Cultural",
+        "cargo": "Diretora Financeira",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Prestação de contas de projetos aprovados na Lei Rouanet."
+      }
+    ],
+    "formacao": [
+      { "curso": "Produção Cultural", "instituicao": "UFBA", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Arte", "Gestão Cultural", "Música"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 121,
+    "nome": "Alberto Diniz",
+    "foto": "",
+    "cargo": "Diretor Comercial",
+    "resumo": "Estratégias de vendas e expansão de mercado para varejo.",
+    "localizacao": "São Paulo/SP",
+    "area": "Vendas",
+    "habilidadesTecnicas": ["Planejamento Estratégico", "Negociação B2B", "Gestão de KPIs", "Liderança"],
+    "softSkills": ["Visão de Negócio", "Persuasão", "Foco em Resultados"],
+    "hobbies": ["Golfe", "Viagens", "Vinhos"],
+    "experiencias": [
+      {
+        "empresa": "Grupo Varejista",
+        "cargo": "Diretor Comercial",
+        "inicio": "2010-05",
+        "fim": "Atual",
+        "descricao": "Gestão da equipe nacional de vendas."
+      }
+    ],
+    "formacao": [
+      { "curso": "Administração", "instituicao": "FGV", "ano": 2000 }
+    ],
+    "projetos": [],
+    "certificacoes": ["MBA em Gestão Comercial"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areaInteresses": ["Varejo", "Economia", "Inovação"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 122,
+    "nome": "Edson Moreira",
+    "foto": "",
+    "cargo": "Consultor Esportivo",
+    "resumo": "Gestão de carreiras e marketing para atletas.",
+    "localizacao": "Santos/SP",
+    "area": "Esporte",
+    "habilidadesTecnicas": ["Marketing Esportivo", "Contratos", "Gestão de Imagem", "Negociação"],
+    "softSkills": ["Networking", "Comunicação", "Ética"],
+    "hobbies": ["Futebol", "Pesca", "Música"],
+    "experiencias": [
+      {
+        "empresa": "Agência de Atletas",
+        "cargo": "Sócio",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Representação de jogadores de futebol."
+      }
+    ],
+    "formacao": [
+      { "curso": "Educação Física", "instituicao": "UNIMES", "ano": 2010 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Espanhol", "nivel": "Avançado" }],
+    "areaInteresses": ["Futebol", "Negócios", "Direito Desportivo"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 123,
+    "nome": "Augusto Meirelles",
+    "foto": "",
+    "cargo": "Editor de Vídeo Sênior",
+    "resumo": "Pós-produção para publicidade e conteúdo digital.",
+    "localizacao": "São Paulo/SP",
+    "area": "Mídias",
+    "habilidadesTecnicas": ["Premiere", "After Effects", "Color Grading", "Motion Graphics"],
+    "softSkills": ["Criatividade", "Atenção aos Detalhes", "Prazos"],
+    "hobbies": ["Cinema", "Fotografia", "Games"],
+    "experiencias": [
+      {
+        "empresa": "Produtora de Vídeo",
+        "cargo": "Editor Sênior",
+        "inicio": "2016-02",
+        "fim": "Atual",
+        "descricao": "Edição de comerciais de TV e internet."
+      }
+    ],
+    "formacao": [
+      { "curso": "Rádio e TV", "instituicao": "Belas Artes", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Audiovisual", "Tecnologia", "Arte"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 124,
+    "nome": "Helena Sampaio",
+    "foto": "",
+    "cargo": "Cerimonialista",
+    "resumo": "Organização completa de casamentos e eventos sociais.",
+    "localizacao": "São Paulo/SP",
+    "area": "Eventos",
+    "habilidadesTecnicas": ["Planejamento", "Gestão de Fornecedores", "Protocolo", "Decoração"],
+    "softSkills": ["Simpatia", "Organização", "Resolução de Problemas"],
+    "hobbies": ["Festas", "Flores", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Helena Eventos",
+        "cargo": "Proprietária",
+        "inicio": "2012-01",
+        "fim": "Atual",
+        "descricao": "Realização de casamentos e festas de 15 anos."
+      }
+    ],
+    "formacao": [
+      { "curso": "Relações Públicas", "instituicao": "Anhembi Morumbi", "ano": 2010 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Eventos", "Moda", "Gastronomia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 125,
+    "nome": "Francisco Neto",
+    "foto": "",
+    "cargo": "Roteirista",
+    "resumo": "Criação de roteiros para séries, curtas e publicidade.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Cinema",
+    "habilidadesTecnicas": ["Roteiro", "Storytelling", "Formatação Master Scenes", "Escrita Criativa"],
+    "softSkills": ["Criatividade", "Observação", "Trabalho em Equipe"],
+    "hobbies": ["Leitura", "Cinema", "Escrita"],
+    "experiencias": [
+      {
+        "empresa": "Produtora de Conteúdo",
+        "cargo": "Roteirista",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de séries para streaming."
+      }
+    ],
+    "formacao": [
+      { "curso": "Cinema", "instituicao": "UFF", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Cinema", "Literatura", "Dramaturgia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 126,
+    "nome": "Antonio Carlos",
+    "foto": "",
+    "cargo": "Advogado Cível",
+    "resumo": "Atuação em contencioso cível e contratos.",
+    "localizacao": "Fortaleza/CE",
+    "area": "Direito",
+    "habilidadesTecnicas": ["Processo Civil", "Redação Jurídica", "Audiências", "Negociação"],
+    "softSkills": ["Oratória", "Argumentação", "Ética"],
+    "hobbies": ["Leitura", "Corrida", "Política"],
+    "experiencias": [
+      {
+        "empresa": "Escritório de Advocacia",
+        "cargo": "Advogado Pleno",
+        "inicio": "2019-03",
+        "fim": "Atual",
+        "descricao": "Acompanhamento processual e elaboração de peças."
+      }
+    ],
+    "formacao": [
+      { "curso": "Direito", "instituicao": "UFC", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": ["OAB"],
+    "idiomas": [],
+    "areaInteresses": ["Justiça", "Direito do Consumidor", "Mediação"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 127,
+    "nome": "Manoel Fraga",
+    "foto": "",
+    "cargo": "Produtor Cultural",
+    "resumo": "Elaboração e gestão de projetos culturais e artísticos.",
+    "localizacao": "Itajaí/SC",
+    "area": "Cultura",
+    "habilidadesTecnicas": ["Leis de Incentivo", "Produção Executiva", "Gestão de Projetos", "Curadoria"],
+    "softSkills": ["Criatividade", "Liderança", "Comunicação"],
+    "hobbies": ["Teatro", "Circo", "Música"],
+    "experiencias": [
+      {
+        "empresa": "Fundação Cultural",
+        "cargo": "Produtor",
+        "inicio": "2017-02",
+        "fim": "Atual",
+        "descricao": "Organização de festivais de teatro."
+      }
+    ],
+    "formacao": [
+      { "curso": "Produção Cultural", "instituicao": "Univali", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Arte", "Cultura Popular", "Educação"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 128,
+    "nome": "Antonio Silva",
+    "foto": "",
+    "cargo": "Músico Percussionista",
+    "resumo": "Atuação em bandas, gravações e aulas de música.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Música",
+    "habilidadesTecnicas": ["Percussão", "Leitura de Partitura", "Ritmos Brasileiros", "Ensino"],
+    "softSkills": ["Musicalidade", "Trabalho em Equipe", "Disciplina"],
+    "hobbies": ["Samba", "Futebol", "Cozinhar"],
+    "experiencias": [
+      {
+        "empresa": "Escola de Música",
+        "cargo": "Professor de Percussão",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Aulas para crianças e jovens."
+      }
+    ],
+    "formacao": [
+      { "curso": "Música", "instituicao": "Villa-Lobos", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": ["OMB"],
+    "idiomas": [],
+    "areaInteresses": ["Música Brasileira", "Educação Musical", "Cultura"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 129,
+    "nome": "Mauro Cezar",
+    "foto": "",
+    "cargo": "Ator e Dublador",
+    "resumo": "Dublagem de filmes, séries e games.",
+    "localizacao": "São Paulo/SP",
+    "area": "Artes",
+    "habilidadesTecnicas": ["Dublagem", "Interpretação", "Locução", "Lip Sync"],
+    "softSkills": ["Versatilidade", "Concentração", "Criatividade"],
+    "hobbies": ["Cinema", "Games", "Leitura"],
+    "experiencias": [
+      {
+        "empresa": "Estúdio de Dublagem",
+        "cargo": "Dublador",
+        "inicio": "2018-05",
+        "fim": "Atual",
+        "descricao": "Voz original de personagens de animação."
+      }
+    ],
+    "formacao": [
+      { "curso": "Artes Cênicas", "instituicao": "USP", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": ["DRT"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Audiovisual", "Teatro", "Voz"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 130,
+    "nome": "José Eugênio",
+    "foto": "",
+    "cargo": "Tradutor e Revisor",
+    "resumo": "Tradução literária e revisão de textos acadêmicos.",
+    "localizacao": "São Paulo/SP",
+    "area": "Letras",
+    "habilidadesTecnicas": ["Tradução", "Revisão Gramatical", "Edição de Texto", "Inglês/Francês"],
+    "softSkills": ["Cultura Geral", "Atenção aos Detalhes", "Prazos"],
+    "hobbies": ["Literatura", "Jazz", "Cinema"],
+    "experiencias": [
+      {
+        "empresa": "Editora Livros",
+        "cargo": "Revisor",
+        "inicio": "2016-01",
+        "fim": "Atual",
+        "descricao": "Revisão de lançamentos literários."
+      }
+    ],
+    "formacao": [
+      { "curso": "Letras", "instituicao": "PUC-SP", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      { "idioma": "Francês", "nivel": "Fluente" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Literatura", "Linguística", "Arte"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 131,
+    "nome": "Arlete Dias",
+    "foto": "",
+    "cargo": "Professora de Teatro",
+    "resumo": "Ensino de artes cênicas e direção teatral.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Educação",
+    "habilidadesTecnicas": ["Direção Teatral", "Pedagogia do Teatro", "Expressão Corporal", "Voz"],
+    "softSkills": ["Paixão", "Liderança", "Comunicação"],
+    "hobbies": ["Teatro", "Leitura", "Cinema"],
+    "experiencias": [
+      {
+        "empresa": "Escola de Artes",
+        "cargo": "Professora",
+        "inicio": "2010-01",
+        "fim": "Atual",
+        "descricao": "Aulas de interpretação para jovens."
+      }
+    ],
+    "formacao": [
+      { "curso": "Artes Cênicas", "instituicao": "UNIRIO", "ano": 2008 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Francês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Teatro", "Educação", "Cultura"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 132,
+    "nome": "Glória Antunes",
+    "foto": "",
+    "cargo": "Repórter Internacional",
+    "resumo": "Cobertura de notícias e eventos no exterior.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Reportagem", "Edição", "Idiomas", "Correspondência"],
+    "softSkills": ["Curiosidade", "Adaptabilidade", "Coragem"],
+    "hobbies": ["Viagens", "Fotografia", "Culturas"],
+    "experiencias": [
+      {
+        "empresa": "Canal de Notícias",
+        "cargo": "Repórter",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Cobertura de eventos internacionais."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "PUC-Rio", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [
+      { "idioma": "Inglês", "nivel": "Fluente" },
+      { "idioma": "Espanhol", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Política Internacional", "Direitos Humanos", "Viagens"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 133,
+    "nome": "Pedro Henrique",
+    "foto": "",
+    "cargo": "Escritor e Biógrafo",
+    "resumo": "Pesquisa e escrita de livros biográficos e históricos.",
+    "localizacao": "São Paulo/SP",
+    "area": "Literatura",
+    "habilidadesTecnicas": ["Escrita", "Pesquisa", "Entrevistas", "Edição"],
+    "softSkills": ["Paciência", "Escuta", "Disciplina"],
+    "hobbies": ["Leitura", "História", "Café"],
+    "experiencias": [
+      {
+        "empresa": "Editora História",
+        "cargo": "Autor",
+        "inicio": "2017-01",
+        "fim": "Atual",
+        "descricao": "Publicação de biografias de personalidades."
+      }
+    ],
+    "formacao": [
+      { "curso": "História", "instituicao": "USP", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["História do Brasil", "Literatura", "Memória"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 134,
+    "nome": "William Torres",
+    "foto": "",
+    "cargo": "Editor Chefe de Jornalismo",
+    "resumo": "Gestão de redação e coordenação de telejornais.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Edição", "Gestão de Equipe", "Critério Noticioso", "Redação"],
+    "softSkills": ["Liderança", "Seriedade", "Tomada de Decisão"],
+    "hobbies": ["Política", "Tecnologia", "Carros"],
+    "experiencias": [
+      {
+        "empresa": "Emissora de TV",
+        "cargo": "Editor Chefe",
+        "inicio": "2010-04",
+        "fim": "Atual",
+        "descricao": "Coordenação da equipe de jornalismo."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "USP", "ano": 2005 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areaInteresses": ["Jornalismo", "Política", "Comunicação"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 135,
+    "nome": "Fátima Lopes",
+    "foto": "",
+    "cargo": "Comunicadora Corporativa",
+    "resumo": "Gestão da comunicação interna e eventos corporativos.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Comunicação",
+    "habilidadesTecnicas": ["Comunicação Interna", "Eventos", "Redação", "Gestão de Crise"],
+    "softSkills": ["Empatia", "Clareza", "Relacionamento"],
+    "hobbies": ["Dança", "Yoga", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Empresa de Energia",
+        "cargo": "Gerente de Comunicação",
+        "inicio": "2015-06",
+        "fim": "Atual",
+        "descricao": "Responsável pela comunicação com colaboradores."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "UFRJ", "ano": 2010 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Cultura Organizacional", "RH", "Comunicação"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 136,
+    "nome": "Ana Clara",
+    "foto": "",
+    "cargo": "Chef de Cozinha",
+    "resumo": "Especialista em confeitaria e panificação.",
+    "localizacao": "São Paulo/SP",
+    "area": "Gastronomia",
+    "habilidadesTecnicas": ["Confeitaria", "Panificação", "Gestão de Cozinha", "Higiene"],
+    "softSkills": ["Criatividade", "Organização", "Paciência"],
+    "hobbies": ["Cozinhar", "Fotografia de Alimentos", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Padaria Artesanal",
+        "cargo": "Chef Pâtissier",
+        "inicio": "2018-10",
+        "fim": "Atual",
+        "descricao": "Criação de sobremesas e pães."
+      }
+    ],
+    "formacao": [
+      { "curso": "Gastronomia", "instituicao": "Anhembi Morumbi", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Francês", "nivel": "Básico" }],
+    "areaInteresses": ["Gastronomia", "Confeitaria", "Empreendedorismo"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 137,
+    "nome": "João Gabriel",
+    "foto": "",
+    "cargo": "Assistente de Produção",
+    "resumo": "Apoio na produção de programas de TV e eventos.",
+    "localizacao": "São Paulo/SP",
+    "area": "TV",
+    "habilidadesTecnicas": ["Produção", "Logística", "Roteiro", "Edição Básica"],
+    "softSkills": ["Proatividade", "Comunicação", "Trabalho em Equipe"],
+    "hobbies": ["Música", "Futebol", "Séries"],
+    "experiencias": [
+      {
+        "empresa": "Produtora de Vídeo",
+        "cargo": "Assistente",
+        "inicio": "2021-01",
+        "fim": "Atual",
+        "descricao": "Apoio nas gravações e sets."
+      }
+    ],
+    "formacao": [
+      { "curso": "Rádio e TV", "instituicao": "FAAP", "ano": 2020 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["TV", "Cinema", "Produção"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 138,
+    "nome": "Tiago Nunes",
+    "foto": "",
+    "cargo": "Editor de E-sports",
+    "resumo": "Cobertura jornalística de campeonatos de games.",
+    "localizacao": "São Paulo/SP",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Redação", "Edição de Vídeo", "Conhecimento de Games", "Streaming"],
+    "softSkills": ["Comunicação", "Paixão", "Agilidade"],
+    "hobbies": ["Videogame", "Futebol", "Tecnologia"],
+    "experiencias": [
+      {
+        "empresa": "Portal de Games",
+        "cargo": "Redator",
+        "inicio": "2019-10",
+        "fim": "Atual",
+        "descricao": "Notícias sobre o mundo dos e-sports."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "Cásper Líbero", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Games", "E-sports", "Tecnologia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 139,
+    "nome": "Tadeu Costa",
+    "foto": "",
+    "cargo": "Apresentador",
+    "resumo": "Apresentação de eventos e vídeos institucionais.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Comunicação",
+    "habilidadesTecnicas": ["Apresentação", "Locução", "Media Training", "Improviso"],
+    "softSkills": ["Simpatia", "Carisma", "Comunicação"],
+    "hobbies": ["Esportes", "Família", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Freelancer",
+        "cargo": "Apresentador",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Apresentação de vídeos corporativos."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "UniCEUB", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areaInteresses": ["Comunicação", "Vídeo", "Eventos"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 140,
+    "nome": "Poliana Rocha",
+    "foto": "",
+    "cargo": "Assessora de Imprensa",
+    "resumo": "Gestão de imagem e relacionamento com a mídia.",
+    "localizacao": "Brasília/DF",
+    "area": "Comunicação",
+    "habilidadesTecnicas": ["Press Release", "Clipping", "Media Relations", "Gestão de Crise"],
+    "softSkills": ["Organização", "Relacionamento", "Escrita"],
+    "hobbies": ["Leitura", "Política", "Café"],
+    "experiencias": [
+      {
+        "empresa": "Agência de Comunicação",
+        "cargo": "Assessora",
+        "inicio": "2017-11",
+        "fim": "Atual",
+        "descricao": "Atendimento a clientes do setor público."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "UnB", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Assessoria", "Jornalismo", "Política"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 141,
+    "nome": "Maria Júlia",
+    "foto": "",
+    "cargo": "Meteorologista",
+    "resumo": "Previsão do tempo e análise climática.",
+    "localizacao": "São Paulo/SP",
+    "area": "Ciências",
+    "habilidadesTecnicas": ["Meteorologia", "Análise de Dados", "Modelagem Climática", "Comunicação"],
+    "softSkills": ["Clareza", "Precisão", "Comunicação"],
+    "hobbies": ["Natureza", "Fotografia", "Caminhadas"],
+    "experiencias": [
+      {
+        "empresa": "Instituto de Meteorologia",
+        "cargo": "Meteorologista",
+        "inicio": "2019-02",
+        "fim": "Atual",
+        "descricao": "Emissão de laudos e previsões."
+      }
+    ],
+    "formacao": [
+      { "curso": "Meteorologia", "instituicao": "USP", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Clima", "Meio Ambiente", "Ciência"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 142,
+    "nome": "César Augusto",
+    "foto": "",
+    "cargo": "Repórter Investigativo",
+    "resumo": "Jornalismo investigativo e grandes reportagens.",
+    "localizacao": "São Paulo/SP",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Investigação", "Apuração", "Entrevistas", "Redação"],
+    "softSkills": ["Persistência", "Ética", "Coragem"],
+    "hobbies": ["Leitura", "Documentários", "Corrida"],
+    "experiencias": [
+      {
+        "empresa": "Jornal Impresso",
+        "cargo": "Repórter Especial",
+        "inicio": "2015-09",
+        "fim": "Atual",
+        "descricao": "Matérias sobre segurança pública e política."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "PUC-SP", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Jornalismo Investigativo", "Direitos Humanos", "Política"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 143,
+    "nome": "Rodrigo Neves",
+    "foto": "",
+    "cargo": "Correspondente Internacional",
+    "resumo": "Reportagens e notícias direto do exterior.",
+    "localizacao": "Nova York/EUA",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Correspondência", "Idiomas", "Edição Mobile", "Reportagem"],
+    "softSkills": ["Adaptabilidade", "Autonomia", "Comunicação"],
+    "hobbies": ["Viagens", "Cultura", "Gastronomia"],
+    "experiencias": [
+      {
+        "empresa": "Agência de Notícias",
+        "cargo": "Correspondente",
+        "inicio": "2018-05",
+        "fim": "Atual",
+        "descricao": "Cobertura de notícias nos EUA."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "Cásper Líbero", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areaInteresses": ["Política Internacional", "Economia", "Cultura"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 144,
+    "nome": "Renata Lins",
+    "foto": "",
+    "cargo": "Editora Executiva",
+    "resumo": "Gestão de conteúdo e pautas jornalísticas.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Edição", "Gestão de Pauta", "Redação", "Liderança"],
+    "softSkills": ["Organização", "Visão Sistêmica", "Calma"],
+    "hobbies": ["Leitura", "Cinema", "Praia"],
+    "experiencias": [
+      {
+        "empresa": "Portal de Notícias",
+        "cargo": "Editora",
+        "inicio": "2016-11",
+        "fim": "Atual",
+        "descricao": "Coordenação da editoria de cultura."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "UFF", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Cultura", "Arte", "Literatura"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 145,
+    "nome": "Sandra Lima",
+    "foto": "",
+    "cargo": "Jornalista Documentarista",
+    "resumo": "Produção de documentários e grandes reportagens.",
+    "localizacao": "São Paulo/SP",
+    "area": "Jornalismo",
+    "habilidadesTecnicas": ["Roteiro", "Direção", "Pesquisa", "Entrevistas"],
+    "softSkills": ["Empatia", "Narrativa", "Paciência"],
+    "hobbies": ["Cinema", "História", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Produtora Independente",
+        "cargo": "Diretora",
+        "inicio": "2019-09",
+        "fim": "Atual",
+        "descricao": "Produção de docs sobre questões sociais."
+      }
+    ],
+    "formacao": [
+      { "curso": "Cinema", "instituicao": "FAAP", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areaInteresses": ["Direitos Humanos", "Sociedade", "História"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 146,
+    "nome": "Sérgio Dias",
+    "foto": "",
+    "cargo": "Produtor de TV",
+    "resumo": "Produção de programas de entretenimento e talk shows.",
+    "localizacao": "São Paulo/SP",
+    "area": "TV",
+    "habilidadesTecnicas": ["Produção", "Roteiro", "Gestão de Convidados", "Logística"],
+    "softSkills": ["Comunicação", "Organização", "Agilidade"],
+    "hobbies": ["Música", "Teatro", "Shows"],
+    "experiencias": [
+      {
+        "empresa": "Emissora de TV",
+        "cargo": "Produtor",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Produção de pautas e convidados."
+      }
+    ],
+    "formacao": [
+      { "curso": "Rádio e TV", "instituicao": "Anhembi Morumbi", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["TV", "Cultura Pop", "Música"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 147,
+    "nome": "Silvio Almeida",
+    "foto": "",
+    "cargo": "Narrador Esportivo",
+    "resumo": "Narração de jogos de futebol e basquete.",
+    "localizacao": "São Paulo/SP",
+    "area": "Esporte",
+    "habilidadesTecnicas": ["Narração", "Locução", "Conhecimento Esportivo", "Voz"],
+    "softSkills": ["Emoção", "Improviso", "Comunicação"],
+    "hobbies": ["Futebol", "Basquete", "Rádio"],
+    "experiencias": [
+      {
+        "empresa": "Web Rádio",
+        "cargo": "Narrador",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Transmissão de jogos online."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "FMU", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Esportes", "Rádio", "Comunicação"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 148,
+    "nome": "Cléber Santana",
+    "foto": "",
+    "cargo": "Locutor Esportivo",
+    "resumo": "Locução de eventos e rádio.",
+    "localizacao": "São Paulo/SP",
+    "area": "Comunicação",
+    "habilidadesTecnicas": ["Locução", "Voz", "Edição de Áudio", "Apresentação"],
+    "softSkills": ["Carisma", "Comunicação", "Entusiasmo"],
+    "hobbies": ["Esportes", "Música", "Samba"],
+    "experiencias": [
+      {
+        "empresa": "Rádio FM",
+        "cargo": "Locutor",
+        "inicio": "2016-01",
+        "fim": "Atual",
+        "descricao": "Apresentação de programas esportivos."
+      }
+    ],
+    "formacao": [
+      { "curso": "Rádio e TV", "instituicao": "Metodista", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": ["DRT"],
+    "idiomas": [],
+    "areaInteresses": ["Rádio", "Esportes", "Música"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 149,
+    "nome": "Luís Fernando",
+    "foto": "",
+    "cargo": "Narrador",
+    "resumo": "Narração de esportes olímpicos e vôlei.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Esporte",
+    "habilidadesTecnicas": ["Narração", "Pesquisa Esportiva", "Locução", "Comunicação"],
+    "softSkills": ["Precisão", "Emoção", "Voz"],
+    "hobbies": ["Vôlei", "Natação", "Praia"],
+    "experiencias": [
+      {
+        "empresa": "Canal de Esportes",
+        "cargo": "Narrador",
+        "inicio": "2019-01",
+        "fim": "Atual",
+        "descricao": "Cobertura de eventos esportivos."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "Estácio", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Esportes Olímpicos", "Vôlei", "Jornalismo"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 150,
+    "nome": "Milton Cesar",
+    "foto": "",
+    "cargo": "Publicitário Esportivo",
+    "resumo": "Marketing e publicidade voltados para o mercado esportivo.",
+    "localizacao": "São Paulo/SP",
+    "area": "Marketing",
+    "habilidadesTecnicas": ["Marketing Esportivo", "Patrocínios", "Eventos", "Branding"],
+    "softSkills": ["Negociação", "Criatividade", "Relacionamento"],
+    "hobbies": ["Futebol", "Tênis", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Agência de Marketing",
+        "cargo": "Gerente de Contas",
+        "inicio": "2017-01",
+        "fim": "Atual",
+        "descricao": "Gestão de patrocínios em clubes."
+      }
+    ],
+    "formacao": [
+      { "curso": "Publicidade", "instituicao": "ESPM", "ano": 2016 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Marketing", "Esportes", "Negócios"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 151,
+    "nome": "José Ferreira",
+    "foto": "",
+    "cargo": "Comentarista de Futebol",
+    "resumo": "Análise tática e comentários em programas de rádio.",
+    "localizacao": "São Paulo/SP",
+    "area": "Esporte",
+    "habilidadesTecnicas": ["Análise Tática", "Comentários", "História do Futebol", "Debate"],
+    "softSkills": ["Opinião Forte", "Comunicação", "Conhecimento"],
+    "hobbies": ["Futebol", "Leitura", "Churrasco"],
+    "experiencias": [
+      {
+        "empresa": "Rádio Esportiva",
+        "cargo": "Comentarista",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Participação em mesas redondas."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "Uninove", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Futebol", "Jornalismo", "Rádio"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 152,
+    "nome": "Carlos Miguel",
+    "foto": "",
+    "cargo": "Streamer de Variedades",
+    "resumo": "Criação de conteúdo ao vivo e entretenimento.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Internet",
+    "habilidadesTecnicas": ["Streaming", "OBS", "Comunicação", "Engajamento"],
+    "softSkills": ["Carisma", "Humor", "Espontaneidade"],
+    "hobbies": ["Games", "Futebol", "Reacts"],
+    "experiencias": [
+      {
+        "empresa": "Twitch",
+        "cargo": "Streamer Parceiro",
+        "inicio": "2020-01",
+        "fim": "Atual",
+        "descricao": "Lives diárias de conversa e jogos."
+      }
+    ],
+    "formacao": [
+      { "curso": "Publicidade", "instituicao": "Estácio", "ano": 2019 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Internet", "Entretenimento", "Games"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 153,
+    "nome": "Alexandre Costa",
+    "foto": "",
+    "cargo": "Ex-Pro Player (CS:GO)",
+    "resumo": "Consultoria e coaching para times de e-sports.",
+    "localizacao": "São Paulo/SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["CS:GO", "Tática de Jogo", "Coaching", "Análise de Replay"],
+    "softSkills": ["Liderança", "Resiliência", "Estratégia"],
+    "hobbies": ["Games", "Basquete", "Tecnologia"],
+    "experiencias": [
+      {
+        "empresa": "Time de E-sports",
+        "cargo": "Coach",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Treinamento da equipe principal."
+      }
+    ],
+    "formacao": [
+      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["E-sports", "Competição", "Games"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 154,
+    "nome": "Alan Souza",
+    "foto": "",
+    "cargo": "Streamer de Games",
+    "resumo": "Gameplays de jogos variados e interação com a comunidade.",
+    "localizacao": "São Paulo/SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["Streaming", "Gameplay", "Edição", "Humor"],
+    "softSkills": ["Simpatia", "Paciência", "Comunicação"],
+    "hobbies": ["Games", "Animes", "Terror"],
+    "experiencias": [
+      {
+        "empresa": "Youtube",
+        "cargo": "Criador de Conteúdo",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Vídeos de gameplay."
+      }
+    ],
+    "formacao": [
+      { "curso": "Design Gráfico", "instituicao": "Panamericana", "ano": 2014 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Games", "Indie Games", "Terror"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 155,
+    "nome": "Bruno Ramos",
+    "foto": "",
+    "cargo": "CEO de Organização de E-sports",
+    "resumo": "Gestão de times e negócios no cenário de games mobile.",
+    "localizacao": "São Paulo/SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["Gestão de E-sports", "Marketing", "Liderança", "Free Fire"],
+    "softSkills": ["Empreendedorismo", "Visão", "Negociação"],
+    "hobbies": ["Games", "Futebol", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Org E-sports",
+        "cargo": "CEO",
+        "inicio": "2020-01",
+        "fim": "Atual",
+        "descricao": "Gestão administrativa e esportiva."
+      }
+    ],
+    "formacao": [
+      { "curso": "Administração", "instituicao": "FGV", "ano": 2019 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["E-sports", "Negócios", "Mobile Games"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 156,
+    "nome": "Lúcio Santos",
+    "foto": "",
+    "cargo": "Influenciador Gamer",
+    "resumo": "Criação de conteúdo sobre Free Fire e lifestyle.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Games",
+    "habilidadesTecnicas": ["Streaming", "Redes Sociais", "Free Fire", "Marketing de Influência"],
+    "softSkills": ["Carisma", "Comunicação", "Autenticidade"],
+    "hobbies": ["Carros", "Games", "Família"],
+    "experiencias": [
+      {
+        "empresa": "Agência de Influência",
+        "cargo": "Influenciador",
+        "inicio": "2019-01",
+        "fim": "Atual",
+        "descricao": "Campanhas publicitárias e eventos."
+      }
+    ],
+    "formacao": [
+      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2018 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["Games", "Lifestyle", "Automobilismo"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 157,
+    "nome": "Felipe Bastos",
+    "foto": "",
+    "cargo": "Criador de Conteúdo (LoL)",
+    "resumo": "Streams e vídeos sobre League of Legends.",
+    "localizacao": "São Paulo/SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["League of Legends", "Streaming", "Edição", "Entretenimento"],
+    "softSkills": ["Criatividade", "Humor", "Resiliência"],
+    "hobbies": ["LoL", "Música", "Skate"],
+    "experiencias": [
+      {
+        "empresa": "Twitch",
+        "cargo": "Streamer",
+        "inicio": "2016-01",
+        "fim": "Atual",
+        "descricao": "Transmissões diárias de gameplay."
+      }
+    ],
+    "formacao": [
+      { "curso": "Publicidade", "instituicao": "Anhembi Morumbi", "ano": 2015 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Games", "Música", "Cultura Geek"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 158,
+    "nome": "Gustavo Gomes",
+    "foto": "",
+    "cargo": "Analista de E-sports",
+    "resumo": "Comentários e análise técnica de partidas de LoL.",
+    "localizacao": "São Paulo/SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["Análise de LoL", "Comentários", "Streaming", "Estratégia"],
+    "softSkills": ["Comunicação", "Análise Crítica", "Clareza"],
+    "hobbies": ["LoL", "Culinária", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Estúdio de Transmissão",
+        "cargo": "Analista",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Comentários em campeonatos oficiais."
+      }
+    ],
+    "formacao": [
+      { "curso": "Jornalismo", "instituicao": "Cásper Líbero", "ano": 2017 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["E-sports", "Games", "Jornalismo"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 159,
+    "nome": "Gabriel Torres",
+    "foto": "",
+    "cargo": "Pro Player (LoL)",
+    "resumo": "Jogador profissional de League of Legends, posição Mid Laner.",
+    "localizacao": "Santos/SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["League of Legends", "Mid Lane", "Mecânica de Jogo", "Trabalho em Equipe"],
+    "softSkills": ["Foco", "Disciplina", "Dedicação"],
+    "hobbies": ["LoL", "Aviação", "Viagens"],
+    "experiencias": [
+      {
+        "empresa": "Time Profissional",
+        "cargo": "Atleta",
+        "inicio": "2014-01",
+        "fim": "Atual",
+        "descricao": "Competição em torneios nacionais."
+      }
+    ],
+    "formacao": [
+      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2013 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["E-sports", "Competição", "Tecnologia"],
+    "convites": [],
+    "conexoes": []
+  },
+  {
+    "Id": 160,
+    "nome": "Felipe Muniz",
+    "foto": "",
+    "cargo": "Pro Player (LoL)",
+    "resumo": "Jogador profissional de League of Legends, posição ADC.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Games",
+    "habilidadesTecnicas": ["League of Legends", "ADC", "Mecânica de Jogo", "Liderança"],
+    "softSkills": ["Competitividade", "Liderança", "Estilo"],
+    "hobbies": ["LoL", "Boxe", "Música"],
+    "experiencias": [
+      {
+        "empresa": "Time Profissional",
+        "cargo": "Atleta",
+        "inicio": "2012-01",
+        "fim": "Atual",
+        "descricao": "Competição em torneios nacionais e internacionais."
+      }
+    ],
+    "formacao": [
+      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2011 }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [],
+    "areaInteresses": ["E-sports", "Música", "Moda"],
+    "convites": [],
+    "conexoes": []
   }
 ]

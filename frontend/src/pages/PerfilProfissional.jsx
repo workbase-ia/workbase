@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext.jsx';
-import { MapPin, Briefcase, BookOpen, Plus, Send, Edit } from 'lucide-react';
+import { MapPin, Plus, Send, Edit } from 'lucide-react';
 import HabilidadesCard from '../components/HabilidadesCard.jsx';
 import ProjetosCard from '../components/ProjetosCard.jsx';
 import CertificacoesCard from '../components/CertificacoesCard.jsx';
@@ -18,15 +18,31 @@ export default function PerfilProfissional() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const { id } = useParams(); 
-  const { user: usuarioLogado } = useAuth(); 
-
+  const navigate = useNavigate();
+  const { user: usuarioLogado, loading, logout } = useAuth(); 
+  
   useEffect(() => {
+    if (!loading && !usuarioLogado) {
+      navigate('/login');
+    }
+  }, [usuarioLogado, loading, navigate]);
+
+  
+  useEffect(() => {
+    if (!usuarioLogado && !loading) return;
     const fetchPerfil = async () => {
       setIsLoading(true);
       setError(null);
       try {
         const response = await fetch(`${API_URL}/perfil/${id}`);
+        if (response.status === 401) {
+            logout(); 
+            navigate('/login');
+            return;
+        }
+
         if (!response.ok) { throw new Error('Perfil não encontrado'); }
         const data = await response.json();
         setPerfil(data);
@@ -36,14 +52,21 @@ export default function PerfilProfissional() {
         setIsLoading(false);
       }
     };
+
     fetchPerfil();
-  }, [id]); 
+  }, [id, usuarioLogado, loading, logout, navigate]); 
 
   const handleProfileUpdate = () => {
-    fetchPerfil();
+    window.location.reload();
   };
 
-  const MeuPerfil = usuarioLogado && usuarioLogado.id === id;
+  const MeuPerfil = usuarioLogado && perfil && usuarioLogado.id === perfil.id;
+
+  if (loading) {
+     return <div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
+  }
+
+  if (!usuarioLogado) return null;
 
   if (isLoading) {
     return <div className="text-center p-10">Carregando perfil...</div>;
@@ -65,7 +88,7 @@ export default function PerfilProfissional() {
               <img
                 src={perfil.foto || ''} 
                 alt={perfil.nome}
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-white absolute -mt-16 md:-mt-20 left-6"
+                className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-white absolute -mt-16 md:-mt-20 left-6 object-cover bg-white"
               />
               
               {MeuPerfil && (

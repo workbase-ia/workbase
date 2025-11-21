@@ -53,7 +53,7 @@ export const register = async (req, res) => {
     };
 
     const newPerfilUser = {
-      Id: newId,
+      id: newId,
       nome: nome,
       email: email,
       area: "",
@@ -95,10 +95,6 @@ export const register = async (req, res) => {
   }
 };
 
-/**
- * Autentica um usuário existente
- * Rota: POST /api/auth/login
- */
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;

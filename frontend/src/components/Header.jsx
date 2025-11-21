@@ -3,12 +3,32 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, LogIn, User, LogOut, ChevronDown, Sun, Moon } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext.jsx';
 
-export default function Header({ isDark, setIsDark }) {
+export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
     const { isAuthenticated, user, logout } = useAuth();
     const navigate = useNavigate();
     const profileMenuRef = useRef(null);
+
+    // ✅ APENAS ESSA definição de tema
+    const [isDark, setIsDark] = useState(() => {
+        if (typeof window === 'undefined') return false;
+        return localStorage.getItem('theme') === 'dark';
+    });
+
+    useEffect(() => {
+        const root = document.documentElement;
+
+        if (isDark) {
+            root.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            root.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    }, [isDark]);
+
+    const toggleDark = () => setIsDark(prev => !prev);
 
     const profileLink = user ? `/perfil/${user.id}` : '/login';
 
@@ -16,7 +36,6 @@ export default function Header({ isDark, setIsDark }) {
         { name: 'Início', path: '/' },
         { name: 'Minha Rede', path: '/minha-rede' },
         { name: 'Vagas', path: '/vagas' },
-
     ];
 
     const handleLogin = () => {
@@ -44,8 +63,9 @@ export default function Header({ isDark, setIsDark }) {
     return (
         <header className="bg-white dark:bg-gray-900 shadow-md border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                
 
-                {/* Logo */}
+                {/* LOGO */}
                 <Link to="/" className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                         WB
@@ -69,12 +89,13 @@ export default function Header({ isDark, setIsDark }) {
                 {/* ÁREA DIREITA — DESKTOP */}
                 <div className="hidden md:flex items-center gap-4 relative" ref={profileMenuRef}>
 
-                    {/* ⭐ BOTÃO DARK MODE */}
+                    {/* BOTÃO DARK MODE */}
                     <button
-                        onClick={() => setIsDark(!isDark)}
-                        className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition"
+                        onClick={toggleDark}
+                        className="p-2 rounded-lg bg-slate-200 dark:bg-gray-700 text-slate-800 dark:text-slate-200 hover:opacity-80 transition"
+                        aria-label="Alternar tema"
                     >
-                        {isDark ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-slate-700" />}
+                        {isDark ? <Sun size={20} /> : <Moon size={20} />}
                     </button>
 
                     {isAuthenticated ? (
@@ -147,7 +168,7 @@ export default function Header({ isDark, setIsDark }) {
                 <div className="md:hidden bg-white dark:bg-gray-900 border-t border-slate-200 dark:border-slate-700 shadow-lg">
                     <nav className="flex flex-col p-4 gap-2">
 
-                        {/* ⭐ BOTÃO DARK MODE MOBILE */}
+                        {/* BOTÃO DARK MODE MOBILE */}
                         <button
                             onClick={() => setIsDark(!isDark)}
                             className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"

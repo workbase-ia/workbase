@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import { ThumbsUp, MessageSquare, Share2, Send, MoreVertical, Heart } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
+import { ThumbsUp, MessageSquare, Share2, Send, MoreVertical } from 'lucide-react';
 
 const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString('pt-BR', options);
 };
 
-
 const Comment = ({ comment }) => {
     const commenter = comment.autor || { nome: "Usuário Desconhecido", foto: "./images/default.jpg" };
+    console.log('Comentário por:', commenter.nome);
 
     return (
         <div className="flex gap-3 mt-4">
             <img
-                src={commenter.foto}
+                src={commenter.foto || "./images/default.jpg"}
                 alt={commenter.nome}
                 className="w-8 h-8 rounded-full object-cover"
             />
@@ -28,60 +29,103 @@ const Comment = ({ comment }) => {
     );
 };
 
-export default function Post({ post, onLike, onComment }) {
+export default function Post({ post }) {
     const [showComments, setShowComments] = useState(false);
     const [commentText, setCommentText] = useState('');
-    const [likes, setLikes] = useState(post.curtidas);
+    const { user, token } = useAuth();
+
+    const [likesCount, setLikesCount] = useState(post.curtidasCount || 0);
+    const [isLiked, setIsLiked] = useState(post.isLiked || false);
     const [comments, setComments] = useState(post.comentarios || []);
 
-    const handleLike = async () => {
+    // Buscar comentários do backend com autenticação
+    const fetchComments = async () => {
         try {
-            const response = await fetch(`/api/posts/${post.id}/like`, {
+            const response = await fetch(`http://localhost:3001/api/posts/${post.id}/comments`, {
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                },
+            });
+            if (!response.ok) {
+                throw new Error('Falha ao buscar comentários');
+            }
+            const data = await response.json();
+            console.log('Comentários recebidos:', data);  // Aqui você vê os commenterId
+            setComments(data);
+        } catch (error) {
+            console.error('Erro ao buscar comentários:', error);
+        }
+    };
+
+    // Abrir/fechar área de comentários, e buscar comentários quando abrir
+    const handleToggleComments = () => {
+        setShowComments(prev => {
+            const novoEstado = !prev;
+            if (novoEstado) fetchComments();
+            return novoEstado;
+        });
+    };
+
+    const handleLike = async () => {
+        if (!user) {
+            alert('Você precisa estar logado para curtir um post.');
+            return;
+        }
+
+        try {
+            const response = await fetch(`http://localhost:3001/api/posts/${post.id}/like`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`,
                 },
             });
 
             if (!response.ok) {
-                throw new Error('Falha ao curtir o post');
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Falha ao curtir/descurtir o post');
             }
 
             const data = await response.json();
-            setLikes(data.curtidas);
+            setLikesCount(data.curtidasCount);
+            setIsLiked(data.isLiked);
         } catch (error) {
-            console.error("Erro ao curtir:", error);
+            console.error('Erro ao curtir:', error);
+            alert(error.message);
         }
     };
 
     const handleCommentSubmit = async (e) => {
         e.preventDefault();
+
         if (commentText.trim() === '') return;
 
+        if (!user) {
+            alert('Você precisa estar logado para comentar.');
+            return;
+        }
+
         try {
-            const commenterId = 1; 
-            
-            const response = await fetch(`/api/posts/${post.id}/comment`, {
+            const response = await fetch(`http://localhost:3001/api/posts/${post.id}/comment`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`,
                 },
-                body: JSON.stringify({
-                    commenterId: commenterId,
-                    text: commentText.trim()
-                })
+                body: JSON.stringify({ text: commentText.trim() }),
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                throw new Error('Falha ao adicionar comentário');
+                throw new Error(data.message || 'Falha ao adicionar comentário');
             }
 
-            const newComment = await response.json();
-            
-            setComments(prev => [newComment, ...prev]);
+            setComments((prev) => [data, ...prev]);
             setCommentText('');
         } catch (error) {
-            console.error("Erro ao comentar:", error);
+            console.error('Erro ao comentar:', error);
+            alert(error.message);
         }
     };
 
@@ -89,7 +133,7 @@ export default function Post({ post, onLike, onComment }) {
 
     return (
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-slate-200 dark:border-slate-700 mb-6">
-            {/* Cabeçalho do Post */}
+            {/* Cabeçalho */}
             <div className="p-4 border-b border-slate-100 dark:border-slate-700 flex justify-between items-start">
                 <div className="flex items-center gap-3">
                     <img
@@ -110,20 +154,27 @@ export default function Post({ post, onLike, onComment }) {
                 </button>
             </div>
 
-            {/* Conteúdo do Post */}
+            {/* Conteúdo */}
             <div className="p-4">
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">{post.title}</h3>
                 <p className="text-slate-700 dark:text-slate-300 whitespace-pre-wrap leading-relaxed">{post.content}</p>
             </div>
 
-            {/* Estatísticas */}
+            {/* Estatísticas e botão de curtir juntos */}
             <div className="px-4 py-2 flex justify-between items-center text-sm text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-700">
-                <div className="flex items-center gap-1">
-                    <Heart size={16} className="text-red-500 fill-red-500" />
-                    <span>{likes} curtidas</span>
-                </div>
-                <span className="hover:text-blue-600 cursor-pointer transition" onClick={() => setShowComments(true)}>
-                    {comments.length} comentários
+                <button
+                    onClick={handleLike}
+                    className="flex items-center gap-1 text-slate-600 dark:text-slate-400 hover:text-blue-600 transition font-medium"
+                >
+                    <ThumbsUp size={16} className={isLiked ? "text-blue-600 fill-blue-600" : "text-slate-400"} />
+                    <span>{likesCount} {likesCount === 1 ? 'curtida' : 'curtidas'}</span>
+                </button>
+
+                <span
+                    className="hover:text-blue-600 cursor-pointer transition"
+                    onClick={handleToggleComments}
+                >
+                    {comments.length} {comments.length === 1 ? 'comentário' : 'comentários'}
                 </span>
             </div>
 
@@ -133,32 +184,35 @@ export default function Post({ post, onLike, onComment }) {
                     onClick={handleLike}
                     className="flex-1 flex items-center justify-center gap-2 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-blue-600 transition font-medium"
                 >
-                    <ThumbsUp size={20} />
-                    Curtir
+                    <ThumbsUp size={20} className={isLiked ? "text-blue-600 fill-blue-600" : ""} />
+                    {isLiked ? 'Curtido' : 'Curtir'}
                 </button>
+
                 <button
-                    onClick={() => setShowComments(!showComments)}
+                    onClick={handleToggleComments}
                     className="flex-1 flex items-center justify-center gap-2 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-blue-600 transition font-medium"
                 >
                     <MessageSquare size={20} />
                     Comentar
                 </button>
+
                 <button className="flex-1 flex items-center justify-center gap-2 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-blue-600 transition font-medium">
                     <Share2 size={20} />
                     Compartilhar
                 </button>
             </div>
 
-            {/* Seção de Comentários */}
+            {/* Comentários */}
             {showComments && (
                 <div className="p-4 border-t border-slate-100 dark:border-slate-700">
-                    {/* Formulário de Comentário */}
+                    {/* Formulário */}
                     <form onSubmit={handleCommentSubmit} className="flex gap-3 mb-4">
                         <img
-                            src="./images/foto1.jpg" // Simula a foto do usuário logado
-                            alt="Seu Perfil"
+                            src={user?.foto || "./images/default.jpg"}
+                            alt={user?.nome || "Seu Perfil"}
                             className="w-10 h-10 rounded-full object-cover"
                         />
+
                         <div className="flex-1 relative">
                             <input
                                 type="text"
@@ -167,6 +221,7 @@ export default function Post({ post, onLike, onComment }) {
                                 placeholder="Adicione um comentário..."
                                 className="w-full p-3 pr-12 border border-slate-300 dark:border-slate-600 dark:bg-slate-700 dark:text-white rounded-full focus:ring-blue-500 focus:border-blue-500 transition"
                             />
+
                             <button
                                 type="submit"
                                 className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 text-blue-600 hover:text-blue-800 disabled:text-slate-400 transition"
@@ -177,14 +232,16 @@ export default function Post({ post, onLike, onComment }) {
                         </div>
                     </form>
 
-                    {/* Lista de Comentários */}
+                    {/* Lista de comentários */}
                     <div className="max-h-80 overflow-y-auto">
                         {comments.length > 0 ? (
                             comments.map((comment, index) => (
                                 <Comment key={index} comment={comment} />
                             ))
                         ) : (
-                            <p className="text-center text-slate-500 dark:text-slate-400 mt-4">Seja o primeiro a comentar!</p>
+                            <p className="text-center text-slate-500 dark:text-slate-400 mt-4">
+                                Seja o primeiro a comentar!
+                            </p>
                         )}
                     </div>
                 </div>

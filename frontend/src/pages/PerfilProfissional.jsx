@@ -36,7 +36,9 @@ export default function PerfilProfissional() {
       setIsLoading(true);
       setError(null);
       try {
+
         const response = await fetch(`${API_URL}/perfil/${id}`);
+        
         if (response.status === 401) {
             logout(); 
             navigate('/login');
@@ -63,7 +65,7 @@ export default function PerfilProfissional() {
   const MeuPerfil = usuarioLogado && perfil && usuarioLogado.id === perfil.id;
 
   if (loading) {
-     return <div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
+      return <div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
   }
 
   if (!usuarioLogado) return null;
@@ -85,8 +87,9 @@ export default function PerfilProfissional() {
           <div className="bg-white border border-gray-200 rounded-lg ">
             <div className="h-24 md:h-28 bg-gray-200 rounded-t-lg"></div>
             <div className="p-6 relative">
+              {/* CORREÇÃO: Fallback para foto */}
               <img
-                src={perfil.foto || ''} 
+                src={perfil.foto || '../../public/profilePicture.png'} 
                 alt={perfil.nome}
                 className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-white absolute -mt-16 md:-mt-20 left-6 object-cover bg-white"
               />

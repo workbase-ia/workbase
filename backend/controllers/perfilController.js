@@ -1,20 +1,39 @@
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { readJSON, writeJSON } from '../lib/helper.js';
 
-const USUARIOS_PATH = path.resolve('data/usuarios.json');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const USUARIOS_PATH = path.resolve(__dirname, '..', 'data', 'usuarios.json');
 
 export const getPerfilById = (req, res) => {
+  console.log('GET /api/perfil/:id recebido, id=', req.params.id);
   try {
     const db = readJSON(USUARIOS_PATH);
-    if (!db || !Array.isArray(db)) { 
-      return res.status(404).json({ message: 'Arquivo de usuários não encontrado ou inválido.' }); 
+    console.log('usuarios.json entries:', Array.isArray(db) ? db.length : 'invalid');
+
+    if (!db || !Array.isArray(db)) {
+      return res.status(404).json({ message: 'Arquivo de usuários não encontrado ou inválido.' });
     }
 
-    const user = db.find(u => u && u.id && u.id.toString() === req.params.id);
-    if (!user) { return res.status(404).json({ message: 'Usuário não encontrado.' }); }
+    // Aceita tanto user.id quanto user.Id e compara sempre como string
+    const requestedId = String(req.params.id);
+    const user = db.find(u => {
+      if (!u) return false;
+      const candidate = (u.id !== undefined ? u.id : u.Id);
+      return candidate !== undefined && String(candidate) === requestedId;
+    });
+
+    if (!user) {
+      console.log('Usuário não encontrado para id=', requestedId);
+      return res.status(404).json({ message: 'Usuário não encontrado.' });
+    }
+
+    console.log('Usuário encontrado:', user.id ?? user.Id);
     res.status(200).json(user);
 
   } catch (error) {
+    console.error('Erro em getPerfilById:', error);
     res.status(500).json({ message: 'Erro interno do servidor', error: error.message });
   }
 };
@@ -24,23 +43,27 @@ export const getPerfilById = (req, res) => {
  */
 export const updateMeuPerfil = (req, res) => {
   try {
-
-    const userIdLogado = req.user.id; 
-    const { nome, cargo, resumo, localizacao, habilidadesTecnicas, softSkills, experiencias, formacao, projetos, certificacoes,idiomas } = req.body;
+    const userIdLogado = String(req.user.id);
+    const { nome, cargo, resumo, localizacao, habilidadesTecnicas, softSkills, experiencias, formacao, projetos, certificacoes, idiomas } = req.body;
 
     let db = readJSON(USUARIOS_PATH);
-    if (!db || !Array.isArray(db)) { 
-      return res.status(500).json({ message: 'Arquivo de perfis inválido.' }); 
+    if (!db || !Array.isArray(db)) {
+      return res.status(500).json({ message: 'Arquivo de perfis inválido.' });
     }
 
-    const userIndex = db.findIndex(u => u && u.id && u.id.toString() === userIdLogado);
+    const userIndex = db.findIndex(u => {
+      const candidate = (u.id !== undefined ? String(u.id) : (u.Id !== undefined ? String(u.Id) : null));
+      return candidate === userIdLogado;
+    });
+
     if (userIndex === -1) {
       return res.status(404).json({ message: 'Usuário não encontrado no DB de perfis.' });
     }
-    //Atualiza o objeto do usuário no array 
+
+    // atualiza objeto...
     const usuarioAtualizado = {
       ...db[userIndex],
-      nome: nome !== undefined ? nome : db[userIndex].nome, 
+      nome: nome !== undefined ? nome : db[userIndex].nome,
       cargo: cargo !== undefined ? cargo : db[userIndex].cargo,
       resumo: resumo !== undefined ? resumo : db[userIndex].resumo,
       localizacao: localizacao !== undefined ? localizacao : db[userIndex].localizacao,

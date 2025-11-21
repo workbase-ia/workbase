@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 
 const API_URL = 'http://127.0.0.1:3001/api';
 
-export default function ModalProfissional({ isOpen, onClose, profissional }) {
+export default function ModalProfissional({ isOpen, onClose, profissional, onOpenMensagem }) {
   const { token } = useAuth();
   const [status, setStatus] = useState('idle');
 
@@ -41,11 +41,14 @@ export default function ModalProfissional({ isOpen, onClose, profissional }) {
   };
 
   const handleMessage = () => {
-  console.log("Abrir chat com", profissional.nome);
+    onClose();
+    if (onOpenMensagem){
+      onOpenMensagem(profissional);
+    }
   };
 
   const handleRecommend = () => {
-  console.log("Recomendar", profissional.nome);
+  
   };
 
   const renderConnectButton = () => {
@@ -125,6 +128,7 @@ export default function ModalProfissional({ isOpen, onClose, profissional }) {
         <button 
         onClick={handleMessage}
         className="p-2.5 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+        title="Enviar Mensagem"
         >
         <MessageCircle size={20} />
         </button>

@@ -7,8 +7,6 @@ const __dirname = path.dirname(__filename);
 const USUARIOS_PATH = path.resolve(__dirname, '../data/usuarios.json');
 
 const migrarUsuarios = () => {
-  console.log("--- Iniciando Migração ---");
-  console.log(`📂 Procurando banco de dados em: ${USUARIOS_PATH}`);
 
   if (!fs.existsSync(USUARIOS_PATH)) {
     console.error("❌ ERRO: O arquivo usuarios.json não foi encontrado neste caminho!");
@@ -20,8 +18,6 @@ const migrarUsuarios = () => {
     // Lê o arquivo atual
     const data = fs.readFileSync(USUARIOS_PATH, 'utf8');
     const usuarios = JSON.parse(data);
-
-    console.log(`📊 Encontrados ${usuarios.length} usuários.`);
 
     let alterados = 0;
 
@@ -38,6 +34,12 @@ const migrarUsuarios = () => {
       // Garante array de convites
       if (!Array.isArray(user.convites)) {
         user.convites = []; 
+        mudou = true;
+      }
+
+      // Adiciona array de mensagens se não existir
+      if (!Array.isArray(user.mensagens)) {
+        user.mensagens = [];
         mudou = true;
       }
 
@@ -64,7 +66,6 @@ const migrarUsuarios = () => {
   } catch (error) {
     console.error('❌ Erro fatal ao atualizar usuários:', error.message);
   }
-  console.log("--- Fim ---");
 };
 
 migrarUsuarios();

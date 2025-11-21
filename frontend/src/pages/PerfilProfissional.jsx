@@ -10,6 +10,7 @@ import SobreCard from '../components/SobreCard.jsx';
 import ExperienciaCard from '../components/ExperienciaCard.jsx';
 import FormacaoCard from '../components/FormacaoCard.jsx';
 import PerfilEditarModal from '../components/PerfilEditarModal.jsx';
+import MensagemModal from '../components/MensagemModal.jsx';
 
 const API_URL = 'http://127.0.0.1:3001/api'; 
 
@@ -18,6 +19,7 @@ export default function PerfilProfissional() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMensagemModalOpen, setIsMensagemModalOpen] = useState(false);
   
   const { id } = useParams(); 
   const navigate = useNavigate();
@@ -61,6 +63,10 @@ export default function PerfilProfissional() {
   const handleProfileUpdate = () => {
     window.location.reload();
   };
+
+  const handleOpenMensagem = () =>{
+    setIsMensagemModalOpen(true);
+  }
 
   const loggedId = usuarioLogado ? String(usuarioLogado.id ?? usuarioLogado.Id ?? '') : '';
   const perfilId = perfil ? String(perfil.id ?? perfil.Id ?? '') : '';
@@ -132,7 +138,9 @@ export default function PerfilProfissional() {
                       <Plus size={18} />
                       Conectar
                     </button>
-                    <button className="flex items-center gap-2 px-4 py-2 text-sm border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                    <button 
+                    onClick={handleOpenMensagem}
+                    className="flex items-center gap-2 px-4 py-2 text-sm border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
                       <Send size={18} />
                       Mensagem
                     </button>

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import ProfileCard from '../components/ProfileCard'; 
 import PerfilModal from '../components/PerfilModal';
 import ConexaoCard from '../components/ConexaoCard';
+import MensagemModal from '../components/MensagemModal';
 import { useAuth } from '../contexts/AuthContext';
 
 const API_URL = 'http://127.0.0.1:3001/api';
@@ -20,8 +21,13 @@ export default function MinhaRede() {
   const [filtroEstado, setFiltroEstado] = useState('');
   const [selectedProfissional, setSelectedProfissional] = useState(null);
   const [convites, setConvites] = useState([]);
+  const [isMensagemOpen, setIsMensagemOpen] = useState(false);
+  const [mensagemTarget, setMensagemTarget] = useState(null);
 
   const fetchConvites = async () => {
+    if (!token) 
+      return;
+
     try {
       const response = await fetch(`${API_URL}/conexoes/pendentes`, {
         headers: { Authorization: `Bearer ${token}` }
@@ -63,7 +69,10 @@ export default function MinhaRede() {
           
           const isConnected = (u.conexoes && u.conexoes.map(String).includes(userIdStr)) || (user?.conexoes && user.conexoes.map(String).includes(targetIdStr));
           
-          const isPending = u.convites && u.convites.some(c => String(c.remetenteId) === userIdStr);
+          const isPending = u.convites && u.convites.some(c => {
+            const remetenteId = typeof c === 'object' ? c.remetenteId : c;
+            return String(remetenteId) === userIdStr;
+          });
 
           let status = 'idle'; 
           if (isConnected) status = 'connected';
@@ -99,7 +108,7 @@ export default function MinhaRede() {
         fetchUsuarios(true);
       });
     }
-  }, [user]);
+  }, [user, token]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -108,7 +117,7 @@ export default function MinhaRede() {
 
   const handleAceitarConvite = async (conviteId) => {
     try {
-      await fetch(`${API_URL}/conexoes/aceitar/${conviteId}`, {
+      const response = await fetch(`${API_URL}/conexoes/aceitar/${conviteId}`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -123,7 +132,7 @@ export default function MinhaRede() {
 
   const handleIgnorarConvite = async (conviteId) => {
     try {
-      await fetch(`${API_URL}/conexoes/ignorar/${conviteId}`, {
+      const responde = await fetch(`${API_URL}/conexoes/ignorar/${conviteId}`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -132,6 +141,11 @@ export default function MinhaRede() {
     } catch (error) {
       console.error("Erro ao ignorar convite:", error);
     }
+  };
+
+  const handleOpenMensagemModal = (profissional) =>{
+    setMensagemTarget(profissional);
+    setIsMensagemOpen(true);
   };
 
   if (loading) return <div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
@@ -217,7 +231,7 @@ export default function MinhaRede() {
               Nenhum profissional encontrado.
             </div>
           ) : (
-            // grid com colunas de largura fixa (14rem) — gap permanece fixo ao redimensionar
+
             <div
               className="grid gap-y-6 gap-x-6"
               style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(14rem, 14rem))', justifyContent: 'start' }}
@@ -238,7 +252,14 @@ export default function MinhaRede() {
         isOpen={!!selectedProfissional}
         onClose={() => setSelectedProfissional(null)}
         profissional={selectedProfissional}
+        onOpenMensagem={handleOpenMensagemModal}
       />
+
+      <MensagemModal
+        isOpen={isMensagemOpen}
+        onClose={() => setIsMensagemOpen(false)}
+        profissional={mensagemTarget}
+        />
     </div>
   );
 }

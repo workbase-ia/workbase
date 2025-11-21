@@ -133,7 +133,16 @@
       "Finanças"
     ],
     "convites": [],
-    "conexoes": []
+    "conexoes": [],
+    "mensagens": [
+      {
+        "id": "msg_1763768709124_ycr9h4srj",
+        "remetenteId": "1763126460224",
+        "conteudo": "Teste",
+        "data": "2025-11-21T23:45:09.124Z",
+        "lida": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -3913,9 +3922,58 @@
       "Sistemas Distribuídos"
     ],
     "conexoes": [
-       1, 4, 8, 11, 12, 14, 16, 21, 24, 25, 27, 29, 32, 38, 43, 2, 7, 10, 28, 37, 51, 57, 83, 90, 101, 13, 26, 40, 61, 64, 118, 143, 18, 71, 113, 55, 77, 88, 95, 105, 116, 125, 134, 149, 156
+      1,
+      4,
+      8,
+      11,
+      12,
+      14,
+      16,
+      21,
+      24,
+      25,
+      27,
+      29,
+      32,
+      38,
+      43,
+      2,
+      7,
+      10,
+      28,
+      37,
+      51,
+      57,
+      83,
+      90,
+      101,
+      13,
+      26,
+      40,
+      61,
+      64,
+      118,
+      143,
+      18,
+      71,
+      113,
+      55,
+      77,
+      88,
+      95,
+      105,
+      116,
+      125,
+      134,
+      149,
+      156,
+      80
     ],
-    "convites": [80, 99, 102, 120, 130]
+    "convites": [
+      102,
+      120,
+      130
+    ]
   },
   {
     "Id": 61,
@@ -5093,7 +5151,9 @@
       "Agronegócio"
     ],
     "convites": [],
-    "conexoes": []
+    "conexoes": [
+      "1763126460224"
+    ]
   },
   {
     "Id": 81,
@@ -6571,9 +6631,22 @@
     "resumo": "Criação de vídeos de entretenimento e opinião.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Mídias",
-    "habilidadesTecnicas": ["Edição de Vídeo", "Roteiro", "SEO para Youtube", "Atuação"],
-    "softSkills": ["Comunicação", "Carisma", "Polêmica"],
-    "hobbies": ["Games", "Futebol", "Leitura"],
+    "habilidadesTecnicas": [
+      "Edição de Vídeo",
+      "Roteiro",
+      "SEO para Youtube",
+      "Atuação"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Carisma",
+      "Polêmica"
+    ],
+    "hobbies": [
+      "Games",
+      "Futebol",
+      "Leitura"
+    ],
     "experiencias": [
       {
         "empresa": "Canal Próprio",
@@ -6584,12 +6657,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Teatro", "instituicao": "Curso Livre", "ano": 2009 }
+      {
+        "curso": "Teatro",
+        "instituicao": "Curso Livre",
+        "ano": 2009
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Internet", "Cultura Pop", "Política"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Internet",
+      "Cultura Pop",
+      "Política"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6601,9 +6687,22 @@
     "resumo": "Criação de coleções de vestuário feminino.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Moda",
-    "habilidadesTecnicas": ["Desenho de Moda", "Modelagem", "Ficha Técnica", "Pesquisa de Tecidos"],
-    "softSkills": ["Criatividade", "Estilo", "Sensibilidade"],
-    "hobbies": ["Viagens", "Gatos", "Arte"],
+    "habilidadesTecnicas": [
+      "Desenho de Moda",
+      "Modelagem",
+      "Ficha Técnica",
+      "Pesquisa de Tecidos"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Estilo",
+      "Sensibilidade"
+    ],
+    "hobbies": [
+      "Viagens",
+      "Gatos",
+      "Arte"
+    ],
     "experiencias": [
       {
         "empresa": "Marca de Roupas",
@@ -6614,12 +6713,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Design de Moda", "instituicao": "PUC-Rio", "ano": 2017 }
+      {
+        "curso": "Design de Moda",
+        "instituicao": "PUC-Rio",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
-    "areaInteresses": ["Sustentabilidade na Moda", "Tecidos Naturais", "Tendências"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "areaInteresses": [
+      "Sustentabilidade na Moda",
+      "Tecidos Naturais",
+      "Tendências"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6631,9 +6743,22 @@
     "resumo": "Atleta de futebol profissional com foco em alta performance.",
     "localizacao": "Londres/UK (Temporário)",
     "area": "Esporte",
-    "habilidadesTecnicas": ["Futebol", "Tática", "Condicionamento Físico", "Liderança em Campo"],
-    "softSkills": ["Liderança", "Disciplina", "Foco"],
-    "hobbies": ["Pagode", "Família", "Video Game"],
+    "habilidadesTecnicas": [
+      "Futebol",
+      "Tática",
+      "Condicionamento Físico",
+      "Liderança em Campo"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Disciplina",
+      "Foco"
+    ],
+    "hobbies": [
+      "Pagode",
+      "Família",
+      "Video Game"
+    ],
     "experiencias": [
       {
         "empresa": "Clube de Futebol",
@@ -6644,12 +6769,29 @@
       }
     ],
     "formacao": [
-      { "curso": "Ensino Médio", "instituicao": "Escola Estadual", "ano": 2002 }
+      {
+        "curso": "Ensino Médio",
+        "instituicao": "Escola Estadual",
+        "ano": 2002
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }, { "idioma": "Francês", "nivel": "Básico" }],
-    "areaInteresses": ["Esportes", "Família", "Religião"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      },
+      {
+        "idioma": "Francês",
+        "nivel": "Básico"
+      }
+    ],
+    "areaInteresses": [
+      "Esportes",
+      "Família",
+      "Religião"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6661,9 +6803,22 @@
     "resumo": "Instalação e manutenção de sistemas de ar condicionado.",
     "localizacao": "Manaus/AM",
     "area": "Serviços Técnicos",
-    "habilidadesTecnicas": ["HVAC", "Solda", "Elétrica Básica", "Manutenção Preventiva"],
-    "softSkills": ["Pontualidade", "Honestidade", "Proatividade"],
-    "hobbies": ["Pesca", "Motos", "Futebol"],
+    "habilidadesTecnicas": [
+      "HVAC",
+      "Solda",
+      "Elétrica Básica",
+      "Manutenção Preventiva"
+    ],
+    "softSkills": [
+      "Pontualidade",
+      "Honestidade",
+      "Proatividade"
+    ],
+    "hobbies": [
+      "Pesca",
+      "Motos",
+      "Futebol"
+    ],
     "experiencias": [
       {
         "empresa": "Clima Frio",
@@ -6674,12 +6829,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Refrigeração", "instituicao": "SENAI", "ano": 2016 }
+      {
+        "curso": "Refrigeração",
+        "instituicao": "SENAI",
+        "ano": 2016
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Climatização", "Automóveis", "Tecnologia"],
+    "areaInteresses": [
+      "Climatização",
+      "Automóveis",
+      "Tecnologia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6691,9 +6854,22 @@
     "resumo": "Maquiagem social, noivas e artística.",
     "localizacao": "Belo Horizonte/MG",
     "area": "Beleza",
-    "habilidadesTecnicas": ["Colorimetria", "Penteados", "Visagismo", "Maquiagem HD"],
-    "softSkills": ["Simpatia", "Paciência", "Estética"],
-    "hobbies": ["Instagram", "Tutoriais", "Moda"],
+    "habilidadesTecnicas": [
+      "Colorimetria",
+      "Penteados",
+      "Visagismo",
+      "Maquiagem HD"
+    ],
+    "softSkills": [
+      "Simpatia",
+      "Paciência",
+      "Estética"
+    ],
+    "hobbies": [
+      "Instagram",
+      "Tutoriais",
+      "Moda"
+    ],
     "experiencias": [
       {
         "empresa": "Autônoma",
@@ -6704,12 +6880,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Maquiagem Profissional", "instituicao": "Instituto Embelleze", "ano": 2017 }
+      {
+        "curso": "Maquiagem Profissional",
+        "instituicao": "Instituto Embelleze",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Beleza", "Arte", "Empreendedorismo"],
+    "areaInteresses": [
+      "Beleza",
+      "Arte",
+      "Empreendedorismo"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6721,9 +6905,22 @@
     "resumo": "Venda e locação de imóveis de alto padrão.",
     "localizacao": "Balneário Camboriú/SC",
     "area": "Vendas",
-    "habilidadesTecnicas": ["Avaliação de Imóveis", "Contratos", "Fotografia Imobiliária", "Negociação"],
-    "softSkills": ["Persuasão", "Networking", "Boa Apresentação"],
-    "hobbies": ["Carros Esportivos", "Praia", "Investimentos"],
+    "habilidadesTecnicas": [
+      "Avaliação de Imóveis",
+      "Contratos",
+      "Fotografia Imobiliária",
+      "Negociação"
+    ],
+    "softSkills": [
+      "Persuasão",
+      "Networking",
+      "Boa Apresentação"
+    ],
+    "hobbies": [
+      "Carros Esportivos",
+      "Praia",
+      "Investimentos"
+    ],
     "experiencias": [
       {
         "empresa": "Imobiliária Prime",
@@ -6734,12 +6931,27 @@
       }
     ],
     "formacao": [
-      { "curso": "TTI (Técnico em Transações Imobiliárias)", "instituicao": "Sindimóveis", "ano": 2018 }
+      {
+        "curso": "TTI (Técnico em Transações Imobiliárias)",
+        "instituicao": "Sindimóveis",
+        "ano": 2018
+      }
     ],
     "projetos": [],
-    "certificacoes": ["CRECI"],
-    "idiomas": [{ "idioma": "Espanhol", "nivel": "Intermediário" }],
-    "areaInteresses": ["Mercado Imobiliário", "Luxo", "Arquitetura"],
+    "certificacoes": [
+      "CRECI"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Mercado Imobiliário",
+      "Luxo",
+      "Arquitetura"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6751,9 +6963,22 @@
     "resumo": "Fisioterapeuta especializada em Pilates e reabilitação postural.",
     "localizacao": "Salvador/BA",
     "area": "Saúde",
-    "habilidadesTecnicas": ["Pilates Solo", "Pilates Aparelhos", "RPG", "Anatomia"],
-    "softSkills": ["Paciência", "Atenção", "Didática"],
-    "hobbies": ["Dança", "Praia", "Leitura"],
+    "habilidadesTecnicas": [
+      "Pilates Solo",
+      "Pilates Aparelhos",
+      "RPG",
+      "Anatomia"
+    ],
+    "softSkills": [
+      "Paciência",
+      "Atenção",
+      "Didática"
+    ],
+    "hobbies": [
+      "Dança",
+      "Praia",
+      "Leitura"
+    ],
     "experiencias": [
       {
         "empresa": "Studio Zen",
@@ -6764,12 +6989,22 @@
       }
     ],
     "formacao": [
-      { "curso": "Fisioterapia", "instituicao": "UFBA", "ano": 2015 }
+      {
+        "curso": "Fisioterapia",
+        "instituicao": "UFBA",
+        "ano": 2015
+      }
     ],
     "projetos": [],
-    "certificacoes": ["Certificação Internacional em Pilates"],
+    "certificacoes": [
+      "Certificação Internacional em Pilates"
+    ],
     "idiomas": [],
-    "areaInteresses": ["Bem-estar", "Saúde", "Fisioterapia"],
+    "areaInteresses": [
+      "Bem-estar",
+      "Saúde",
+      "Fisioterapia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6781,9 +7016,22 @@
     "resumo": "Planejamento e execução de eventos corporativos e feiras.",
     "localizacao": "São Paulo/SP",
     "area": "Eventos",
-    "habilidadesTecnicas": ["Gestão de Fornecedores", "Logística", "Orçamento", "Produção"],
-    "softSkills": ["Organização", "Liderança", "Comunicação"],
-    "hobbies": ["Musculação", "Cinema", "Viagens"],
+    "habilidadesTecnicas": [
+      "Gestão de Fornecedores",
+      "Logística",
+      "Orçamento",
+      "Produção"
+    ],
+    "softSkills": [
+      "Organização",
+      "Liderança",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Musculação",
+      "Cinema",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Eventos Corp",
@@ -6794,12 +7042,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Relações Públicas", "instituicao": "Cásper Líbero", "ano": 2017 }
+      {
+        "curso": "Relações Públicas",
+        "instituicao": "Cásper Líbero",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Marketing", "Eventos", "Negócios"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Marketing",
+      "Eventos",
+      "Negócios"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6811,9 +7072,22 @@
     "resumo": "Coordenação de iniciativas de impacto social e captação de recursos.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Terceiro Setor",
-    "habilidadesTecnicas": ["Gestão de Projetos", "Captação de Recursos", "Relatórios de Impacto", "Parcerias"],
-    "softSkills": ["Empatia", "Liderança", "Negociação"],
-    "hobbies": ["Voluntariado", "Corrida", "Leitura"],
+    "habilidadesTecnicas": [
+      "Gestão de Projetos",
+      "Captação de Recursos",
+      "Relatórios de Impacto",
+      "Parcerias"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Liderança",
+      "Negociação"
+    ],
+    "hobbies": [
+      "Voluntariado",
+      "Corrida",
+      "Leitura"
+    ],
     "experiencias": [
       {
         "empresa": "ONG Educar",
@@ -6824,12 +7098,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Ciências Sociais", "instituicao": "UFRJ", "ano": 2018 }
+      {
+        "curso": "Ciências Sociais",
+        "instituicao": "UFRJ",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Educação", "Sustentabilidade", "Impacto Social"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Educação",
+      "Sustentabilidade",
+      "Impacto Social"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6841,9 +7128,22 @@
     "resumo": "Atendimento clínico a crianças com dificuldades de aprendizagem.",
     "localizacao": "Porto Alegre/RS",
     "area": "Educação",
-    "habilidadesTecnicas": ["Avaliação Psicopedagógica", "Intervenção", "Orientação Familiar", "Inclusão"],
-    "softSkills": ["Paciência", "Escuta Ativa", "Empatia"],
-    "hobbies": ["Artesanato", "Literatura Infantil", "Jardinagem"],
+    "habilidadesTecnicas": [
+      "Avaliação Psicopedagógica",
+      "Intervenção",
+      "Orientação Familiar",
+      "Inclusão"
+    ],
+    "softSkills": [
+      "Paciência",
+      "Escuta Ativa",
+      "Empatia"
+    ],
+    "hobbies": [
+      "Artesanato",
+      "Literatura Infantil",
+      "Jardinagem"
+    ],
     "experiencias": [
       {
         "empresa": "Clínica Aprender",
@@ -6854,12 +7154,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Pedagogia", "instituicao": "UFRGS", "ano": 2019 }
+      {
+        "curso": "Pedagogia",
+        "instituicao": "UFRGS",
+        "ano": 2019
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Educação Inclusiva", "Psicologia", "Desenvolvimento Infantil"],
+    "areaInteresses": [
+      "Educação Inclusiva",
+      "Psicologia",
+      "Desenvolvimento Infantil"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6871,9 +7179,22 @@
     "resumo": "Consultoria de vinhos e gestão de adegas para restaurantes.",
     "localizacao": "Bento Gonçalves/RS",
     "area": "Gastronomia",
-    "habilidadesTecnicas": ["Enologia", "Harmonização", "Gestão de Estoque", "Vendas"],
-    "softSkills": ["Comunicação", "Atendimento", "Paixão"],
-    "hobbies": ["Vinhos", "Culinária", "Viagens"],
+    "habilidadesTecnicas": [
+      "Enologia",
+      "Harmonização",
+      "Gestão de Estoque",
+      "Vendas"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Atendimento",
+      "Paixão"
+    ],
+    "hobbies": [
+      "Vinhos",
+      "Culinária",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Vinícola Vale",
@@ -6884,12 +7205,27 @@
       }
     ],
     "formacao": [
-      { "curso": "Sommelier Profissional", "instituicao": "ABS", "ano": 2017 }
+      {
+        "curso": "Sommelier Profissional",
+        "instituicao": "ABS",
+        "ano": 2017
+      }
     ],
     "projetos": [],
-    "certificacoes": ["WSET Level 2"],
-    "idiomas": [{ "idioma": "Italiano", "nivel": "Intermediário" }],
-    "areaInteresses": ["Vinicultura", "Turismo", "Gastronomia"],
+    "certificacoes": [
+      "WSET Level 2"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Italiano",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Vinicultura",
+      "Turismo",
+      "Gastronomia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6901,9 +7237,22 @@
     "resumo": "Produção e apresentação de podcasts sobre tecnologia e cultura.",
     "localizacao": "São Paulo/SP",
     "area": "Comunicação",
-    "habilidadesTecnicas": ["Edição de Áudio", "Roteiro", "Entrevistas", "Locução"],
-    "softSkills": ["Curiosidade", "Comunicação", "Humor"],
-    "hobbies": ["Games", "Séries", "Música"],
+    "habilidadesTecnicas": [
+      "Edição de Áudio",
+      "Roteiro",
+      "Entrevistas",
+      "Locução"
+    ],
+    "softSkills": [
+      "Curiosidade",
+      "Comunicação",
+      "Humor"
+    ],
+    "hobbies": [
+      "Games",
+      "Séries",
+      "Música"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora de Áudio",
@@ -6914,12 +7263,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "Mackenzie", "ano": 2018 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Mackenzie",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Tecnologia", "Cultura Pop", "Rádio"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Tecnologia",
+      "Cultura Pop",
+      "Rádio"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6931,9 +7293,22 @@
     "resumo": "Gestão financeira e logística de projetos culturais.",
     "localizacao": "Salvador/BA",
     "area": "Cultura",
-    "habilidadesTecnicas": ["Leis de Incentivo", "Planilhas", "Gestão de Equipe", "Produção"],
-    "softSkills": ["Organização", "Liderança", "Resiliência"],
-    "hobbies": ["Teatro", "Praia", "Dança"],
+    "habilidadesTecnicas": [
+      "Leis de Incentivo",
+      "Planilhas",
+      "Gestão de Equipe",
+      "Produção"
+    ],
+    "softSkills": [
+      "Organização",
+      "Liderança",
+      "Resiliência"
+    ],
+    "hobbies": [
+      "Teatro",
+      "Praia",
+      "Dança"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora Cultural",
@@ -6944,12 +7319,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Produção Cultural", "instituicao": "UFBA", "ano": 2014 }
+      {
+        "curso": "Produção Cultural",
+        "instituicao": "UFBA",
+        "ano": 2014
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Arte", "Gestão Cultural", "Música"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Arte",
+      "Gestão Cultural",
+      "Música"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6961,9 +7349,22 @@
     "resumo": "Estratégias de vendas e expansão de mercado para varejo.",
     "localizacao": "São Paulo/SP",
     "area": "Vendas",
-    "habilidadesTecnicas": ["Planejamento Estratégico", "Negociação B2B", "Gestão de KPIs", "Liderança"],
-    "softSkills": ["Visão de Negócio", "Persuasão", "Foco em Resultados"],
-    "hobbies": ["Golfe", "Viagens", "Vinhos"],
+    "habilidadesTecnicas": [
+      "Planejamento Estratégico",
+      "Negociação B2B",
+      "Gestão de KPIs",
+      "Liderança"
+    ],
+    "softSkills": [
+      "Visão de Negócio",
+      "Persuasão",
+      "Foco em Resultados"
+    ],
+    "hobbies": [
+      "Golfe",
+      "Viagens",
+      "Vinhos"
+    ],
     "experiencias": [
       {
         "empresa": "Grupo Varejista",
@@ -6974,12 +7375,27 @@
       }
     ],
     "formacao": [
-      { "curso": "Administração", "instituicao": "FGV", "ano": 2000 }
+      {
+        "curso": "Administração",
+        "instituicao": "FGV",
+        "ano": 2000
+      }
     ],
     "projetos": [],
-    "certificacoes": ["MBA em Gestão Comercial"],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
-    "areaInteresses": ["Varejo", "Economia", "Inovação"],
+    "certificacoes": [
+      "MBA em Gestão Comercial"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "areaInteresses": [
+      "Varejo",
+      "Economia",
+      "Inovação"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -6991,9 +7407,22 @@
     "resumo": "Gestão de carreiras e marketing para atletas.",
     "localizacao": "Santos/SP",
     "area": "Esporte",
-    "habilidadesTecnicas": ["Marketing Esportivo", "Contratos", "Gestão de Imagem", "Negociação"],
-    "softSkills": ["Networking", "Comunicação", "Ética"],
-    "hobbies": ["Futebol", "Pesca", "Música"],
+    "habilidadesTecnicas": [
+      "Marketing Esportivo",
+      "Contratos",
+      "Gestão de Imagem",
+      "Negociação"
+    ],
+    "softSkills": [
+      "Networking",
+      "Comunicação",
+      "Ética"
+    ],
+    "hobbies": [
+      "Futebol",
+      "Pesca",
+      "Música"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Atletas",
@@ -7004,12 +7433,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Educação Física", "instituicao": "UNIMES", "ano": 2010 }
+      {
+        "curso": "Educação Física",
+        "instituicao": "UNIMES",
+        "ano": 2010
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Espanhol", "nivel": "Avançado" }],
-    "areaInteresses": ["Futebol", "Negócios", "Direito Desportivo"],
+    "idiomas": [
+      {
+        "idioma": "Espanhol",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Futebol",
+      "Negócios",
+      "Direito Desportivo"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7021,9 +7463,22 @@
     "resumo": "Pós-produção para publicidade e conteúdo digital.",
     "localizacao": "São Paulo/SP",
     "area": "Mídias",
-    "habilidadesTecnicas": ["Premiere", "After Effects", "Color Grading", "Motion Graphics"],
-    "softSkills": ["Criatividade", "Atenção aos Detalhes", "Prazos"],
-    "hobbies": ["Cinema", "Fotografia", "Games"],
+    "habilidadesTecnicas": [
+      "Premiere",
+      "After Effects",
+      "Color Grading",
+      "Motion Graphics"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Atenção aos Detalhes",
+      "Prazos"
+    ],
+    "hobbies": [
+      "Cinema",
+      "Fotografia",
+      "Games"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora de Vídeo",
@@ -7034,12 +7489,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Rádio e TV", "instituicao": "Belas Artes", "ano": 2015 }
+      {
+        "curso": "Rádio e TV",
+        "instituicao": "Belas Artes",
+        "ano": 2015
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Audiovisual", "Tecnologia", "Arte"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Audiovisual",
+      "Tecnologia",
+      "Arte"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7051,9 +7519,22 @@
     "resumo": "Organização completa de casamentos e eventos sociais.",
     "localizacao": "São Paulo/SP",
     "area": "Eventos",
-    "habilidadesTecnicas": ["Planejamento", "Gestão de Fornecedores", "Protocolo", "Decoração"],
-    "softSkills": ["Simpatia", "Organização", "Resolução de Problemas"],
-    "hobbies": ["Festas", "Flores", "Viagens"],
+    "habilidadesTecnicas": [
+      "Planejamento",
+      "Gestão de Fornecedores",
+      "Protocolo",
+      "Decoração"
+    ],
+    "softSkills": [
+      "Simpatia",
+      "Organização",
+      "Resolução de Problemas"
+    ],
+    "hobbies": [
+      "Festas",
+      "Flores",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Helena Eventos",
@@ -7064,12 +7545,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Relações Públicas", "instituicao": "Anhembi Morumbi", "ano": 2010 }
+      {
+        "curso": "Relações Públicas",
+        "instituicao": "Anhembi Morumbi",
+        "ano": 2010
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Eventos", "Moda", "Gastronomia"],
+    "areaInteresses": [
+      "Eventos",
+      "Moda",
+      "Gastronomia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7081,9 +7570,22 @@
     "resumo": "Criação de roteiros para séries, curtas e publicidade.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Cinema",
-    "habilidadesTecnicas": ["Roteiro", "Storytelling", "Formatação Master Scenes", "Escrita Criativa"],
-    "softSkills": ["Criatividade", "Observação", "Trabalho em Equipe"],
-    "hobbies": ["Leitura", "Cinema", "Escrita"],
+    "habilidadesTecnicas": [
+      "Roteiro",
+      "Storytelling",
+      "Formatação Master Scenes",
+      "Escrita Criativa"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Observação",
+      "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Cinema",
+      "Escrita"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora de Conteúdo",
@@ -7094,12 +7596,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Cinema", "instituicao": "UFF", "ano": 2017 }
+      {
+        "curso": "Cinema",
+        "instituicao": "UFF",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Cinema", "Literatura", "Dramaturgia"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Cinema",
+      "Literatura",
+      "Dramaturgia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7111,9 +7626,22 @@
     "resumo": "Atuação em contencioso cível e contratos.",
     "localizacao": "Fortaleza/CE",
     "area": "Direito",
-    "habilidadesTecnicas": ["Processo Civil", "Redação Jurídica", "Audiências", "Negociação"],
-    "softSkills": ["Oratória", "Argumentação", "Ética"],
-    "hobbies": ["Leitura", "Corrida", "Política"],
+    "habilidadesTecnicas": [
+      "Processo Civil",
+      "Redação Jurídica",
+      "Audiências",
+      "Negociação"
+    ],
+    "softSkills": [
+      "Oratória",
+      "Argumentação",
+      "Ética"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Corrida",
+      "Política"
+    ],
     "experiencias": [
       {
         "empresa": "Escritório de Advocacia",
@@ -7124,12 +7652,22 @@
       }
     ],
     "formacao": [
-      { "curso": "Direito", "instituicao": "UFC", "ano": 2016 }
+      {
+        "curso": "Direito",
+        "instituicao": "UFC",
+        "ano": 2016
+      }
     ],
     "projetos": [],
-    "certificacoes": ["OAB"],
+    "certificacoes": [
+      "OAB"
+    ],
     "idiomas": [],
-    "areaInteresses": ["Justiça", "Direito do Consumidor", "Mediação"],
+    "areaInteresses": [
+      "Justiça",
+      "Direito do Consumidor",
+      "Mediação"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7141,9 +7679,22 @@
     "resumo": "Elaboração e gestão de projetos culturais e artísticos.",
     "localizacao": "Itajaí/SC",
     "area": "Cultura",
-    "habilidadesTecnicas": ["Leis de Incentivo", "Produção Executiva", "Gestão de Projetos", "Curadoria"],
-    "softSkills": ["Criatividade", "Liderança", "Comunicação"],
-    "hobbies": ["Teatro", "Circo", "Música"],
+    "habilidadesTecnicas": [
+      "Leis de Incentivo",
+      "Produção Executiva",
+      "Gestão de Projetos",
+      "Curadoria"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Liderança",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Teatro",
+      "Circo",
+      "Música"
+    ],
     "experiencias": [
       {
         "empresa": "Fundação Cultural",
@@ -7154,12 +7705,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Produção Cultural", "instituicao": "Univali", "ano": 2016 }
+      {
+        "curso": "Produção Cultural",
+        "instituicao": "Univali",
+        "ano": 2016
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Arte", "Cultura Popular", "Educação"],
+    "areaInteresses": [
+      "Arte",
+      "Cultura Popular",
+      "Educação"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7171,9 +7730,22 @@
     "resumo": "Atuação em bandas, gravações e aulas de música.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Música",
-    "habilidadesTecnicas": ["Percussão", "Leitura de Partitura", "Ritmos Brasileiros", "Ensino"],
-    "softSkills": ["Musicalidade", "Trabalho em Equipe", "Disciplina"],
-    "hobbies": ["Samba", "Futebol", "Cozinhar"],
+    "habilidadesTecnicas": [
+      "Percussão",
+      "Leitura de Partitura",
+      "Ritmos Brasileiros",
+      "Ensino"
+    ],
+    "softSkills": [
+      "Musicalidade",
+      "Trabalho em Equipe",
+      "Disciplina"
+    ],
+    "hobbies": [
+      "Samba",
+      "Futebol",
+      "Cozinhar"
+    ],
     "experiencias": [
       {
         "empresa": "Escola de Música",
@@ -7184,12 +7756,22 @@
       }
     ],
     "formacao": [
-      { "curso": "Música", "instituicao": "Villa-Lobos", "ano": 2014 }
+      {
+        "curso": "Música",
+        "instituicao": "Villa-Lobos",
+        "ano": 2014
+      }
     ],
     "projetos": [],
-    "certificacoes": ["OMB"],
+    "certificacoes": [
+      "OMB"
+    ],
     "idiomas": [],
-    "areaInteresses": ["Música Brasileira", "Educação Musical", "Cultura"],
+    "areaInteresses": [
+      "Música Brasileira",
+      "Educação Musical",
+      "Cultura"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7201,9 +7783,22 @@
     "resumo": "Dublagem de filmes, séries e games.",
     "localizacao": "São Paulo/SP",
     "area": "Artes",
-    "habilidadesTecnicas": ["Dublagem", "Interpretação", "Locução", "Lip Sync"],
-    "softSkills": ["Versatilidade", "Concentração", "Criatividade"],
-    "hobbies": ["Cinema", "Games", "Leitura"],
+    "habilidadesTecnicas": [
+      "Dublagem",
+      "Interpretação",
+      "Locução",
+      "Lip Sync"
+    ],
+    "softSkills": [
+      "Versatilidade",
+      "Concentração",
+      "Criatividade"
+    ],
+    "hobbies": [
+      "Cinema",
+      "Games",
+      "Leitura"
+    ],
     "experiencias": [
       {
         "empresa": "Estúdio de Dublagem",
@@ -7214,12 +7809,27 @@
       }
     ],
     "formacao": [
-      { "curso": "Artes Cênicas", "instituicao": "USP", "ano": 2017 }
+      {
+        "curso": "Artes Cênicas",
+        "instituicao": "USP",
+        "ano": 2017
+      }
     ],
     "projetos": [],
-    "certificacoes": ["DRT"],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Audiovisual", "Teatro", "Voz"],
+    "certificacoes": [
+      "DRT"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Audiovisual",
+      "Teatro",
+      "Voz"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7231,9 +7841,22 @@
     "resumo": "Tradução literária e revisão de textos acadêmicos.",
     "localizacao": "São Paulo/SP",
     "area": "Letras",
-    "habilidadesTecnicas": ["Tradução", "Revisão Gramatical", "Edição de Texto", "Inglês/Francês"],
-    "softSkills": ["Cultura Geral", "Atenção aos Detalhes", "Prazos"],
-    "hobbies": ["Literatura", "Jazz", "Cinema"],
+    "habilidadesTecnicas": [
+      "Tradução",
+      "Revisão Gramatical",
+      "Edição de Texto",
+      "Inglês/Francês"
+    ],
+    "softSkills": [
+      "Cultura Geral",
+      "Atenção aos Detalhes",
+      "Prazos"
+    ],
+    "hobbies": [
+      "Literatura",
+      "Jazz",
+      "Cinema"
+    ],
     "experiencias": [
       {
         "empresa": "Editora Livros",
@@ -7244,15 +7867,29 @@
       }
     ],
     "formacao": [
-      { "curso": "Letras", "instituicao": "PUC-SP", "ano": 2015 }
+      {
+        "curso": "Letras",
+        "instituicao": "PUC-SP",
+        "ano": 2015
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Francês", "nivel": "Fluente" },
-      { "idioma": "Inglês", "nivel": "Fluente" }
+      {
+        "idioma": "Francês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
     ],
-    "areaInteresses": ["Literatura", "Linguística", "Arte"],
+    "areaInteresses": [
+      "Literatura",
+      "Linguística",
+      "Arte"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7264,9 +7901,22 @@
     "resumo": "Ensino de artes cênicas e direção teatral.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Educação",
-    "habilidadesTecnicas": ["Direção Teatral", "Pedagogia do Teatro", "Expressão Corporal", "Voz"],
-    "softSkills": ["Paixão", "Liderança", "Comunicação"],
-    "hobbies": ["Teatro", "Leitura", "Cinema"],
+    "habilidadesTecnicas": [
+      "Direção Teatral",
+      "Pedagogia do Teatro",
+      "Expressão Corporal",
+      "Voz"
+    ],
+    "softSkills": [
+      "Paixão",
+      "Liderança",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Teatro",
+      "Leitura",
+      "Cinema"
+    ],
     "experiencias": [
       {
         "empresa": "Escola de Artes",
@@ -7277,12 +7927,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Artes Cênicas", "instituicao": "UNIRIO", "ano": 2008 }
+      {
+        "curso": "Artes Cênicas",
+        "instituicao": "UNIRIO",
+        "ano": 2008
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Francês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Teatro", "Educação", "Cultura"],
+    "idiomas": [
+      {
+        "idioma": "Francês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Teatro",
+      "Educação",
+      "Cultura"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7294,9 +7957,22 @@
     "resumo": "Cobertura de notícias e eventos no exterior.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Reportagem", "Edição", "Idiomas", "Correspondência"],
-    "softSkills": ["Curiosidade", "Adaptabilidade", "Coragem"],
-    "hobbies": ["Viagens", "Fotografia", "Culturas"],
+    "habilidadesTecnicas": [
+      "Reportagem",
+      "Edição",
+      "Idiomas",
+      "Correspondência"
+    ],
+    "softSkills": [
+      "Curiosidade",
+      "Adaptabilidade",
+      "Coragem"
+    ],
+    "hobbies": [
+      "Viagens",
+      "Fotografia",
+      "Culturas"
+    ],
     "experiencias": [
       {
         "empresa": "Canal de Notícias",
@@ -7307,15 +7983,29 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "PUC-Rio", "ano": 2014 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "PUC-Rio",
+        "ano": 2014
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [
-      { "idioma": "Inglês", "nivel": "Fluente" },
-      { "idioma": "Espanhol", "nivel": "Fluente" }
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Fluente"
+      }
     ],
-    "areaInteresses": ["Política Internacional", "Direitos Humanos", "Viagens"],
+    "areaInteresses": [
+      "Política Internacional",
+      "Direitos Humanos",
+      "Viagens"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7327,9 +8017,22 @@
     "resumo": "Pesquisa e escrita de livros biográficos e históricos.",
     "localizacao": "São Paulo/SP",
     "area": "Literatura",
-    "habilidadesTecnicas": ["Escrita", "Pesquisa", "Entrevistas", "Edição"],
-    "softSkills": ["Paciência", "Escuta", "Disciplina"],
-    "hobbies": ["Leitura", "História", "Café"],
+    "habilidadesTecnicas": [
+      "Escrita",
+      "Pesquisa",
+      "Entrevistas",
+      "Edição"
+    ],
+    "softSkills": [
+      "Paciência",
+      "Escuta",
+      "Disciplina"
+    ],
+    "hobbies": [
+      "Leitura",
+      "História",
+      "Café"
+    ],
     "experiencias": [
       {
         "empresa": "Editora História",
@@ -7340,12 +8043,25 @@
       }
     ],
     "formacao": [
-      { "curso": "História", "instituicao": "USP", "ano": 2015 }
+      {
+        "curso": "História",
+        "instituicao": "USP",
+        "ano": 2015
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["História do Brasil", "Literatura", "Memória"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "História do Brasil",
+      "Literatura",
+      "Memória"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7357,9 +8073,22 @@
     "resumo": "Gestão de redação e coordenação de telejornais.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Edição", "Gestão de Equipe", "Critério Noticioso", "Redação"],
-    "softSkills": ["Liderança", "Seriedade", "Tomada de Decisão"],
-    "hobbies": ["Política", "Tecnologia", "Carros"],
+    "habilidadesTecnicas": [
+      "Edição",
+      "Gestão de Equipe",
+      "Critério Noticioso",
+      "Redação"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Seriedade",
+      "Tomada de Decisão"
+    ],
+    "hobbies": [
+      "Política",
+      "Tecnologia",
+      "Carros"
+    ],
     "experiencias": [
       {
         "empresa": "Emissora de TV",
@@ -7370,12 +8099,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "USP", "ano": 2005 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "USP",
+        "ano": 2005
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
-    "areaInteresses": ["Jornalismo", "Política", "Comunicação"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "areaInteresses": [
+      "Jornalismo",
+      "Política",
+      "Comunicação"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7387,9 +8129,22 @@
     "resumo": "Gestão da comunicação interna e eventos corporativos.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Comunicação",
-    "habilidadesTecnicas": ["Comunicação Interna", "Eventos", "Redação", "Gestão de Crise"],
-    "softSkills": ["Empatia", "Clareza", "Relacionamento"],
-    "hobbies": ["Dança", "Yoga", "Viagens"],
+    "habilidadesTecnicas": [
+      "Comunicação Interna",
+      "Eventos",
+      "Redação",
+      "Gestão de Crise"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Clareza",
+      "Relacionamento"
+    ],
+    "hobbies": [
+      "Dança",
+      "Yoga",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Empresa de Energia",
@@ -7400,12 +8155,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "UFRJ", "ano": 2010 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "UFRJ",
+        "ano": 2010
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Cultura Organizacional", "RH", "Comunicação"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Cultura Organizacional",
+      "RH",
+      "Comunicação"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7417,9 +8185,22 @@
     "resumo": "Especialista em confeitaria e panificação.",
     "localizacao": "São Paulo/SP",
     "area": "Gastronomia",
-    "habilidadesTecnicas": ["Confeitaria", "Panificação", "Gestão de Cozinha", "Higiene"],
-    "softSkills": ["Criatividade", "Organização", "Paciência"],
-    "hobbies": ["Cozinhar", "Fotografia de Alimentos", "Viagens"],
+    "habilidadesTecnicas": [
+      "Confeitaria",
+      "Panificação",
+      "Gestão de Cozinha",
+      "Higiene"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Organização",
+      "Paciência"
+    ],
+    "hobbies": [
+      "Cozinhar",
+      "Fotografia de Alimentos",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Padaria Artesanal",
@@ -7430,12 +8211,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Gastronomia", "instituicao": "Anhembi Morumbi", "ano": 2017 }
+      {
+        "curso": "Gastronomia",
+        "instituicao": "Anhembi Morumbi",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Francês", "nivel": "Básico" }],
-    "areaInteresses": ["Gastronomia", "Confeitaria", "Empreendedorismo"],
+    "idiomas": [
+      {
+        "idioma": "Francês",
+        "nivel": "Básico"
+      }
+    ],
+    "areaInteresses": [
+      "Gastronomia",
+      "Confeitaria",
+      "Empreendedorismo"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7447,9 +8241,22 @@
     "resumo": "Apoio na produção de programas de TV e eventos.",
     "localizacao": "São Paulo/SP",
     "area": "TV",
-    "habilidadesTecnicas": ["Produção", "Logística", "Roteiro", "Edição Básica"],
-    "softSkills": ["Proatividade", "Comunicação", "Trabalho em Equipe"],
-    "hobbies": ["Música", "Futebol", "Séries"],
+    "habilidadesTecnicas": [
+      "Produção",
+      "Logística",
+      "Roteiro",
+      "Edição Básica"
+    ],
+    "softSkills": [
+      "Proatividade",
+      "Comunicação",
+      "Trabalho em Equipe"
+    ],
+    "hobbies": [
+      "Música",
+      "Futebol",
+      "Séries"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora de Vídeo",
@@ -7460,12 +8267,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Rádio e TV", "instituicao": "FAAP", "ano": 2020 }
+      {
+        "curso": "Rádio e TV",
+        "instituicao": "FAAP",
+        "ano": 2020
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["TV", "Cinema", "Produção"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "TV",
+      "Cinema",
+      "Produção"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7477,9 +8297,22 @@
     "resumo": "Cobertura jornalística de campeonatos de games.",
     "localizacao": "São Paulo/SP",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Redação", "Edição de Vídeo", "Conhecimento de Games", "Streaming"],
-    "softSkills": ["Comunicação", "Paixão", "Agilidade"],
-    "hobbies": ["Videogame", "Futebol", "Tecnologia"],
+    "habilidadesTecnicas": [
+      "Redação",
+      "Edição de Vídeo",
+      "Conhecimento de Games",
+      "Streaming"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Paixão",
+      "Agilidade"
+    ],
+    "hobbies": [
+      "Videogame",
+      "Futebol",
+      "Tecnologia"
+    ],
     "experiencias": [
       {
         "empresa": "Portal de Games",
@@ -7490,12 +8323,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "Cásper Líbero", "ano": 2018 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Cásper Líbero",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Games", "E-sports", "Tecnologia"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Games",
+      "E-sports",
+      "Tecnologia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7507,9 +8353,22 @@
     "resumo": "Apresentação de eventos e vídeos institucionais.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Comunicação",
-    "habilidadesTecnicas": ["Apresentação", "Locução", "Media Training", "Improviso"],
-    "softSkills": ["Simpatia", "Carisma", "Comunicação"],
-    "hobbies": ["Esportes", "Família", "Viagens"],
+    "habilidadesTecnicas": [
+      "Apresentação",
+      "Locução",
+      "Media Training",
+      "Improviso"
+    ],
+    "softSkills": [
+      "Simpatia",
+      "Carisma",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Esportes",
+      "Família",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Freelancer",
@@ -7520,12 +8379,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "UniCEUB", "ano": 2016 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "UniCEUB",
+        "ano": 2016
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
-    "areaInteresses": ["Comunicação", "Vídeo", "Eventos"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "areaInteresses": [
+      "Comunicação",
+      "Vídeo",
+      "Eventos"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7537,9 +8409,22 @@
     "resumo": "Gestão de imagem e relacionamento com a mídia.",
     "localizacao": "Brasília/DF",
     "area": "Comunicação",
-    "habilidadesTecnicas": ["Press Release", "Clipping", "Media Relations", "Gestão de Crise"],
-    "softSkills": ["Organização", "Relacionamento", "Escrita"],
-    "hobbies": ["Leitura", "Política", "Café"],
+    "habilidadesTecnicas": [
+      "Press Release",
+      "Clipping",
+      "Media Relations",
+      "Gestão de Crise"
+    ],
+    "softSkills": [
+      "Organização",
+      "Relacionamento",
+      "Escrita"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Política",
+      "Café"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Comunicação",
@@ -7550,12 +8435,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "UnB", "ano": 2016 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "UnB",
+        "ano": 2016
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Assessoria", "Jornalismo", "Política"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Assessoria",
+      "Jornalismo",
+      "Política"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7567,9 +8465,22 @@
     "resumo": "Previsão do tempo e análise climática.",
     "localizacao": "São Paulo/SP",
     "area": "Ciências",
-    "habilidadesTecnicas": ["Meteorologia", "Análise de Dados", "Modelagem Climática", "Comunicação"],
-    "softSkills": ["Clareza", "Precisão", "Comunicação"],
-    "hobbies": ["Natureza", "Fotografia", "Caminhadas"],
+    "habilidadesTecnicas": [
+      "Meteorologia",
+      "Análise de Dados",
+      "Modelagem Climática",
+      "Comunicação"
+    ],
+    "softSkills": [
+      "Clareza",
+      "Precisão",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Natureza",
+      "Fotografia",
+      "Caminhadas"
+    ],
     "experiencias": [
       {
         "empresa": "Instituto de Meteorologia",
@@ -7580,12 +8491,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Meteorologia", "instituicao": "USP", "ano": 2018 }
+      {
+        "curso": "Meteorologia",
+        "instituicao": "USP",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Clima", "Meio Ambiente", "Ciência"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Clima",
+      "Meio Ambiente",
+      "Ciência"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7597,9 +8521,22 @@
     "resumo": "Jornalismo investigativo e grandes reportagens.",
     "localizacao": "São Paulo/SP",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Investigação", "Apuração", "Entrevistas", "Redação"],
-    "softSkills": ["Persistência", "Ética", "Coragem"],
-    "hobbies": ["Leitura", "Documentários", "Corrida"],
+    "habilidadesTecnicas": [
+      "Investigação",
+      "Apuração",
+      "Entrevistas",
+      "Redação"
+    ],
+    "softSkills": [
+      "Persistência",
+      "Ética",
+      "Coragem"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Documentários",
+      "Corrida"
+    ],
     "experiencias": [
       {
         "empresa": "Jornal Impresso",
@@ -7610,12 +8547,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "PUC-SP", "ano": 2014 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "PUC-SP",
+        "ano": 2014
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Jornalismo Investigativo", "Direitos Humanos", "Política"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Jornalismo Investigativo",
+      "Direitos Humanos",
+      "Política"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7627,9 +8577,22 @@
     "resumo": "Reportagens e notícias direto do exterior.",
     "localizacao": "Nova York/EUA",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Correspondência", "Idiomas", "Edição Mobile", "Reportagem"],
-    "softSkills": ["Adaptabilidade", "Autonomia", "Comunicação"],
-    "hobbies": ["Viagens", "Cultura", "Gastronomia"],
+    "habilidadesTecnicas": [
+      "Correspondência",
+      "Idiomas",
+      "Edição Mobile",
+      "Reportagem"
+    ],
+    "softSkills": [
+      "Adaptabilidade",
+      "Autonomia",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Viagens",
+      "Cultura",
+      "Gastronomia"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Notícias",
@@ -7640,12 +8603,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "Cásper Líbero", "ano": 2016 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Cásper Líbero",
+        "ano": 2016
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
-    "areaInteresses": ["Política Internacional", "Economia", "Cultura"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "areaInteresses": [
+      "Política Internacional",
+      "Economia",
+      "Cultura"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7657,9 +8633,22 @@
     "resumo": "Gestão de conteúdo e pautas jornalísticas.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Edição", "Gestão de Pauta", "Redação", "Liderança"],
-    "softSkills": ["Organização", "Visão Sistêmica", "Calma"],
-    "hobbies": ["Leitura", "Cinema", "Praia"],
+    "habilidadesTecnicas": [
+      "Edição",
+      "Gestão de Pauta",
+      "Redação",
+      "Liderança"
+    ],
+    "softSkills": [
+      "Organização",
+      "Visão Sistêmica",
+      "Calma"
+    ],
+    "hobbies": [
+      "Leitura",
+      "Cinema",
+      "Praia"
+    ],
     "experiencias": [
       {
         "empresa": "Portal de Notícias",
@@ -7670,12 +8659,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "UFF", "ano": 2015 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "UFF",
+        "ano": 2015
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Cultura", "Arte", "Literatura"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Cultura",
+      "Arte",
+      "Literatura"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7687,9 +8689,22 @@
     "resumo": "Produção de documentários e grandes reportagens.",
     "localizacao": "São Paulo/SP",
     "area": "Jornalismo",
-    "habilidadesTecnicas": ["Roteiro", "Direção", "Pesquisa", "Entrevistas"],
-    "softSkills": ["Empatia", "Narrativa", "Paciência"],
-    "hobbies": ["Cinema", "História", "Viagens"],
+    "habilidadesTecnicas": [
+      "Roteiro",
+      "Direção",
+      "Pesquisa",
+      "Entrevistas"
+    ],
+    "softSkills": [
+      "Empatia",
+      "Narrativa",
+      "Paciência"
+    ],
+    "hobbies": [
+      "Cinema",
+      "História",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Produtora Independente",
@@ -7700,12 +8715,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Cinema", "instituicao": "FAAP", "ano": 2018 }
+      {
+        "curso": "Cinema",
+        "instituicao": "FAAP",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
-    "areaInteresses": ["Direitos Humanos", "Sociedade", "História"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Fluente"
+      }
+    ],
+    "areaInteresses": [
+      "Direitos Humanos",
+      "Sociedade",
+      "História"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7717,9 +8745,22 @@
     "resumo": "Produção de programas de entretenimento e talk shows.",
     "localizacao": "São Paulo/SP",
     "area": "TV",
-    "habilidadesTecnicas": ["Produção", "Roteiro", "Gestão de Convidados", "Logística"],
-    "softSkills": ["Comunicação", "Organização", "Agilidade"],
-    "hobbies": ["Música", "Teatro", "Shows"],
+    "habilidadesTecnicas": [
+      "Produção",
+      "Roteiro",
+      "Gestão de Convidados",
+      "Logística"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Organização",
+      "Agilidade"
+    ],
+    "hobbies": [
+      "Música",
+      "Teatro",
+      "Shows"
+    ],
     "experiencias": [
       {
         "empresa": "Emissora de TV",
@@ -7730,12 +8771,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Rádio e TV", "instituicao": "Anhembi Morumbi", "ano": 2014 }
+      {
+        "curso": "Rádio e TV",
+        "instituicao": "Anhembi Morumbi",
+        "ano": 2014
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["TV", "Cultura Pop", "Música"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "TV",
+      "Cultura Pop",
+      "Música"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7747,9 +8801,22 @@
     "resumo": "Narração de jogos de futebol e basquete.",
     "localizacao": "São Paulo/SP",
     "area": "Esporte",
-    "habilidadesTecnicas": ["Narração", "Locução", "Conhecimento Esportivo", "Voz"],
-    "softSkills": ["Emoção", "Improviso", "Comunicação"],
-    "hobbies": ["Futebol", "Basquete", "Rádio"],
+    "habilidadesTecnicas": [
+      "Narração",
+      "Locução",
+      "Conhecimento Esportivo",
+      "Voz"
+    ],
+    "softSkills": [
+      "Emoção",
+      "Improviso",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Futebol",
+      "Basquete",
+      "Rádio"
+    ],
     "experiencias": [
       {
         "empresa": "Web Rádio",
@@ -7760,12 +8827,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "FMU", "ano": 2017 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "FMU",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Esportes", "Rádio", "Comunicação"],
+    "areaInteresses": [
+      "Esportes",
+      "Rádio",
+      "Comunicação"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7777,9 +8852,22 @@
     "resumo": "Locução de eventos e rádio.",
     "localizacao": "São Paulo/SP",
     "area": "Comunicação",
-    "habilidadesTecnicas": ["Locução", "Voz", "Edição de Áudio", "Apresentação"],
-    "softSkills": ["Carisma", "Comunicação", "Entusiasmo"],
-    "hobbies": ["Esportes", "Música", "Samba"],
+    "habilidadesTecnicas": [
+      "Locução",
+      "Voz",
+      "Edição de Áudio",
+      "Apresentação"
+    ],
+    "softSkills": [
+      "Carisma",
+      "Comunicação",
+      "Entusiasmo"
+    ],
+    "hobbies": [
+      "Esportes",
+      "Música",
+      "Samba"
+    ],
     "experiencias": [
       {
         "empresa": "Rádio FM",
@@ -7790,12 +8878,22 @@
       }
     ],
     "formacao": [
-      { "curso": "Rádio e TV", "instituicao": "Metodista", "ano": 2015 }
+      {
+        "curso": "Rádio e TV",
+        "instituicao": "Metodista",
+        "ano": 2015
+      }
     ],
     "projetos": [],
-    "certificacoes": ["DRT"],
+    "certificacoes": [
+      "DRT"
+    ],
     "idiomas": [],
-    "areaInteresses": ["Rádio", "Esportes", "Música"],
+    "areaInteresses": [
+      "Rádio",
+      "Esportes",
+      "Música"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7807,9 +8905,22 @@
     "resumo": "Narração de esportes olímpicos e vôlei.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Esporte",
-    "habilidadesTecnicas": ["Narração", "Pesquisa Esportiva", "Locução", "Comunicação"],
-    "softSkills": ["Precisão", "Emoção", "Voz"],
-    "hobbies": ["Vôlei", "Natação", "Praia"],
+    "habilidadesTecnicas": [
+      "Narração",
+      "Pesquisa Esportiva",
+      "Locução",
+      "Comunicação"
+    ],
+    "softSkills": [
+      "Precisão",
+      "Emoção",
+      "Voz"
+    ],
+    "hobbies": [
+      "Vôlei",
+      "Natação",
+      "Praia"
+    ],
     "experiencias": [
       {
         "empresa": "Canal de Esportes",
@@ -7820,12 +8931,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "Estácio", "ano": 2018 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Estácio",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
-    "areaInteresses": ["Esportes Olímpicos", "Vôlei", "Jornalismo"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "areaInteresses": [
+      "Esportes Olímpicos",
+      "Vôlei",
+      "Jornalismo"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7837,9 +8961,22 @@
     "resumo": "Marketing e publicidade voltados para o mercado esportivo.",
     "localizacao": "São Paulo/SP",
     "area": "Marketing",
-    "habilidadesTecnicas": ["Marketing Esportivo", "Patrocínios", "Eventos", "Branding"],
-    "softSkills": ["Negociação", "Criatividade", "Relacionamento"],
-    "hobbies": ["Futebol", "Tênis", "Viagens"],
+    "habilidadesTecnicas": [
+      "Marketing Esportivo",
+      "Patrocínios",
+      "Eventos",
+      "Branding"
+    ],
+    "softSkills": [
+      "Negociação",
+      "Criatividade",
+      "Relacionamento"
+    ],
+    "hobbies": [
+      "Futebol",
+      "Tênis",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Marketing",
@@ -7850,12 +8987,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Publicidade", "instituicao": "ESPM", "ano": 2016 }
+      {
+        "curso": "Publicidade",
+        "instituicao": "ESPM",
+        "ano": 2016
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Marketing", "Esportes", "Negócios"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Marketing",
+      "Esportes",
+      "Negócios"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7867,9 +9017,22 @@
     "resumo": "Análise tática e comentários em programas de rádio.",
     "localizacao": "São Paulo/SP",
     "area": "Esporte",
-    "habilidadesTecnicas": ["Análise Tática", "Comentários", "História do Futebol", "Debate"],
-    "softSkills": ["Opinião Forte", "Comunicação", "Conhecimento"],
-    "hobbies": ["Futebol", "Leitura", "Churrasco"],
+    "habilidadesTecnicas": [
+      "Análise Tática",
+      "Comentários",
+      "História do Futebol",
+      "Debate"
+    ],
+    "softSkills": [
+      "Opinião Forte",
+      "Comunicação",
+      "Conhecimento"
+    ],
+    "hobbies": [
+      "Futebol",
+      "Leitura",
+      "Churrasco"
+    ],
     "experiencias": [
       {
         "empresa": "Rádio Esportiva",
@@ -7880,12 +9043,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "Uninove", "ano": 2014 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Uninove",
+        "ano": 2014
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Futebol", "Jornalismo", "Rádio"],
+    "areaInteresses": [
+      "Futebol",
+      "Jornalismo",
+      "Rádio"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7897,9 +9068,22 @@
     "resumo": "Criação de conteúdo ao vivo e entretenimento.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Internet",
-    "habilidadesTecnicas": ["Streaming", "OBS", "Comunicação", "Engajamento"],
-    "softSkills": ["Carisma", "Humor", "Espontaneidade"],
-    "hobbies": ["Games", "Futebol", "Reacts"],
+    "habilidadesTecnicas": [
+      "Streaming",
+      "OBS",
+      "Comunicação",
+      "Engajamento"
+    ],
+    "softSkills": [
+      "Carisma",
+      "Humor",
+      "Espontaneidade"
+    ],
+    "hobbies": [
+      "Games",
+      "Futebol",
+      "Reacts"
+    ],
     "experiencias": [
       {
         "empresa": "Twitch",
@@ -7910,12 +9094,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Publicidade", "instituicao": "Estácio", "ano": 2019 }
+      {
+        "curso": "Publicidade",
+        "instituicao": "Estácio",
+        "ano": 2019
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
-    "areaInteresses": ["Internet", "Entretenimento", "Games"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "areaInteresses": [
+      "Internet",
+      "Entretenimento",
+      "Games"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7927,9 +9124,22 @@
     "resumo": "Consultoria e coaching para times de e-sports.",
     "localizacao": "São Paulo/SP",
     "area": "Games",
-    "habilidadesTecnicas": ["CS:GO", "Tática de Jogo", "Coaching", "Análise de Replay"],
-    "softSkills": ["Liderança", "Resiliência", "Estratégia"],
-    "hobbies": ["Games", "Basquete", "Tecnologia"],
+    "habilidadesTecnicas": [
+      "CS:GO",
+      "Tática de Jogo",
+      "Coaching",
+      "Análise de Replay"
+    ],
+    "softSkills": [
+      "Liderança",
+      "Resiliência",
+      "Estratégia"
+    ],
+    "hobbies": [
+      "Games",
+      "Basquete",
+      "Tecnologia"
+    ],
     "experiencias": [
       {
         "empresa": "Time de E-sports",
@@ -7940,12 +9150,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2015 }
+      {
+        "curso": "Ensino Médio",
+        "instituicao": "Escola",
+        "ano": 2015
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["E-sports", "Competição", "Games"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "E-sports",
+      "Competição",
+      "Games"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7957,9 +9180,22 @@
     "resumo": "Gameplays de jogos variados e interação com a comunidade.",
     "localizacao": "São Paulo/SP",
     "area": "Games",
-    "habilidadesTecnicas": ["Streaming", "Gameplay", "Edição", "Humor"],
-    "softSkills": ["Simpatia", "Paciência", "Comunicação"],
-    "hobbies": ["Games", "Animes", "Terror"],
+    "habilidadesTecnicas": [
+      "Streaming",
+      "Gameplay",
+      "Edição",
+      "Humor"
+    ],
+    "softSkills": [
+      "Simpatia",
+      "Paciência",
+      "Comunicação"
+    ],
+    "hobbies": [
+      "Games",
+      "Animes",
+      "Terror"
+    ],
     "experiencias": [
       {
         "empresa": "Youtube",
@@ -7970,12 +9206,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Design Gráfico", "instituicao": "Panamericana", "ano": 2014 }
+      {
+        "curso": "Design Gráfico",
+        "instituicao": "Panamericana",
+        "ano": 2014
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Games", "Indie Games", "Terror"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "Games",
+      "Indie Games",
+      "Terror"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -7987,9 +9236,22 @@
     "resumo": "Gestão de times e negócios no cenário de games mobile.",
     "localizacao": "São Paulo/SP",
     "area": "Games",
-    "habilidadesTecnicas": ["Gestão de E-sports", "Marketing", "Liderança", "Free Fire"],
-    "softSkills": ["Empreendedorismo", "Visão", "Negociação"],
-    "hobbies": ["Games", "Futebol", "Viagens"],
+    "habilidadesTecnicas": [
+      "Gestão de E-sports",
+      "Marketing",
+      "Liderança",
+      "Free Fire"
+    ],
+    "softSkills": [
+      "Empreendedorismo",
+      "Visão",
+      "Negociação"
+    ],
+    "hobbies": [
+      "Games",
+      "Futebol",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Org E-sports",
@@ -8000,12 +9262,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Administração", "instituicao": "FGV", "ano": 2019 }
+      {
+        "curso": "Administração",
+        "instituicao": "FGV",
+        "ano": 2019
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
-    "areaInteresses": ["E-sports", "Negócios", "Mobile Games"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      }
+    ],
+    "areaInteresses": [
+      "E-sports",
+      "Negócios",
+      "Mobile Games"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -8017,9 +9292,22 @@
     "resumo": "Criação de conteúdo sobre Free Fire e lifestyle.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Games",
-    "habilidadesTecnicas": ["Streaming", "Redes Sociais", "Free Fire", "Marketing de Influência"],
-    "softSkills": ["Carisma", "Comunicação", "Autenticidade"],
-    "hobbies": ["Carros", "Games", "Família"],
+    "habilidadesTecnicas": [
+      "Streaming",
+      "Redes Sociais",
+      "Free Fire",
+      "Marketing de Influência"
+    ],
+    "softSkills": [
+      "Carisma",
+      "Comunicação",
+      "Autenticidade"
+    ],
+    "hobbies": [
+      "Carros",
+      "Games",
+      "Família"
+    ],
     "experiencias": [
       {
         "empresa": "Agência de Influência",
@@ -8030,12 +9318,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2018 }
+      {
+        "curso": "Ensino Médio",
+        "instituicao": "Escola",
+        "ano": 2018
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["Games", "Lifestyle", "Automobilismo"],
+    "areaInteresses": [
+      "Games",
+      "Lifestyle",
+      "Automobilismo"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -8047,9 +9343,22 @@
     "resumo": "Streams e vídeos sobre League of Legends.",
     "localizacao": "São Paulo/SP",
     "area": "Games",
-    "habilidadesTecnicas": ["League of Legends", "Streaming", "Edição", "Entretenimento"],
-    "softSkills": ["Criatividade", "Humor", "Resiliência"],
-    "hobbies": ["LoL", "Música", "Skate"],
+    "habilidadesTecnicas": [
+      "League of Legends",
+      "Streaming",
+      "Edição",
+      "Entretenimento"
+    ],
+    "softSkills": [
+      "Criatividade",
+      "Humor",
+      "Resiliência"
+    ],
+    "hobbies": [
+      "LoL",
+      "Música",
+      "Skate"
+    ],
     "experiencias": [
       {
         "empresa": "Twitch",
@@ -8060,12 +9369,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Publicidade", "instituicao": "Anhembi Morumbi", "ano": 2015 }
+      {
+        "curso": "Publicidade",
+        "instituicao": "Anhembi Morumbi",
+        "ano": 2015
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Games", "Música", "Cultura Geek"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "Games",
+      "Música",
+      "Cultura Geek"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -8077,9 +9399,22 @@
     "resumo": "Comentários e análise técnica de partidas de LoL.",
     "localizacao": "São Paulo/SP",
     "area": "Games",
-    "habilidadesTecnicas": ["Análise de LoL", "Comentários", "Streaming", "Estratégia"],
-    "softSkills": ["Comunicação", "Análise Crítica", "Clareza"],
-    "hobbies": ["LoL", "Culinária", "Viagens"],
+    "habilidadesTecnicas": [
+      "Análise de LoL",
+      "Comentários",
+      "Streaming",
+      "Estratégia"
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Análise Crítica",
+      "Clareza"
+    ],
+    "hobbies": [
+      "LoL",
+      "Culinária",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Estúdio de Transmissão",
@@ -8090,12 +9425,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Jornalismo", "instituicao": "Cásper Líbero", "ano": 2017 }
+      {
+        "curso": "Jornalismo",
+        "instituicao": "Cásper Líbero",
+        "ano": 2017
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["E-sports", "Games", "Jornalismo"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      }
+    ],
+    "areaInteresses": [
+      "E-sports",
+      "Games",
+      "Jornalismo"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -8107,9 +9455,22 @@
     "resumo": "Jogador profissional de League of Legends, posição Mid Laner.",
     "localizacao": "Santos/SP",
     "area": "Games",
-    "habilidadesTecnicas": ["League of Legends", "Mid Lane", "Mecânica de Jogo", "Trabalho em Equipe"],
-    "softSkills": ["Foco", "Disciplina", "Dedicação"],
-    "hobbies": ["LoL", "Aviação", "Viagens"],
+    "habilidadesTecnicas": [
+      "League of Legends",
+      "Mid Lane",
+      "Mecânica de Jogo",
+      "Trabalho em Equipe"
+    ],
+    "softSkills": [
+      "Foco",
+      "Disciplina",
+      "Dedicação"
+    ],
+    "hobbies": [
+      "LoL",
+      "Aviação",
+      "Viagens"
+    ],
     "experiencias": [
       {
         "empresa": "Time Profissional",
@@ -8120,12 +9481,25 @@
       }
     ],
     "formacao": [
-      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2013 }
+      {
+        "curso": "Ensino Médio",
+        "instituicao": "Escola",
+        "ano": 2013
+      }
     ],
     "projetos": [],
     "certificacoes": [],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["E-sports", "Competição", "Tecnologia"],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "areaInteresses": [
+      "E-sports",
+      "Competição",
+      "Tecnologia"
+    ],
     "convites": [],
     "conexoes": []
   },
@@ -8137,9 +9511,22 @@
     "resumo": "Jogador profissional de League of Legends, posição ADC.",
     "localizacao": "Rio de Janeiro/RJ",
     "area": "Games",
-    "habilidadesTecnicas": ["League of Legends", "ADC", "Mecânica de Jogo", "Liderança"],
-    "softSkills": ["Competitividade", "Liderança", "Estilo"],
-    "hobbies": ["LoL", "Boxe", "Música"],
+    "habilidadesTecnicas": [
+      "League of Legends",
+      "ADC",
+      "Mecânica de Jogo",
+      "Liderança"
+    ],
+    "softSkills": [
+      "Competitividade",
+      "Liderança",
+      "Estilo"
+    ],
+    "hobbies": [
+      "LoL",
+      "Boxe",
+      "Música"
+    ],
     "experiencias": [
       {
         "empresa": "Time Profissional",
@@ -8150,12 +9537,20 @@
       }
     ],
     "formacao": [
-      { "curso": "Ensino Médio", "instituicao": "Escola", "ano": 2011 }
+      {
+        "curso": "Ensino Médio",
+        "instituicao": "Escola",
+        "ano": 2011
+      }
     ],
     "projetos": [],
     "certificacoes": [],
     "idiomas": [],
-    "areaInteresses": ["E-sports", "Música", "Moda"],
+    "areaInteresses": [
+      "E-sports",
+      "Música",
+      "Moda"
+    ],
     "convites": [],
     "conexoes": []
   }

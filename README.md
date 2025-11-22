@@ -4,13 +4,13 @@ Workbase AI é uma plataforma inspirada no LinkedIn, desenvolvida para conectar 
 
 # 🚀 Tecnologias Utilizadas
 
-React
+        React
 
-Vite
+        Vite
 
-Node.js
+        Node.js
 
-TailwindCSS
+        TailwindCSS
 
 📦 Instalação e Execução
 
@@ -31,6 +31,15 @@ TailwindCSS
     Perfil profissional com resumo e habilidades
 
     Autenticação e cadastro
+
+# 🔐 Login
+
+Para desfrutar do nosso site, você pode tanto criar um login,
+quanto utilizar o nosso:
+
+        email: admin@gmail.com
+
+        senha: admin
 
 # 👥 Autores
 

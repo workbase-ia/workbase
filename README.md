@@ -37,9 +37,9 @@ Workbase AI é uma plataforma inspirada no LinkedIn, desenvolvida para conectar 
 Para desfrutar do nosso site, você pode tanto criar um login,
 quanto utilizar o nosso:
 
-        email: admin@gmail.com
+        email: yuri@teste.com
 
-        senha: admin
+        senha: perdepenalti
 
 # 👥 Autores
 

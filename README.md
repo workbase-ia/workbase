@@ -28,7 +28,7 @@ Este projeto foi desenvolvido com uma arquitetura moderna, separando claramente 
 | | **Tailwind CSS** | Framework CSS *utility-first* que permite a criação rápida de designs customizados e responsivos. |
 | **Backend** | **Node.js** | Ambiente de execução JavaScript que permite a construção de APIs escaláveis e de alto desempenho. |
 | | **JavaScript** | Linguagem de programação unificada, utilizada tanto no frontend quanto no backend. |
-| **Banco de Dados** | *Não especificado* | Para um projeto full-stack, é necessário um banco de dados (ex: PostgreSQL, MongoDB) para persistência de dados de usuários, posts e vagas. |
+| **Banco de Dados** | *JSON* | Dados armazenados em bibliotecas JSON |
 
 ## 📦 Instalação e Execução
 
@@ -53,7 +53,7 @@ cd workbase
 
 ### 2. Instalar Dependências
 
-Assumindo uma estrutura de projeto com diretórios separados para o frontend e backend (ex: `client` e `server`), instale as dependências em cada um:
+Assumindo uma estrutura de projeto com diretórios separados para o frontend e backend, instale as dependências em cada um:
 
 **A. Dependências do Backend (API)**
 

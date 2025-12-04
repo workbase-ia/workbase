@@ -48,7 +48,7 @@ export default function MainPage() {
 
   if (error) {
     return (
-      <div className="text-center p-8 bg-red-100 border border-red-400 text-red-700 rounded-lg max-w-lg mx-auto mt-10">
+      <div className="text-center p-8 bg-red-100 border border-red-400 text-red-700 rounded-lg max-w-lg mx-auto mt-10 dark:bg-red-900/20 dark:border-red-700 dark:text-red-300">
         <p className="font-bold">Erro ao carregar</p>
         <p>{error}</p>
       </div>
@@ -56,7 +56,7 @@ export default function MainPage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 pt-10 bg-slate-50">
+    <div className="max-w-3xl mx-auto px-4 pt-10 bg-slate-50 dark:bg-slate-800 min-h-screen">
       <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-200 mb-6">Feed Principal</h1>
 
       <div className="space-y-6">
@@ -67,8 +67,6 @@ export default function MainPage() {
               onLike={handleLike}
               onComment={handleComment}
             />
-
-           
           </React.Fragment>
         ))}
       </div>

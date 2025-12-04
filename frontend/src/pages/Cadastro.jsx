@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext'; 
+import { useAuth } from '../contexts/AuthContext';
 
 const API_URL = 'http://localhost:3001/api';
 
@@ -8,12 +8,12 @@ export default function Cadastro() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [passwordConfirm, setPasswordConfirm] = useState(''); 
+  const [passwordConfirm, setPasswordConfirm] = useState('');
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const navigate = useNavigate();
-  const { login } = useAuth(); 
+  const { login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,8 +32,7 @@ export default function Cadastro() {
         headers: {
           'Content-Type': 'application/json',
         },
-
-        body: JSON.stringify({ nome, email, password }), 
+        body: JSON.stringify({ nome, email, password }),
       });
 
       const data = await response.json();
@@ -43,10 +42,9 @@ export default function Cadastro() {
       }
 
       login(data);
-      navigate('/'); 
+      navigate('/');
 
       console.log('Cadastro bem-sucedido:', data);
-
     } catch (err) {
       setError(err.message);
       console.error('Falha no cadastro:', err);
@@ -56,26 +54,25 @@ export default function Cadastro() {
   };
 
   return (
-    <div className="flex h-full flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="flex h-full flex-col justify-center py-12 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900 min-h-screen">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
+        <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-200">
           WorkBalance AI
         </h2>
-        <p className="mt-2 text-center text-sm text-gray-600">
+        <p className="mt-2 text-center text-sm text-gray-600 dark:text-slate-400">
           Crie sua conta para começar
         </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         {/* Card principal */}
-        <div className="bg-white border border-slate-200 py-8 px-4 sm:rounded-lg sm:px-10">
+        <div className="bg-white border border-slate-200 py-8 px-4 sm:rounded-lg sm:px-10 dark:bg-slate-800 dark:border-slate-700">
           <form className="space-y-6" onSubmit={handleSubmit}>
-            
             {/* Campo de Nome Completo */}
             <div>
-              <label 
-                htmlFor="nome" 
-                className="block text-sm font-medium text-gray-700"
+              <label
+                htmlFor="nome"
+                className="block text-sm font-medium text-gray-700 dark:text-slate-200"
               >
                 Nome Completo
               </label>
@@ -88,16 +85,16 @@ export default function Cadastro() {
                   required
                   value={nome}
                   onChange={(e) => setNome(e.target.value)}
-                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm bg-white text-gray-700 dark:bg-slate-900 dark:border-slate-700 dark:placeholder-slate-400 dark:text-slate-200"
                 />
               </div>
             </div>
-            
+
             {/* Campo de Email */}
             <div>
-              <label 
-                htmlFor="email" 
-                className="block text-sm font-medium text-gray-700"
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 dark:text-slate-200"
               >
                 Email
               </label>
@@ -110,16 +107,16 @@ export default function Cadastro() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm bg-white text-gray-700 dark:bg-slate-900 dark:border-slate-700 dark:placeholder-slate-400 dark:text-slate-200"
                 />
               </div>
             </div>
 
             {/* Campo de Senha */}
             <div>
-              <label 
-                htmlFor="password" 
-                className="block text-sm font-medium text-gray-700"
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-gray-700 dark:text-slate-200"
               >
                 Senha
               </label>
@@ -131,16 +128,16 @@ export default function Cadastro() {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm bg-white text-gray-700 dark:bg-slate-900 dark:border-slate-700 dark:placeholder-slate-400 dark:text-slate-200"
                 />
               </div>
             </div>
 
             {/* Campo de Confirmar Senha */}
             <div>
-              <label 
-                htmlFor="passwordConfirm" 
-                className="block text-sm font-medium text-gray-700"
+              <label
+                htmlFor="passwordConfirm"
+                className="block text-sm font-medium text-gray-700 dark:text-slate-200"
               >
                 Confirmar Senha
               </label>
@@ -152,14 +149,14 @@ export default function Cadastro() {
                   required
                   value={passwordConfirm}
                   onChange={(e) => setPasswordConfirm(e.target.value)}
-                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  className="block w-full appearance-none rounded-md border border-slate-300 px-3 py-2 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm bg-white text-gray-700 dark:bg-slate-900 dark:border-slate-700 dark:placeholder-slate-400 dark:text-slate-200"
                 />
               </div>
             </div>
 
             {/* Exibir Erro */}
             {error && (
-              <div className="text-sm text-red-600">
+              <div className="text-sm text-red-600 dark:text-red-300">
                 {error}
               </div>
             )}
@@ -178,7 +175,7 @@ export default function Cadastro() {
         </div>
       </div>
 
-      <p className="mt-8 text-center text-sm text-gray-600">
+      <p className="mt-8 text-center text-sm text-gray-600 dark:text-slate-400">
         Já tem uma conta?{' '}
         <a href="/login" className="font-medium text-blue-600 hover:text-blue-500">
           Faça login

@@ -11,9 +11,9 @@ export default function Footer() {
           
           {/* Adicionar a imagem da Logo */}
           <img 
-            src="#" 
+            src="/logo.png" 
             alt="Logo WorkBase AI" 
-            className="h-10 w-auto object-contain" 
+            className="h-10 w-auto" 
           />
           {/* Bloco de Texto */}
             <p className="text-slate-400 text-sm">
